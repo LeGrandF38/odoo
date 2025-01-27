@@ -41,6 +41,7 @@ jobs:
     - name: Push Docker image to Docker Hub
       run: |
         docker push ${{ secrets.DOCKERHUB_ACCOUNT }}/pack-entreprise:latest
+        docker push ${{ secrets.DOCKERHUB_ACCOUNT }}/pack-entreprise:0.1
 
     # 6. Nettoyer les fichiers temporaires
     - name: Clean up
