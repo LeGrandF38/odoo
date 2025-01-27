@@ -70,12 +70,18 @@ RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ noble-pgdg main' > /etc/a
 RUN npm install -g rtlcss
 
 # Install Odoo
-# Copy local Odoo source code into the container
+# Copier le dossier odoo dans l'image
 COPY ./odoo /usr/lib/python3/dist-packages/odoo
 
-# Install Python dependencies
+# Copier le fichier requirements.txt dans le dossier cible
+COPY ./requirements.txt /usr/lib/python3/dist-packages/odoo/
+
+# Changer le répertoire de travail
 WORKDIR /usr/lib/python3/dist-packages/odoo
+
+# Installer les dépendances Python
 RUN pip3 install --break-system-packages -r requirements.txt
+
 
 # Copy entrypoint script and Odoo configuration file
 COPY ./entrypoint.sh /
