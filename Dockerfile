@@ -70,11 +70,14 @@ RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ noble-pgdg main' > /etc/a
 RUN npm install -g rtlcss
 
 # Install Odoo
-# Copier le dossier odoo dans l'image
-COPY ./odoo /usr/lib/python3/dist-packages/odoo
+ARG GIT_REPO=https://github.com/LeGrandF38/pack-entreprise.git
+ARG BRANCH_NAME=18.0
 
-# Copier le fichier requirements.txt dans le dossier cible
-COPY ./requirements.txt /usr/lib/python3/dist-packages/odoo/
+# Cloner le dépôt et installer les dépendances
+RUN apt-get update && apt-get install -y --no-install-recommends git && \
+    git clone -b ${BRANCH_NAME} ${GIT_REPO} /opt/odoo && \
+    cd /opt/odoo && pip3 install -r requirements.txt && \
+    rm -rf /var/lib/apt/lists/*
 
 # Changer le répertoire de travail
 WORKDIR /usr/lib/python3/dist-packages/odoo
