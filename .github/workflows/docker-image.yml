@@ -15,9 +15,8 @@ jobs:
       uses: actions/checkout@v4
 
     # 2. Télécharger le Dockerfile et les fichiers nécessaires directement dans le répertoire courant
-    - name: Download Dockerfile and dependencies
+    - name: Download Dockerfile s dependencies
       run: |
-        curl -o Dockerfile https://raw.githubusercontent.com/odoo/docker/master/18.0/Dockerfile
         curl -o entrypoint.sh https://raw.githubusercontent.com/odoo/docker/master/18.0/entrypoint.sh
         curl -o odoo.conf https://raw.githubusercontent.com/odoo/docker/master/18.0/odoo.conf
         curl -o wait-for-psql.py https://raw.githubusercontent.com/odoo/docker/master/18.0/wait-for-psql.py
