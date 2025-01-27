@@ -21,7 +21,7 @@ jobs:
         curl -o entrypoint.sh https://raw.githubusercontent.com/odoo/docker/master/18.0/entrypoint.sh
         curl -o odoo.conf https://raw.githubusercontent.com/odoo/docker/master/18.0/odoo.conf
         curl -o wait-for-psql.py https://raw.githubusercontent.com/odoo/docker/master/18.0/wait-for-psql.py
-        chmod +x docker_files/entrypoint.sh
+        chmod +x entrypoint.sh
 
     # 3. Authentification à Docker Hub
     - name: Log in to Docker Hub
