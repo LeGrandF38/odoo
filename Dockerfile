@@ -70,13 +70,8 @@ RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ noble-pgdg main' > /etc/a
 RUN npm install -g rtlcss
 
 # Install Odoo
-# Clone custom Odoo source code
-ARG ODOO_REPO=https://github.com/your-org/your-odoo-repo.git
-ARG ODOO_BRANCH=18.0
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends git && \
-    git clone --depth 1 -b ${ODOO_BRANCH} ${ODOO_REPO} /usr/lib/python3/dist-packages/odoo && \
-    apt-get clean && rm -rf /var/lib/apt/lists/*
+# Copy local Odoo source code into the container
+COPY ./odoo /usr/lib/python3/dist-packages/odoo
 
 # Install Python dependencies
 WORKDIR /usr/lib/python3/dist-packages/odoo
