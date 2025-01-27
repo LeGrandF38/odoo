@@ -14,14 +14,13 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    # 2. Télécharger le Dockerfile et les fichiers nécessaires
+    # 2. Télécharger le Dockerfile et les fichiers nécessaires directement dans le répertoire courant
     - name: Download Dockerfile and dependencies
       run: |
-        mkdir -p docker_files
-        curl -o docker_files/Dockerfile https://raw.githubusercontent.com/odoo/docker/master/18.0/Dockerfile
-        curl -o docker_files/entrypoint.sh https://raw.githubusercontent.com/odoo/docker/master/18.0/entrypoint.sh
-        curl -o docker_files/odoo.conf https://raw.githubusercontent.com/odoo/docker/master/18.0/odoo.conf
-        curl -o docker_files/wait-for-psql.py https://raw.githubusercontent.com/odoo/docker/master/18.0/wait-for-psql.py
+        curl -o Dockerfile https://raw.githubusercontent.com/odoo/docker/master/18.0/Dockerfile
+        curl -o entrypoint.sh https://raw.githubusercontent.com/odoo/docker/master/18.0/entrypoint.sh
+        curl -o odoo.conf https://raw.githubusercontent.com/odoo/docker/master/18.0/odoo.conf
+        curl -o wait-for-psql.py https://raw.githubusercontent.com/odoo/docker/master/18.0/wait-for-psql.py
 
     # 3. Authentification à Docker Hub
     - name: Log in to Docker Hub
@@ -34,7 +33,7 @@ jobs:
     - name: Build Docker image
       run: |
         docker build . \
-          --file docker_files/Dockerfile \
+          --file Dockerfile \
           --tag ${{ secrets.DOCKERHUB_ACCOUNT }}/pack-entreprise:latest
 
     # 5. Pousser l'image vers Docker Hub
@@ -44,4 +43,4 @@ jobs:
 
     # 6. Nettoyer les fichiers temporaires
     - name: Clean up
-      run: rm -rf docker_files
+      run: rm -f Dockerfile entrypoint.sh odoo.conf wait-for-psql.py
