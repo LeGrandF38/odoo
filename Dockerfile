@@ -75,7 +75,7 @@ COPY ./odoo /usr/lib/python3/dist-packages/odoo
 
 # Install Python dependencies
 WORKDIR /usr/lib/python3/dist-packages/odoo
-RUN pip3 install -r requirements.txt
+RUN pip3 install --break-system-packages -r requirements.txt
 
 # Copy entrypoint script and Odoo configuration file
 COPY ./entrypoint.sh /
