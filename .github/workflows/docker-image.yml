@@ -22,6 +22,8 @@ jobs:
         curl -o odoo.conf https://raw.githubusercontent.com/odoo/docker/master/18.0/odoo.conf
         curl -o wait-for-psql.py https://raw.githubusercontent.com/odoo/docker/master/18.0/wait-for-psql.py
         chmod +x entrypoint.sh
+        chmod +x odoo.conf
+        chmod +x wait-for-psql.py
 
     # 3. Authentification à Docker Hub
     - name: Log in to Docker Hub
