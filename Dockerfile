@@ -73,10 +73,17 @@ RUN npm install -g rtlcss
 ARG GIT_REPO=https://github.com/LeGrandF38/pack-entreprise.git
 ARG BRANCH_NAME=18.0
 
-# Cloner le dépôt et installer les dépendances
-RUN apt-get update && apt-get install -y --no-install-recommends git && \
-    git clone -b ${BRANCH_NAME} ${GIT_REPO} /opt/odoo && \
-    cd /opt/odoo && pip3 install -r requirements.txt && \
+# Ensure Python and pip are installed
+RUN apt-get update && apt-get install -y --no-install-recommends python3 python3-pip git build-essential libssl-dev libffi-dev python3-dev
+
+# Install Python dependencies with virtual environment bypass
+RUN pip3 install --upgrade pip
+RUN pip3 install -r /opt/odoo/requirements.txt --break-system-packages
+
+# Clone the repository
+RUN git clone -b ${BRANCH_NAME} ${GIT_REPO} /opt/odoo && \
+    cd /opt/odoo && \
+    pip3 install -r requirements.txt --break-system-packages && \
     rm -rf /var/lib/apt/lists/*
 
 # Changer le répertoire de travail
