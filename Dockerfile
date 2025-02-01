@@ -48,6 +48,13 @@ RUN git clone -b ${BRANCH_NAME} ${GIT_REPO} /opt/odoo
 # Change working directory
 WORKDIR /opt/odoo
 
+# Install system dependencies for python-ldap
+RUN apt-get update && apt-get install -y \
+    libldap2-dev \
+    libsasl2-dev \
+    gcc \
+    python3-dev
+
 # Install additional Odoo dependencies
 RUN pip install -r requirements.txt
 
