@@ -10,7 +10,6 @@ ENV LANG en_US.UTF-8
 ARG TARGETARCH
 
 # Install some deps, lessc and less-plugin-clean-css, and wkhtmltopdf
-
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive \
     apt-get install -y --no-install-recommends \
@@ -52,7 +51,7 @@ RUN apt-get update && \
     && apt-get install -y --no-install-recommends ./wkhtmltox.deb \
     && rm -rf /var/lib/apt/lists/* wkhtmltox.deb
 
-# install latest postgresql-client
+# Install latest postgresql-client
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ noble-pgdg main' > /etc/apt/sources.list.d/pgdg.list \
     && GNUPGHOME="$(mktemp -d)" \
     && export GNUPGHOME \
@@ -86,12 +85,11 @@ RUN git clone -b ${BRANCH_NAME} ${GIT_REPO} /opt/odoo && \
     pip3 install -r requirements.txt --break-system-packages && \
     rm -rf /var/lib/apt/lists/*
 
-# Changer le répertoire de travail
-WORKDIR /usr/lib/python3/dist-packages/odoo
+# Change working directory
+WORKDIR /opt/odoo
 
-# Installer les dépendances Python
+# Install Python dependencies
 RUN pip3 install --break-system-packages -r requirements.txt
-
 
 # Copy entrypoint script and Odoo configuration file
 COPY ./entrypoint.sh /
