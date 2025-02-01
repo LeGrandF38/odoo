@@ -33,8 +33,13 @@ RUN apt-get update && \
 RUN python3 -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 
-# Upgrade pip and install Python dependencies
+# Upgrade pip
 RUN pip install --upgrade pip
+
+# Copy the requirements.txt file from the local context into the container
+COPY requirements.txt /opt/odoo/requirements.txt
+
+# Install Python dependencies from the requirements file
 RUN pip install -r /opt/odoo/requirements.txt
 
 # Clone the repository
@@ -45,11 +50,11 @@ RUN git clone -b ${BRANCH_NAME} ${GIT_REPO} /opt/odoo
 # Change working directory
 WORKDIR /opt/odoo
 
-# Install Odoo dependencies
+# Install additional Odoo dependencies
 RUN pip install -r requirements.txt
 
 # Copy entrypoint script and Odoo configuration file
-COPY ./entrypoint.sh /
+COPY ./entrypoint.sh /entrypoint.sh
 COPY ./odoo.conf /etc/odoo/
 
 # Set permissions and Mount /var/lib/odoo to allow restoring filestore and /mnt/extra-addons for users addons
@@ -64,6 +69,7 @@ EXPOSE 8069 8071 8072
 # Set the default config file
 ENV ODOO_RC /etc/odoo/odoo.conf
 
+# Copy wait-for-psql script
 COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py
 
 # Set default user when running the container
