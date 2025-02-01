@@ -3,10 +3,10 @@ MAINTAINER Odoo S.A. <info@odoo.com>
 
 SHELL ["/bin/bash", "-xo", "pipefail", "-c"]
 
-# Generate locale C.UTF-8 for postgres and general locale data
+# Générer la locale C.UTF-8 pour Postgres et les données locales générales
 ENV LANG en_US.UTF-8
 
-# Install system dependencies
+# Installer les dépendances système
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive \
     apt-get install -y --no-install-recommends \
@@ -26,53 +26,49 @@ RUN apt-get update && \
         libssl-dev \
         libffi-dev \
         python3-dev \
-        xz-utils && \
+        xz-utils \
+        postgresql \
+        libpq-dev && \
     rm -rf /var/lib/apt/lists/*
 
-# Create and activate a virtual environment
+# Créer et activer un environnement virtuel
 RUN python3 -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 
-# Upgrade pip
+# Mettre à jour pip et installer les dépendances Python
 RUN pip install --upgrade pip
-
-# Copy the requirements.txt file from the local context into the container
-COPY requirements.txt /opt/odoo/requirements.txt
-
-# Install Python dependencies from the requirements file
 RUN pip install -r /opt/odoo/requirements.txt
 
-# Clone the repository
+# Cloner le dépôt
 ARG GIT_REPO=https://github.com/LeGrandF38/pack-entreprise.git
 ARG BRANCH_NAME=18.0
 RUN git clone -b ${BRANCH_NAME} ${GIT_REPO} /opt/odoo
 
-# Change working directory
+# Changer le répertoire de travail
 WORKDIR /opt/odoo
 
-# Install additional Odoo dependencies
+# Installer les dépendances d'Odoo
 RUN pip install -r requirements.txt
 
-# Copy entrypoint script and Odoo configuration file
-COPY ./entrypoint.sh /entrypoint.sh
+# Copier le script d'entrée et le fichier de configuration d'Odoo
+COPY ./entrypoint.sh / 
 COPY ./odoo.conf /etc/odoo/
 
-# Set permissions and Mount /var/lib/odoo to allow restoring filestore and /mnt/extra-addons for users addons
+# Définir les permissions et monter /var/lib/odoo pour restaurer le filestore et /mnt/extra-addons pour les add-ons des utilisateurs
 RUN chown odoo /etc/odoo/odoo.conf \
     && mkdir -p /mnt/extra-addons \
     && chown -R odoo /mnt/extra-addons
 VOLUME ["/var/lib/odoo", "/mnt/extra-addons"]
 
-# Expose Odoo services
+# Exposer les services d'Odoo
 EXPOSE 8069 8071 8072
 
-# Set the default config file
+# Définir le fichier de configuration par défaut
 ENV ODOO_RC /etc/odoo/odoo.conf
 
-# Copy wait-for-psql script
 COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py
 
-# Set default user when running the container
+# Définir l'utilisateur par défaut lors de l'exécution du conteneur
 USER odoo
 
 ENTRYPOINT ["/entrypoint.sh"]
