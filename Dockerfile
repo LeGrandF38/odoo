@@ -7,6 +7,7 @@ SHELL ["/bin/bash", "-xo", "pipefail", "-c"]
 ENV LANG en_US.UTF-8
 
 # Install system dependencies
+# Installer les dépendances système
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive \
     apt-get install -y --no-install-recommends \
@@ -26,7 +27,9 @@ RUN apt-get update && \
         libssl-dev \
         libffi-dev \
         python3-dev \
-        xz-utils && \
+        xz-utils \
+        postgresql \
+        libpq-dev && \
     rm -rf /var/lib/apt/lists/*
 
 # Create and activate a virtual environment
