@@ -42,11 +42,6 @@ ARG BRANCH_NAME=18.0
 RUN git clone -b ${BRANCH_NAME} ${GIT_REPO} /opt/odoo
 
 
-
-# Install Python dependencies from the requirements file
-RUN pip install -r /opt/odoo/requirements.txt
-
-
 # Change working directory
 WORKDIR /opt/odoo
 
