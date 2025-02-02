@@ -69,6 +69,7 @@ EXPOSE 8069 8071 8072
 
 # Copier les fichiers de configuration
 COPY ./entrypoint.sh /
+COPY ./wait-for-psql.py /
 COPY ./odoo.conf /etc/odoo/
 
 # Créer l'utilisateur 'odoo' avant de modifier les permissions
