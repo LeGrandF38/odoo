@@ -20,7 +20,8 @@ RUN apt-get update && \
         python3.12-venv \
         python3.12-dev \
         wkhtmltopdf \
-        xz-utils && \
+        xz-utils \
+        libpq-dev && \   # Ajout de libpq-dev pour pg_config
     rm -rf /var/lib/apt/lists/*
 
 # Installation de PostgreSQL client
