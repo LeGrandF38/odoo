@@ -14,21 +14,21 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    # 2. Télécharger le Dockerfile et les fichiers nécessaires directement dans le répertoire courant
-    - name: Debug Dockerfile dependencies download
-      run: |
-        curl -o entrypoint.sh https://raw.githubusercontent.com/odoo/docker/master/18.0/entrypoint.sh
-        echo "Downloaded entrypoint.sh ✅"
-        curl -o odoo.conf https://raw.githubusercontent.com/odoo/docker/master/18.0/odoo.conf
-        echo "Downloaded odoo.conf ✅"
-        curl -o wait-for-psql.py https://raw.githubusercontent.com/odoo/docker/master/18.0/wait-for-psql.py
-        echo "Downloaded wait-for-psql.py ✅"
-        chmod +x entrypoint.sh
-        echo "Made entrypoint.sh executable ✅"
-        chmod +x odoo.conf
-        echo "Made odoo.conf executable ✅"
-        chmod +x wait-for-psql.py
-        echo "Made wait-for-psql.py executable ✅"
+    # # 2. Télécharger le Dockerfile et les fichiers nécessaires directement dans le répertoire courant
+    # - name: Debug Dockerfile dependencies download
+    #   run: |
+    #     curl -o entrypoint.sh https://raw.githubusercontent.com/odoo/docker/master/18.0/entrypoint.sh
+    #     echo "Downloaded entrypoint.sh ✅"
+    #     curl -o odoo.conf https://raw.githubusercontent.com/odoo/docker/master/18.0/odoo.conf
+    #     echo "Downloaded odoo.conf ✅"
+    #     curl -o wait-for-psql.py https://raw.githubusercontent.com/odoo/docker/master/18.0/wait-for-psql.py
+    #     echo "Downloaded wait-for-psql.py ✅"
+    #     chmod +x entrypoint.sh
+    #     echo "Made entrypoint.sh executable ✅"
+    #     chmod +x odoo.conf
+    #     echo "Made odoo.conf executable ✅"
+    #     chmod +x wait-for-psql.py
+    #     echo "Made wait-for-psql.py executable ✅"
 
     # 3. Authentification à Docker Hub
     - name: Log in to Docker Hub
