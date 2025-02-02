@@ -52,5 +52,5 @@ jobs:
         docker push ${{ secrets.DOCKERHUB_ACCOUNT }}/pack-entreprise:0.1
 
     # 6. Nettoyer les fichiers temporaires
-    - name: Clean up
-      run: rm -f Dockerfile entrypoint.sh odoo.conf wait-for-psql.py
+    # - name: Clean up
+    #   run: rm -f Dockerfile entrypoint.sh odoo.conf wait-for-psql.py
