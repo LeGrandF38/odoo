@@ -68,6 +68,11 @@ RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ noble-pgdg main' > /etc/a
 # Installer rtlcss (sur Debian buster)
 RUN npm install -g rtlcss
 
+# Installer python3-venv pour créer un environnement virtuel
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends python3.12-venv && \
+    rm -rf /var/lib/apt/lists/*
+
 # Copier le fichier requirements.txt et installer les dépendances python
 COPY ./requirements.txt /tmp/requirements.txt
 
