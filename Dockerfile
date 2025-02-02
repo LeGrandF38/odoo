@@ -71,9 +71,13 @@ RUN npm install -g rtlcss
 # Copier le fichier requirements.txt et installer les dépendances python
 COPY ./requirements.txt /tmp/requirements.txt
 
-# Installer les dépendances python depuis requirements.txt
-RUN pip3 install --upgrade pip && \
-    pip3 install -r /tmp/requirements.txt
+# Créer et activer un environnement virtuel Python
+RUN python3 -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
+
+# Installer les dépendances python depuis requirements.txt dans l'environnement virtuel
+RUN pip install --upgrade pip && \
+    pip install -r /tmp/requirements.txt
 
 # Copier le code Odoo
 COPY . /opt/odoo/
