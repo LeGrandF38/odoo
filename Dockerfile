@@ -46,6 +46,9 @@ RUN npm install -g rtlcss
 RUN python3.12 -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 
+#
+RUN apt-get update && apt-get install -y libldap2-dev libsasl2-dev
+
 # Copier le fichier requirements.txt et installer les dépendances
 COPY ./requirements.txt /tmp/requirements.txt
 RUN pip install --upgrade pip && pip install -r /tmp/requirements.txt
