@@ -47,7 +47,14 @@ RUN python3.12 -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 
 #
-RUN apt-get update && apt-get install -y libldap2-dev libsasl2-dev
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libssl-dev \
+    libffi-dev \
+    libsasl2-dev \
+    python3-dev \
+    libldap2-dev \
+    && rm -rf /var/lib/apt/lists/*
 
 # Copier le fichier requirements.txt et installer les dépendances
 COPY ./requirements.txt /tmp/requirements.txt
