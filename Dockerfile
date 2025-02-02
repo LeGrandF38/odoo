@@ -71,6 +71,12 @@ EXPOSE 8069 8071 8072
 COPY ./entrypoint.sh /
 COPY ./odoo.conf /etc/odoo/
 
+# Créer l'utilisateur 'odoo' avant de modifier les permissions
+RUN useradd -m odoo && \
+    chown odoo /etc/odoo/odoo.conf && \
+    mkdir -p /mnt/extra-addons && \
+    chown -R odoo /mnt/extra-addons
+
 # Configurer les permissions
 RUN chown odoo /etc/odoo/odoo.conf && \
     mkdir -p /mnt/extra-addons && \
