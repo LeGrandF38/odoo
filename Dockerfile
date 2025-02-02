@@ -71,6 +71,12 @@ EXPOSE 8069 8071 8072
 COPY ./entrypoint.sh /
 COPY ./wait-for-psql.py /
 COPY ./odoo.conf /etc/odoo/
+RUN chmod +x wait-for-psql.py
+RUN chmod +x entrypoint.sh
+RUN chmod +x /etc/odoo/odoo.conf
+
+# Installer grep si nécessaire
+RUN apt-get update && apt-get install -y grep
 
 # Créer l'utilisateur 'odoo' avant de modifier les permissions
 RUN useradd -m odoo && \
