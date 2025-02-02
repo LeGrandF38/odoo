@@ -21,8 +21,9 @@ RUN apt-get update && \
         python3.12-dev \
         wkhtmltopdf \
         xz-utils \
-        libpq-dev && \   # Ajout de libpq-dev pour pg_config
+        libpq-dev && \
     rm -rf /var/lib/apt/lists/*
+
 
 # Installation de PostgreSQL client
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ noble-pgdg main' > /etc/apt/sources.list.d/pgdg.list && \
