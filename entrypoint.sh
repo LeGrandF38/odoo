@@ -35,15 +35,15 @@ case "$1" in
     -- | odoo)
         shift
         if [[ "$1" == "scaffold" ]]; then
-            exec odoo "$@"
+            exec ./odoo-bin "$@"
         else
             /usr/local/bin/wait-for-psql.py "${DB_ARGS[@]}" --timeout=30
-            exec odoo "$@" "${DB_ARGS[@]}"
+            exec ./odoo-bin "$@" "${DB_ARGS[@]}"
         fi
         ;;
     -*)
         /usr/local/bin/wait-for-psql.py "${DB_ARGS[@]}" --timeout=30
-        exec odoo "$@" "${DB_ARGS[@]}"
+        exec ./odoo-bin "$@" "${DB_ARGS[@]}"
         ;;
     *)
         exec "$@"
