@@ -43,7 +43,7 @@ jobs:
         docker build . \
           --file Dockerfile \
           --tag ${{ secrets.DOCKERHUB_ACCOUNT }}/pack-entreprise:latest \
-          --tag ${{ secrets.DOCKERHUB_ACCOUNT }}/pack-entreprise:0.1
+          --tag ${{ secrets.DOCKERHUB_ACCOUNT }}/pack-entreprise:1.0
 
     # 5. Pousser l'image vers Docker Hub
     - name: Push Docker image to Docker Hub
