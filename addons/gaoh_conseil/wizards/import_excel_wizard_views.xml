@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Vue formulaire du wizard d'import Excel -->
+    <record id="view_import_excel_wizard_form" model="ir.ui.view">
+        <field name="name">gaoh.import_excel_wizard.form</field>
+        <field name="model">gaoh.import_excel_wizard</field>
+        <field name="arch" type="xml">
+            <form string="Import Excel">
+                <group>
+                    <field name="import_type"/>
+                    <field name="file" filename="filename"/>
+                    <field name="filename" invisible="1"/>
+                    <field name="sheet_name" placeholder="Laisser vide pour la première feuille"/>
+                </group>
+                <group invisible="not result_message">
+                    <field name="result_message" nolabel="1"/>
+                </group>
+                <footer>
+                    <button string="Importer" name="action_import" type="object" class="btn-primary" invisible="result_message"/>
+                    <button string="Fermer" special="cancel" class="btn-secondary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action pour ouvrir le wizard -->
+    <record id="action_import_excel_wizard" model="ir.actions.act_window">
+        <field name="name">Import Excel</field>
+        <field name="res_model">gaoh.import_excel_wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

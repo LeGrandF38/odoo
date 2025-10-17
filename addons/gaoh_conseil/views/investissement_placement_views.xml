@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Vue Liste Investissement Placement -->
+    <record id="view_investissement_placement_tree" model="ir.ui.view">
+        <field name="name">gaoh.investissement_placement.tree</field>
+        <field name="model">gaoh.investissement_placement</field>
+        <field name="arch" type="xml">
+            <tree string="Investissements Placements">
+                <field name="investisseur_id"/>
+                <field name="libelle_produit"/>
+                <field name="type_produit"/>
+                <field name="partenaire"/>
+                <field name="numero_contrat"/>
+                <field name="date_effet"/>
+                <field name="anciennete_mois"/>
+                <field name="va_encours" widget="monetary"/>
+                <field name="etat_commande" decoration-success="etat_commande == 'en_vigueur'" decoration-info="etat_commande == 'signee'" decoration-warning="etat_commande == 'en_cours'" decoration-danger="etat_commande == 'annulee'"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Vue Formulaire Investissement Placement -->
+    <record id="view_investissement_placement_form" model="ir.ui.view">
+        <field name="name">gaoh.investissement_placement.form</field>
+        <field name="model">gaoh.investissement_placement</field>
+        <field name="arch" type="xml">
+            <form string="Investissement Placement">
+                <header>
+                    <field name="etat_commande" widget="statusbar" options="{'clickable': '1'}"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="libelle_produit"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group string="Investisseur">
+                            <field name="investisseur_id"/>
+                            <field name="email_investisseur"/>
+                            <field name="consultant_apporteur"/>
+                            <field name="tmi"/>
+                            <field name="age_67_69"/>
+                        </group>
+                        <group string="Produit">
+                            <field name="type_produit"/>
+                            <field name="partenaire"/>
+                            <field name="numero_contrat"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Dates">
+                            <field name="date_effet"/>
+                            <field name="date_sortie"/>
+                            <field name="anciennete_mois"/>
+                        </group>
+                        <group string="Commande">
+                            <field name="numero_commande"/>
+                            <field name="achat_personnel"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Programmation Versement">
+                            <field name="programmation_versement"/>
+                            <field name="programmation_date_debut"/>
+                            <field name="programmation_date_fin"/>
+                            <field name="programmation_montant" widget="monetary"/>
+                        </group>
+                        <group string="Dernier Mouvement VC">
+                            <field name="dernier_mouvement_vc_date"/>
+                            <field name="dernier_mouvement_vc_type"/>
+                            <field name="dernier_mouvement_vc_montant" widget="monetary"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Montants Cumulés" name="montants_cumules">
+                            <group>
+                                <group>
+                                    <field name="montant_versement_cumule" widget="monetary"/>
+                                    <field name="va_vc_cumule" widget="monetary"/>
+                                    <field name="va_vc_exercice" widget="monetary"/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="Versements Exercice" name="versements_exercice">
+                            <group>
+                                <group>
+                                    <field name="versement_initial_ex" widget="monetary"/>
+                                    <field name="versement_complementaire_ex" widget="monetary"/>
+                                    <field name="versement_programme_ex" widget="monetary"/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="Encours" name="encours">
+                            <group>
+                                <group>
+                                    <field name="va_encours" widget="monetary"/>
+                                    <field name="versement_initial_encours" widget="monetary"/>
+                                    <field name="versement_complementaire_encours" widget="monetary"/>
+                                    <field name="versement_programme_encours" widget="monetary"/>
+                                </group>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vue Recherche Investissement Placement -->
+    <record id="view_investissement_placement_search" model="ir.ui.view">
+        <field name="name">gaoh.investissement_placement.search</field>
+        <field name="model">gaoh.investissement_placement</field>
+        <field name="arch" type="xml">
+            <search string="Rechercher Investissement Placement">
+                <field name="libelle_produit"/>
+                <field name="type_produit"/>
+                <field name="partenaire"/>
+                <field name="investisseur_id"/>
+                <field name="numero_contrat"/>
+                <field name="consultant_apporteur"/>
+                <filter string="Âge 67-69" name="age_67_69" domain="[('age_67_69', '=', True)]"/>
+                <filter string="En Vigueur" name="en_vigueur" domain="[('etat_commande', '=', 'en_vigueur')]"/>
+                <filter string="Sortie" name="sortie" domain="[('etat_commande', '=', 'sortie')]"/>
+                <group expand="0" string="Grouper par">
+                    <filter string="Investisseur" name="group_investisseur" context="{'group_by': 'investisseur_id'}"/>
+                    <filter string="Type Produit" name="group_type" context="{'group_by': 'type_produit'}"/>
+                    <filter string="Partenaire" name="group_partenaire" context="{'group_by': 'partenaire'}"/>
+                    <filter string="État" name="group_etat" context="{'group_by': 'etat_commande'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action Investissement Placement -->
+    <record id="action_investissement_placement" model="ir.actions.act_window">
+        <field name="name">Investissements Placements</field>
+        <field name="res_model">gaoh.investissement_placement</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Créer un nouveau placement
+            </p>
+            <p>
+                Suivez les placements financiers de vos clients.
+            </p>
+        </field>
+    </record>
+</odoo>

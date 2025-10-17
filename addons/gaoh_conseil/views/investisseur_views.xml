@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Vue Liste Investisseur -->
+    <record id="view_investisseur_tree" model="ir.ui.view">
+        <field name="name">gaoh.investisseur.tree</field>
+        <field name="model">gaoh.investisseur</field>
+        <field name="arch" type="xml">
+            <tree string="Investisseurs">
+                <field name="nom_complet"/>
+                <field name="email"/>
+                <field name="telephone_portable"/>
+                <field name="ville"/>
+                <field name="consultant_apporteur"/>
+                <field name="nb_investissements_immobiliers"/>
+                <field name="nb_investissements_placements"/>
+                <field name="date_derniere_signature"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Vue Formulaire Investisseur -->
+    <record id="view_investisseur_form" model="ir.ui.view">
+        <field name="name">gaoh.investisseur.form</field>
+        <field name="model">gaoh.investisseur</field>
+        <field name="arch" type="xml">
+            <form string="Investisseur">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="toggle_active" type="object" class="oe_stat_button" icon="fa-archive" invisible="active">
+                            <div class="o_field_widget o_stat_info">
+                                <span class="o_stat_text">Archivé</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="nom_complet" readonly="1"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group string="Informations Personnelles">
+                            <field name="civilite"/>
+                            <field name="nom"/>
+                            <field name="prenom"/>
+                            <field name="nom_jeune_fille"/>
+                            <field name="date_naissance"/>
+                            <field name="age"/>
+                            <field name="situation_familiale"/>
+                            <field name="interlocuteur_principal"/>
+                        </group>
+                        <group string="Contact">
+                            <field name="email" widget="email"/>
+                            <field name="telephone_portable" widget="phone"/>
+                            <field name="telephone_domicile" widget="phone"/>
+                            <field name="telephone_professionnel" widget="phone"/>
+                            <field name="autorisation_communication"/>
+                            <field name="npai"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Adresse">
+                            <field name="adresse_ligne1"/>
+                            <field name="adresse_ligne2"/>
+                            <field name="rue"/>
+                            <field name="code_postal"/>
+                            <field name="ville"/>
+                            <field name="pays_id"/>
+                        </group>
+                        <group string="Consultant">
+                            <field name="consultant_apporteur"/>
+                            <field name="consultant_precedent"/>
+                            <field name="date_rattachement_precedent"/>
+                            <field name="date_derniere_signature"/>
+                            <field name="date_suppression_contact"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Détentions">
+                            <field name="detenteur_epargne_retraite"/>
+                            <field name="detenteur_capinvest"/>
+                            <field name="detenteur_girardin"/>
+                        </group>
+                        <group string="Informations Fiscales">
+                            <field name="impot_revenu_brut" widget="monetary"/>
+                            <field name="impot_revenu_net" widget="monetary"/>
+                            <field name="tmi"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Liquidités">
+                            <field name="liquidites_seul" widget="monetary"/>
+                            <field name="liquidites_couple" widget="monetary"/>
+                            <field name="liquidites_total" widget="monetary"/>
+                        </group>
+                        <group string="Crédits">
+                            <field name="date_credit_recent"/>
+                            <field name="date_credit_futur"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Investissements Immobiliers" name="investissements_immobiliers">
+                            <field name="investissement_immobilier_ids">
+                                <tree>
+                                    <field name="nom_programme"/>
+                                    <field name="ville_programme"/>
+                                    <field name="dispositif_fiscal"/>
+                                    <field name="date_reservation"/>
+                                    <field name="prix_ttc" widget="monetary"/>
+                                    <field name="etat_commande"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Placements Financiers" name="placements">
+                            <field name="investissement_placement_ids">
+                                <tree>
+                                    <field name="libelle_produit"/>
+                                    <field name="type_produit"/>
+                                    <field name="partenaire"/>
+                                    <field name="date_effet"/>
+                                    <field name="va_encours" widget="monetary"/>
+                                    <field name="etat_commande"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vue Recherche Investisseur -->
+    <record id="view_investisseur_search" model="ir.ui.view">
+        <field name="name">gaoh.investisseur.search</field>
+        <field name="model">gaoh.investisseur</field>
+        <field name="arch" type="xml">
+            <search string="Rechercher Investisseur">
+                <field name="nom_complet"/>
+                <field name="email"/>
+                <field name="telephone_portable"/>
+                <field name="ville"/>
+                <field name="consultant_apporteur"/>
+                <filter string="Avec Épargne Retraite" name="avec_epargne_retraite" domain="[('detenteur_epargne_retraite', '=', True)]"/>
+                <filter string="Avec Capinvest" name="avec_capinvest" domain="[('detenteur_capinvest', '=', True)]"/>
+                <filter string="Avec Girardin" name="avec_girardin" domain="[('detenteur_girardin', '=', True)]"/>
+                <filter string="NPAI" name="npai" domain="[('npai', '=', True)]"/>
+                <group expand="0" string="Grouper par">
+                    <filter string="Consultant Apporteur" name="group_consultant" context="{'group_by': 'consultant_apporteur'}"/>
+                    <filter string="Ville" name="group_ville" context="{'group_by': 'ville'}"/>
+                    <filter string="Situation Familiale" name="group_situation" context="{'group_by': 'situation_familiale'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action Investisseur -->
+    <record id="action_investisseur" model="ir.actions.act_window">
+        <field name="name">Investisseurs</field>
+        <field name="res_model">gaoh.investisseur</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Créer un nouvel investisseur
+            </p>
+            <p>
+                Gérez vos investisseurs et suivez leurs investissements.
+            </p>
+        </field>
+    </record>
+</odoo>

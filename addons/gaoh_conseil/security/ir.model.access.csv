@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_gaoh_investisseur_user,gaoh.investisseur.user,model_gaoh_investisseur,group_gaoh_user,1,1,1,0
+access_gaoh_investisseur_manager,gaoh.investisseur.manager,model_gaoh_investisseur,group_gaoh_manager,1,1,1,1
+access_gaoh_investissement_immobilier_user,gaoh.investissement_immobilier.user,model_gaoh_investissement_immobilier,group_gaoh_user,1,1,1,0
+access_gaoh_investissement_immobilier_manager,gaoh.investissement_immobilier.manager,model_gaoh_investissement_immobilier,group_gaoh_manager,1,1,1,1
+access_gaoh_investissement_placement_user,gaoh.investissement_placement.user,model_gaoh_investissement_placement,group_gaoh_user,1,1,1,0
+access_gaoh_investissement_placement_manager,gaoh.investissement_placement.manager,model_gaoh_investissement_placement,group_gaoh_manager,1,1,1,1

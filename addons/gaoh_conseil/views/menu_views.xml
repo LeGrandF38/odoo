@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Menu Principal -->
+    <menuitem id="menu_gaoh_conseil_root"
+              name="Gaoh Conseil"
+              sequence="10"
+              web_icon="gaoh_conseil,static/description/icon.png"/>
+
+    <!-- Menu Investisseurs -->
+    <menuitem id="menu_gaoh_investisseurs"
+              name="Investisseurs"
+              parent="menu_gaoh_conseil_root"
+              action="action_investisseur"
+              sequence="10"/>
+
+    <!-- Menu Investissements -->
+    <menuitem id="menu_gaoh_investissements"
+              name="Investissements"
+              parent="menu_gaoh_conseil_root"
+              sequence="20"/>
+
+    <!-- Sous-menu Investissements Immobiliers -->
+    <menuitem id="menu_gaoh_investissement_immobilier"
+              name="Investissements Immobiliers"
+              parent="menu_gaoh_investissements"
+              action="action_investissement_immobilier"
+              sequence="10"/>
+
+    <!-- Sous-menu Placements -->
+    <menuitem id="menu_gaoh_investissement_placement"
+              name="Placements Financiers"
+              parent="menu_gaoh_investissements"
+              action="action_investissement_placement"
+              sequence="20"/>
+
+    <!-- Menu Configuration -->
+    <menuitem id="menu_gaoh_configuration"
+              name="Configuration"
+              parent="menu_gaoh_conseil_root"
+              sequence="100"/>
+
+    <!-- Sous-menu Import -->
+    <menuitem id="menu_gaoh_import"
+              name="Import Excel"
+              parent="menu_gaoh_configuration"
+              action="action_import_excel_wizard"
+              sequence="10"/>
+</odoo>

@@ -1,0 +1,175 @@
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                                                                           ║
+║              📦 PACKAGE MODULE GAOH CONSEIL POUR ODOO 18.0                ║
+║                                                                           ║
+║                    ✅ Module prêt à être installé                         ║
+║                                                                           ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+🎯 OBJECTIF
+-----------
+Module de gestion complet pour :
+  • Investisseurs (informations complètes, fiscalité, liquidités)
+  • Investissements Immobiliers (programmes, dispositifs fiscaux)
+  • Placements Financiers (contrats, encours, versements)
+  • Import Excel (import massif de données)
+
+
+📦 FICHIERS INCLUS
+------------------
+  ✓ gaoh_conseil.zip                    → Module Odoo complet (21 Ko)
+  ✓ gaoh_conseil_import_exemple.xlsx    → Exemple Excel pour import (7.6 Ko)
+  ✓ INSTALLATION_GAOH_CONSEIL.md        → Guide complet (7.9 Ko)
+  ✓ README.md                           → Documentation package
+  ✓ LISEZ_MOI_EN_PREMIER.txt            → Ce fichier
+
+
+⚡ INSTALLATION RAPIDE (3 ÉTAPES)
+---------------------------------
+
+  1️⃣  INSTALLER LES DÉPENDANCES PYTHON
+      
+      pip install openpyxl python-dateutil
+
+
+  2️⃣  DÉCOMPRESSER ET COPIER LE MODULE
+      
+      unzip gaoh_conseil.zip
+      cp -r gaoh_conseil /chemin/vers/odoo/addons/
+      sudo systemctl restart odoo
+
+
+  3️⃣  ACTIVER DANS ODOO
+      
+      → Connectez-vous à Odoo
+      → Paramètres > Activer le mode développeur
+      → Apps > Mettre à jour la liste des applications
+      → Rechercher "Gaoh Conseil"
+      → Installer
+
+
+🎓 POUR UNE INSTALLATION DÉTAILLÉE
+-----------------------------------
+Consultez le fichier : INSTALLATION_GAOH_CONSEIL.md
+
+Ce guide contient :
+  • Installation pas à pas (2 méthodes)
+  • Configuration des droits d'accès
+  • Procédure d'import Excel
+  • Guide d'utilisation quotidienne
+  • Dépannage des problèmes
+
+
+📊 FONCTIONNALITÉS PRINCIPALES
+-------------------------------
+
+  👥 INVESTISSEURS
+     ✓ Fiche complète (civil, contact, adresse, fiscalité)
+     ✓ Gestion des liquidités et crédits
+     ✓ Suivi des consultants
+     ✓ Historique et archivage
+
+  🏢 INVESTISSEMENTS IMMOBILIERS
+     ✓ Programmes immobiliers complets
+     ✓ Dispositifs fiscaux (Pinel, LMNP, Malraux...)
+     ✓ Suivi des dates (option, livraison, acte)
+     ✓ Gestion des commandes
+     ✓ Calcul des commissions
+
+  �� PLACEMENTS FINANCIERS
+     ✓ Contrats et produits variés
+     ✓ Programmation des versements
+     ✓ Historique des mouvements
+     ✓ Encours et valeurs actualisées
+     ✓ Ancienneté automatique
+
+  �� IMPORT EXCEL
+     ✓ Import massif (investisseurs, immobilier, placements)
+     ✓ Gestion intelligente des doublons
+     ✓ Rapport détaillé avec erreurs
+
+
+🔧 CONFIGURATION REQUISE
+-------------------------
+  • Odoo 18.0
+  • Python 3.8+
+  • PostgreSQL
+  • openpyxl
+  • python-dateutil
+
+
+🚀 APRÈS INSTALLATION
+----------------------
+  1. Configurer les droits (Utilisateur/Manager)
+  2. Importer les données Excel ou créer manuellement
+  3. Former les utilisateurs
+  4. Commencer à utiliser !
+
+
+📥 IMPORT DE DONNÉES
+--------------------
+Utilisez le fichier : gaoh_conseil_import_exemple.xlsx
+
+  1. Ouvrir le fichier Excel
+  2. Modifier avec vos données
+  3. Dans Odoo : Gaoh Conseil > Configuration > Import Excel
+  4. Sélectionner le type (Investisseurs/Immobilier/Placements)
+  5. Choisir le fichier
+  6. Importer et consulter le rapport
+
+
+🔐 DROITS D'ACCÈS
+-----------------
+  UTILISATEUR → Lecture, Écriture, Création (pas de suppression)
+  MANAGER     → Tous les droits (y compris suppression)
+
+
+🐛 PROBLÈME ?
+-------------
+  → Consultez INSTALLATION_GAOH_CONSEIL.md section "Dépannage"
+  → Vérifiez que openpyxl est installé
+  → Redémarrez Odoo après installation
+  → Mettez à jour la liste des apps (mode développeur)
+
+
+📞 SUPPORT
+----------
+  Email : support@gaohconseil.com
+  Doc Odoo : https://www.odoo.com/documentation/18.0/
+
+
+📝 INFORMATIONS MODULE
+----------------------
+  Nom : Gaoh Conseil - Gestion des Investisseurs
+  Version : 1.0.0
+  Auteur : Gaoh Conseil
+  Licence : LGPL-3
+  Compatible : Odoo 18.0
+
+
+✅ CHECKLIST POST-INSTALLATION
+-------------------------------
+  [ ] Dépendances Python installées
+  [ ] Module copié dans addons/
+  [ ] Odoo redémarré
+  [ ] Module installé depuis l'interface
+  [ ] Droits d'accès configurés
+  [ ] Test de création d'investisseur
+  [ ] Test d'import Excel
+  [ ] Formation des utilisateurs
+
+
+🎯 PRÊT À COMMENCER !
+---------------------
+Tout est prêt pour installer le module Gaoh Conseil sur votre serveur Odoo.
+
+Suivez les 3 étapes de l'installation rapide ci-dessus, ou consultez
+le guide complet dans INSTALLATION_GAOH_CONSEIL.md pour plus de détails.
+
+Bonne utilisation ! 🚀
+
+
+═══════════════════════════════════════════════════════════════════════════
+                    Module développé pour Gaoh Conseil
+                         Octobre 2024 - v1.0.0
+═══════════════════════════════════════════════════════════════════════════

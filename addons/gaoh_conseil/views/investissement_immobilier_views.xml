@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Vue Liste Investissement Immobilier -->
+    <record id="view_investissement_immobilier_tree" model="ir.ui.view">
+        <field name="name">gaoh.investissement_immobilier.tree</field>
+        <field name="model">gaoh.investissement_immobilier</field>
+        <field name="arch" type="xml">
+            <tree string="Investissements Immobiliers">
+                <field name="investisseur_id"/>
+                <field name="nom_programme"/>
+                <field name="ville_programme"/>
+                <field name="dispositif_fiscal"/>
+                <field name="promoteur"/>
+                <field name="date_reservation"/>
+                <field name="date_livraison"/>
+                <field name="prix_ttc" widget="monetary"/>
+                <field name="etat_commande" decoration-success="etat_commande == 'livree'" decoration-info="etat_commande == 'signee'" decoration-warning="etat_commande == 'en_cours'" decoration-danger="etat_commande == 'annulee'"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Vue Formulaire Investissement Immobilier -->
+    <record id="view_investissement_immobilier_form" model="ir.ui.view">
+        <field name="name">gaoh.investissement_immobilier.form</field>
+        <field name="model">gaoh.investissement_immobilier</field>
+        <field name="arch" type="xml">
+            <form string="Investissement Immobilier">
+                <header>
+                    <field name="etat_commande" widget="statusbar" options="{'clickable': '1'}"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="nom_programme"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group string="Investisseur">
+                            <field name="investisseur_id"/>
+                            <field name="email_investisseur"/>
+                            <field name="consultant_apporteur"/>
+                        </group>
+                        <group string="Programme">
+                            <field name="code_programme"/>
+                            <field name="ville_programme"/>
+                            <field name="promoteur"/>
+                            <field name="gestionnaire"/>
+                            <field name="stellium_sci"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Lot">
+                            <field name="lot"/>
+                            <field name="type_lot"/>
+                            <field name="dispositif_fiscal"/>
+                        </group>
+                        <group string="Dates Importantes">
+                            <field name="date_option"/>
+                            <field name="date_reservation"/>
+                            <field name="date_livraison"/>
+                            <field name="date_acte"/>
+                            <field name="date_vc"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Commande">
+                            <field name="numero_commande"/>
+                            <field name="paiement_comptant"/>
+                            <field name="achat_personnel"/>
+                            <field name="pv_strategie"/>
+                        </group>
+                        <group string="Montants">
+                            <field name="prix_ttc" widget="monetary"/>
+                            <field name="base_commissionnement" widget="monetary"/>
+                        </group>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vue Recherche Investissement Immobilier -->
+    <record id="view_investissement_immobilier_search" model="ir.ui.view">
+        <field name="name">gaoh.investissement_immobilier.search</field>
+        <field name="model">gaoh.investissement_immobilier</field>
+        <field name="arch" type="xml">
+            <search string="Rechercher Investissement Immobilier">
+                <field name="nom_programme"/>
+                <field name="ville_programme"/>
+                <field name="investisseur_id"/>
+                <field name="promoteur"/>
+                <field name="consultant_apporteur"/>
+                <filter string="Pinel" name="pinel" domain="[('dispositif_fiscal', '=', 'pinel')]"/>
+                <filter string="LMNP" name="lmnp" domain="[('dispositif_fiscal', '=', 'lmnp')]"/>
+                <filter string="En Cours" name="en_cours" domain="[('etat_commande', '=', 'en_cours')]"/>
+                <filter string="Signée" name="signee" domain="[('etat_commande', '=', 'signee')]"/>
+                <filter string="Livrée" name="livree" domain="[('etat_commande', '=', 'livree')]"/>
+                <group expand="0" string="Grouper par">
+                    <filter string="Investisseur" name="group_investisseur" context="{'group_by': 'investisseur_id'}"/>
+                    <filter string="Ville" name="group_ville" context="{'group_by': 'ville_programme'}"/>
+                    <filter string="Promoteur" name="group_promoteur" context="{'group_by': 'promoteur'}"/>
+                    <filter string="Dispositif Fiscal" name="group_dispositif" context="{'group_by': 'dispositif_fiscal'}"/>
+                    <filter string="État" name="group_etat" context="{'group_by': 'etat_commande'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action Investissement Immobilier -->
+    <record id="action_investissement_immobilier" model="ir.actions.act_window">
+        <field name="name">Investissements Immobiliers</field>
+        <field name="res_model">gaoh.investissement_immobilier</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Créer un nouvel investissement immobilier
+            </p>
+            <p>
+                Suivez les investissements immobiliers de vos clients.
+            </p>
+        </field>
+    </record>
+</odoo>

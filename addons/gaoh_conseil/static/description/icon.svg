@@ -1,0 +1,8 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <rect width="128" height="128" fill="#2C3E50"/>
+  <circle cx="64" cy="45" r="18" fill="#ECF0F1"/>
+  <path d="M 40 65 Q 64 55 88 65 L 88 100 L 40 100 Z" fill="#ECF0F1"/>
+  <rect x="25" y="75" width="78" height="8" fill="#3498DB" opacity="0.7"/>
+  <rect x="25" y="88" width="78" height="8" fill="#E74C3C" opacity="0.7"/>
+  <text x="64" y="120" font-family="Arial, sans-serif" font-size="14" fill="#ECF0F1" text-anchor="middle" font-weight="bold">GAOH</text>
+</svg>
