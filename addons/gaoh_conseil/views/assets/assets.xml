@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<odoo>
-    <!-- Assets pour le backend -->
-    <template id="assets_backend" inherit_id="web.assets_backend">
-        <xpath expr="." position="inside">
-            <link rel="stylesheet" type="text/css" href="/gaoh_conseil/static/src/css/gaoh_conseil.css"/>
-        </xpath>
-    </template>
-</odoo>
