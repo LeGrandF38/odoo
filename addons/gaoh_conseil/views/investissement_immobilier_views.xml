@@ -35,7 +35,7 @@
                             <field name="nom_programme"/>
                         </h1>
                     </div>
-                    <group>
+                    <group col="2">
                         <group string="Investisseur" colspan="1">
                             <field name="investisseur_id"/>
                             <field name="email_investisseur"/>
@@ -49,7 +49,7 @@
                             <field name="stellium_sci"/>
                         </group>
                     </group>
-                    <group>
+                    <group col="2">
                         <group string="Lot" colspan="1">
                             <field name="lot"/>
                             <field name="type_lot"/>
@@ -63,7 +63,7 @@
                             <field name="date_vc"/>
                         </group>
                     </group>
-                    <group>
+                    <group col="2">
                         <group string="Commande" colspan="1">
                             <field name="numero_commande"/>
                             <field name="paiement_comptant"/>

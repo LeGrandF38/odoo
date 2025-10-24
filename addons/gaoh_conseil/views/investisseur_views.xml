@@ -38,7 +38,7 @@
                             <field name="nom_complet" readonly="1"/>
                         </h1>
                     </div>
-                    <group>
+                    <group col="2">
                         <group string="Informations Personnelles" colspan="1">
                             <field name="civilite"/>
                             <field name="nom"/>
@@ -58,7 +58,7 @@
                             <field name="npai"/>
                         </group>
                     </group>
-                    <group>
+                    <group col="2">
                         <group string="Adresse" colspan="1">
                             <field name="adresse_ligne1"/>
                             <field name="adresse_ligne2"/>
@@ -75,7 +75,7 @@
                             <field name="date_suppression_contact"/>
                         </group>
                     </group>
-                    <group>
+                    <group col="2">
                         <group string="Détentions" colspan="1">
                             <field name="detenteur_epargne_retraite"/>
                             <field name="detenteur_capinvest"/>
@@ -87,7 +87,7 @@
                             <field name="tmi"/>
                         </group>
                     </group>
-                    <group>
+                    <group col="2">
                         <group string="Liquidités" colspan="1">
                             <field name="liquidites_seul" widget="monetary"/>
                             <field name="liquidites_couple" widget="monetary"/>
