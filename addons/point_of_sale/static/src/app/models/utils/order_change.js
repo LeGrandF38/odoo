@@ -13,7 +13,9 @@ export const changesToOrder = (
         : Object.values(order.last_order_preparation_change.lines);
 
     for (const lineChange of linesChanges) {
-        if (lineChange["quantity"] > 0 && !cancelled) {
+        if (lineChange["quantity"] === 0) {
+            continue;
+        } else if (lineChange["quantity"] > 0 && !cancelled) {
             toAdd.push(lineChange);
         } else {
             lineChange["quantity"] = Math.abs(lineChange["quantity"]); // we need always positive values.
@@ -50,7 +52,7 @@ export const getOrderChanges = (order, skipped = false, orderPreparationCategori
     for (const orderline of order.get_orderlines()) {
         const product = orderline.get_product();
         const note = orderline.getNote();
-        const lineKey = `${orderline.uuid} - ${note}`;
+        const lineKey = orderline.uuid;
         const productCategoryIds = product.parentPosCategIds.filter((id) =>
             prepaCategoryIds.has(id)
         );
@@ -123,6 +125,7 @@ export const getOrderChanges = (order, skipped = false, orderPreparationCategori
                     product_id: lineResume["product_id"],
                     name: lineResume["name"],
                     basic_name: lineResume["basic_name"],
+                    display_name: lineResume["display_name"],
                     isCombo: lineResume["isCombo"],
                     note: lineResume["note"],
                     attribute_value_ids: lineResume["attribute_value_ids"],
@@ -151,8 +154,9 @@ export const getOrderChanges = (order, skipped = false, orderPreparationCategori
     }
     const sittingMode = order.last_order_preparation_change.sittingMode;
     if (
-        (sittingMode !== "dine in" && !order.takeaway) ||
-        (sittingMode !== "takeaway" && order.takeaway)
+        Object.keys(order.last_order_preparation_change.lines).length &&
+        ((sittingMode !== "dine in" && !order.takeaway) ||
+            (sittingMode !== "takeaway" && order.takeaway))
     ) {
         result.modeUpdate = true;
     }

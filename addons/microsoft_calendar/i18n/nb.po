@@ -6,17 +6,18 @@
 # Thor Arne Hvidsten <thor.arne.hvidsten@gmail.com>, 2024
 # Cécile Collart <cco@odoo.com>, 2024
 # Marius Stedjan <marius@stedjan.com>, 2024
-# Henning Fyllingsnes, 2024
 # Martin Trigaux, 2024
 # Rune Restad, 2025
+# Henning Fyllingsnes, 2025
+# Wil Odoo, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-26 08:55+0000\n"
+"POT-Creation-Date: 2025-07-18 18:39+0000\n"
 "PO-Revision-Date: 2024-09-25 09:41+0000\n"
-"Last-Translator: Rune Restad, 2025\n"
+"Last-Translator: Wil Odoo, 2025\n"
 "Language-Team: Norwegian Bokmål (https://app.transifex.com/odoo/teams/41243/nb/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -187,6 +188,11 @@ msgid ""
 msgstr ""
 
 #. module: microsoft_calendar
+#: model:ir.model,name:microsoft_calendar.model_calendar_alarm_manager
+msgid "Event Alarm Manager"
+msgstr "Hendelse Alarm Styring"
+
+#. module: microsoft_calendar
 #: model:ir.model,name:microsoft_calendar.model_calendar_recurrence
 msgid "Event Recurrence Rule"
 msgstr ""
@@ -199,6 +205,9 @@ msgid ""
 "Either update the events/attendees or archive these events %(details)s:\n"
 "%(invalid_events)s"
 msgstr ""
+"For en korrekt synkronisering mellom Odoo og Outlook-kalender må alle deltakere ha en e-postadresse. Noen arrangementer respekterer imidlertid ikke denne betingelsen. Så lenge hendelsene er feil, vil ikke kalenderne bli synkronisert.\n"
+"Enten oppdater arrangementene/deltakerne eller arkiver disse hendelsene %(details)s:\n"
+"%(invalid_events)s"
 
 #. module: microsoft_calendar
 #. odoo-python
@@ -401,12 +410,6 @@ msgstr ""
 msgid ""
 "The Outlook Synchronization needs to be configured before you can use it, do"
 " you want to do it now?"
-msgstr ""
-
-#. module: microsoft_calendar
-#. odoo-python
-#: code:addons/microsoft_calendar/models/res_users.py:0
-msgid "The account for the Outlook Calendar service is not configured."
 msgstr ""
 
 #. module: microsoft_calendar

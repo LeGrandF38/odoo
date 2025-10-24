@@ -11,7 +11,7 @@ from psycopg2.errors import LockNotAvailable
 from odoo import fields, models, api, _
 from odoo.http import request
 from odoo.exceptions import UserError, ValidationError
-from odoo.tools import formatLang, float_round, float_repr, cleanup_xml_node, groupby
+from odoo.tools import formatLang, float_compare, float_is_zero, float_round, float_repr, cleanup_xml_node, groupby
 from odoo.tools.misc import split_every
 from odoo.addons.base_iban.models.res_partner_bank import normalize_iban
 from odoo.addons.l10n_hu_edi.models.l10n_hu_edi_connection import format_bool, L10nHuEdiConnection, L10nHuEdiConnectionError
@@ -128,6 +128,10 @@ class AccountMove(models.Model):
     def _compute_invoice_currency_rate(self):
         # In Hungary, the currency rate should be based on the delivery date.
         super()._compute_invoice_currency_rate()
+
+    @api.depends('delivery_date')
+    def _compute_expected_currency_rate(self):
+        super()._compute_expected_currency_rate()
 
     def _get_invoice_currency_rate_date(self):
         self.ensure_one()
@@ -272,18 +276,11 @@ class AccountMove(models.Model):
     def _l10n_hu_get_currency_rate(self):
         """ Get the invoice currency / HUF rate.
 
-        If the company currency is HUF, we estimate this based on the invoice lines
-        (or if this is not an invoice, based on the AMLs), using a MMSE estimator.
-
-        If the company currency is not HUF (e.g. Hungarian companies that do their accounting in euro),
-        we get the rate from the currency rates.
+            We don't use `invoice_currency_rate` to avoid rounding error as 1/0.002470 ≃ 404.87,
+            and we want exactly 404.87, i.e. the rate given by the MNB of Hungary, to avoid NAV error
+            upon XML submission.
         """
-        if self.currency_id.name == 'HUF':
-            return 1
-        if self.company_id.currency_id.name == 'HUF':
-            squared_amount_currency = sum(line.amount_currency ** 2 for line in (self.invoice_line_ids or self.line_ids))
-            squared_balance = sum(line.balance ** 2 for line in self.invoice_line_ids)
-            return math.sqrt(squared_balance / squared_amount_currency)
+        self.ensure_one()
         return self.env['res.currency']._get_conversion_rate(
             from_currency=self.currency_id,
             to_currency=self.env.ref('base.HUF'),
@@ -350,8 +347,8 @@ class AccountMove(models.Model):
                 'action_text': _('View Company/ies'),
             },
             'company_not_huf': {
-                'records': self.company_id.filtered(lambda c: c.currency_id.name != 'HUF'),
-                'message': _('Please use HUF as company currency!'),
+                'records': self.company_id.filtered(lambda c: c.currency_id.name not in ['HUF', 'EUR']),
+                'message': _('Please use HUF or EUR as your company currency.'),
                 'action_text': _('View Company/ies'),
             },
             'partner_bank_account_invalid': {
@@ -500,6 +497,18 @@ class AccountMove(models.Model):
             for batch in split_every(100, batch_company):
                 self.env['account.move'].union(*batch)._l10n_hu_edi_upload_single_batch(connection)
 
+    def _l10n_hu_edi_get_operation_type(self):
+        base_invoice = self._l10n_hu_get_chain_base()
+        modification_invoices = self._l10n_hu_get_chain_invoices() - base_invoice
+
+        all_invoices_residual_zero = all(invoice.amount_residual == 0 for invoice in modification_invoices)
+
+        if self == base_invoice:
+            return 'CREATE'
+        if base_invoice.amount_residual == 0 and all_invoices_residual_zero:
+            return 'STORNO'
+        return 'MODIFY'
+
     def _l10n_hu_edi_upload_single_batch(self, connection):
         try:
             token_result = connection.do_token_exchange(self.company_id.sudo()._l10n_hu_edi_get_credentials_dict())
@@ -520,7 +529,7 @@ class AccountMove(models.Model):
         invoice_operations = [
             {
                 'index': invoice.l10n_hu_edi_batch_upload_index,
-                'operation': 'CREATE' if invoice._l10n_hu_get_chain_base() == invoice else 'MODIFY',
+                'operation': invoice._l10n_hu_edi_get_operation_type(),
                 'invoice_data': base64.b64decode(invoice.l10n_hu_edi_attachment),
             }
             for invoice in self
@@ -831,6 +840,9 @@ class AccountMove(models.Model):
         supplier = self.company_id.partner_id
         customer = self.partner_id.commercial_partner_id
 
+        supplier_bank = self.partner_bank_id if self.partner_bank_id and self.move_type == "out_invoice" else supplier.bank_ids[:1]
+        customer_bank = self.partner_bank_id if self.partner_bank_id and self.move_type == "out_refund" else customer.bank_ids[:1]
+
         currency_huf = self.env.ref('base.HUF')
         currency_rate = self._l10n_hu_get_currency_rate()
 
@@ -844,12 +856,12 @@ class AccountMove(models.Model):
             'base_invoice': base_invoice if base_invoice != self else None,
             'supplier': supplier,
             'supplier_vat_data': get_vat_data(supplier, self.fiscal_position_id.foreign_vat),
-            'supplierBankAccountNumber': format_bank_account_number(self.partner_bank_id or supplier.bank_ids[:1]),
+            'supplierBankAccountNumber': format_bank_account_number(supplier_bank),
             'individualExemption': self.company_id.l10n_hu_tax_regime == 'ie',
             'customer': customer,
             'customerVatStatus': (not customer.is_company and 'PRIVATE_PERSON') or (customer.country_code == 'HU' and 'DOMESTIC') or 'OTHER',
             'customer_vat_data': get_vat_data(customer) if customer.is_company else None,
-            'customerBankAccountNumber': format_bank_account_number(customer.bank_ids[:1]),
+            'customerBankAccountNumber': format_bank_account_number(customer_bank),
             'smallBusinessIndicator': self.company_id.l10n_hu_tax_regime == 'sb',
             'exchangeRate': currency_rate,
             'cashAccountingIndicator': self.company_id.l10n_hu_tax_regime == 'ca',
@@ -906,7 +918,12 @@ class AccountMove(models.Model):
 
             if line.display_type == 'product':
                 vat_tax = line.tax_ids.filtered(lambda t: t.l10n_hu_tax_type)
-                price_unit_signed = sign * line.price_unit
+
+                if line.quantity == 0.0 or line.discount == 100.0:
+                    price_unit_signed = 0.0
+                else:
+                    price_unit_signed = sign * line.price_subtotal / (1 - line.discount / 100) / line.quantity
+
                 price_net_signed = self.currency_id.round(price_unit_signed * line.quantity * (1 - line.discount / 100.0))
                 discount_value_signed = self.currency_id.round(price_unit_signed * line.quantity - price_net_signed)
                 price_total_signed = sign * line.price_total

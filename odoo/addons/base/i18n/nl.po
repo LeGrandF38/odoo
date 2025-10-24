@@ -1,27 +1,29 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* base
-# 
+# * base
+#
 # Translators:
 # Martin Trigaux, 2024
-# Jolien De Paepe, 2024
-# Wil Odoo, 2024
+# Jolien De Paepe, 2025
+# Tiffany Chang, 2025
+# Wil Odoo, 2025
 # Erwin van der Ploeg <erwin@odooexperts.nl>, 2025
 # Manon Rondou, 2025
-# 
+# "Manon Rondou (ronm)" <ronm@odoo.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-19 13:06+0000\n"
-"PO-Revision-Date: 2024-09-25 09:41+0000\n"
-"Last-Translator: Manon Rondou, 2025\n"
-"Language-Team: Dutch (https://app.transifex.com/odoo/teams/41243/nl/)\n"
+"POT-Creation-Date: 2025-05-13 15:13+0000\n"
+"PO-Revision-Date: 2025-09-10 13:57+0000\n"
+"Last-Translator: \"Manon Rondou (ronm)\" <ronm@odoo.com>\n"
+"Language-Team: Dutch <https://translate.odoo.com/projects/odoo-18/base/nl/>\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: nl\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.12.2\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_at_reports
@@ -38,7 +40,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Boekhoudkundige rapporten voor Oostenrijk.\n"
+"Boekhoudrapporten voor Oostenrijk.\n"
 "================================\n"
 "\n"
 "    * Definieert de volgende rapporten:\n"
@@ -622,6 +624,17 @@ msgstr ""
 "Gebruik Epson ePOS-printers zonder de IoT-box in het kassasysteem\n"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_l10n_eg_edi_eta
+msgid ""
+"\n"
+"            Egypt Tax Authority Invoice Integration\n"
+"        "
+msgstr ""
+"\n"
+"            Factuurintegratie Egyptische belastingdienst\n"
+"        "
+
+#. module: base
 #: model:ir.module.module,summary:base.module_l10n_ke_edi_oscu
 msgid ""
 "\n"
@@ -652,6 +665,17 @@ msgid ""
 msgstr ""
 "\n"
 "        Een Html Editor component en plugin systeem\n"
+"    "
+
+#. module: base
+#: model:ir.module.module,summary:base.module_l10n_sa_edi
+msgid ""
+"\n"
+"        E-Invoicing, Universal Business Language\n"
+"    "
+msgstr ""
+"\n"
+"        E-facturering, Universal Business Language\n"
 "    "
 
 #. module: base
@@ -1214,19 +1238,6 @@ msgstr ""
 "========================================\n"
 
 #. module: base
-#: model:ir.module.module,description:base.module_l10n_sa_hr_payroll_account
-msgid ""
-"\n"
-"Accounting Data for KSA Payroll Rules.\n"
-"=======================================================\n"
-"\n"
-msgstr ""
-"\n"
-"Boekhoudgegevens voor KSA Payroll-regels.\n"
-"================================================= =====\n"
-"\n"
-
-#. module: base
 #: model:ir.module.module,description:base.module_l10n_ke_hr_payroll_account
 msgid ""
 "\n"
@@ -1257,6 +1268,17 @@ msgid ""
 msgstr ""
 "\n"
 "Boekhoudgegevens voor de Luxemburgse loonregels\n"
+"===========================================\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_my_hr_payroll_account
+msgid ""
+"\n"
+"Accounting Data for Malaysian Payroll Rules\n"
+"===========================================\n"
+msgstr ""
+"\n"
+"Boekhoudgegevens voor Maleisische salarisregels\n"
 "===========================================\n"
 
 #. module: base
@@ -1326,6 +1348,19 @@ msgstr ""
 "========================================\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_sa_hr_payroll_account
+msgid ""
+"\n"
+"Accounting Data for Saudi Arabia Payroll Rules.\n"
+"=======================================================\n"
+"\n"
+msgstr ""
+"\n"
+"Boekhoudgegevens voor Saoedi-Arabië – loonregels.\n"
+"=======================================================\n"
+"\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_sk_hr_payroll_account
 msgid ""
 "\n"
@@ -1338,6 +1373,7 @@ msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_ch_hr_payroll_account
+#: model:ir.module.module,description:base.module_l10n_ch_hr_payroll_elm_transmission_account
 msgid ""
 "\n"
 "Accounting Data for Switzerland Payroll Rules\n"
@@ -1414,7 +1450,7 @@ msgid ""
 "==================\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten\n"
+"Boekhoudrapporten\n"
 "==================\n"
 
 #. module: base
@@ -1424,7 +1460,7 @@ msgid ""
 "Accounting Reports for Estonia\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Estland\n"
+"Boekhoudrapporten voor Estland\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_ng_reports
@@ -1434,6 +1470,15 @@ msgid ""
 msgstr ""
 "\n"
 "Boekhoudrapporten voor Nigeria\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_pk_reports
+msgid ""
+"\n"
+"Accounting Reports for Pakistan (Profit and Loss report and Balance Sheet)\n"
+msgstr ""
+"\n"
+"Boekhoudrapporten voor Pakistan (Winst- en Verliesrekening en Balans)\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_hu
@@ -1452,7 +1497,7 @@ msgid ""
 "================================\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Algerije\n"
+"Boekhoudrapporten voor Algerije\n"
 "================================\n"
 
 #. module: base
@@ -1460,9 +1505,13 @@ msgstr ""
 msgid ""
 "\n"
 "Accounting reports for Bangladesh\n"
+"============================================\n"
+"- Corporate tax report\n"
 msgstr ""
 "\n"
 "Boekhoudkundige rapporten voor Bangladesh\n"
+"============================================\n"
+"- Rapport vennootschapsbelasting\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be_reports
@@ -1471,7 +1520,7 @@ msgid ""
 "Accounting reports for Belgium\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor België\n"
+"Boekhoudrapporten voor België\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_ca_reports
@@ -1480,7 +1529,7 @@ msgid ""
 "Accounting reports for Canada\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Canada\n"
+"Boekhoudrapporten voor Canada\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_cl_reports
@@ -1489,7 +1538,7 @@ msgid ""
 "Accounting reports for Chile\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Chili\n"
+"Boekhoudrapporten voor Chili\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_co_reports
@@ -1499,7 +1548,7 @@ msgid ""
 "================================\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Colombia\n"
+"Boekhoudrapporten voor Colombia\n"
 "================================\n"
 
 #. module: base
@@ -1509,7 +1558,7 @@ msgid ""
 "Accounting reports for Croatia\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Kroatië\n"
+"Boekhoudrapporten voor Kroatië\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_cz_reports
@@ -1530,7 +1579,7 @@ msgid ""
 "=================================\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Denemarken\n"
+"Boekhoudrapporten voor Denemarken\n"
 "=================================\n"
 
 #. module: base
@@ -1540,7 +1589,7 @@ msgid ""
 "Accounting reports for Dominican Republic\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor de Dominicaanse Republiek\n"
+"Boekhoudrapporten voor de Dominicaanse Republiek\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_ec_reports
@@ -1552,7 +1601,7 @@ msgid ""
 "* Adds Profit and Loss report adapted for Ecuador\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Ecuador\n"
+"Boekhoudrapporten voor Ecuador\n"
 "==============================\n"
 "* Voegt balansrapport toe aangepast voor Ecuador\n"
 "* Voegt een winst- en verliesrapport toe, aangepast voor Ecuador\n"
@@ -1566,7 +1615,7 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Finland\n"
+"Boekhoudrapporten voor Finland\n"
 "================================\n"
 "\n"
 
@@ -1583,7 +1632,7 @@ msgid ""
 "in the \"Statement Reports\" section).\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Frankrijk\n"
+"Boekhoudrapporten voor Frankrijk\n"
 "================================\n"
 "\n"
 "Met deze module kun je ook het Franse btw-rapport exporteren en naar de DGFiP, een OGA of een deskundige accountant sturen.\n"
@@ -1600,7 +1649,7 @@ msgid ""
 "Also adds DATEV export options to general ledger\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Duitsland\n"
+"Boekhoudrapporten voor Duitsland\n"
 "Bevat Balans-, Winst- en Verlies-, btw- en btw-rapporten van partners\n"
 "Voegt ook DATEV-exportopties toe aan het grootboek\n"
 
@@ -1613,7 +1662,7 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Griekenland\n"
+"Boekhoudrapporten voor Griekenland\n"
 "================================\n"
 "\n"
 
@@ -1624,7 +1673,7 @@ msgid ""
 "Accounting reports for Hong Kong\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Hong Kong\n"
+"Boekhoudrapporten voor Hong Kong\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_hu_reports
@@ -1633,7 +1682,7 @@ msgid ""
 "Accounting reports for Hungary\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Hongarije\n"
+"Boekhoudrapporten voor Hongarije\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_in_reports
@@ -1643,7 +1692,7 @@ msgid ""
 "================================\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor India\n"
+"Boekhoudrapporten voor India\n"
 "================================\n"
 
 #. module: base
@@ -1655,7 +1704,7 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Italië\n"
+"Boekhoudrapporten voor Italië\n"
 "============================\n"
 "\n"
 
@@ -1667,7 +1716,7 @@ msgid ""
 "Contains Balance sheet, Profit and Loss reports\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Kazachstan\n"
+"Boekhoudrapporten voor Kazachstan\n"
 "Bevat balans-, winst- en verliesrapporten\n"
 
 #. module: base
@@ -1679,7 +1728,7 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Kenia\n"
+"Boekhoudrapporten voor Kenia\n"
 "============================\n"
 "\n"
 
@@ -1692,7 +1741,7 @@ msgid ""
 "Contains Balance Sheet, Profit/Loss reports\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Litouwen\n"
+"Boekhoudrapporten voor Litouwen\n"
 "\n"
 "Bevat balans, winst-/verliesrapporten\n"
 
@@ -1707,7 +1756,7 @@ msgid ""
 "Necessary master data is also included.\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Luxemburg\n"
+"Boekhoudrapporten voor Luxemburg\n"
 "=================================\n"
 "Het Luxemburgse SAF-T (ook bekend als FAIA) is een standaardbestandsformaat voor het exporteren van verschillende soorten boekhoudkundige transactiegegevens met behulp van het XML-formaat.\n"
 "De eerste versie van SAF-T Financial is beperkt tot het grootboekniveau, inclusief klant- en leverancierstransacties.\n"
@@ -1722,7 +1771,7 @@ msgid ""
 "This module has been built with the help of Caudigef.\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Marokko.\n"
+"Boekhoudrapporten voor Marokko.\n"
 "\n"
 "Deze module is gebouwd met behulp van Caudigef.\n"
 
@@ -1733,7 +1782,7 @@ msgid ""
 "Accounting reports for NZ\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor NZ\n"
+"Boekhoudrapporten voor NZ\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_nl_reports
@@ -1742,7 +1791,7 @@ msgid ""
 "Accounting reports for Netherlands\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Nederland\n"
+"Boekhoudrapporten voor Nederland\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_no_reports
@@ -1753,7 +1802,7 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Noorwegen\n"
+"Boekhoudrapporten voor Noorwegen\n"
 "================================\n"
 "\n"
 
@@ -1765,17 +1814,8 @@ msgid ""
 "=================================\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor OHADA\n"
+"Boekhoudrapporten voor OHADA\n"
 "=================================\n"
-
-#. module: base
-#: model:ir.module.module,description:base.module_l10n_pk_reports
-msgid ""
-"\n"
-"Accounting reports for Pakistan\n"
-msgstr ""
-"\n"
-"Boekhoudkundige rapporten voor Pakistan\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_pl_reports
@@ -1793,7 +1833,7 @@ msgid ""
 "        - Invoices done with KSef \n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Polen\n"
+"Boekhoudrapporten voor Polen\n"
 "\n"
 "        Deze module biedt ook de mogelijkheid om de JPK_VAT in xml te genereren, voor Polen.\n"
 "\n"
@@ -1813,7 +1853,7 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Portugal\n"
+"Boekhoudrapporten voor Portugal\n"
 "================================\n"
 "\n"
 
@@ -1824,7 +1864,7 @@ msgid ""
 "Accounting reports for Romania\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Roemenië\n"
+"Boekhoudrapporten voor Roemenië\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_rw_reports
@@ -1844,7 +1884,7 @@ msgid ""
 "Source: https://www.paragraf.rs/propisi/pravilnik-o-kontnom-okviru-sadrzini-racuna-za-privredna-drustva-zadruge.html\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Servië.\n"
+"Boekhoudrapporten voor Servië.\n"
 "Deze module is gebaseerd op het officiële document \"Pravilnik o kontnom okviru i sadržini računa u kontnom okviru za privredna društva, zadruge i preduzetnike (\"Sl. glasnik RS\", geb. 89/2020)\"\n"
 "Bron: https://www.paragraf.rs/propisi/pravilnik-o-kontnom-okviru-sadrzini-racuna-za-privredna-drustva-zadruge.html\n"
 
@@ -1858,7 +1898,7 @@ msgid ""
 " - To generate the IRAS Audit File, go to Accounting -> Reporting -> IRAS Audit File\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Singapore\n"
+"Boekhoudrapporten voor Singapore\n"
 "================================\n"
 "Met deze module kun je het IRAS-auditbestand genereren.\n"
 " - Om het IRAS-auditbestand te genereren, ga je naar Boekhouding -> Rapportage -> IRAS-auditbestand\n"
@@ -1870,7 +1910,7 @@ msgid ""
 "Accounting reports for Spain\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Spanje\n"
+"Boekhoudrapporten voor Spanje\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_se_reports
@@ -1879,7 +1919,7 @@ msgid ""
 "Accounting reports for Sweden\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Zweden\n"
+"Boekhoudrapporten voor Zweden\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_ch_reports
@@ -1888,7 +1928,7 @@ msgid ""
 "Accounting reports for Switzerland\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Zwitserland\n"
+"Boekhoudrapporten voor Zwitserland\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_tw_reports
@@ -1898,7 +1938,7 @@ msgid ""
 "================================\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Taiwan\n"
+"Boekhoudrapporten voor Taiwan\n"
 "================================\n"
 
 #. module: base
@@ -1918,7 +1958,7 @@ msgid ""
 "==============================================================================\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Thailand\n"
+"Boekhoudrapporten voor Thailand\n"
 "================================================= ============================\n"
 
 #. module: base
@@ -1930,7 +1970,7 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Tunesië\n"
+"Boekhoudrapporten voor Tunesië\n"
 "================================\n"
 "\n"
 
@@ -1944,7 +1984,7 @@ msgid ""
 "- Profit and Loss\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Türkiye\n"
+"Boekhoudrapporten voor Türkiye\n"
 "\n"
 "- Balans\n"
 "- Winst en verlies\n"
@@ -1959,7 +1999,7 @@ msgid ""
 "MTD-VAT API to HMRC.\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor het Verenigd Koninkrijk\n"
+"Boekhoudrapporten voor het Verenigd Koninkrijk\n"
 "\n"
 "Maakt het mogelijk om het belastingaangifte te verzenden via de\n"
 "MTD-VAT API naar HMRC.\n"
@@ -1971,7 +2011,7 @@ msgid ""
 "Accounting reports for US\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor de VS\n"
+"Boekhoudrapporten voor de VS\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_zm_reports
@@ -1982,7 +2022,7 @@ msgid ""
 "    - Financial Reports (Balance Sheet & Profit and Loss & Tax Report)\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Zambia\n"
+"Boekhoudrapporten voor Zambia\n"
 "================================\n"
 "    - Financiële rapportages (Balans & winst en verlies & btw)\n"
 
@@ -2004,7 +2044,7 @@ msgid ""
 "Accounting reports for the United Arab Emirates\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor de Verenigde Arabische Emiraten\n"
+"Boekhoudrapporten voor de Verenigde Arabische Emiraten\n"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_l10n_vn_reports
@@ -2014,7 +2054,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Vietnam\n"
+"Boekhoudrapporten voor Vietnam\n"
 "    "
 
 #. module: base
@@ -2271,6 +2311,15 @@ msgstr ""
 "Voeg de mogelijkheid toe om CV's en brieven te beheren met de  documenten app.\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_it_xml_export
+msgid ""
+"\n"
+"Additional module to allow the export of the Italian monthly tax report to XML format.\n"
+msgstr ""
+"\n"
+"Extra module voor het exporteren van het Italiaanse maandelijkse belastingrapport naar XML-formaat.\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_it_edi_ndd
 msgid ""
 "\n"
@@ -2368,6 +2417,16 @@ msgstr ""
 "Voegt de mogelijkheid toe om werkruimtesjablonen op producten in te stellen.\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_be_intrastat_services
+#: model:ir.module.module,description:base.module_l10n_fr_intrastat_services
+msgid ""
+"\n"
+"Adds the support for services intrastat codes.\n"
+msgstr ""
+"\n"
+"Voegt ondersteuning toe voor services intrastat codes.\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_quality_mrp
 msgid ""
 "\n"
@@ -2411,6 +2470,33 @@ msgstr ""
 "\n"
 "* Snelle betaling door simpelweg een creditcard/betaalkaart of een QR-code te vegen/scannen terwijl je zich op het betalingsscherm bevindt\n"
 "* Ondersteunde kaarten: Visa, MasterCard, Rupay, UPI\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_pos_pine_labs
+msgid ""
+"\n"
+"Allow Pine Labs POS payments\n"
+"==============================\n"
+"\n"
+"This module is available only for companies that use INR currency.\n"
+"It enables customers to pay for their orders using debit/credit cards and UPI through Pine Labs POS terminals.\n"
+"A Pine Labs merchant account is required to process transactions.\n"
+"Features include:\n"
+"\n"
+"* Quick payments by swiping, scanning, or tapping your credit/debit card or UPI QR code at the payment terminal.\n"
+"* Supported cards: Visa, MasterCard, RuPay.\n"
+msgstr ""
+"\n"
+"Pine Labs POS-betalingen toestaan\n"
+"==============================\n"
+"\n"
+"Deze module is alleen beschikbaar voor bedrijven die INR valuta gebruiken.\n"
+"Hiermee kunnen klanten hun bestellingen betalen met pinpas/creditcard en UPI via Pine Labs POS-terminals.\n"
+"Een Pine Labs winkeliersaccount is vereist om transacties te verwerken.\n"
+"De functies omvatten:\n"
+"\n"
+"* Snelle betalingen door je creditcard/debetkaart of UPI QR-code te swipen, scannen of tikken op de betaalterminal.\n"
+"* Ondersteunde kaarten: Visa, MasterCard, RuPay.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_pos_razorpay
@@ -2714,7 +2800,7 @@ msgid ""
 "When creating invoices from picking, the system is able to add and compute the shipping line.\n"
 msgstr ""
 "\n"
-"Staat je toe om verzendwijzes toe te voegen aan je pickings.\n"
+"Staat je toe om verzendmethoden toe te voegen aan je pickings.\n"
 "===============================================\n"
 "\n"
 "Bij het maken van facturen vanuit leveringen kan het systeem de verzendregel toevoegen en berekenen.\n"
@@ -2729,7 +2815,7 @@ msgid ""
 "The system is able to add and compute the shipping line.\n"
 msgstr ""
 "\n"
-"Staat je toe om verzendwijzes toe te voegen aan je verkooporders.\n"
+"Staat je toe om verzendmethoden toe te voegen aan je verkooporders.\n"
 "==================================================\n"
 "Je kunt je eigen vervoerder voor prijzen bepalen.\n"
 "Het systeem kan de verzendlijn toevoegen en berekenen.\n"
@@ -2800,7 +2886,7 @@ msgid ""
 "Arabic/English for GCC + lot/SN numbers\n"
 msgstr ""
 "\n"
-"Arabisch/Engels voor GCC + lot/serienummers\n"
+"Arabisch/Engels voor GCC + partij/serienummers\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_forum
@@ -3089,12 +3175,16 @@ msgid ""
 "\n"
 "Bangladesh Payroll Rules.\n"
 "=========================\n"
-"\n"
+"- Salary rules calculation\n"
+"- Income tax credits handling\n"
+"- Introduced the income tax slabs calculations\n"
 msgstr ""
 "\n"
-"Salarisregels van Bangladesh.\n"
+"Salarisregels voor Bangladesh.\n"
 "=========================\n"
-"\n"
+"- Berekening salarisregels\n"
+"- Verwerking van inkomstenbelastingkredieten\n"
+"- Berekening van inkomstenbelastingschijven ingevoerd\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_et
@@ -3263,7 +3353,7 @@ msgstr ""
 "Naast deze module is de Braziliaanse Lokalisatie ook\n"
 "uitgebreid en aangevuld met verschillende extra modules.\n"
 "\n"
-"Brazilië - Boekhoudkundige rapporten (l10n_br_reports)\n"
+"Brazilië - Boekhoudrapporten (l10n_br_reports)\n"
 "---------------------------------------------\n"
 "Voegt een eenvoudig belastingrapport toe dat helpt bij het controleren van het belastingbedrag per belastinggroep\n"
 "in een bepaalde periode. Voegt ook de P&L en BS toe die zijn aangepast voor de\n"
@@ -3498,6 +3588,19 @@ msgstr ""
 "Biedt elektronische facturatie voor Brazilië via Avatax.\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_br_edi_pos
+msgid ""
+"\n"
+"Brazilian Accounting EDI for POS\n"
+"================================\n"
+"Provides electronic invoicing for Brazil through Avatax in the POS.\n"
+msgstr ""
+"\n"
+"Braziliaanse boekhouding EDI voor POS\n"
+"================================\n"
+"Biedt elektronische facturering voor Brazilië via Avatax in de kassa.\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_br_edi_sale
 msgid ""
 "\n"
@@ -3522,6 +3625,19 @@ msgstr ""
 "Braziliaanse boekhouding EDI voor e-commerce\n"
 "======================================\n"
 "Maakt belastingberekening en EDI voor eCommerce gebruikers mogelijk.\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_br_edi_stock
+msgid ""
+"\n"
+"Brazilian Accounting EDI for stock\n"
+"==================================\n"
+"Adds delivery-related information to the NF-e.\n"
+msgstr ""
+"\n"
+"Braziliaanse boekhouding EDI voor voorraad\n"
+"==================================\n"
+"Voegt leveringsgerelateerde informatie toe aan de NF-e.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_hr_livechat
@@ -3649,7 +3765,7 @@ msgstr ""
 "\n"
 "Brugmodule tussen de boekhoud- en documenten-apps. Het maakt mogelijk\n"
 "de aanmaakfacturen uit de Documenten-module, en voegt een\n"
-"knop op de boekhoudkundige rapportages waarmee je het rapport kunt opslaan in het\n"
+"knop op de boekhoudrapporten waarmee je het rapport kunt opslaan in het\n"
 "Documenten-app in de gewenste indeling (en).\n"
 
 #. module: base
@@ -3749,7 +3865,7 @@ msgid ""
 "=================================\n"
 msgstr ""
 "\n"
-"Contante basis voor boekhoudkundige rapporten\n"
+"Contante basis voor boekhoudrapporten\n"
 "=================================\n"
 
 #. module: base
@@ -4250,7 +4366,7 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"Maak aanpasbare werkbladsjablonen voor onderhoud\n"
+"Maak aanpasbare werkbonsjablonen voor onderhoud\n"
 "================================================= =====\n"
 "\n"
 
@@ -4371,7 +4487,7 @@ msgid ""
 "- Balance sheet\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Cyprus\n"
+"Boekhoudrapporten voor Cyprus\n"
 "=========================\n"
 "- Winst en verlies\n"
 "- Balans\n"
@@ -4463,7 +4579,7 @@ msgid ""
 "Display the worksheet template when planning an Intervention from a ticket\n"
 msgstr ""
 "\n"
-"Geef het werkbladsjabloon weer bij het plannen van een interventie vanaf een ticket\n"
+"Geef het werkbonsjabloon weer bij het plannen van een interventie vanaf een ticket\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_event_booth
@@ -4611,6 +4727,24 @@ msgstr ""
 "Bovendien markeert het de factuur als 'uitbetaald' in de betaalstatus.\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_ro_edi_stock_batch
+msgid ""
+"\n"
+"E-Transport implementation for Batch Pickings in Romania\n"
+msgstr ""
+"\n"
+"Implementatie van e-transport voor batchpickings in Roemenië\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_ro_edi_stock
+msgid ""
+"\n"
+"E-Transport implementation for Romania\n"
+msgstr ""
+"\n"
+"Implementatie van e-transport voor Roemenië\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_it_edi
 msgid ""
 "\n"
@@ -4629,6 +4763,24 @@ msgstr ""
 "E-invoice implementatie voor Roemenië\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_sa_edi
+msgid ""
+"\n"
+"E-invoice implementation for Saudi Arabia; Integration with ZATCA\n"
+msgstr ""
+"\n"
+"Implementatie van e-facturatie voor Saoedi-Arabië; integratie met ZATCA\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_sa_edi_pos
+msgid ""
+"\n"
+"E-invoice implementation for Saudi Arabia; Integration with ZATCA (POS)\n"
+msgstr ""
+"\n"
+"Implementatie van e-facturatie voor Saoedi-Arabië; Integratie met ZATCA (kassa)\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_dk_oioubl
 msgid ""
 "\n"
@@ -4638,22 +4790,23 @@ msgstr ""
 "E-invoice implementatie voor Denemarken\n"
 
 #. module: base
-#: model:ir.module.module,description:base.module_l10n_sa_edi
+#: model:ir.module.module,description:base.module_l10n_id_efaktur_coretax
 msgid ""
 "\n"
-"E-invoice implementation for the Kingdom of Saudi Arabia\n"
+"E-invoicing feature provided by DJP (Indonesian Tax Office). As of January 1st 2025,\n"
+"Indonesia is using CoreTax system, which changes the file format and content of E-Faktur.\n"
+"We're changing from CSV files into XML.\n"
+"At the same time, due to tax regulation changes back and forth, for general E-Faktur now,\n"
+"TaxBase (DPP) has to be mulitplied by factor of 11/12 while multiplied to tax of 12% which\n"
+"is resulting to 11%.\n"
 msgstr ""
 "\n"
-"E-invoice implementatie voor het Koninkrijk Saoedi-Arabië\n"
-
-#. module: base
-#: model:ir.module.module,description:base.module_l10n_sa_edi_pos
-msgid ""
-"\n"
-"E-invoice implementation for the Kingdom of Saudi Arabia (PoS)\n"
-msgstr ""
-"\n"
-"E-invoice implementatie voor het Koninkrijk Saoedi-Arabië (Kassa)\n"
+"E-factureringsfunctie aangeboden door DJP (Indonesische Belastingdienst). Vanaf 1 januari 2025,\n"
+"Gebruikt Indonesië het CoreTax systeem, waardoor het bestandsformaat en de inhoud van E-Faktur verandert.\n"
+"We veranderen van CSV-bestanden in XML.\n"
+"Tegelijkertijd, als gevolg van veranderingen in de belastingwetgeving over en weer, voor algemene E-Faktur nu,\n"
+"TaxBase (DPP) vermenigvuldigd worden met factor 11/12 en vermenigvuldigd worden met 12% belasting, wat resulteert in 11%\n"
+"resulteert in 11%.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_hr_skills_slides
@@ -4936,17 +5089,75 @@ msgstr ""
 "Krijg gemakkelijk toegang tot je documenten vanuit je werknemer profiel.\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_eg
+msgid ""
+"\n"
+"Egypt Accounting Module\n"
+"==============================================================================\n"
+"Egypt Accounting Basic Charts and Localization.\n"
+"\n"
+"Activates:\n"
+"\n"
+"- Chart of Accounts\n"
+"- Taxes\n"
+"- VAT Return\n"
+"- Withholding Tax Report\n"
+"- Schedule Tax Report\n"
+"- Other Taxes Report\n"
+"- Fiscal Positions\n"
+msgstr ""
+"\n"
+"Boekhoudmodule Egypte\n"
+"==============================================================================\n"
+"Basisboekhoudschema’s en lokalisatie voor Egypte.\n"
+"\n"
+"Activeert:\n"
+"\n"
+"- Rekeningschema\n"
+"- Belastingen\n"
+"- Btw-aangifte\n"
+"- Bronbelastingrapport\n"
+"- Overzicht belastingrapport\n"
+"- Andere belastingrapporten\n"
+"- Fiscale posities\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_eg_hr_payroll
 msgid ""
 "\n"
 "Egypt Payroll and End of Service rules.\n"
 "=======================================\n"
-"\n"
+"- Basic calculation\n"
+"- End of service calculation\n"
+"- Other inputs (overtime, salary attachments, etc.)\n"
+"- Social insurance calculation\n"
+"- End of service provisions\n"
+"- Tax break calculations and deductions\n"
+"- Master payroll export\n"
 msgstr ""
 "\n"
-"Regels voor salarisadministratie en einde dienstverband in Egypte.\n"
+"Egypte Payroll en regels voor einde dienstverband.\n"
 "=======================================\n"
+"- Basis berekening\n"
+"- Berekening einde dienst\n"
+"- Andere invoer (overwerk, loonbeslag, enz.)\n"
+"- Berekening sociale verzekeringen\n"
+"- Voorzieningen bij einde dienstverband\n"
+"- Berekeningen en aftrekposten voor belastingvoordeel\n"
+"- Master loonlijst export\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_eg_edi_eta
+msgid ""
 "\n"
+"Egypt Tax Authority Invoice Integration\n"
+"==============================================================================\n"
+"Integrates with the ETA portal to automatically send and sign the Invoices to the Tax Authority.\n"
+msgstr ""
+"\n"
+"Integratie met de Egyptische Belastingdienst\n"
+"==============================================================================\n"
+"Integreert met het ETA-portaal om facturen automatisch te verzenden en te ondertekenen voor de Belastingdienst.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_account_edi
@@ -5152,12 +5363,22 @@ msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be_reports_post_wizard
+#: model:ir.module.module,description:base.module_l10n_nl_reports_vat_pay_wizard
 msgid ""
 "\n"
 "Enable the VAT wizard when posting a tax return journal entry\n"
 msgstr ""
 "\n"
 "Schakel de btw-wizard in bij het boeken van een boeking voor de btw-aangifte\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_pos_urban_piper_enhancements
+msgid ""
+"\n"
+"Enhancements for the Point of Sale UrbanPiper module. Includes features such as store timing configuration, scheduled order handling, and improved toggle options.\n"
+msgstr ""
+"\n"
+"Verbeteringen voor de UrbanPiper-kassamodule. Inclusief functies zoals configuratie van de winkeltiming, afhandeling van geplande bestellingen en verbeterde schakelopties.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_appointment_crm
@@ -6181,6 +6402,33 @@ msgstr ""
 "* FBM: bezorgmeldingen worden naar Amazon gestuurd voor elke bevestigde levering (vriendelijk voor deellevering).\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_sale_shopee
+msgid ""
+"\n"
+"Import your Shopee orders in Odoo and synchronize deliveries\n"
+"============================================================\n"
+"\n"
+"Key Features\n"
+"------------\n"
+"* Import orders from multiple accounts and shops\n"
+"* Orders are matched with Odoo products based on their internal reference (item_id or model_id in Shopee)\n"
+"* Support for both Fulfillment by Shopee (FBS), Fulfillment by Merchant (FBM) and Fulfilled by Cross Border Seller (Hybrid):\n"
+"* FBS: Importing the completed orders\n"
+"* FBM/Hybrid: Delivery information is fetched from Shopee, track and synchronize the stock level to Shopee\n"
+msgstr ""
+"\n"
+"Importeer je Shopee-bestellingen in Odoo en synchroniseer leveringen\n"
+"============================================================\n"
+"\n"
+"Belangrijkste kenmerken\n"
+"------------\n"
+"* Importeer bestellingen van meerdere accounts en winkels\n"
+"* Bestellingen worden gekoppeld aan Odoo-producten op basis van hun interne referentie (item_id of model_id in Shopee)\n"
+"* Ondersteuning voor zowel Fulfillment by Shopee (FBS), Fulfillment by Merchant (FBM) als Fulfilled by Cross Border Seller (Hybrid):\n"
+"* FBS: Voltooide bestellingen importeren\n"
+"* FBM/Hybrid: Leveringsinformatie wordt opgehaald van Shopee, volg en synchroniseer het voorraadniveau naar Shopee\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_account_debit_note
 msgid ""
 "\n"
@@ -6287,7 +6535,7 @@ msgstr ""
 "\n"
 "Stap 1: Eerst moet je een API-gebruikersnaam en -wachtwoord aanmaken in het E-factuurportaal.\n"
 "Stap 2: Schakel over naar bedrijf gerelateerd aan dat GST-nummer\n"
-"Stap 3: Stel die gebruikersnaam en dat wachtwoord in in Odoo (Ga naar: Facturering/Boekhouding -> Configuratie -> Instellingen -> Klantenfacturen of zoek \"E-factuur\" in de zoekbalk)\n"
+"Stap 3: Stel die gebruikersnaam en dat wachtwoord in in Odoo (Ga naar: Facturering/Boekhouding -> Configuratie -> Instellingen -> Klantfacturen of zoek \"E-factuur\" in de zoekbalk)\n"
 "Stap 4: Herhaal stappen 1,2,3 voor alle GSTIN die je in odoo heeft. Heb je meerdere bedrijven met hetzelfde GST-nummer, voer stap 1 dan alleen uit voor het eerste bedrijf.\n"
 "\n"
 "Raadpleeg dit document voor het aanmaken van een API-gebruikersnaam en -wachtwoord: <https://service.odoo.co.in/einvoice_create_api_user>\n"
@@ -6415,6 +6663,17 @@ msgstr ""
 "==================\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_account_intrastat_services
+msgid ""
+"\n"
+"Intrastat Reports for Services\n"
+"==============================\n"
+msgstr ""
+"\n"
+"Intrastat-rapporten voor diensten\n"
+"==============================\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_dk_intrastat
 msgid ""
 "\n"
@@ -6517,22 +6776,19 @@ msgstr ""
 msgid ""
 "\n"
 "Jordan Payroll and Tax Rules\n"
-"============================\n"
+"========================================\n"
+"\n"
+"- Supports basic calculation\n"
+"- Tax income brackets\n"
+"- National contribution tax and social security\n"
 msgstr ""
 "\n"
 "Loon- en belastingregels Jordanië\n"
-"============================\n"
-
-#. module: base
-#: model:ir.module.module,description:base.module_l10n_sa_pos
-msgid ""
+"========================================\n"
 "\n"
-"K.S.A. POS Localization\n"
-"=======================================================\n"
-msgstr ""
-"\n"
-"K.S.A. POS Lokalisatie\n"
-"=======================================================\n"
+"- Ondersteunt basisberekening\n"
+"- Schijven voor belastinginkomen\n"
+"- Nationale bijdrage belasting en sociale zekerheid\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_appointment_hr_recruitment
@@ -6582,19 +6838,6 @@ msgstr ""
 "    * Geïntegreerd met Bladerenbeheer\n"
 
 #. module: base
-#: model:ir.module.module,description:base.module_l10n_sa_hr_payroll
-msgid ""
-"\n"
-"Kingdom of Saudi Arabia Payroll and End of Service rules.\n"
-"===========================================================\n"
-"\n"
-msgstr ""
-"\n"
-"Regels voor salarisadministratie en einde dienstverband van het Koninkrijk Saoedi-Arabië.\n"
-"================================================= =========\n"
-"\n"
-
-#. module: base
 #: model:ir.module.module,description:base.module_stock_landed_costs
 msgid ""
 "\n"
@@ -6617,7 +6860,7 @@ msgid ""
 "-Balance Sheet\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Letland.\n"
+"Boekhoudrapporten voor Letland.\n"
 "====================================================\n"
 "- Winst en verlies\n"
 "- Balans\n"
@@ -6782,6 +7025,23 @@ msgstr ""
 "* MTBF, MTTR, ...\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_my_hr_payroll
+msgid ""
+"\n"
+"Malaysian Payroll and Tax Rules\n"
+"===============================\n"
+"- Social Security Premium/Insurance calculations for employment and unemployment\n"
+"- Income tax calculations\n"
+"- Stamp tax deductions\n"
+msgstr ""
+"\n"
+"Maleisische loon- en belastingregels\n"
+"===============================\n"
+"- Berekeningen sociale premies/verzekeringen voor werk en werkloosheid\n"
+"- Berekeningen inkomstenbelasting\n"
+"- Postzegelbelasting aftrek\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_mt_reports
 msgid ""
 "\n"
@@ -6791,7 +7051,7 @@ msgid ""
 "-Balance Sheet\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapporten voor Malta.\n"
+"Boekhoudrapporten voor Malta.\n"
 "====================================================\n"
 "- Winst en verlies\n"
 "- Balans\n"
@@ -7298,6 +7558,15 @@ msgstr ""
 "totaal afhankelijk behandeld. Je kunt dus verschillende kostenplaast handelingen ingeven die geen tegenwaarde hebben in de algemene financiële rekeningen.\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_bg_reports_ledger
+msgid ""
+"\n"
+"Module for ledger reports\n"
+msgstr ""
+"\n"
+"Module voor grootboekrapporten\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_hr_recruitment_integration_monster
 msgid ""
 "\n"
@@ -7330,6 +7599,19 @@ msgstr ""
 "Een bron stelt iets voor dat kan gepland worden (een ontwikkelaar op een taak of een werkplek op een productieorder). Deze module beheert een resource kalender gekoppeld aan resources. Het beheert ook de bladeren van elk middel.\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_se_sie4_export
+msgid ""
+"\n"
+"Module for the export of accounting data to SIE 4 standard files.\n"
+"Official website: https://sie.se/\n"
+"XSD and documentation: https://sie.se/format/\n"
+msgstr ""
+"\n"
+"Module voor het exporteren van boekhoudgegevens naar SIE 4 standaardbestanden.\n"
+"Officiële website: https://sie.se/\n"
+"XSD en documentatie: https://sie.se/format/\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_fr_fec_import
 msgid ""
 "\n"
@@ -7353,7 +7635,7 @@ msgstr ""
 "Module voor het importeren van FEC-standaardbestanden, handig voor het importeren van boekhoudgeschiedenis.\n"
 "\n"
 "FEC-bestanden (fichier des écritures comptables) zijn de standaard boekhoudrapporten die Franse bedrijven moeten indienen bij de belastingdienst.\n"
-"Met deze module kun je rekeningen, dagboeken, partners en verhuizingen uit deze bestanden importeren.\n"
+"Met deze module kun je rekeningen, dagboeken, partners en verplaatsingen uit deze bestanden importeren.\n"
 "\n"
 "Alleen het CSV-formaat van FEC is geïmplementeerd.\n"
 "'utf-8', 'utf-8-sig' en 'iso8859_15' zijn de enige toegestane coderingen.\n"
@@ -7425,6 +7707,19 @@ msgstr ""
 "\n"
 "SAF-T bestanden zijn de standaard boekhoudrapportages die bedrijven in sommige landen moeten indienen bij de belastingdienst. \n"
 "Met deze module, kunnen rekeningen, dagboeken, partners, belastingen en boekingen uit deze bestanden worden geïmporteerd.\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_se_sie4_import
+msgid ""
+"\n"
+"Module for the import of SIE 4 standard files.\n"
+"Official website: https://sie.se/\n"
+"XSD and documentation: https://sie.se/format/\n"
+msgstr ""
+"\n"
+"Module voor het importeren van SIE 4 standaardbestanden.\n"
+"Officiële website: https://sie.se/\n"
+"XSD en documentatie: https://sie.se/format/\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_se_sie_import
@@ -7719,7 +8014,7 @@ msgid ""
 "Financial requirement contributor: Baskhuu Lodoikhuu. BumanIT LLC\n"
 msgstr ""
 "\n"
-"Boekhoudkundige rapportages Mongolië.\n"
+"Boekhoudrapporten Mongolië.\n"
 "====================================================\n"
 "- Winst en verlies\n"
 "- Balansrekening\n"
@@ -7754,6 +8049,19 @@ msgid ""
 msgstr ""
 "\n"
 "        Mozambikaanse boekhoudkundige lokalisatie\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_gr_edi
+msgid ""
+"\n"
+"MyDATA is a platform created by Greece's tax authority,\n"
+"The Independent Authority for Public Revenue (IAPR),\n"
+"to digitize business tax and accounting information declaration.\n"
+msgstr ""
+"\n"
+"MyDATA is een platform dat is opgezet door de belastingdienst van Griekenland,\n"
+"De Onafhankelijke Autoriteit voor Overheidsinkomsten (IAPR),\n"
+"om de aangifte van zakelijke belasting- en boekhoudgegevens te digitaliseren.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_nz
@@ -7853,15 +8161,6 @@ msgid ""
 msgstr ""
 "\n"
 "Geef aan dat er een overeenkomende verkooporder bestaat in de afletterwidget.\n"
-
-#. module: base
-#: model:ir.module.module,description:base.module_l10n_sa
-msgid ""
-"\n"
-"Odoo Arabic localization for most Saudi Arabia.\n"
-msgstr ""
-"\n"
-"Odoo Arabische lokalisatie voor de meeste Saoedi-Arabië.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_web_enterprise
@@ -8080,15 +8379,46 @@ msgstr ""
 "================================================\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_pk
+msgid ""
+"\n"
+"Pakistan Accounting Module\n"
+"=======================================================\n"
+"Pakistan accounting basic charts and localization.\n"
+"\n"
+"Activates:\n"
+"\n"
+"- Chart of Accounts\n"
+"- Taxes\n"
+"- Tax Report\n"
+"- Withholding Tax Report\n"
+msgstr ""
+"\n"
+"Boekhoudmodule Pakistan\n"
+"=======================================================\n"
+"Basisboekhoudschema’s en lokalisatie voor Pakistan.\n"
+"\n"
+"Activeert:\n"
+"\n"
+"- Rekeningschema\n"
+"- Belastingen\n"
+"- Belastingrapport\n"
+"- Bronbelastingrapport\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_pk_hr_payroll
 msgid ""
 "\n"
 "Pakistan Payroll and End of Service rules\n"
 "=========================================\n"
+"- Basic salaries calculations.\n"
+"- Tax bracket calculations/deductions\n"
 msgstr ""
 "\n"
-"Regels voor salarisadministratie en einde dienstverband in Pakistan\n"
+"Pakistaanse salarisadministratie en regels einde dienstverband\n"
 "=========================================\n"
+"- Berekening basissalarissen.\n"
+"- Berekening/aftrek belastingschijf\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_pa
@@ -8413,6 +8743,42 @@ msgstr ""
 "Repareer producten van helpdesktickets\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_bg_ledger
+msgid ""
+"\n"
+"Report ledger for Bulgaria\n"
+msgstr ""
+"\n"
+"Rapport grootboek voor Bulgarije\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_it_riba
+msgid ""
+"\n"
+"Ri.Ba. Export for Batch Payment\n"
+"================================\n"
+"\n"
+"This module enables the generation of Ri.Ba. (Ricevute Bancarie) files from batch payments in Odoo.  \n"
+"It facilitates compliance with the Italian banking standard for managing receivables.\n"
+"\n"
+"- Group multiple receivables into a single batch for streamlined management and reconciliation.\n"
+"- Export batch payments as RIBA-compliant files to be submitted to your homebanking for processing.\n"
+"\n"
+"For more information about RIBA standards, refer to the guidelines issued by the Italian Bankers Association (CBI).\n"
+msgstr ""
+"\n"
+"Ri.Ba. Export voor batchbetalingen\n"
+"================================\n"
+"\n"
+"Deze module maakt het mogelijk om Ri.Ba. (Ricevute Bancarie) bestanden te genereren vanuit batchbetalingen in Odoo.  \n"
+"Het vergemakkelijkt de naleving van de Italiaanse banknorm voor het beheren van vorderingen.\n"
+"\n"
+"- Groepeer meerdere vorderingen in één batch voor een gestroomlijnde beheering en afstemming.\n"
+"- Exporteer batchbetalingen als RIBA-conforme bestanden om te worden ingediend bij je homebanking voor verwerking.\n"
+"\n"
+"For more information about RIBA standards, refer to the guidelines issued by the Italian Bankers Association (CBI).\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_rw
 msgid ""
 "\n"
@@ -8513,6 +8879,73 @@ msgstr ""
 "Bridge-module die UX-vereisten toevoegt om sms-marketing op evenemententrack sprekers te vergemakkelijken\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_sa
+msgid ""
+"\n"
+"Saudi Arabia Accounting Module\n"
+"===========================================================\n"
+"Saudi Arabia Accounting Basic Charts and Localization\n"
+"\n"
+"Activates:\n"
+"\n"
+"- Chart of Accounts\n"
+"- Taxes\n"
+"- Vat Filling Report\n"
+"- Withholding Tax Report\n"
+"- Fiscal Positions\n"
+msgstr ""
+"\n"
+"Boekhoudmodule Saoedi-Arabië\n"
+"===========================================================\n"
+"Basisboekhoudschema’s en lokalisatie voor Saoedi-Arabië\n"
+"\n"
+"Activeert:\n"
+"\n"
+"- Rekeningschema\n"
+"- Belastingen\n"
+"- Btw-aangifte\n"
+"- Bronbelastingrapport\n"
+"- Fiscale posities\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_sa_pos
+msgid ""
+"\n"
+"Saudi Arabia POS Localization\n"
+"===========================================================\n"
+msgstr ""
+"\n"
+"Kassalokalisatie voor Saoedi-Arabië\n"
+"===========================================================\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_sa_hr_payroll
+msgid ""
+"\n"
+"Saudi Arabia Payroll and End of Service rules.\n"
+"===========================================================\n"
+"- Basic Calculation\n"
+"- End of Service Calculation\n"
+"- Other Input Rules (Overtime, Salary Attachments, etc.)\n"
+"- Split Structures for EOS and Monthly Salaries\n"
+"- GOSI Employee Deduction and company contributions\n"
+"- Unpaid leaves\n"
+"- WPS\n"
+"- Master Payroll Export\n"
+msgstr ""
+"\n"
+"Regels voor salarisadministratie en einde dienst in Saoedi-Arabië.\n"
+"===========================================================\n"
+"- Basisberekening\n"
+"- Berekening einde dienst\n"
+"- Andere invoerregels (overwerk, salarisbijlagen, enz.)\n"
+"- Splitsen van structuren voor EOS en maandsalarissen\n"
+"- GOSI Werknemersaftrek en bedrijfsbijdragen\n"
+"- Onbetaald verlof\n"
+"- WPS\n"
+"- Master salarisadministratie exporteren\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_project_forecast
 msgid ""
 "\n"
@@ -8577,6 +9010,27 @@ msgstr ""
 "\n"
 "Verzend periodiek een KPI samenvatting\n"
 "=============================\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_delivery_envia
+msgid ""
+"\n"
+"Send your shippings through Envia and track them online\n"
+"=======================================================\n"
+"\n"
+"Envia is a provider of integrated shipping and tracking solutions for growing e-commerce businesses.\n"
+"Seamlessly integrating with a large range of couriers and platforms,\n"
+"you can streamline every step of your fulfilment process,\n"
+"reduce handling time and improve customer experience.\n"
+msgstr ""
+"\n"
+"Verstuur je zendingen via Envia en volg ze online\n"
+"=======================================================\n"
+"\n"
+"Envia is een aanbieder van geïntegreerde verzend- en traceeroplossingen voor groeiende e-commercebedrijven.\n"
+"Naadloze integratie met een groot aantal koeriers en platforms,\n"
+"kun je elke stap van je fulfilmentproces stroomlijnen,\n"
+"de afhandelingstijd verkorten en de klantervaring verbeteren.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_delivery_starshipit
@@ -9118,6 +9572,7 @@ msgstr ""
 "gids.\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_ec_edi_stock
 #: model:ir.module.module,description:base.module_l10n_pe_edi_stock
 msgid ""
 "\n"
@@ -9457,7 +9912,7 @@ msgstr ""
 "\n"
 "Prijslijst ondersteunt:\n"
 "-------------------\n"
-"    * Meerdere niveau's van korting (op product, categorie, hoeveelheden)\n"
+"    * Meerdere niveaus van korting (op product, categorie, hoeveelheden)\n"
 "    * Prijs berekenen op basis van verschillende criteria:\n"
 "    * Andere prijslijsten\n"
 "    * Kostprijs\n"
@@ -9507,6 +9962,33 @@ msgstr ""
 " - Belastingrapporten\n"
 " - Fiscale posities\n"
 " - Staten\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_bd
+msgid ""
+"\n"
+"This is the base module to manage the accounting chart for Bangladesh in Odoo\n"
+"==============================================================================\n"
+"\n"
+"Bangladesh accounting basic charts and localization.\n"
+"\n"
+"Activates:\n"
+"\n"
+"- Chart of accounts\n"
+"- Taxes\n"
+"- Tax report\n"
+msgstr ""
+"\n"
+"Dit is de basismodule om het boekhoudschema voor Bangladesh in Odoo te beheren\n"
+"==============================================================================\n"
+"\n"
+"Boekhoudkundige basisgrafieken en lokalisatie voor Bangladesh.\n"
+"\n"
+"Wordt geactiveerd:\n"
+"\n"
+"- Rekeningschema\n"
+"- Belastingen\n"
+"- Belastingrapport\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be
@@ -9568,17 +10050,6 @@ msgstr ""
 "      \n"
 "        **Te volgen Pad:** Facturatie / Rapportages / Belgische aangiften / Jaarlijkse klantenlisting\n"
 "\n"
-
-#. module: base
-#: model:ir.module.module,description:base.module_l10n_eg
-msgid ""
-"\n"
-"This is the base module to manage the accounting chart for Egypt in Odoo.\n"
-"==============================================================================\n"
-msgstr ""
-"\n"
-"Dit is de basismodule om het boekhoudschema voor Egypte in Odoo te beheren.\n"
-"================================================== ============================\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_ee
@@ -10289,7 +10760,7 @@ msgid ""
 "This shortcut allows you to generate a rental order based on the selected case.\n"
 msgstr ""
 "\n"
-"Deze module voegt een snelkoppeling toe voor één of meerdere verkoopkansen in het CRM.\n"
+"Deze module voegt een snelkoppeling toe voor één of meerdere verkoopkansen in de CRM.\n"
 "================================================= =========================\n"
 "\n"
 "Met deze snelkoppeling kun je een huurorder genereren op basis van de geselecteerde zaak.\n"
@@ -10404,6 +10875,27 @@ msgstr ""
 "\n"
 "Deze module voegt de optie voor batchverwerking toe aan voorraadbeheer\n"
 "================================================== ================\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_cz_reports_2025
+msgid ""
+"\n"
+"This module adds the following reports for the Czech Republic:\n"
+"==============================================================\n"
+"1. VAT Control Statement (creation and XML export). For more information, see https://adisspr.mfcr.cz/dpr/adis/idpr_pub/epo2_info/popis_struktury_detail.faces?zkratka=DPHKH1\n"
+"\n"
+"2. Souhrnné hlášení VIES Report (creation and XML export). For more information, see https://adisspr.mfcr.cz/dpr/adis/idpr_pub/epo2_info/popis_struktury_detail.faces?zkratka=DPHSHV\n"
+"\n"
+"3. Tax report (XML export). For more information, see https://adisspr.mfcr.cz/dpr/adis/idpr_pub/epo2_info/popis_struktury_detail.faces?zkratka=DPHDP3\n"
+msgstr ""
+"\n"
+"Deze module voegt de volgende rapporten toe voor Tsjechië:\n"
+"==============================================================\n"
+"1. Btw-controleverklaring (aanmaak en XML-export). Bekijk voor meer informatie: https://adisspr.mfcr.cz/dpr/adis/idpr_pub/epo2_info/popis_struktury_detail.faces?zkratka=DPHKH1\n"
+"\n"
+"2. Souhrnné hlášení VIES-rapport (aanmaak en XML-export). Bekijk voor meer informatie: https://adisspr.mfcr.cz/dpr/adis/idpr_pub/epo2_info/popis_struktury_detail.faces?zkratka=DPHSHV\n"
+"\n"
+"3. Belastingrapport (XML-export). Bekijk voor meer informatie: https://adisspr.mfcr.cz/dpr/adis/idpr_pub/epo2_info/popis_struktury_detail.faces?zkratka=DPHDP3\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_approvals_purchase
@@ -10978,6 +11470,7 @@ msgstr ""
 "Het test alle ondersteunde QR-codes: SEPA, Swiss QR en EMV QR (met behulp van de hk- en br-implementatie)\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_pos_restaurant_loyalty
 #: model:ir.module.module,description:base.module_pos_sale_loyalty
 msgid ""
 "\n"
@@ -11107,6 +11600,17 @@ msgid ""
 msgstr ""
 "\n"
 "Deze module maakt de qrcode scanfunctie mogelijk voor de leveranciersrekeningen voor India.\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_ch_hr_payroll_elm_transmission
+msgid ""
+"\n"
+"This module fully implements the ELM 5.0 wage standard and is Swissdec certified under certificate 1203.25. Any unauthorized modifications are strictly prohibited, as they may lead to errors in data transmission and calculations.\n"
+"The Module is not retro-compatible with Previous Swiss Payroll versions, installation will require a re-generation of your yearly Payroll-accounting.\n"
+msgstr ""
+"\n"
+"Deze module implementeert volledig de ELM 5.0-loonstandaard en is Swissdec-gecertificeerd onder certificaat 1203.25. Ongeautoriseerde wijzigingen zijn strikt verboden, omdat deze kunnen leiden tot fouten in gegevensoverdracht en berekeningen.\n"
+"De module is niet compatibel met eerdere versies van de Zwitserse loonadministratie; installatie vereist een hergeneratie van de jaarlijkse loonboekhouding.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_sms
@@ -11528,6 +12032,17 @@ msgstr ""
 "\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_my_edi_extended
+msgid ""
+"\n"
+"This module improves the MyInvois E-invoicing feature by adding proper support for self billing, rendering the MyInvois\n"
+"QR code in the invoice PDF file and allows better management of foreign customer TIN.\n"
+msgstr ""
+"\n"
+"Deze module verbetert de MyInvois-functie voor e-facturatie door juiste ondersteuning voor zelffacturatie toe te voegen, de MyInvois\n"
+"QR-code in het PDF-bestand van de factuur weer te geven en het beheer van buitenlandse klant TIN te verbeteren.\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_base_iban
 msgid ""
 "\n"
@@ -11596,17 +12111,6 @@ msgstr ""
 "\n"
 "* Onvoorziene documenten niet geïmplementeerd\n"
 "* Toekomstige implementatie zal automatische synchronisatie van leveranciersfacturen hebben.\n"
-
-#. module: base
-#: model:ir.module.module,description:base.module_l10n_eg_edi_eta
-msgid ""
-"\n"
-"This module integrate with the ETA Portal to automatically sign and send your invoices to the tax Authority.\n"
-"Special thanks to Plementus <info@plementus.com> for their help in developing this module.\n"
-msgstr ""
-"\n"
-"       Deze module integreert met de ETA Portal om je facturen automatisch te ondertekenen en naar de Belastingdienst te sturen.\n"
-"       Speciale dank aan Plementus <info@plementus.com> voor hun hulp bij het ontwikkelen van deze module.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_pos_urban_piper_swiggy
@@ -11867,6 +12371,15 @@ msgid ""
 msgstr ""
 "\n"
 "Deze module biedt de link tussen kwaliteit stappen en IoT toestellen.\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_pos_mobile
+msgid ""
+"\n"
+"This module provides the point of sale function of the Odoo Mobile App.\n"
+msgstr ""
+"\n"
+"Deze module biedt de verkooppuntfunctie van de Odoo Mobile App.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_es_edi_tbai
@@ -12183,15 +12696,44 @@ msgstr ""
 "============================\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_ae
+msgid ""
+"\n"
+"United Arab Emirates Accounting Module\n"
+"=======================================================\n"
+"United Arab Emirates accounting basic charts and localization.\n"
+"\n"
+"Activates:\n"
+"\n"
+"- Chart of Accounts\n"
+"- Taxes\n"
+"- Tax Report\n"
+"- Fiscal Positions\n"
+msgstr ""
+"\n"
+"Boekhoudmodule Verenigde Arabische Emiraten\n"
+"=======================================================\n"
+"Basisboekhoudschema’s en lokalisatie voor de Verenigde Arabische Emiraten.\n"
+"\n"
+"Activeert:\n"
+"\n"
+"- Rekeningschema\n"
+"- Belastingen\n"
+"- Belastingrapport\n"
+"- Fiscale posities\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_ae_corporate_tax_report
 msgid ""
 "\n"
 "United Arab Emirates Corporate Tax Report\n"
 "=======================================================\n"
+"Adds the Corporate Tax Report which can be accessed by going to Accounting > Reporting > Corporate Tax Report\n"
 msgstr ""
 "\n"
 "Verslag vennootschapsbelasting Verenigde Arabische Emiraten\n"
 "=======================================================\n"
+"Voegt het rapport vennootschapsbelasting toe dat toegankelijk is via Boekhouding > Rapportage > Rapport vennootschapsbelasting\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_ae_hr_payroll
@@ -12199,23 +12741,36 @@ msgid ""
 "\n"
 "United Arab Emirates Payroll and End of Service rules.\n"
 "=======================================================\n"
-"\n"
+"- Basic salary calculations\n"
+"- EOS calculations\n"
+"- Annual leaves provisions and EOS provisions\n"
+"- Social insurance rules for locals\n"
+"- Overtime rule for the other inputs case\n"
+"- Sick-leaves calculations\n"
+"- DEWS calculations\n"
+"- EOS calculations for free zones (DMCC)\n"
+"- Out of contract calculations\n"
+"- Calculation for unused leaves for EOS calculation\n"
+"- Additional other input rules for (bonus, commissions, arrears, etc.)\n"
+"- Master payroll export\n"
+"- WPS\n"
 msgstr ""
 "\n"
-"Regels voor salarisadministratie en einde dienstverband in de Verenigde Arabische Emiraten.\n"
-"================================================= =====\n"
-"\n"
-
-#. module: base
-#: model:ir.module.module,description:base.module_l10n_ae
-msgid ""
-"\n"
-"United Arab Emirates accounting chart and localization.\n"
+"Payroll- en dienstbeëindigingsregels Verenigde Arabische Emiraten.\n"
 "=======================================================\n"
-msgstr ""
-"\n"
-"Grootboekschema en lokalisatie van de Verenigde Arabische Emiraten.\n"
-"================================================== =====\n"
+"- Berekeningen basissalaris\n"
+"- EOS berekeningen\n"
+"- Voorzieningen voor jaarlijks verlof en EOS\n"
+"- Sociale verzekeringsregels voor lokale werknemers\n"
+"- Overwerkregeling voor de overige ingangen\n"
+"- Berekeningen ziekteverlof\n"
+"- DEWS-berekeningen\n"
+"- EOS-berekeningen voor vrije zones (DMCC)\n"
+"- Berekeningen voor buitencontracten\n"
+"- Berekening voor ongebruikt verlof voor EOS-berekening\n"
+"- Extra overige invoerregels voor (bonus, provisies, achterstallige betalingen, etc.)\n"
+"- Master salarisadministratie export\n"
+"- WPS\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_us_hr_payroll
@@ -12533,7 +13088,7 @@ msgid ""
 msgstr ""
 "\n"
 "Bij het factureren van urenstaten is het mogelijk om alle urenstaten te factureren\n"
-"gekoppeld aan een SO, of alleen de gevalideerde urenstaten\n"
+"gekoppeld aan een verkooporder, of alleen de goedgekeurde urenstaten\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_documents
@@ -12577,6 +13132,66 @@ msgstr ""
 "in je belastingconfiguratie.\n"
 "\n"
 "Werk ook de Italiaanse boekhoudmodule (l10n_it) bij wanneer je deze module installeert.\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_rs_edi
+msgid ""
+"\n"
+"eFaktura E-invoice implementation for Serbia\n"
+msgstr ""
+"\n"
+"eFaktura E-factuur implementatie voor Servië\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_be_hr_payroll_dmfa_sftp
+msgid ""
+"\n"
+"synchronize DmfA to ONSS portal\n"
+"===============================\n"
+"\n"
+"This new module automates the synchronization of DmfA ONSS declarations\n"
+"to the official Belgian SFTP portal.\n"
+"\n"
+"It integrates with the existing `l10n_be_hr_payroll` and\n"
+"`l10n_be_hr_payroll_dmfa` modules to:\n"
+"\n"
+"- Upload the FO, FS, and GO files to the correct ONSS environment folder\n"
+"  (IN, INTEST, INTEST-S).\n"
+"- Poll the OUT folders (OUT, OUTTEST, OUTTEST-S) for returned files.\n"
+"- Link received files to the corresponding declarations and employees\n"
+"  when applicable.\n"
+"\n"
+"Technical features include:\n"
+"- Secure connection using a private key and technical user credentials.\n"
+"- XML file parsing for ACRF and notification files.\n"
+"- Error handling and logging for missing directories or malformed files.\n"
+"\n"
+"This module ensures compliance with ONSS electronic declaration\n"
+"requirements and reduces manual interaction with the SFTP portal.\n"
+msgstr ""
+"\n"
+"dmfA synchroniseren met ONSS-portaal\n"
+"===============================\n"
+"\n"
+"Deze nieuwe module automatiseert de synchronisatie van DmfA ONSS declaraties\n"
+"naar het officiële Belgische SFTP-portaal.\n"
+"\n"
+"Het integreert met de bestaande `l10n_be_hr_payroll` en\n"
+"`l10n_be_hr_payroll_dmfa` modules om:\n"
+"\n"
+"- Upload de FO, FS en GO bestanden naar de juiste ONSS omgevingsmap\n"
+"  (IN, INTEST, INTEST-S).\n"
+"- De OUT mappen (OUT, OUTTEST, OUTTEST-S) afzoeken naar geretourneerde bestanden.\n"
+"- Koppel ontvangen bestanden aan de bijbehorende declaraties en medewerkers\n"
+"  indien van toepassing.\n"
+"\n"
+"Technische functies zijn onder andere:\n"
+"- Beveiligde verbinding met behulp van een privésleutel en technische gebruikersgegevens.\n"
+"- XML-bestanden parsen voor ACRF en meldingsbestanden.\n"
+"- Foutafhandeling en logboekregistratie voor ontbrekende mappen of misvormde bestanden.\n"
+"\n"
+"Deze module zorgt voor naleving van de ONSS elektronische aangifte\n"
+"eisen en vermindert handmatige interactie met het SFTP-portaal.\n"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_delivery_mondialrelay
@@ -12741,6 +13356,7 @@ msgstr "%s (speciale server voor uitgaande e-mail):"
 
 #. module: base
 #. odoo-python
+#: code:addons/base/models/ir_actions.py:0
 #: code:addons/base/models/ir_filters.py:0
 #: code:addons/base/models/res_lang.py:0
 #: code:addons/base/models/res_partner.py:0
@@ -12778,8 +13394,8 @@ msgid ""
 "attribute."
 msgstr ""
 "'%(value)s' lijkt geen geldige Property-waarde te zijn voor veld "
-"'%%(field)s'. Elke eigenschap heeft ten minste het attribuut 'name', 'type' "
-"en 'string' nodig."
+"'%%(field)s'. Elke eigenschap heeft ten minste het kenmerk 'name', 'type' en"
+" 'string' nodig."
 
 #. module: base
 #. odoo-python
@@ -13362,20 +13978,20 @@ msgstr ""
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_server_action_form
 msgid ""
-"<span invisible=\"evaluation_type != 'value' or not update_field_type == "
-"'many2many'\">by</span>"
+"<span invisible=\"evaluation_type != 'value' or update_field_type in "
+"['one2many', 'many2many']\">to</span>"
 msgstr ""
-"<span invisible=\"evaluation_type != 'value' or not update_field_type == "
-"'many2many'\">door</span>"
+"<span invisible=\"evaluation_type != 'value' or update_field_type in "
+"['one2many', 'many2many']\">naar</span>"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_server_action_form
 msgid ""
-"<span invisible=\"evaluation_type != 'value' or update_field_type == "
-"'many2many'\">to</span>"
+"<span invisible=\"evaluation_type != 'value' or update_field_type not in "
+"['one2many', 'many2many']\">by</span>"
 msgstr ""
-"<span invisible=\"evaluation_type != 'value' or update_field_type == "
-"'many2many'\">om</span>"
+"<span invisible=\"evaluation_type != 'value' or update_field_type not in "
+"['one2many', 'many2many']\">door</span>"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_partner_form
@@ -13978,6 +14594,11 @@ msgid "A payment provider covering India."
 msgstr "Een betaalprovider die India dekt."
 
 #. module: base
+#: model:ir.module.module,summary:base.module_payment_nuvei
+msgid "A payment provider covering Latin America."
+msgstr "Een betalingsprovider voor Latijns-Amerika."
+
+#. module: base
 #: model:ir.module.module,summary:base.module_payment_mercado_pago
 msgid "A payment provider covering several countries in Latin America."
 msgstr "Een betaalprovider die meerdere landen in Latijns-Amerika dekt."
@@ -14360,7 +14981,7 @@ msgstr "Boekhoudkundige import"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_reports
 msgid "Accounting Reports"
-msgstr "Boekhoudkundige rapportages"
+msgstr "Boekhoudrapporten"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_nl
@@ -14591,7 +15212,7 @@ msgstr "Toevoegen"
 #. module: base
 #: model:ir.module.module,summary:base.module_pos_avatax
 msgid "Add Avatax support to POS"
-msgstr "Avatax-ondersteuning toevoegen aan POS"
+msgstr "Avatax-ondersteuning toevoegen aan Kassa"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_view_base_language_install
@@ -14748,6 +15369,11 @@ msgid "Add lead / opportunities info on mass mailing sms"
 msgstr "Informatie over leads/kansen toevoegen aan massamailing sms"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_mx_hr_payroll_localisation
+msgid "Add models and fields for complete mexican localisation"
+msgstr "Voeg modellen en velden toe voor complete Mexicaanse lokalisatie"
+
+#. module: base
 #: model:ir.module.module,summary:base.module_social_sale
 msgid "Add sale UTM info on social"
 msgstr "Verkoop UTM-info op social media toevoegen"
@@ -14830,7 +15456,7 @@ msgstr ""
 #: model:ir.module.module,summary:base.module_pos_self_order_adyen
 msgid "Addon for the Self Order App that allows customers to pay by Adyen."
 msgstr ""
-"Add-on voor de Self Order-app waarmee klanten via Adyen kunnen betalen."
+"Add-on voor de Zelfbediening-app waarmee klanten via Adyen kunnen betalen."
 
 #. module: base
 #: model:ir.module.module,summary:base.module_pos_self_order_razorpay
@@ -14838,14 +15464,19 @@ msgid ""
 "Addon for the Self Order App that allows customers to pay by Razorpay POS "
 "Terminal."
 msgstr ""
-"Addon voor de Self Order App waarmee klanten kunnen betalen met de Razorpay "
-"POS Terminal."
+"Add-on voor de Zelfbediening-app waarmee klanten kunnen betalen met de "
+"Kassaterminal van Razorpay."
 
 #. module: base
 #: model:ir.module.module,summary:base.module_pos_self_order_stripe
 msgid "Addon for the Self Order App that allows customers to pay by Stripe."
 msgstr ""
-"Add-on voor de Self Order-app waarmee klanten met Stripe kunnen betalen."
+"Add-on voor de Zelfbediening-app waarmee klanten met Stripe kunnen betalen."
+
+#. module: base
+#: model:ir.module.module,description:base.module_tests
+msgid "Addons to test Odoo industries code."
+msgstr "Addons om Odoo industries code te testen."
 
 #. module: base
 #. odoo-python
@@ -15442,6 +16073,11 @@ msgid "Agorot"
 msgstr "Agorot"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_agriculture_shop
+msgid "Agricultural Store"
+msgstr "Landbouwwinkel"
+
+#. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_A
 msgid "Agriculture"
 msgstr "Landbouw"
@@ -15915,6 +16551,11 @@ msgstr "Amerika/Cordoba"
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__america/costa_rica
 msgid "America/Costa_Rica"
 msgstr "Amerika/Costa_Rica"
+
+#. module: base
+#: model:ir.model.fields.selection,name:base.selection__res_partner__tz__america/coyhaique
+msgid "America/Coyhaique"
+msgstr "Amerika/Coyhaique"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__america/creston
@@ -16909,6 +17550,16 @@ msgid "Architecture Diff"
 msgstr "Architectuur verschil"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_architects
+msgid "Architecture Firm"
+msgstr "Architectenbureau"
+
+#. module: base
+#: model_terms:ir.ui.view,arch_db:base.view_partner_bank_form
+msgid "Archive"
+msgstr "Archief"
+
+#. module: base
 #: model_terms:ir.ui.view,arch_db:base.edit_menu_access_search
 #: model_terms:ir.ui.view,arch_db:base.ir_access_view_search
 #: model_terms:ir.ui.view,arch_db:base.ir_cron_view_search
@@ -16920,6 +17571,7 @@ msgstr "Architectuur verschil"
 #: model_terms:ir.ui.view,arch_db:base.res_partner_kanban_view
 #: model_terms:ir.ui.view,arch_db:base.view_ir_mail_server_search
 #: model_terms:ir.ui.view,arch_db:base.view_partner_bank_form
+#: model_terms:ir.ui.view,arch_db:base.view_partner_bank_search
 #: model_terms:ir.ui.view,arch_db:base.view_partner_form
 #: model_terms:ir.ui.view,arch_db:base.view_res_bank_form
 #: model_terms:ir.ui.view,arch_db:base.view_res_partner_filter
@@ -16999,6 +17651,11 @@ msgstr "Ariary"
 #: model:res.country,name:base.am
 msgid "Armenia"
 msgstr "Armenië"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_art_craft
+msgid "Arts & Crafts Store"
+msgstr "Kunstnijverheidswinkel"
 
 #. module: base
 #: model:res.country,name:base.aw
@@ -17694,6 +18351,11 @@ msgid "Attract visitors to subscribe to mailing lists"
 msgstr "Trek bezoekers aan om te abonneren op mailinglijsten"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_certification_organism
+msgid "Audit & Certification"
+msgstr "Controle en certificering"
+
+#. module: base
 #: model:res.currency,currency_subunit_label:base.ISK
 msgid "Aurar"
 msgstr "Aurar"
@@ -17975,6 +18637,11 @@ msgid "Automation Rules based on Employee Contracts"
 msgstr "Automatiseringsregels op basis van werknemerscontracten"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_automobile
+msgid "Automobile Spare Parts"
+msgstr "Auto Onderdelen"
+
+#. module: base
 #: model:ir.model.fields,field_description:base.field_ir_actions_server__available_model_ids
 #: model:ir.model.fields,field_description:base.field_ir_cron__available_model_ids
 msgid "Available Models"
@@ -18158,14 +18825,14 @@ msgid "Bahamas"
 msgstr "Bahama's"
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_bh
-msgid "Bahrain - Accounting"
-msgstr "Bahrein - Boekhouding"
-
-#. module: base
 #: model:res.country,name:base.bh
 msgid "Bahrain"
 msgstr "Bahrein"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_bh
+msgid "Bahrain - Accounting"
+msgstr "Bahrein - Boekhouding"
 
 #. module: base
 #: model:res.currency,currency_unit_label:base.THB
@@ -18176,6 +18843,11 @@ msgstr "Baht"
 #: model:res.currency,currency_subunit_label:base.OMR
 msgid "Baisa"
 msgstr "Baisa"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_bakery
+msgid "Bakery Shop"
+msgstr "Patisserie"
 
 #. module: base
 #: model:res.currency,currency_unit_label:base.PAB
@@ -18200,7 +18872,7 @@ msgstr "Bangladesh - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_bd_reports
 msgid "Bangladesh - Accounting Reports"
-msgstr "Bangladesh - Boekhoudkundige rapporten"
+msgstr "Bangladesh - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_bd_hr_payroll
@@ -18279,6 +18951,11 @@ msgid ""
 msgstr ""
 "Banken zijn de financiële instellingen waar jij en je contacten hun "
 "rekeningen hebben."
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_bar_industry
+msgid "Bar & Pub"
+msgstr "Bar & café"
 
 #. module: base
 #: model:res.country,name:base.bb
@@ -18506,6 +19183,16 @@ msgid "Belgian Intrastat Declaration"
 msgstr "Belgische Intrastatverklaring"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_be_intrastat_services
+msgid "Belgian Intrastat Declaration (Services)"
+msgstr "Belgische Intrastat-verklaring (Diensten)"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_be_pos_restaurant
+msgid "Belgian POS Restaurant Localization"
+msgstr "Belgische Lokalisatie voor Restaurant (Kassa)"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_be_hr_payroll_attendance
 msgid "Belgian Payroll - Attendance"
 msgstr "Belgische loonadministratie - Aanwezigheid"
@@ -18528,7 +19215,7 @@ msgstr "België  - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_be_reports
 msgid "Belgium - Accounting Reports"
-msgstr "België - Boekhoudkundige rapportages"
+msgstr "België - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_be_reports_post_wizard
@@ -18576,6 +19263,16 @@ msgid "Belgium - Payroll - Dimona"
 msgstr "België - Loonadministratie - Dimona"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_be_hr_payroll_dmfa_sftp
+msgid "Belgium - Payroll - DmfA SFTP"
+msgstr "België - Salarisadministratie - DmfA SFTP"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_be_hr_payroll_acerta
+msgid "Belgium - Payroll - Export to Acerta"
+msgstr "België - Loonlijst - Exporteren naar Acerta"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_be_hr_payroll_group_s
 msgid "Belgium - Payroll - Export to Group S"
 msgstr "België - Loonadministratie - Exporteer naar Group S"
@@ -18584,6 +19281,11 @@ msgstr "België - Loonadministratie - Exporteer naar Group S"
 #: model:ir.module.module,shortdesc:base.module_l10n_be_hr_payroll_partena
 msgid "Belgium - Payroll - Export to Partena"
 msgstr "België - Salarisadministratie - Exporteren naar Partena"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_be_hr_payroll_prisma
+msgid "Belgium - Payroll - Export to Prisma"
+msgstr "België - Salarisadministratie - Exporteren naar Prisma"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_be_hr_payroll_sd_worx
@@ -18635,14 +19337,29 @@ msgid "Bermuda"
 msgstr "Bermuda"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_beverage_distributor
+msgid "Beverage Distributor"
+msgstr "Drank Distributeur"
+
+#. module: base
 #: model:res.country,name:base.bt
 msgid "Bhutan"
 msgstr "Bhutan"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_bike_leasing
+msgid "Bike Leasing"
+msgstr "Fietsen leasen"
+
+#. module: base
 #: model:ir.module.module,summary:base.module_website_sale_ups
 msgid "Bill to your UPS account number"
 msgstr "Factureer naar je UPC rekeningnummer"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_billboard_rental
+msgid "Billboard Rental"
+msgstr "Billboard Verhuur"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_actions_act_url__binding_model_id
@@ -18726,7 +19443,7 @@ msgstr "Bolivië - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_bo_reports
 msgid "Bolivia - Accounting Reports"
-msgstr "Bolivia - Boekhoudkundige rapporten"
+msgstr "Bolivia - Boekhoudrapporten"
 
 #. module: base
 #: model:res.currency,currency_unit_label:base.BOB
@@ -18737,6 +19454,11 @@ msgstr "Boliviano"
 #: model:res.country,name:base.bq
 msgid "Bonaire, Sint Eustatius and Saba"
 msgstr "Bonaire, Sint Eustatius en Saba"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_bookstore
+msgid "Bookstore"
+msgstr "Boekhandel"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_actions_server__update_boolean_value
@@ -18854,9 +19576,19 @@ msgid "Brazilian Accounting EDI For Sale"
 msgstr "Braziliaanse boekhouding EDI voor Verkoop"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_br_edi_pos
+msgid "Brazilian Accounting EDI for POS"
+msgstr "Braziliaanse boekhouding EDI voor POS"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_br_edi_website_sale
 msgid "Brazilian Accounting EDI for eCommerce"
 msgstr "Braziliaanse boekhouding EDI voor e-commerce"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_br_edi_stock
+msgid "Brazilian Accounting EDI for stock"
+msgstr "Braziliaanse boekhouding EDI voor voorraad"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_sale_renting_sign
@@ -19107,7 +19839,17 @@ msgstr "Bulgarije - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_bg_reports
 msgid "Bulgaria - Accounting Reports"
-msgstr "Bulgarije - Boekhoudkundige rapportages"
+msgstr "Bulgarije - Boekhoudrapporten"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_bg_reports_ledger
+msgid "Bulgaria - Accounting Reports Ledger"
+msgstr "Bulgarije - Boekhoudkundige rapporten Grootboek"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_bg_ledger
+msgid "Bulgaria - Report ledger"
+msgstr "Bulgarije - Verslag grootboek"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_asset__bundle
@@ -19254,6 +19996,11 @@ msgid "CUIT"
 msgstr "CUIT"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_cake_shop
+msgid "Cake Store"
+msgstr "Taartenwinkel"
+
+#. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_actions_act_window_view__view_mode__calendar
 #: model:ir.model.fields.selection,name:base.selection__ir_ui_view__type__calendar
 #: model:ir.module.category,name:base.module_category_productivity_calendar
@@ -19274,7 +20021,7 @@ msgstr "Ga af op"
 #. module: base
 #: model:res.country,name:base.kh
 msgid "Cambodia"
-msgstr "Cambodia"
+msgstr "Cambodja"
 
 #. module: base
 #: model:res.country,name:base.cm
@@ -19320,7 +20067,7 @@ msgstr "Canada  - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ca_reports
 msgid "Canada - Accounting Reports"
-msgstr "Canada - Boekhoudkundige rapporten"
+msgstr "Canada - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__canada/atlantic
@@ -19850,7 +20597,7 @@ msgstr "Chili - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_cl_reports
 msgid "Chile - Accounting Reports"
-msgstr "Chili - Boekhoudkundige rapportages"
+msgstr "Chili - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_cl_edi_stock
@@ -19962,6 +20709,11 @@ msgid "City"
 msgstr "Plaats"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_cleaning_services
+msgid "Cleaning Services"
+msgstr "Schoonmaakdiensten"
+
+#. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_actions_server__update_m2m_operation__clear
 msgid "Clearing it"
 msgstr "Opschonen"
@@ -19969,7 +20721,7 @@ msgstr "Opschonen"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_sale_collect
 msgid "Click & Collect"
-msgstr "Klik & Ophalen"
+msgstr "Click & Collect"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_logging__type__client
@@ -20001,6 +20753,11 @@ msgstr "Clientactie-label"
 #: model_terms:ir.ui.view,arch_db:base.wizard_lang_export
 msgid "Close"
 msgstr "Afsluiten"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_clothing_boutique
+msgid "Clothing Store"
+msgstr "Kledingwinkel"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_cloud_storage
@@ -20096,7 +20853,7 @@ msgstr "Colombia - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_co_reports
 msgid "Colombian - Accounting Reports"
-msgstr "Colombia - Boekhoudkundige rapportages"
+msgstr "Colombia - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_co_pos
@@ -20108,6 +20865,11 @@ msgstr "Colombia - Kassa"
 #: model:ir.module.module,description:base.module_l10n_co
 msgid "Colombian Accounting and Tax Preconfiguration"
 msgstr "Colombiaanse boekhoudkundige en fiscale preconfiguratie"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_l10n_co_edi_mandate
+msgid "Colombian EDI Mandate Invoicing extension"
+msgstr "Colombiaanse EDI Mandaat Facturatie uitbreiding"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_l10n_co_dian
@@ -20452,7 +21214,7 @@ msgstr "Instellingen"
 #. module: base
 #: model:ir.model,name:base.model_res_config_settings
 msgid "Config Settings"
-msgstr "Configuratie instellingen"
+msgstr "Configuratie-instellingen"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.config_wizard_step_view_form
@@ -20475,7 +21237,7 @@ msgstr "Configuratie"
 #: model:ir.model,name:base.model_ir_actions_todo
 #: model:ir.ui.menu,name:base.menu_ir_actions_todo_form
 msgid "Configuration Wizards"
-msgstr "Configuratie wizard"
+msgstr "Configuratiewizards"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_partner_commission
@@ -20511,6 +21273,11 @@ msgstr "Congo - Boekhouding"
 #: model:ir.module.module,summary:base.module_hw_drivers
 msgid "Connect the Web Client to Hardware Peripherals"
 msgstr "Koppel de webclient aan de Hatrdware"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_l10n_gr_edi
+msgid "Connect to MyDATA API implementation for Greece"
+msgstr "Verbinding maken met MyDATA API-implementatie voor Griekenland"
 
 #. module: base
 #. odoo-python
@@ -20601,6 +21368,8 @@ msgid "Constraints with the same name are unique per module."
 msgstr "Beperkingen met dezelfde naam zijn uniek per module."
 
 #. module: base
+#: model:ir.module.category,name:base.module_category_construction
+#: model:ir.module.module,shortdesc:base.module_construction
 #: model:res.partner.industry,name:base.res_partner_industry_F
 msgid "Construction"
 msgstr "Constructie"
@@ -20749,7 +21518,7 @@ msgstr "Tickets converteren van/naar leads"
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.ir_mail_server_form
 msgid "Convert attachments to links for emails over"
-msgstr "Bijlagen converteren naar links voor e-mails over"
+msgstr "Bijlagen converteren naar links voor e-mails boven"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_helpdesk_mail_plugin
@@ -20770,6 +21539,11 @@ msgstr "Gekopieerd"
 #: model:res.currency,currency_unit_label:base.NIO
 msgid "Cordoba"
 msgstr "Córdoba"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_corporate_gifts
+msgid "Corporate Gifts"
+msgstr "Relatiegeschenken"
 
 #. module: base
 #: model:res.country,name:base.cr
@@ -21310,7 +22084,7 @@ msgstr "Kroatië - Boekhouding (Kuna)"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_hr_reports
 msgid "Croatia - Accounting Reports"
-msgstr "Kroatië - Boekhoudkundige rapporten"
+msgstr "Kroatië - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_cron_progress__cron_id
@@ -21481,6 +22255,11 @@ msgid "Custom Field"
 msgstr "Eigen veld"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_custom_furniture
+msgid "Custom Furniture Production"
+msgstr "Meubelproductie op maat"
+
+#. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_model__state__manual
 msgid "Custom Object"
 msgstr "Aangepast object"
@@ -21576,7 +22355,7 @@ msgstr "Cyprus - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_cy_reports
 msgid "Cyprus - Accounting Reports"
-msgstr "Cyprus - Boekhoudkundige rapporten"
+msgstr "Cyprus - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_cz
@@ -21587,6 +22366,11 @@ msgstr "Tsjechisch - Boekhouding"
 #: model:res.country,name:base.cz
 msgid "Czech Republic"
 msgstr "Tsjechië"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_cz_reports_2025
+msgid "Czech Republic - Accounting Reports 2025"
+msgstr "Tsjechië - Boekhoudrapporten 2025"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_cz_reports
@@ -21605,8 +22389,8 @@ msgstr "D - ELEKTRICITEITS-, GAS-, STOOM- EN AIRCONDITIONING-TOEVOER"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_delivery_dhl
-msgid "DHL Express Shipping"
-msgstr "DHL Express Shipping"
+msgid "DHL Express Shipping (Legacy)"
+msgstr "DHL Express Shipping (Legacy)"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_din5008
@@ -22873,14 +23657,14 @@ msgid "E-Invoice implementation for Romania"
 msgstr "E-Invoice implementatie voor Roemenië"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_l10n_rs_edi
+msgid "E-Invoice implementation for Serbia"
+msgstr "Implementatie van e-facturen voor Servië"
+
+#. module: base
 #: model:ir.module.module,summary:base.module_l10n_dk_oioubl
 msgid "E-Invoicing, Offentlig Information Online Universal Business Language"
 msgstr "E-Invoicing, Offentlig Information Online Universal Business Language"
-
-#. module: base
-#: model:ir.module.module,summary:base.module_l10n_sa_edi
-msgid "E-Invoicing, Universal Business Language"
-msgstr "E-Invoicing, Universal Business Language"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_l10n_my_edi
@@ -23017,7 +23801,12 @@ msgstr "Ecuadoraanse boekhouding EDI"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ec_reports
 msgid "Ecuadorian Accounting Reports"
-msgstr "Ecuadoriaanse boekhoudkundige rapporten"
+msgstr "Ecuadoriaanse boekhoudrapporten"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_ec_edi_stock
+msgid "Ecuadorian Delivery Guide"
+msgstr "Ecuadoriaanse Leveringsgids"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ec_edi_pos
@@ -23057,13 +23846,8 @@ msgstr "Egypte - Loonadministratie met boekhouding"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_eg_edi_eta
-msgid "Egyptian E-Invoice Integration"
-msgstr "Egyptische e-factuurintegratie"
-
-#. module: base
-#: model:ir.module.module,summary:base.module_l10n_eg_edi_eta
-msgid "Egyptian Tax Authority Invoice Integration"
-msgstr "Egyptische belastingdienst factuurintegratie"
+msgid "Egypt E-Invoicing"
+msgstr "E-facturatie Egypte"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__eire
@@ -23088,6 +23872,11 @@ msgid "El Salvador"
 msgstr "El Salvador"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_electrician
+msgid "Electricians"
+msgstr "Elektriciens"
+
+#. module: base
 #: model:ir.module.module,summary:base.module_l10n_pe_edi_stock
 msgid "Electronic Delivery Note for Peru (OSE method) and UBL 2.1"
 msgstr "Elektronische leveringsbon voor Peru (OSE-methode) en UBL 2.1"
@@ -23108,14 +23897,19 @@ msgid "Electronic Invoicing for Peru (OSE method) and UBL 2.1"
 msgstr "Elektronische facturatie voor Peru (OSE-methode) en UBL 2.1"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_electronic_store
+msgid "Electronic Store"
+msgstr "Elektronische winkel"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_co_edi
 msgid "Electronic invoicing for Colombia with Carvajal"
-msgstr "Electronische facturatie voor Columba met Carvajal"
+msgstr "Elektronische facturatie voor Colombia met Carvajal"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_co_dian
 msgid "Electronic invoicing for Colombia with DIAN"
-msgstr "Electronische facturatie voor Columbia met DIAN"
+msgstr "Elektronische facturatie voor Colombia met DIAN"
 
 #. module: base
 #. odoo-python
@@ -23430,7 +24224,7 @@ msgstr "Enterprise mogelijkheden op contacten"
 #. module: base
 #: model:ir.module.module,summary:base.module_website
 msgid "Enterprise website builder"
-msgstr "Enterprise website bouwer"
+msgstr "Enterprise websitebouwer"
 
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_R
@@ -23441,6 +24235,16 @@ msgstr "Entertainment"
 #: model:ir.model.fields,field_description:base.field_ir_profile__entry_count
 msgid "Entry count"
 msgstr "Aantal inzendingen"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_delivery_envia
+msgid "Envia Shipping"
+msgstr "Envia Verzending"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_environmental_agency
+msgid "Environmental Agency"
+msgstr "Milieuagentschap"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_pos_epson_printer
@@ -23558,12 +24362,17 @@ msgstr "Estland - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ee_reports
 msgid "Estonia - Accounting Reports"
-msgstr "Estland - Boekhoudkundige rapporten"
+msgstr "Estland - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ee_rounding
 msgid "Estonia - Rounding"
 msgstr "Estland - Afronding"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_ee_intrastat
+msgid "Estonia Intrastat Declaration"
+msgstr "Estland Intrastat-verklaring"
 
 #. module: base
 #: model:res.country,name:base.sz
@@ -24088,7 +24897,7 @@ msgstr "Europese Unie"
 #. module: base
 #: model:res.currency,currency_unit_label:base.EUR
 msgid "Euros"
-msgstr "Europese Euro’s"
+msgstr "Euro's"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_event_jitsi
@@ -24329,6 +25138,11 @@ msgid "Export"
 msgstr "Exporteren"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_l10n_se_sie4_export
+msgid "Export Accounting Data to SIE 4 files"
+msgstr "Boekhoudgegevens exporteren naar SIE 4 bestanden"
+
+#. module: base
 #: model_terms:ir.ui.view,arch_db:base.wizard_lang_export
 msgid "Export Complete"
 msgstr "Export voltooid"
@@ -24371,6 +25185,12 @@ msgid "Export Work Entries to ADP"
 msgstr "Werkboekingen exporteren naar ADP"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_be_hr_payroll_acerta
+#: model:ir.module.module,summary:base.module_l10n_be_hr_payroll_acerta
+msgid "Export Work Entries to Acerta"
+msgstr "Werkboekingen exporteren naar Acerta"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_be_hr_payroll_group_s
 #: model:ir.module.module,summary:base.module_l10n_be_hr_payroll_group_s
 msgid "Export Work Entries to Group S"
@@ -24381,6 +25201,12 @@ msgstr "Werkaantekeningen exporteren naar Group S"
 #: model:ir.module.module,summary:base.module_l10n_be_hr_payroll_partena
 msgid "Export Work Entries to Partena"
 msgstr "Werkaantekeningen exporteren naar Partena"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_be_hr_payroll_prisma
+#: model:ir.module.module,summary:base.module_l10n_be_hr_payroll_prisma
+msgid "Export Work Entries to Prisma"
+msgstr "Werkboekingen exporteren naar Prisma"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be_hr_payroll_sd_worx
@@ -24449,6 +25275,11 @@ msgstr "Expressie"
 #: model:ir.module.module,shortdesc:base.module_base_address_extended
 msgid "Extended Addresses"
 msgstr "Uitgebreide adressen"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_l10n_my_edi_extended
+msgid "Extended features for the E-invoicing using MyInvois"
+msgstr "Uitgebreide functies voor e-facturatie met MyInvois"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_ui_view__mode__extension
@@ -24567,7 +25398,12 @@ msgstr "Onttrek data vanuit factuur scans om ze automatisch in te vullen"
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_U
 msgid "Extraterritorial"
-msgstr "Buitenaards"
+msgstr "NGO's"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_eyewear_shop
+msgid "Eyewear Store"
+msgstr "Brillenwinkel"
 
 #. module: base
 #: model:res.partner.industry,full_name:base.res_partner_industry_F
@@ -24626,6 +25462,11 @@ msgstr "Falklandeilanden"
 #: model:res.country,name:base.fo
 msgid "Faroe Islands"
 msgstr "Faeröereilanden"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_fast_food
+msgid "Fast Food"
+msgstr "Snelle Hap"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_l10n_it_edi_website_sale
@@ -24716,7 +25557,7 @@ msgstr "Veld \"Soort\" kan niet gewijzigd worden op modellen."
 msgid ""
 "Field '%(field)s' found in 'groupby' node does not exist in model %(model)s"
 msgstr ""
-"Veld '%(field)s' gevonden in 'groupby' knooppunt bestaat niet in model "
+"Veld '%(field)s' gevonden in 'groeperen op' knooppunt bestaat niet in model "
 "%(model)s"
 
 #. module: base
@@ -24726,8 +25567,8 @@ msgid ""
 "Field '%(name)s' found in 'groupby' node can only be of type many2one, found"
 " %(type)s"
 msgstr ""
-"Veld '%(name)s' gevonden in 'groupby' knooppunt kan alleen van het type "
-"many2one, found zijn %(type)s"
+"Veld '%(name)s' gevonden in 'groeperen op' knooppunt kan alleen van het type"
+" many2one, found zijn %(type)s"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_fields__help
@@ -25050,6 +25891,11 @@ msgid "Find old records and archive/delete them"
 msgstr "Oude records zoeken en archiveren/verwijderen"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_industry_restaurant
+msgid "Fine Dining Restaurant"
+msgstr "Restaurant voor fijnproevers"
+
+#. module: base
 #: model:ir.model.fields.selection,name:base.selection__base_partner_merge_automatic_wizard__state__finished
 msgid "Finished"
 msgstr "Klaar"
@@ -25062,7 +25908,7 @@ msgstr "Finland"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_fi_reports
 msgid "Finland - Accounting Reports"
-msgstr "Boekhoudkundige rapportages voor Finland"
+msgstr "Boekhoudrapporten voor Finland"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_fi_sale
@@ -25115,6 +25961,11 @@ msgstr ""
 "Eerste weergavemodus in mobiele omgevingen en omgevingen met klein scherm "
 "(standaard='kanban'). Als het niet kan worden gevonden tussen de beschikbare"
 " weergavemodi, wordt dezelfde modus gebruikt als voor bredere schermen)"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_fitness
+msgid "Fitness Center"
+msgstr "Fitness Kamer"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_l10n_nl_reports_sbr_ob_nummer
@@ -25178,6 +26029,11 @@ msgid "Font"
 msgstr "Lettertype"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_food_trucks
+msgid "Food Trucks"
+msgstr "Foodtrucks"
+
+#. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_I
 msgid "Food/Hospitality"
 msgstr "Eten/gastvrijheid"
@@ -25186,11 +26042,6 @@ msgstr "Eten/gastvrijheid"
 #: model:ir.model.fields,help:base.field_res_company__report_footer
 msgid "Footer text displayed at the bottom of all reports."
 msgstr "Voettekst, weergegeven aan de onderzijde van alle rapportages."
-
-#. module: base
-#: model:ir.module.module,summary:base.module_l10n_be_codabox
-msgid "For Accounting Firms"
-msgstr "Voor Accountantskantoren"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_actions_server__value
@@ -25307,6 +26158,11 @@ msgid "Forum on Courses"
 msgstr "Forum voor cursussen"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_coal_petroleum
+msgid "Fossil Fuel Trading"
+msgstr "Handel in fossiele brandstoffen"
+
+#. module: base
 #. odoo-python
 #: code:addons/models.py:0
 msgid ""
@@ -25353,7 +26209,7 @@ msgstr "Frankrijk  - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_fr_reports
 msgid "France - Accounting Reports"
-msgstr "Frankrijk - Boekhoudkundige rapportages"
+msgstr "Frankrijk - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_fr_fec_import
@@ -25401,6 +26257,11 @@ msgstr "Frans Guyana"
 #: model:ir.module.module,shortdesc:base.module_l10n_fr_intrastat
 msgid "French Intrastat Declaration"
 msgstr "Franse Intrastatverklaring"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_fr_intrastat_services
+msgid "French Intrastat Declaration (Services)"
+msgstr "Franse Intrastat-verklaring (Diensten)"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_fr_hr_payroll
@@ -25478,6 +26339,11 @@ msgstr "Volledige traceability rapport demo data"
 #: model:ir.model.fields,field_description:base.field_ir_logging__func
 msgid "Function"
 msgstr "Functie"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_furniture_store
+msgid "Furniture Store"
+msgstr "Meubelwinkel"
 
 #. module: base
 #: model:res.partner.industry,full_name:base.res_partner_industry_G
@@ -25613,6 +26479,21 @@ msgid "Gantt view for Time Off Dashboard"
 msgstr "Gantt weergave voor verlofdashboard"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_gardening
+msgid "Gardening"
+msgstr "Tuinieren"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_sale_gelato
+msgid "Gelato"
+msgstr "Gelato"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_sale_gelato_stock
+msgid "Gelato/Stock bridge"
+msgstr "Gelato/Stock bridge"
+
+#. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_rule_form
 msgid "General"
 msgstr "Algemeen"
@@ -25675,6 +26556,7 @@ msgstr "Genereer traceerbare & korte URL's"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_de_intrastat
+#: model:ir.module.module,description:base.module_l10n_ee_intrastat
 msgid "Generates Intrastat XML report for declaration."
 msgstr "Genereert Intrastat XML-rapport voor aangifte."
 
@@ -25832,8 +26714,8 @@ msgid ""
 "Global rules are combined together with a logical AND operator, and with the"
 " result of the following steps"
 msgstr ""
-"1. Globale regels worden gecombineerd met een logische EN operator, en met "
-"de resultaten van de volgende stappen"
+"Globale regels worden gecombineerd met een logische EN operator, en met de "
+"resultaten van de volgende stappen"
 
 #. module: base
 #: model:ir.module.module,description:base.module_google_gmail
@@ -25919,7 +26801,12 @@ msgstr "Griekenland  - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_gr_reports
 msgid "Greece - Accounting Reports"
-msgstr "Griekenland - Boekhoudkundige rapportages"
+msgstr "Griekenland - Boekhoudrapporten"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_gr_edi
+msgid "Greece - MyDATA"
+msgstr "Griekenland - MyDATA"
 
 #. module: base
 #: model:res.country,name:base.gl
@@ -25940,6 +26827,11 @@ msgstr "Grenada"
 #: model:ir.module.module,shortdesc:base.module_web_grid
 msgid "Grid View"
 msgstr "Matrixweergave"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_fmcg_store
+msgid "Grocery Store"
+msgstr "Kruidenierswinkel"
 
 #. module: base
 #: model:res.currency,currency_subunit_label:base.PLN
@@ -26192,6 +27084,11 @@ msgid "HTTP Routing"
 msgstr "HTTP routing"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_hair_salon
+msgid "Hair Salon"
+msgstr "Kapsalon"
+
+#. module: base
 #: model:res.country,name:base.ht
 msgid "Haiti"
 msgstr "Haïti"
@@ -26222,6 +27119,11 @@ msgid "Handle lunch orders of your employees"
 msgstr "Verwerk lunchorders van je werknemers"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_handyman
+msgid "Handyman Services"
+msgstr "Handyman Diensten"
+
+#. module: base
 #: model_terms:res.partner,website_description:base.res_partner_1
 #: model_terms:res.partner,website_description:base.res_partner_10
 #: model_terms:res.partner,website_description:base.res_partner_12
@@ -26238,6 +27140,11 @@ msgstr "Hardware Driver voor  ESC/Kassa Printers en kassalade's"
 #: model:ir.module.module,shortdesc:base.module_hw_drivers
 msgid "Hardware Proxy"
 msgstr "Hardware Proxy"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_hardware_shop
+msgid "Hardware Store"
+msgstr "IJzerhandel"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_reset_view_arch_wizard__has_diff
@@ -26258,6 +27165,11 @@ msgstr "Kop afstand"
 #: model:ir.model.fields,help:base.field_res_company__company_details
 msgid "Header text displayed at the top of all reports."
 msgstr "Koptekst weergegeven boven aan alle rapportages."
+
+#. module: base
+#: model:ir.module.category,name:base.module_category_health_and_fitness
+msgid "Health and Fitness"
+msgstr "Gezondheid en fitness"
 
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_Q
@@ -26570,7 +27482,7 @@ msgstr "Hong Kong - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_hk_reports
 msgid "Hong Kong - Accounting Reports"
-msgstr "Hong Kong - Boekhoudkundige rapporten"
+msgstr "Hong Kong - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_hk_hr_payroll
@@ -26586,6 +27498,11 @@ msgstr "Hong Kong - Loonadministratie met Boekhouding"
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__hongkong
 msgid "Hongkong"
 msgstr "Hongkong"
+
+#. module: base
+#: model:ir.module.category,name:base.module_category_hospitality
+msgid "Hospitality"
+msgstr "Hospitality"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_mail_server__smtp_host
@@ -26663,7 +27580,7 @@ msgstr "Hongarije - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_hu_reports
 msgid "Hungary - Accounting Reports"
-msgstr "Hongarije - Boekhoudkundige rapportages"
+msgstr "Hongarije - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_hu_edi
@@ -26863,6 +27780,11 @@ msgstr "ISO taal- en landcode bijv. nl_NL"
 #: model:ir.model.fields,field_description:base.field_res_lang__iso_code
 msgid "ISO code"
 msgstr "ISO-code"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_it_hardware
+msgid "IT Hardware & Support"
+msgstr "IT-hardware en ondersteuning"
 
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_J
@@ -27165,16 +28087,6 @@ msgid "Image is not encoded in base64."
 msgstr "Afbeelding is niet gecodeerd in base64."
 
 #. module: base
-#. odoo-python
-#: code:addons/image.py:0
-msgid ""
-"Image size excessive, uploaded images must be smaller than %s million "
-"pixels."
-msgstr ""
-"Afbeeldingsgrootte overdreven, geüploade afbeeldingen moeten kleiner zijn "
-"dan %s miljoen pixels."
-
-#. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_base_module_upgrade
 msgid "Impacted Apps"
 msgstr "Beïnvloede apps"
@@ -27242,9 +28154,14 @@ msgid "Import Accounting Data from SAF-T files"
 msgstr "Importeer boekhoudgegevens uit SAF-T-bestanden"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_l10n_se_sie4_import
+msgid "Import Accounting Data from SIE 4 files"
+msgstr "Boekhoudgegevens importeren uit SIE 4-bestanden"
+
+#. module: base
 #: model:ir.module.module,summary:base.module_l10n_se_sie_import
-msgid "Import Accounting Data from SIE files"
-msgstr "Importeer boekhoudgegevens uit SIE-bestanden"
+msgid "Import Accounting Data from SIE 5 files"
+msgstr "Boekhoudgegevens importeren uit SIE 5-bestanden"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_sale_amazon
@@ -27275,6 +28192,11 @@ msgstr "Importeer OFX rekeningafschriften"
 #: model:ir.module.module,shortdesc:base.module_account_bank_statement_import_qif
 msgid "Import QIF Bank Statement"
 msgstr "Importeer QIF rekeningafschriften"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_sale_shopee
+msgid "Import Shopee orders and sync deliveries"
+msgstr "Importeer Shopee-bestellingen en synchroniseer leveringen"
 
 #. module: base
 #. odoo-python
@@ -27414,7 +28336,7 @@ msgstr "India - Loonadministratie met boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_in_hr_holidays
 msgid "India - Time Off"
-msgstr "India - Vrije tijd"
+msgstr "India - Verlof"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_in_enet_batch_payment
@@ -27444,7 +28366,7 @@ msgstr "Indisch - Boekhoudkundig actief"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_in_reports
 msgid "Indian - Accounting Reports"
-msgstr "India - Boekhoudkundige rapportages"
+msgstr "India - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_in_gstin_status
@@ -27605,6 +28527,11 @@ msgstr "Indonesië - Verkooppunt"
 #: model:ir.module.module,shortdesc:base.module_l10n_id_efaktur
 msgid "Indonesia E-faktur"
 msgstr "Indonesië E-faktur"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_id_efaktur_coretax
+msgid "Indonesia E-faktur (Coretax)"
+msgstr "Indonesië E-faktur (Coretax)"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_id
@@ -27802,6 +28729,11 @@ msgstr ""
 "                   Zet e-mails die je in je mailbox hebt ontvangen om in Tickets en registreer hun inhoud als interne notities."
 
 #. module: base
+#: model:ir.module.module,summary:base.module_pos_pine_labs
+msgid "Integrate your POS with Pine Labs payment terminals"
+msgstr "Integreer je POS met betaalterminals van Pine Labs"
+
+#. module: base
 #: model:ir.module.module,summary:base.module_pos_paytm
 msgid "Integrate your POS with a PayTM payment terminal"
 msgstr "Integreer je kassa met een PayTM-betaalterminal"
@@ -27819,12 +28751,17 @@ msgstr "Integreer je Kassa met een Six-betaalterminal"
 #. module: base
 #: model:ir.module.module,summary:base.module_pos_iot_six
 msgid "Integrate your POS with a Six payment terminal through IoT"
-msgstr "Integreer je POS met een Six-betaalterminal via IoT"
+msgstr "Integreer je Kassa met een Six-betaalterminal via IoT"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_pos_stripe
 msgid "Integrate your POS with a Stripe payment terminal"
 msgstr "Integreer je kassa met een Stripe-betaalterminal"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_pos_tyro
+msgid "Integrate your POS with a Tyro payment terminal (AU)"
+msgstr "Integreer je kassa met een Tyro betaalterminal (AU)"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_pos_viva_wallet
@@ -27859,7 +28796,8 @@ msgstr "Integratie tussen Loonadministratie en Wagenpark."
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_it_pos
 msgid "Integration of Odoo PoS with the Italian Fiscal Printer"
-msgstr "Integratie van Odoo PoS met de Italiaanse belastingprinter"
+msgstr ""
+"Integratie van het Kassasysteem van Odoo met de Italiaanse belastingprinter"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_purchase_stock_inter_company_rules
@@ -27954,6 +28892,11 @@ msgstr ""
 #: model:ir.module.module,shortdesc:base.module_account_intrastat
 msgid "Intrastat Reports"
 msgstr "Intrastatrapportage"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_account_intrastat_services
+msgid "Intrastat Reports for Services"
+msgstr "Intrastat-rapporten voor diensten"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.report_irmodulereference
@@ -28258,7 +29201,7 @@ msgstr "IoT voor Kassa"
 #. module: base
 #: model:ir.module.module,summary:base.module_pos_self_order_iot
 msgid "IoT in PoS Kiosk"
-msgstr "IoT in PoS Kiosk"
+msgstr "IoT in Kassakiosk"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_menu_ir_profile
@@ -28299,7 +29242,7 @@ msgstr "Ierland - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ie_reports
 msgid "Ireland - Accounting Reports"
-msgstr "Ierland - Boekhoudkundige rapportages"
+msgstr "Ierland - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_base_partner_merge_automatic_wizard__group_by_is_company
@@ -28419,6 +29362,11 @@ msgid "Italy - Accounting Reports"
 msgstr "Italië - Boekhoudrapportages"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_it_riba
+msgid "Italy - Bank Receipts (Ri.Ba.)"
+msgstr "Italië - bankafschriften (Ri.Ba.)"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_it_edi_doi
 msgid "Italy - Declaration of Intent"
 msgstr "Italië - Intentieverklaring"
@@ -28448,9 +29396,19 @@ msgid "Italy - Point of Sale"
 msgstr "Italië - Verkooppunt"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_it_edi_sale
+msgid "Italy - Sale E-invoicing"
+msgstr "Italië - Verkoop E-facturatie"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_it_stock_ddt
 msgid "Italy - Stock DDT"
 msgstr "Italië - Voorraad DDT"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_it_xml_export
+msgid "Italy - Tax Report XML Export"
+msgstr "Italië - Belastingrapport XML export"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_it_edi_website_sale
@@ -28547,16 +29505,6 @@ msgid "K - FINANCIAL AND INSURANCE ACTIVITIES"
 msgstr "K - FINANCILE EN VERZEKERINGSACTIVITEITEN"
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_sa_hr_payroll
-msgid "K.S.A. - Payroll"
-msgstr "K.S.A. - loonadministratie"
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_sa_hr_payroll_account
-msgid "K.S.A. - Payroll with Accounting"
-msgstr "KSA - Loonadministratie met boekhouding"
-
-#. module: base
 #: model:ir.module.module,shortdesc:base.module_digest
 msgid "KPI Digests"
 msgstr "KPI samenvatting"
@@ -28586,7 +29534,7 @@ msgstr "Kazachstan - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_kz_reports
 msgid "Kazakhstan - Accounting Reports"
-msgstr "Kazachstan - Boekhoudkundige rapportages"
+msgstr "Kazachstan - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_users__password
@@ -28618,7 +29566,7 @@ msgstr "Kenia - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ke_reports
 msgid "Kenya - Accounting Reports"
-msgstr "Kenia - Boekhoudkundige rapportages"
+msgstr "Kenia - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ke_hr_payroll
@@ -28634,6 +29582,11 @@ msgstr "Kenia - Salarisadministratie SHIF"
 #: model:ir.module.module,shortdesc:base.module_l10n_ke_hr_payroll_account
 msgid "Kenya - Payroll with Accounting"
 msgstr "Kenia - Loonadministratie met boekhouding"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_ke_edi_oscu_pos
+msgid "Kenya - Point of Sale"
+msgstr "Kenya - Kassa"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ke_edi_oscu_mrp
@@ -28792,7 +29745,7 @@ msgstr "Kyat"
 #. module: base
 #: model:res.country,name:base.kg
 msgid "Kyrgyzstan"
-msgstr "Kyrgyzstan"
+msgstr "Kirgizië"
 
 #. module: base
 #: model:res.partner.industry,full_name:base.res_partner_industry_L
@@ -29143,7 +30096,7 @@ msgstr "Letland - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_lv_reports
 msgid "Latvia - Accounting Reports"
-msgstr "Letland - Boekhoudkundige rapporten"
+msgstr "Letland - Boekhoudrapporten"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.config_wizard_step_view_form
@@ -29156,6 +30109,11 @@ msgstr "Lanceer"
 #: model_terms:ir.ui.view,arch_db:base.ir_actions_todo_tree
 msgid "Launch Configuration Wizard"
 msgstr "Start configuratie wizard"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_industry_lawyer
+msgid "Law Firm"
+msgstr "Advokatenkantoor"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_company__layout_background
@@ -29436,9 +30394,19 @@ msgid "Link module between pos_hr and pos_restaurant"
 msgstr "Koppelmodule tussen pos_hr en pos_restaurant"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_pos_restaurant_loyalty
+msgid "Link module between pos_restaurant and pos_loyalty"
+msgstr "Koppelmodule tussen pos_restaurant en pos_loyalty"
+
+#. module: base
 #: model:ir.module.module,summary:base.module_l10n_be_pos_sale
 msgid "Link module between pos_sale and l10n_be"
 msgstr "Koppelmodule tussen pos_sale en l10n_be"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_pos_event_sale
+msgid "Link module between pos_sale and pos_event"
+msgstr "Koppelingsmodule tussen pos_sale en pos_event"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_pos_sale_loyalty
@@ -29510,7 +30478,7 @@ msgstr "Litouwen - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_lt_reports
 msgid "Lithuania - Accounting Reports"
-msgstr "Litouwen - Boekhoudkundige rapporten"
+msgstr "Litouwen - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_lt_hr_payroll
@@ -29660,7 +30628,7 @@ msgstr "Luxemburg  - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_lu_reports
 msgid "Luxembourg - Accounting Reports"
-msgstr "Luxemburg - Boekhoudkundige rapportages"
+msgstr "Luxemburg - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_lu_hr_payroll
@@ -29918,12 +30886,27 @@ msgstr "Maleisië - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_my_reports
 msgid "Malaysia - Accounting Reports"
-msgstr "Maleisië - Boekhoudkundige rapporten"
+msgstr "Maleisië - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_my_edi
 msgid "Malaysia - E-invoicing"
 msgstr "Maleisië - E-facturatie"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_my_edi_extended
+msgid "Malaysia - E-invoicing Extended Features"
+msgstr "Maleisië - Uitgebreide functies voor e-facturatie"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_my_hr_payroll
+msgid "Malaysia - Payroll"
+msgstr "Maleisië - Salarisadministratie"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_my_hr_payroll_account
+msgid "Malaysia - Payroll with Accounting"
+msgstr "Maleisië - Salarisadministratie met boekhouding"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_my_ubl_pint
@@ -29958,7 +30941,7 @@ msgstr "Malta - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_mt_reports
 msgid "Malta - Accounting Reports"
-msgstr "Malta - Boekhoudkundige rapporten"
+msgstr "Malta - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_mt_pos
@@ -30330,6 +31313,11 @@ msgid "Manat"
 msgstr "Manat"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_co_edi_mandate
+msgid "Mandate invoicing for Colombia"
+msgstr "Mandaat facturatie voor Colombia"
+
+#. module: base
 #: model:ir.module.category,name:base.module_category_manufacturing
 #: model:ir.module.category,name:base.module_category_manufacturing_manufacturing
 #: model:ir.module.module,shortdesc:base.module_mrp
@@ -30396,6 +31384,11 @@ msgid "Marketing"
 msgstr "Marketing"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_marketing_agency
+msgid "Marketing Agency"
+msgstr "Marketingbureau"
+
+#. module: base
 #: model:ir.module.category,name:base.module_category_marketing_marketing_automation
 #: model:ir.module.module,shortdesc:base.module_marketing_automation
 msgid "Marketing Automation"
@@ -30419,7 +31412,7 @@ msgstr "Marketingkaart"
 #. module: base
 #: model:res.country,name:base.mh
 msgid "Marshall Islands"
-msgstr "Marshall-eilanden"
+msgstr "Marshalleilanden"
 
 #. module: base
 #: model:res.country,name:base.mq
@@ -30484,6 +31477,12 @@ msgstr "Massamailing sms op lead / verkoopkansen"
 #: model:ir.module.module,shortdesc:base.module_mass_mailing_sale_sms
 msgid "Mass mailing sms on sale orders"
 msgstr "Massa-mailing sms op verkooporders"
+
+#. module: base
+#: model:ir.module.module,description:base.module_hr_recruitment_sms
+#: model:ir.module.module,summary:base.module_hr_recruitment_sms
+msgid "Mass mailing sms to job applicants"
+msgstr "Massamailing naar sollicitanten"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mrp_mps
@@ -30660,6 +31659,11 @@ msgid "Mexico - Payroll"
 msgstr "Mexico - Loonadministratie"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_mx_hr_payroll_localisation
+msgid "Mexico - Payroll - Localisation"
+msgstr "Mexico - Loonadministratie - Lokalisatie"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_mx_hr_payroll_account
 msgid "Mexico - Payroll with Accounting"
 msgstr "Mexico - Loonadministratie met Boekhouding"
@@ -30683,6 +31687,11 @@ msgstr "Mexico/BajaSur"
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__mexico/general
 msgid "Mexico/General"
 msgstr "Mexico/Algemeen"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_micro_brewery
+msgid "Microbrewery"
+msgstr "Microbrouwerij"
 
 #. module: base
 #: model:res.country,name:base.fm
@@ -31199,7 +32208,7 @@ msgstr "Modules \"%(module)s\" en \"%(incompatible_module)s\" zijn niet compatib
 #. module: base
 #: model:res.country,name:base.md
 msgid "Moldova"
-msgstr "Moldova"
+msgstr "Moldavië"
 
 #. module: base
 #: model:res.country,name:base.mc
@@ -31234,7 +32243,7 @@ msgstr "Boekhouding - Mongolië"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_mn_reports
 msgid "Mongolia - Accounting Reports"
-msgstr "Mongolië - Boekhoudkundige rapportages"
+msgstr "Mongolië - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_project_mrp_account
@@ -31305,7 +32314,7 @@ msgstr "Mozambique - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_mz_reports
 msgid "Mozambique - Accounting Reports"
-msgstr "Mozambique - Boekhoudkundige rapporten"
+msgstr "Mozambique - Boekhoudrapporten"
 
 #. module: base
 #: model:res.partner.title,shortcut:base.res_partner_title_mister
@@ -31404,7 +32413,7 @@ msgstr "NZ"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_nz_reports
 msgid "NZ - Accounting Reports"
-msgstr "NZ - Boekhoudkundige rapporten"
+msgstr "NZ - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__nz-chat
@@ -31532,7 +32541,12 @@ msgstr "Nederland - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_nl_reports
 msgid "Netherlands - Accounting Reports"
-msgstr "Nederland - Boekhoudkundige rapportages"
+msgstr "Nederland - Boekhoudrapporten"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_nl_reports_vat_pay_wizard
+msgid "Netherlands - Accounting Reports (post wizard)"
+msgstr "Nederland - Boekhoudkundige rapporten (post wizard)"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_nl_hr_payroll
@@ -31577,7 +32591,7 @@ msgstr "Nieuwe API key"
 #. module: base
 #: model:res.country,name:base.nc
 msgid "New Caledonia"
-msgstr "Nieuw Caledonië"
+msgstr "Nieuw-Caledonië"
 
 #. module: base
 #. odoo-python
@@ -31729,7 +32743,7 @@ msgstr "Niue"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_actions_server__update_boolean_value__false
 msgid "No (False)"
-msgstr "Nee (onwaar)"
+msgstr "Nee (False)"
 
 #. module: base
 #: model_terms:ir.actions.act_window,help:base.action_country
@@ -31847,6 +32861,11 @@ msgid "None"
 msgstr "Geen"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_non_profit_organization
+msgid "Nonprofit Organization"
+msgstr "Non-profit organisatie"
+
+#. module: base
 #: model:res.country,name:base.nf
 msgid "Norfolk Island"
 msgstr "Norfolkeiland"
@@ -31870,7 +32889,7 @@ msgstr "Noord-Macedonië"
 #. module: base
 #: model:res.country,name:base.mp
 msgid "Northern Mariana Islands"
-msgstr "Noordelijke Marianaeilanden"
+msgstr "Noordelijke Marianen"
 
 #. module: base
 #: model:res.country,name:base.no
@@ -31885,7 +32904,7 @@ msgstr "Noorwegen - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_no_reports
 msgid "Norway - Accounting Reports"
-msgstr "Noorwegen - Boekhoudkundige rapportages"
+msgstr "Noorwegen - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_no_saft
@@ -31968,7 +32987,7 @@ msgstr "OAuth2 Authenticatie"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_syscohada_reports
 msgid "OHADA (révisé) - Accounting Reports"
-msgstr "OHADA (herzien) - Boekhoudkundige rapporten"
+msgstr "OHADA (herzien) - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_syscohada
@@ -32922,6 +33941,16 @@ msgstr "Odoo Mexicaanse lokalisatie voor voorraad"
 #: model:ir.module.module,summary:base.module_web_mobile
 msgid "Odoo Mobile Core module"
 msgstr "Odoo mobiele core module"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_pos_mobile
+msgid "Odoo Mobile Point of Sale module"
+msgstr "Odoo Mobiele Verkooppuntmodule"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_odoo_partner
+msgid "Odoo Partner"
+msgstr "Odoo Partner"
 
 #. module: base
 #: model:ir.module.module,description:base.module_point_of_sale
@@ -34632,6 +35661,11 @@ msgstr ""
 "late betaling."
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_outdoor_activities
+msgid "Outdoor Activities"
+msgstr "Buitenactiviteiten"
+
+#. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_ir_mail_server_search
 msgid "Outgoing Mail Server"
 msgstr "Uitgaande e-mailserver"
@@ -34718,6 +35752,11 @@ msgid "POS - HR"
 msgstr "Kassa - Personeelszaken"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_pos_restaurant_loyalty
+msgid "POS - Restaurant Loyality"
+msgstr "Kassa - Restaurant Loyaliteit"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_sms
 msgid "POS - SMS"
 msgstr "Kassa - SMS"
@@ -34745,7 +35784,7 @@ msgstr "Kassa Adyen"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_avatax
 msgid "POS Avatax"
-msgstr "POS Avatax"
+msgstr "Kassa Avatax"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_hr_mobile
@@ -34770,7 +35809,7 @@ msgstr "Kassa Personeelszaken Restaurant"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_iot_six
 msgid "POS IoT Six"
-msgstr "POS IoT Zes"
+msgstr "Kassa IoT Zes"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_mercado_pago
@@ -34780,7 +35819,12 @@ msgstr "Kassa Mercado Pago"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_paytm
 msgid "POS PayTM"
-msgstr "POS PayTM"
+msgstr "Kassa PayTM"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_pos_pine_labs
+msgid "POS Pine Labs"
+msgstr "POS Pine Labs"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_pricer
@@ -34810,7 +35854,7 @@ msgstr "Kassa restaurant Stripe"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_restaurant_urban_piper
 msgid "POS Restaurant Urban Piper"
-msgstr "POS Restaurant Urban Piper"
+msgstr "Kassa Restaurant Urban Piper"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_self_order
@@ -34820,32 +35864,32 @@ msgstr "Kassa Self-Order"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_self_order_adyen
 msgid "POS Self Order Adyen"
-msgstr "POS Zelfbestelling Adyen"
+msgstr "Kassa Zelfbestelling Adyen"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_self_order_epson_printer
 msgid "POS Self Order Epson Printer"
-msgstr "POS Zelfbestelling Epson-printer"
+msgstr "Kassa Zelfbestelling Epson-printer"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_self_order_iot
 msgid "POS Self Order IoT"
-msgstr "POS Self Order IoT"
+msgstr "Kassa Self Order IoT"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_self_order_razorpay
 msgid "POS Self Order Razorpay"
-msgstr "POS Zelf bestellen Razorpay"
+msgstr "Kassa Zelf bestellen Razorpay"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_self_order_sale
 msgid "POS Self Order Sale"
-msgstr "POS-zelforderverkoop"
+msgstr "Kassa-zelforderverkoop"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_self_order_stripe
 msgid "POS Self Order Stripe"
-msgstr "POS zelfbestelling streep"
+msgstr "Kassa zelfbestelling streep"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_online_payment_self_order
@@ -34868,19 +35912,24 @@ msgid "POS Stripe"
 msgstr "Kassa Stripe"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_pos_tyro
+msgid "POS Tyro"
+msgstr "POS Tyro"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_urban_piper_swiggy
 msgid "POS UrbanPiper - Swiggy"
-msgstr "POS UrbanPiper - Swiggy"
+msgstr "Kassa UrbanPiper - Swiggy"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_urban_piper_ubereats
 msgid "POS UrbanPiper - Uber Eats"
-msgstr "POS UrbanPiper - Uber Eats"
+msgstr "Kassa UrbanPiper - Uber Eats"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_urban_piper_zomato
 msgid "POS UrbanPiper - Zomato"
-msgstr "POS UrbanPiper - Zomato"
+msgstr "Kassa UrbanPiper - Zomato"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_viva_wallet
@@ -35163,7 +36212,7 @@ msgstr "Pakistan - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_pk_reports
 msgid "Pakistan - Accounting Reports"
-msgstr "Pakistan - Boekhoudkundige rapportages"
+msgstr "Pakistan - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_pk_hr_payroll
@@ -35307,7 +36356,7 @@ msgstr "Partner"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_partner_autocomplete
 msgid "Partner Autocomplete"
-msgstr "Partner automatisch aanvullen"
+msgstr "Partner Autocomplete"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_sales_commissions
@@ -35458,7 +36507,7 @@ msgstr "Het pad in de URL moet uniek zijn! Selecteer een ander."
 #: model:ir.model.fields,help:base.field_ir_actions_server__update_path
 #: model:ir.model.fields,help:base.field_ir_cron__update_path
 msgid "Path to the field to update, e.g. 'partner_id.name'"
-msgstr "Pad naar het veld dat moet worden bijgewerkt, b.v. 'partner_id.naam'"
+msgstr "Pad naar het veld dat moet worden bijgewerkt, b.v. 'partner_id.name'"
 
 #. module: base
 #. odoo-python
@@ -35557,6 +36606,11 @@ msgid "Payment Provider: Mollie"
 msgstr "Betaalprovider: Mollie"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_payment_nuvei
+msgid "Payment Provider: Nuvei"
+msgstr "Betalingsprovider: Nuvei"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_payment_paypal
 msgid "Payment Provider: Paypal"
 msgstr "Betaalprovider: Paypal"
@@ -35641,6 +36695,11 @@ msgid "Peppol"
 msgstr "Peppol"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_personal_trainer
+msgid "Personal Trainer"
+msgstr "Persoonlijke Trainer"
+
+#. module: base
 #: model_terms:res.partner,website_description:base.res_partner_2
 #: model_terms:res.partner,website_description:base.res_partner_4
 msgid "Personnel Administration"
@@ -35659,7 +36718,7 @@ msgstr "Peru - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_pe_reports
 msgid "Peru - Accounting Reports"
-msgstr "Peru - Boekhoudkundige rapportages"
+msgstr "Peru - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_pe_reports_stock
@@ -35711,9 +36770,14 @@ msgid "Pesos"
 msgstr "Pesos"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_pharmacy_retail
+msgid "Pharmacy"
+msgstr "Apotheek"
+
+#. module: base
 #: model:res.country,name:base.ph
 msgid "Philippines"
-msgstr "Filippijnen"
+msgstr "Filipijnen"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ph
@@ -35752,6 +36816,11 @@ msgid "Phone:"
 msgstr "Telefoon:"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_photography
+msgid "Photography"
+msgstr "Fotografie"
+
+#. module: base
 #: model:res.currency,currency_subunit_label:base.SSP
 msgid "Piasters"
 msgstr "Piasters"
@@ -35777,6 +36846,11 @@ msgstr "Pitcairn eilanden"
 #: model:ir.model.fields.selection,name:base.selection__ir_ui_view__type__pivot
 msgid "Pivot"
 msgstr "Draaitabel"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_sale_gelato
+msgid "Place orders through Gelato's print-on-demand service"
+msgstr "Plaats orders via Gelato's printing-on-demand service"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_project_forecast
@@ -35863,9 +36937,14 @@ msgstr ""
 "in de Voorkeuren van de gebruiker) om je eigen wachtwoord te wijzigen."
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_pos_event_sale
+msgid "PoS - Event Sale"
+msgstr "PoS - Evenement verkoop"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_order_tracking_display
 msgid "PoS Order Tracking Customer Display"
-msgstr "PoS-order volgen Klantendisplay"
+msgstr "Kassaorder volgen Klantendisplay"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_preparation_display
@@ -35884,6 +36963,7 @@ msgstr "Kassa Keukenscherm Restaurant"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_accounting_localizations_point_of_sale
+#: model:ir.module.category,name:base.module_category_localization_point_of_sale
 #: model:ir.module.category,name:base.module_category_point_of_sale
 #: model:ir.module.category,name:base.module_category_sales_point_of_sale
 #: model:ir.module.module,shortdesc:base.module_point_of_sale
@@ -35901,9 +36981,19 @@ msgid "Point of Sale - UrbanPiper"
 msgstr "Verkooppunt - UrbanPiper"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_pos_urban_piper_enhancements
+msgid "Point of Sale - UrbanPiper Enhancements"
+msgstr "Kassa - Verbeteringen UrbanPiper"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_discount
 msgid "Point of Sale Discounts"
 msgstr "Kassa kortingen"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_pos_mobile
+msgid "Point of Sale Mobile"
+msgstr "Verkooppunt Mobiel"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_sale_stock_renting
@@ -35949,7 +37039,7 @@ msgstr "Polen  - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_pl_reports
 msgid "Poland - Accounting Reports"
-msgstr "Polen - Boekhoudkundige rapporten"
+msgstr "Polen - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_pl_reports_pos_jpk
@@ -36010,7 +37100,7 @@ msgstr "Portugal - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_pt_reports
 msgid "Portugal - Accounting Reports"
-msgstr "Portugal - Boekhoudkundige rapportages"
+msgstr "Portugal - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_model_constraint__definition
@@ -36677,6 +37767,11 @@ msgstr ""
 "Wijzig deze door middel van Python-code, bij voorkeur in een eigen module!"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_condominium
+msgid "Property Owner Association"
+msgstr "Vereniging van Eigenaren"
+
+#. module: base
 #: model:res.partner.category,name:base.res_partner_category_2
 msgid "Prospects"
 msgstr "Verkoopkans"
@@ -37131,7 +38226,8 @@ msgid "RTN"
 msgstr "RTN"
 
 #. module: base
-#: model:res.country,vat_label:base.ec model:res.country,vat_label:base.pe
+#: model:res.country,vat_label:base.ec model:res.country,vat_label:base.pa
+#: model:res.country,vat_label:base.pe
 msgid "RUC"
 msgstr "RUC"
 
@@ -37190,6 +38286,7 @@ msgid "Real"
 msgstr "Real"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_industry_real_estate
 #: model:res.partner.industry,name:base.res_partner_industry_L
 msgid "Real Estate"
 msgstr "Onroerend goed"
@@ -37264,6 +38361,11 @@ msgstr "Te maken record"
 #: model:ir.module.module,shortdesc:base.module_hr_recruitment
 msgid "Recruitment"
 msgstr "Werving & Selectie"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_hr_recruitment_sms
+msgid "Recruitment - SMS"
+msgstr "Werving - SMS"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_recruitment_sign
@@ -37619,7 +38721,7 @@ msgstr "Republiek Korea - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_kr_reports
 msgid "Republic of Korea - Accounting Reports"
-msgstr "Republiek Korea - Boekhoudkundige rapporten"
+msgstr "Republiek Korea - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_users_identitycheck__request
@@ -37735,6 +38837,11 @@ msgid "Restrict"
 msgstr "Beperken"
 
 #. module: base
+#: model:ir.module.category,name:base.module_category_retail
+msgid "Retail"
+msgstr "Retail"
+
+#. module: base
 #: model_terms:ir.ui.view,arch_db:base.res_device_view_kanban
 #: model_terms:ir.ui.view,arch_db:base.res_device_view_tree
 msgid "Revoke"
@@ -37796,7 +38903,17 @@ msgstr "Roemenië  - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ro_reports
 msgid "Romania - Accounting Reports"
-msgstr "Roumenië - Boekhoudkundige rapportages"
+msgstr "Roumenië - Boekhoudrapporten"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_ro_edi_stock
+msgid "Romania - E-Transport"
+msgstr "Roemenië - E-Transport"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_ro_edi_stock_batch
+msgid "Romania - E-Transport Batch Pickings"
+msgstr "Roemenië - E-Transport Batchpickings"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ro_edi
@@ -37933,7 +39050,7 @@ msgstr "Rupiah"
 #. module: base
 #: model:res.country,name:base.ru
 msgid "Russian Federation"
-msgstr "Russische Federatie"
+msgstr "Rusland"
 
 #. module: base
 #: model:res.country,name:base.rw
@@ -37953,7 +39070,7 @@ msgstr "Rwanda - Boekhoudrapporten"
 #. module: base
 #: model:res.country,name:base.re
 msgid "Réunion"
-msgstr "Reünie"
+msgstr "Réunion"
 
 #. module: base
 #: model:res.partner.industry,full_name:base.res_partner_industry_S
@@ -38120,7 +39237,7 @@ msgstr "Saint Kitts en Nevis"
 #. module: base
 #: model:res.country,name:base.lc
 msgid "Saint Lucia"
-msgstr "Santa Lucia"
+msgstr "Saint Lucia"
 
 #. module: base
 #: model:res.country,name:base.mf
@@ -38148,6 +39265,11 @@ msgid "Salary Configurator (Belgium)"
 msgstr "Salarisconfigurator (België)"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_be_hr_contract_salary_mobility_budget
+msgid "Salary Configurator (Belgium) - Mobility Budget"
+msgstr "Salarisconfigurator (België) - Mobiliteitsbudget"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_contract_salary_holidays
 msgid "Salary Configurator - Holidays"
 msgstr "Salarisconfigurator - Feestdagen"
@@ -38159,6 +39281,7 @@ msgstr "Salarisconfigurator - Loonadministratie"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_l10n_be_hr_contract_salary
+#: model:ir.module.module,summary:base.module_l10n_be_hr_contract_salary_mobility_budget
 msgid "Salary Package Configurator"
 msgstr "Salarispakketconfigurator"
 
@@ -38166,6 +39289,11 @@ msgstr "Salarispakketconfigurator"
 #: model:ir.module.category,name:base.module_category_accounting_localizations_sale
 msgid "Sale"
 msgstr "Verkoop"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_test_sale_purchase_edi_ubl
+msgid "Sale & Purchase Order EDI Tests: Ensure Flow Robustness"
+msgstr "Verkoop- en inkooporder EDI-tests: Zorg voor een robuuste stroom"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_sms
@@ -38310,6 +39438,11 @@ msgid "Sale modifications for Brazil"
 msgstr "Verkoopwijzigingen voor Brazilië"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_it_edi_sale
+msgid "Sale modifications for Italy E-invoicing"
+msgstr "Verkoop wijzigingen voor Italië E-facturatie"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_spreadsheet_sale_management
 msgid "Sale order spreadsheet"
 msgstr "Verkooporder spreadsheet"
@@ -38388,7 +39521,7 @@ msgstr "Verkopen urenstaten: Facturatie"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_timesheet_enterprise_holidays
 msgid "Sales Timesheet: Time Off"
-msgstr "Verkoopurenstaat: vrije tijd"
+msgstr "Verkoopurenstaat: Verlof"
 
 #. module: base
 #: model_terms:res.partner,website_description:base.res_partner_2
@@ -38509,6 +39642,16 @@ msgstr "Saoedi-Arabië - E-facturering"
 #: model:ir.module.module,shortdesc:base.module_l10n_sa_edi_pos
 msgid "Saudi Arabia - E-invoicing (Simplified)"
 msgstr "Saoedi-Arabië - E-facturering (vereenvoudigd)"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_sa_hr_payroll
+msgid "Saudi Arabia - Payroll"
+msgstr "Saoedi-Arabië – Loonadministratie"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_sa_hr_payroll_account
+msgid "Saudi Arabia - Payroll with Accounting"
+msgstr "Saoedi-Arabië – Loonadministratie met boekhouding"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_sa_pos
@@ -38918,8 +40061,14 @@ msgstr "Verstuur je pakketten via Shiprocket en volg ze online"
 
 #. module: base
 #: model:ir.module.module,description:base.module_delivery_dhl
-msgid "Send your shippings through DHL and track them online"
-msgstr "Verzend je verzendingen via DHL en volg ze online"
+msgid ""
+"This is the legacy integration with DHL Express that is no longer supported."
+" Please install the new \"DHL Express Shipping\" module and uninstall this "
+"one as soon as possible."
+msgstr ""
+"Dit is de oude integratie met DHL Express die niet langer wordt ondersteund."
+" Installeer de nieuwe module 'DHL Express Shipping' en verwijder deze zo "
+"snel mogelijk."
 
 #. module: base
 #: model:ir.module.module,description:base.module_delivery_fedex_rest
@@ -38932,7 +40081,7 @@ msgid "Send your shippings through UPS and track them online"
 msgstr "Verzend je verzendingen via USPS en volg ze online"
 
 #. module: base
-#: model:ir.module.module,description:base.module_delivery_usps
+#: model:ir.module.module,description:base.module_delivery_usps_rest
 msgid "Send your shippings through USPS and track them online"
 msgstr "Verzend je verzendingen via USPS en volg ze online"
 
@@ -39069,7 +40218,12 @@ msgstr "Servië - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_rs_reports
 msgid "Serbia - Accounting Reports"
-msgstr "Servië - Boekhoudkundige rapporten"
+msgstr "Servië - Boekhoudrapporten"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_rs_edi
+msgid "Serbia - eFaktura E-invoicing"
+msgstr "Servië - eFaktura E-facturatie"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_logging__type__server
@@ -39254,6 +40408,16 @@ msgid "Shiprocket: Cash on Delivery"
 msgstr "Shiprocket: onder rembours"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_shoe_maker
+msgid "Shoe Maker"
+msgstr "Schoenmaker"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_sale_shopee
+msgid "Shopee Connector"
+msgstr "Shopee Connector"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_website_sale_wishlist
 msgid "Shopper's Wishlist"
 msgstr "Webshop wensenlijst"
@@ -39289,6 +40453,11 @@ msgstr "Wisselkoersen tonen"
 #: model_terms:ir.ui.view,arch_db:base.view_currency_search
 msgid "Show active currencies"
 msgstr "Toon actieve valuta"
+
+#. module: base
+#: model_terms:ir.ui.view,arch_db:base.view_partner_bank_search
+msgid "Show inactive bank account"
+msgstr "Toon inactieve bankrekening"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_currency_search
@@ -39385,7 +40554,7 @@ msgstr "Singapore - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_sg_reports
 msgid "Singapore - Accounting Reports"
-msgstr "Singapore - Boekhoudkundige rapportages"
+msgstr "Singapore - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_sg_ubl_pint
@@ -39473,7 +40642,7 @@ msgstr "Slovenië"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_si_reports
 msgid "Slovenia - Accounting Reports"
-msgstr "Slovenië - Boekhoudkundige rapportages"
+msgstr "Slovenië - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_si
@@ -39561,6 +40730,16 @@ msgstr "Sociale YouTube"
 #: model:ir.module.module,summary:base.module_social_media
 msgid "Social media connectors for company settings."
 msgstr "Socialmedia-koppelingen voor bedrijfsinstellingen."
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_software_reseller
+msgid "Software Reseller"
+msgstr "Software wederverkoper"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_solar_installation
+msgid "Solar Energy Systems"
+msgstr "Zonne-energiesystemen"
 
 #. module: base
 #: model:res.currency,currency_unit_label:base.PEN
@@ -39660,12 +40839,12 @@ msgstr "Spanje - Boekhouding (PGCE 2008)"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_es_reports
 msgid "Spain - Accounting (PGCE 2008) Reports"
-msgstr "Spanje - Boekhoudkundige rapportages (PGCE 2008)"
+msgstr "Spanje - Boekhoudrapporten (PGCE 2008)"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_es_reports_2024
 msgid "Spain - Accounting Reports (2024 Update)"
-msgstr "Spanje - Boekhoudkundige rapporten (Update 2024)"
+msgstr "Spanje - Boekhoudrapporten (Update 2024)"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_es_sale_amazon
@@ -39769,6 +40948,11 @@ msgstr "Speedscope"
 #: model:ir.module.module,summary:base.module_website_event_track
 msgid "Sponsors, Tracks, Agenda, Event News"
 msgstr "Sponsors, Tracks, Agenda, Evenement nieuws"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_sports_club
+msgid "Sports Club"
+msgstr "Sportclub"
 
 #. module: base
 #: model:ir.module.module,description:base.module_spreadsheet
@@ -40326,6 +41510,11 @@ msgid "Supplementary arguments"
 msgstr "Aanvullende argumenten"
 
 #. module: base
+#: model:ir.module.category,name:base.module_category_supply_chain
+msgid "Supply Chain"
+msgstr "Leverancier"
+
+#. module: base
 #: model:ir.module.module,summary:base.module_website_event_track_live
 msgid "Support live tracks: streaming, participation, youtube"
 msgstr "Ondersteuning van livetracks: streaming, deelname, youtube"
@@ -40344,6 +41533,11 @@ msgstr "Ondersteuning van online betaling bij zelfbediening"
 #: model:res.country,name:base.sr
 msgid "Suriname"
 msgstr "Suriname"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_surveyor
+msgid "Surveying & Mapping"
+msgstr "Landmeten en cartografie"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_marketing_surveys
@@ -40373,9 +41567,19 @@ msgid "Sweden - Accounting Reports"
 msgstr "Financiele rapportages - Zweden"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_se_sie4_export
+msgid "Sweden - SIE 4 Export"
+msgstr "Zweden - SIE 4 Export"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_se_sie4_import
+msgid "Sweden - SIE 4 Import"
+msgstr "Zweden - SIE 4 Invoer"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_se_sie_import
-msgid "Sweden - SIE Import"
-msgstr "Zweden - SIE-import"
+msgid "Sweden - SIE 5 Import"
+msgstr "Zweden - SIE 5 Invoer"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_l10n_se
@@ -40386,6 +41590,11 @@ msgstr "In Zweden geregistreerde kassa"
 #: model:ir.module.module,shortdesc:base.module_l10n_ch_pos
 msgid "Swiss - Point of Sale"
 msgstr "Zwitserland - Kassa"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_ch_hr_payroll_elm_transmission
+msgid "Swissdec Certified Payroll (ELM 5.0)"
+msgstr "Swissdec-gecertificeerde loonadministratie (ELM 5.0)"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.language_install_view_form_lang_switch
@@ -40410,7 +41619,7 @@ msgstr "Zwitserland  - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ch_reports
 msgid "Switzerland - Accounting Reports"
-msgstr "Zwitserland - Boekhoudkundige rapportages"
+msgstr "Zwitserland - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ch_hr_payroll
@@ -40419,6 +41628,7 @@ msgstr "Zwitserland - Salarisadministratie"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ch_hr_payroll_account
+#: model:ir.module.module,shortdesc:base.module_l10n_ch_hr_payroll_elm_transmission_account
 msgid "Switzerland - Payroll with Accounting"
 msgstr "Zwitserland - Salarisadministratie met boekhouding"
 
@@ -40545,7 +41755,7 @@ msgstr "Taiwan - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_tw_reports
 msgid "Taiwan - Accounting Reports"
-msgstr "Taiwan - Boekhoudkundige rapporten"
+msgstr "Taiwan - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_company__font__tajawal
@@ -40555,7 +41765,7 @@ msgstr "Tajawa"
 #. module: base
 #: model:res.country,name:base.tj
 msgid "Tajikistan"
-msgstr "Tadjikistan"
+msgstr "Tadzjikistan"
 
 #. module: base
 #: model:res.currency,currency_unit_label:base.BDT
@@ -40566,6 +41776,11 @@ msgstr "Taka"
 #: model:res.currency,currency_unit_label:base.WST
 msgid "Tala"
 msgstr "Tala"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_headhunter
+msgid "Talent Acquisition"
+msgstr "Talent Acquisition"
 
 #. module: base
 #: model_terms:res.partner,website_description:base.res_partner_2
@@ -40620,6 +41835,11 @@ msgstr "Genereer taak vanuit verkooporder"
 #: model:ir.module.module,shortdesc:base.module_hr_timesheet
 msgid "Task Logs"
 msgstr "Taak logs"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_tattoo_shop
+msgid "Tattoo Shop"
+msgstr "Tattoo winkel"
 
 #. module: base
 #. odoo-python
@@ -40748,6 +41968,11 @@ msgstr "Test - Import & Export"
 #: model:ir.module.module,shortdesc:base.module_test_resource
 msgid "Test - Resource"
 msgstr "Test - Hulpbron"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_test_sale_purchase_edi_ubl
+msgid "Test - Sale & Purchase Order EDI"
+msgstr "Test - Verkoop- en inkooporder EDI"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_html_field_history
@@ -40976,7 +42201,7 @@ msgstr "Thailand  - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_th_reports
 msgid "Thailand - Accounting Reports"
-msgstr "Thailand - Boekhoudkundige rapporten"
+msgstr "Thailand - Boekhoudrapporten"
 
 #. module: base
 #. odoo-python
@@ -40997,8 +42222,8 @@ msgid ""
 "The \"editable\" attribute of list views must be \"top\" or \"bottom\", "
 "received %(value)s"
 msgstr ""
-"Het attribuut \"editable\" van de lijstweergaven moet \"top\" of \"bottom\","
-" zijn, %(value)s ontvangen"
+"Het kenmerk \"editable\" van de lijstweergaven moet \"top\" of \"bottom\", "
+"zijn, %(value)s ontvangen"
 
 #. module: base
 #. odoo-python
@@ -41355,7 +42580,7 @@ msgstr "Het uur moet tussen 0 en 23 . liggen"
 #: model:ir.model.fields,help:base.field_res_partner__user_id
 #: model:ir.model.fields,help:base.field_res_users__user_id
 msgid "The internal user in charge of this contact."
-msgstr "De interne gebruiker verantwoordelijk voor dit contract."
+msgstr "De interne gebruiker verantwoordelijk voor dit contact."
 
 #. module: base
 #: model:ir.model.constraint,message:base.constraint_ir_cron_check_strictly_positive_interval
@@ -42010,24 +43235,6 @@ msgstr ""
 "voor Hong Kong "
 
 #. module: base
-#: model:ir.module.module,description:base.module_l10n_bd
-msgid ""
-"This is the base module to manage chart of accounts and localization for the"
-" Bangladesh "
-msgstr ""
-"Dit is de basismodule om grootboekschema's alsook de lokalisatie voor "
-"Bangladesh te beheren "
-
-#. module: base
-#: model:ir.module.module,description:base.module_l10n_pk
-msgid ""
-"This is the base module to manage chart of accounts and localization for the"
-" Pakistan "
-msgstr ""
-"Dit is de basismodule om grootboekschema's en lokalisatie voor Pakistan te "
-"beheren "
-
-#. module: base
 #: model:ir.model.fields,help:base.field_ir_actions_report__attachment
 msgid ""
 "This is the filename of the attachment used to store the printing result. "
@@ -42072,6 +43279,16 @@ msgstr ""
 "mogelijk. Deze integratie stopt met werken in 2024."
 
 #. module: base
+#: model:ir.module.module,description:base.module_delivery_usps
+msgid ""
+"This is the legacy integration with USPS. Please install the new \"United "
+"States Postal Service (USPS) Shipping\" module and uninstall this one as "
+"soon as possible."
+msgstr ""
+"Dit is de oude-integratie met USPS. Installeer de nieuwe module \"United "
+"States Postal Service (USPS) Shipping\" en verwijder deze zo snel mogelijk."
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_no
 msgid ""
 "This is the module to manage the accounting chart for Norway in Odoo.\n"
@@ -42085,7 +43302,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,summary:base.module_l10n_ph
 msgid "This is the module to manage the accounting chart for The Philippines."
-msgstr "Deze module beheert het grootboekschema van de Filippijnen."
+msgstr "Deze module beheert het grootboekschema van de Filipijnen."
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_currency_form
@@ -42122,7 +43339,7 @@ msgstr "Deze module integreert betaling met WhatsApp"
 #. module: base
 #: model:ir.module.module,description:base.module_pos_avatax
 msgid "This module adds Avatax support to POS."
-msgstr "Deze module voegt Avatax-ondersteuning toe aan POS."
+msgstr "Deze module voegt Avatax-ondersteuning toe aan de Kassa."
 
 #. module: base
 #: model:ir.module.module,description:base.module_sale_management_renting
@@ -42141,13 +43358,11 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be_codabox
 msgid ""
-"This module allows Accounting Firms to connect to CodaBox\n"
-"and automatically import CODA and SODA statements for their clients in Odoo.\n"
-"The connection must be done by the Accounting Firm.\n"
+"This module allows connection to CodaBox\n"
+"and automatically imports CODA and SODA statements in Odoo.\n"
 msgstr ""
-"Dit module stelt Accountantskantoren in staat om verbinding te maken met CodaBox\n"
-"en automatisch CODA- en SODA-afschriften te importeren voor hun klanten in Odoo.\n"
-"De verbinding moet worden gemaakt door het Accountantskantoor.\n"
+"Deze module maakt verbinding met CodaBox\n"
+"en importeert automatisch CODA en SODA verklaringen in Odoo.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_account_online_payment
@@ -42269,6 +43484,17 @@ msgstr ""
 "Deze module bevat tests met betrekking tot bulk-mailing. Die\n"
 "zijn aanwezig in een aparte module om specifieke testmodellen te gebruiken die zijn gedefinieerd in\n"
 "Test mail. "
+
+#. module: base
+#: model:ir.module.module,description:base.module_test_sale_purchase_edi_ubl
+msgid ""
+"This module contains tests related to sale and purchase order edi.\n"
+"    Ensure export and import of order working properly and filling details properly from\n"
+"    order XML file."
+msgstr ""
+"Deze module bevat tests met betrekking tot verkoop- en inkooporder-edi.\n"
+"    Zorg ervoor dat de export en import van bestellingen goed werkt en dat de details goed worden ingevuld vanuit het\n"
+"    order XML-bestand.."
 
 #. module: base
 #: model:ir.module.module,description:base.module_test_spreadsheet_edition
@@ -42456,7 +43682,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,description:base.module_whatsapp_pos
 msgid "This module integrates POS with WhatsApp"
-msgstr "Deze module integreert POS met WhatsApp"
+msgstr "Deze module integreert Kassa met WhatsApp"
 
 #. module: base
 #: model:ir.module.module,description:base.module_whatsapp_sale
@@ -42668,7 +43894,7 @@ msgstr "Tijdzone"
 #: model:ir.model.fields,field_description:base.field_res_partner__tz_offset
 #: model:ir.model.fields,field_description:base.field_res_users__tz_offset
 msgid "Timezone offset"
-msgstr "Tijdzone compensatie"
+msgstr "Verschuiving tijdzone"
 
 #. module: base
 #: model:res.country,name:base.tl
@@ -42790,6 +44016,12 @@ msgstr ""
 
 #. module: base
 #. odoo-python
+#: code:addons/image.py:0
+msgid "Too large image (above %sMpx), reduce the image size."
+msgstr "Te grote afbeelding (boven %sMpx), verklein de afbeelding."
+
+#. module: base
+#. odoo-python
 #: code:addons/base/models/res_users.py:0
 msgid "Too many login failures, please wait a bit before trying again."
 msgstr "Te veel inlogfouten, wacht even voordat je het opnieuw probeert."
@@ -42814,6 +44046,11 @@ msgstr "Totaal aantal records in dit model"
 #: model:ir.module.module,shortdesc:base.module_web_tour
 msgid "Tours"
 msgstr "Rondleidingen"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_toy_store
+msgid "Toy Store"
+msgstr "Speelgoedwinkel"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_profile__traces_async
@@ -42879,7 +44116,7 @@ msgstr "Transient Model"
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.report_irmodeloverview
 msgid "Transient: False"
-msgstr "Transient: Onwaar"
+msgstr "Transient: False"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.report_irmodeloverview
@@ -42964,22 +44201,12 @@ msgstr "Tunesië - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_tn_reports
 msgid "Tunisia - Accounting Reports"
-msgstr "Tunesië - Boekhoudkundige rapporten"
+msgstr "Tunesië - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__turkey
 msgid "Turkey"
 msgstr "Turkije"
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_tr_nilvera
-msgid "Türkiye - Nilvera"
-msgstr "Turkije - Nilvera"
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_tr_nilvera_einvoice
-msgid "Türkiye - Nilvera E-Invoice"
-msgstr "Turkije - Nilvera  E-Factuur"
 
 #. module: base
 #: model:res.country,name:base.tm
@@ -43079,7 +44306,7 @@ msgstr "Soort:"
 #. module: base
 #: model:res.country,name:base.tr
 msgid "Türkiye"
-msgstr "Turkjije"
+msgstr "Turkije"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_tr
@@ -43089,7 +44316,17 @@ msgstr "Turkije - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_tr_reports
 msgid "Türkiye - Accounting Reports"
-msgstr "Turkije - Boekhoudkundige rapportages"
+msgstr "Turkije - Boekhoudrapporten"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_tr_nilvera
+msgid "Türkiye - Nilvera"
+msgstr "Turkije - Nilvera"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_tr_nilvera_einvoice
+msgid "Türkiye - Nilvera E-Invoice"
+msgstr "Turkije - Nilvera  E-Factuur"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_tr_hr_payroll
@@ -43107,16 +44344,6 @@ msgid "U - ACTIVITIES OF EXTRATERRITORIAL ORGANISATIONS AND BODIES"
 msgstr "U - ACTIVITEITEN VAN EXTRATERRITORIALE ORGANISATIES EN ORGANEN"
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_ae_hr_payroll
-msgid "U.A.E. - Payroll"
-msgstr "VAE - Loonadministratie"
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_ae_hr_payroll_account
-msgid "U.A.E. - Payroll with Accounting"
-msgstr "VAE - Loonadministratie met boekhouding"
-
-#. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__uct
 msgid "UCT"
 msgstr "UCT"
@@ -43129,7 +44356,7 @@ msgstr "Engeland"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_uk_reports
 msgid "UK - Accounting Reports"
-msgstr "UK - Boekhoudkundige rapportages"
+msgstr "UK - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_uk_reports_cis
@@ -43319,7 +44546,7 @@ msgid ""
 "\n"
 "Sorry, %(user)s doesn't have '%(operation)s' access to:"
 msgstr ""
-"Oh Oh! Het lijkt erop dat je een aantal uiterst geheime platen bent tegengekomen.\n"
+"Oh Oh! Het lijkt erop dat je een aantal uiterst geheime records bent tegengekomen.\n"
 "\n"
 "Sorry, %(user)s heeft geen '%(operation)s'-toegang tot:"
 
@@ -43462,12 +44689,22 @@ msgstr "Verenigde Arabische Emiraten - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ae_reports
 msgid "United Arab Emirates - Accounting Reports"
-msgstr "Verenigde Arabische Emiraten - Boekhoudkundige rapporten"
+msgstr "Verenigde Arabische Emiraten - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ae_corporate_tax_report
 msgid "United Arab Emirates - Corporate Tax Report"
 msgstr "Verenigde Arabische Emiraten - Verslag over vennootschapsbelasting"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_ae_hr_payroll
+msgid "United Arab Emirates - Payroll"
+msgstr "Verenigde Arabische Emiraten – Loonadministratie"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_ae_hr_payroll_account
+msgid "United Arab Emirates - Payroll with Accounting"
+msgstr "Verenigde Arabische Emiraten – Loonadministratie met boekhouding"
 
 #. module: base
 #: model:res.country,name:base.uk
@@ -43515,9 +44752,14 @@ msgid "United States - Payroll with Accounting"
 msgstr "Verenigde Staten - Salarisadministratie met boekhouding"
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_delivery_usps
+#: model:ir.module.module,shortdesc:base.module_delivery_usps_rest
 msgid "United States Postal Service (USPS) Shipping"
 msgstr "Verenigde State Post Dienst (USPS) verzending"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_delivery_usps
+msgid "United States Postal Service (USPS) Shipping (Legacy)"
+msgstr "Verzending via United States Postal Service (USPS) (oud)"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_uom
@@ -44238,7 +45480,7 @@ msgstr "Vietnam - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_vn_reports
 msgid "Vietnam - Accounting Reports"
-msgstr "Vietnam - Boekhoudkundige rapporten"
+msgstr "Vietnam - Boekhoudrapporten"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_vn_edi_viettel
@@ -44737,6 +45979,11 @@ msgid "Website profile"
 msgstr "Website profiel"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_wedding_planner
+msgid "Wedding Planner"
+msgstr "Bruiloft Planner"
+
+#. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_lang__week_start__3
 msgid "Wednesday"
 msgstr "Woensdag"
@@ -44745,6 +45992,11 @@ msgstr "Woensdag"
 #: model:ir.model.fields.selection,name:base.selection__ir_cron__interval_type__weeks
 msgid "Weeks"
 msgstr "Weken"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_wellness_practitioner
+msgid "Wellness Practitioner"
+msgstr "Wellness Beoefenaar"
 
 #. module: base
 #: model:res.country,name:base.eh
@@ -44791,7 +46043,7 @@ msgstr "WhatsApp-bezorging"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_whatsapp_pos
 msgid "WhatsApp-POS"
-msgstr "WhatsApp-POS"
+msgstr "WhatsApp-Kassa"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_whatsapp_sale
@@ -45114,7 +46366,7 @@ msgstr "Yen"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_actions_server__update_boolean_value__true
 msgid "Yes (True)"
-msgstr "Ja (waar)"
+msgstr "Ja (True)"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.demo_force_install_form
@@ -45150,8 +46402,7 @@ msgstr ""
 msgid ""
 "You are not allowed to delete '%(document_kind)s' (%(document_model)s) "
 "records."
-msgstr ""
-"Je mag niet '%(document_kind)s' (%(document_model)s) records verwijderen."
+msgstr "Je mag '%(document_kind)s' (%(document_model)s) niet verwijderen."
 
 #. module: base
 #. odoo-python
@@ -45159,8 +46410,7 @@ msgstr ""
 msgid ""
 "You are not allowed to modify '%(document_kind)s' (%(document_model)s) "
 "records."
-msgstr ""
-"Je mag niet '%(document_kind)s' (%(document_model)s) records bewerken."
+msgstr "Je mag '%(document_kind)s' (%(document_model)s) niet bewerken."
 
 #. module: base
 #. odoo-python
@@ -45547,7 +46797,7 @@ msgstr ""
 #: model_terms:res.company,sign_terms:base.main_company
 #: model_terms:res.company,sign_terms_html:base.main_company
 msgid "Your conditions..."
-msgstr "je condities..."
+msgstr "Jouw condities..."
 
 #. module: base
 #: model_terms:res.company,lunch_notify_message:base.main_company
@@ -45596,7 +46846,7 @@ msgstr "Zambia - Boekhouding"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_zm_reports
 msgid "Zambia - Accounting Reports"
-msgstr "Zambia - Boekhoudkundige rapporten"
+msgstr "Zambia - Boekhoudrapporten"
 
 #. module: base
 #: model:res.currency,currency_unit_label:base.ZIG
@@ -45916,6 +47166,11 @@ msgid "eCommerce on appointments"
 msgstr "eCommerce op afspraken"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_website_sale_gelato
+msgid "eCommerce/Gelato bridge"
+msgstr "eCommerce/Gelato brug"
+
+#. module: base
 #: model:ir.module.category,name:base.module_category_website_elearning
 #: model:ir.module.module,shortdesc:base.module_website_slides
 msgid "eLearning"
@@ -46145,7 +47400,7 @@ msgstr "berekening winstbaarheid items project"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_model_fields__ttype__properties
 msgid "properties"
-msgstr "vastgoed"
+msgstr "kenmerken"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_model_fields__ttype__properties_definition
@@ -46189,6 +47444,11 @@ msgstr "selection_value"
 #: model:ir.module.category,name:base.module_category_services_sales_subscriptions
 msgid "subscriptions"
 msgstr "abonnementen"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_tests
+msgid "test"
+msgstr "test"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_data_module_install

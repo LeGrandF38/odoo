@@ -9,12 +9,9 @@ class AccountMove(models.Model):
     _name = 'account.move'
     _inherit = ['account.move', 'utm.mixin']
 
-    @api.model
-    def _get_invoice_default_sale_team(self):
-        return self.env['crm.team']._get_default_team_id()
 
     team_id = fields.Many2one(
-        'crm.team', string='Sales Team', default=_get_invoice_default_sale_team,
+        'crm.team', string='Sales Team',
         compute='_compute_team_id', store=True, readonly=False,
         ondelete="set null", tracking=True,
         domain="['|', ('company_id', '=', False), ('company_id', '=', company_id)]")
@@ -39,7 +36,7 @@ class AccountMove(models.Model):
             sale_moves,
             key=lambda m: (m.invoice_user_id.id, m.company_id.id)
         ):
-            self.concat(*moves).team_id = self.env['crm.team'].with_context(
+            self.env['account.move'].concat(*moves).team_id = self.env['crm.team'].with_context(
                 allowed_company_ids=[company_id],
             )._get_default_team_id(
                 user_id=user_id,
@@ -156,7 +153,9 @@ class AccountMove(models.Model):
         """
         order_amount = 0
         for invoice in self:
-            prices = sum(invoice.line_ids.filtered(lambda x: order in x.sale_line_ids.order_id).mapped('price_total'))
+            prices = sum(invoice.line_ids.filtered(
+                lambda x: x.display_type not in ('line_note', 'line_section') and order in x.sale_line_ids.order_id
+            ).mapped('price_total'))
             order_amount += invoice.currency_id._convert(
                 prices * -invoice.direction_sign,
                 order.currency_id,

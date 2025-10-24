@@ -242,8 +242,19 @@ export class WebsiteSnippetsMenu extends weSnippetEditor.SnippetsMenu {
         // TODO remove in master and adapt XML.
         const contentAdditionEl = html.querySelector("#so_content_addition");
         if (contentAdditionEl) {
-            // Allows dropping "inner blocks" next to an image link.
-            contentAdditionEl.dataset.dropNear += ", div:not(.o_grid_item_image) > a:has(img)";
+            // Necessary to be able to drop "inner blocks" next to an image link.
+            contentAdditionEl.dataset.dropNear += ", div:not(.o_grid_item_image) > a";
+            // TODO remove in master
+            // The class is added again here even though it has already been
+            // added by the "searchbar_input_snippet_options" template. We are
+            // doing it again because it was mistakenly translated into Dutch.
+            contentAdditionEl.dataset.selector += ", .s_searchbar_input";
+            contentAdditionEl.dataset.dropNear += ", .s_searchbar_input";
+        }
+        // TODO remove in master
+        const snippetSaveOptionEl = html.querySelector("[data-js='SnippetSave']")[0];
+        if (snippetSaveOptionEl) {
+            snippetSaveOptionEl.dataset.selector += ", .s_searchbar_input";
         }
 
         const toFind = $html.find("we-fontfamilypicker[data-variable]").toArray();
@@ -260,6 +271,23 @@ export class WebsiteSnippetsMenu extends weSnippetEditor.SnippetsMenu {
         if (containerWidthOptionEl) {
             containerWidthOptionEl.dataset.selector += ", .s_carousel .carousel-item";
         }
+
+        // TODO remove in master: add s_progress_bar_text in progress bar where it's missing, fix the previous wrong width
+        const progressBarEls = html.querySelectorAll(".progress-bar");
+        progressBarEls.forEach((el) => {
+            if (el.style.width === "45%") {
+                el.style.width = "25%";
+            }
+            if (!el.querySelector(".s_progress_bar_text")) {
+                const textEl = document.createElement("span");
+                textEl.classList.add("s_progress_bar_text", "small");
+                textEl.textContent = el.style.width;
+                if (el.closest(".s_progress_bar_label_hidden")) {
+                    textEl.classList.add("d-none");
+                }
+                el.appendChild(textEl);
+            }
+        });
 
         return super._computeSnippetTemplates(html);
     }
@@ -314,8 +342,7 @@ export class WebsiteSnippetsMenu extends weSnippetEditor.SnippetsMenu {
                 onMounted(() => this.props.onMounted(this.modalRef));
             }
             onClickSave() {
-                this.props.confirm(this.modalRef, this.state.apiKey);
-                this.props.close();
+                this.props.confirm(this.modalRef, this.state.apiKey, this.props.close);
             }
         };
 
@@ -327,7 +354,7 @@ export class WebsiteSnippetsMenu extends weSnippetEditor.SnippetsMenu {
                         applyError.call($(modalRef.el), apiKeyValidation.message);
                     }
                 },
-                confirm: async (modalRef, valueAPIKey) => {
+                confirm: async (modalRef, valueAPIKey, close = undefined) => {
                     if (!valueAPIKey) {
                         applyError.call($(modalRef.el), _t("Enter an API Key"));
                         return;
@@ -338,7 +365,11 @@ export class WebsiteSnippetsMenu extends weSnippetEditor.SnippetsMenu {
                     if (res.isValid) {
                         await this.orm.write("website", [websiteId], {google_maps_api_key: valueAPIKey});
                         invalidated = true;
-                        return true;
+                        if (close) {
+                            close();
+                        } else {
+                            resolve(true);
+                        }
                     } else {
                         applyError.call($(modalRef.el), res.message);
                     }
@@ -529,6 +560,19 @@ export class WebsiteSnippetsMenu extends weSnippetEditor.SnippetsMenu {
             selectedTextEl.classList.add(...optionClassList);
             let $snippet = null;
             try {
+                const commonAncestor = range.commonAncestorContainer;
+                const ancestorElement =
+                    commonAncestor.nodeType === 1 ? commonAncestor : commonAncestor.parentElement;
+                const backgroundColorParentEl = ancestorElement.closest(
+                    'font[style*="background-color"], font[style*="background-image"], font[class^="bg-"]'
+                );
+                if (backgroundColorParentEl?.textContent === commonAncestor.textContent) {
+                    // As long as we handle the same text content, we extend the
+                    // existing range to the `<font/>` boundaries to keep the
+                    // background color applied correctly.
+                    range.setStartBefore(backgroundColorParentEl);
+                    range.setEndAfter(backgroundColorParentEl);
+                }
                 range.surroundContents(selectedTextEl);
                 $snippet = $(selectedTextEl);
             } catch {

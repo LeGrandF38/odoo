@@ -12,6 +12,7 @@ registerBackendAndFrontendTour("question", {
     tooltipPosition: "left",
     content: _t("Create a new post in this forum by clicking on the button."),
     run: "click",
+    expectUnloadPage: true,
 }, {
     trigger: "input[name=post_name]",
     tooltipPosition: "top",
@@ -19,7 +20,6 @@ registerBackendAndFrontendTour("question", {
     run: "edit Test",
 },
 {
-    isActive: ["auto"],
     trigger: `input[name=post_name]:not(:empty)`,
 },
 {
@@ -29,7 +29,6 @@ registerBackendAndFrontendTour("question", {
     run: "editor Test",
 },
 {
-    isActive: ["auto"],
     trigger: `.note-editable p:not(:contains(/^<br>$/))`,
 },
 {
@@ -43,7 +42,6 @@ registerBackendAndFrontendTour("question", {
     run: "edit Test",
 },
 {
-    isActive: ["auto"],
     trigger: `.o_popover input.o_select_menu_sticky:not(:contains(Please enter 2 or more characters))`,
 },
 {
@@ -61,6 +59,7 @@ registerBackendAndFrontendTour("question", {
     content: _t("Click to post your question."),
     tooltipPosition: "bottom",
     run: "click",
+    expectUnloadPage: true,
 },
 {
     trigger: ".o_wforum_content_wrapper h3:contains(test)",
@@ -83,7 +82,6 @@ registerBackendAndFrontendTour("question", {
     run: "editor Test",
 },
 {
-    isActive: ["auto"],
     trigger: `.note-editable p:not(:contains(/^<br>$/))`,
 },
 {
@@ -91,6 +89,7 @@ registerBackendAndFrontendTour("question", {
     content: _t("Click to post your answer."),
     tooltipPosition: "bottom",
     run: "click",
+    expectUnloadPage: true,
 }, 
 {
     trigger: ".o_wforum_content_wrapper h3:contains(test)",
@@ -105,7 +104,6 @@ registerBackendAndFrontendTour("question", {
     tooltipPosition: "right",
     run: "click",
 }, {
-    isActive: ["auto"],
     content: "Check edit button is there",
     trigger: "a:contains('Edit your answer')",
 }]);

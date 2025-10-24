@@ -4,15 +4,15 @@
 # 
 # Translators:
 # Wil Odoo, 2024
-# Fernanda Alvarez, 2024
+# Fernanda Alvarez, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-19 09:52+0000\n"
+"POT-Creation-Date: 2025-01-27 13:03+0000\n"
 "PO-Revision-Date: 2024-09-25 09:41+0000\n"
-"Last-Translator: Fernanda Alvarez, 2024\n"
+"Last-Translator: Fernanda Alvarez, 2025\n"
 "Language-Team: Spanish (Latin America) (https://app.transifex.com/odoo/teams/41243/es_419/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -131,12 +131,6 @@ msgstr "En línea"
 
 #. module: bus
 #. odoo-javascript
-#: code:addons/bus/static/src/components/bus_connection_alert.xml:0
-msgid "Real-time connection lost..."
-msgstr "Se perdió la conexión en tiempo real..."
-
-#. module: bus
-#. odoo-javascript
 #: code:addons/bus/static/src/outdated_page_watcher_service.js:0
 #: code:addons/bus/static/src/services/assets_watchdog_service.js:0
 #: code:addons/bus/static/src/services/bus_service.js:0
@@ -151,8 +145,8 @@ msgid ""
 "Save your work and refresh to get the latest updates and avoid potential "
 "issues."
 msgstr ""
-"Guarde su trabajo y actualice para obtener las actualizaciones más recientes"
-" y evitar que ocurran problemas. "
+"Guarda tu trabajo y actualiza la página para obtener las actualizaciones más"
+" recientes y evitar que ocurran problemas."
 
 #. module: bus
 #. odoo-javascript
@@ -195,9 +189,9 @@ msgid ""
 " users it is important to change it immediately for security reasons. I will"
 " keep nagging you about it!"
 msgstr ""
-"Está usando la contraseña predeterminada (admin). Si se expone este sistema "
-"a usuarios no confiables, es importante que la cambie inmediatamente por "
-"motivos de seguridad. Seguiré advirtiéndole al respecto."
+"Estás usando la contraseña predeterminada (admin). Por motivos de seguridad,"
+" es importante que la cambies de inmediato si hay usuarios que no deben "
+"tener acceso al sistema."
 
 #. module: bus
 #: model:ir.model,name:bus.model_ir_websocket

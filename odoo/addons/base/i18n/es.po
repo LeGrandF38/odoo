@@ -1,28 +1,33 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* base
-# 
+# * base
+#
 # Translators:
-# Fernanda Alvarez, 2024
 # Martin Trigaux, 2024
 # Iran Villalobos López, 2024
 # Braulio D. López Vázquez <bdl@odoo.com>, 2024
-# Wil Odoo, 2024
+# Fernanda Alvarez, 2025
+# Wil Odoo, 2025
+# Pedro M. Baeza <pedro.baeza@tecnativa.com>, 2025
 # Larissa Manderfeld, 2025
-# 
+# "Larissa Manderfeld (lman)" <lman@odoo.com>, 2025.
+# "Noemi Pla Garcia (nopl)" <nopl@odoo.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-19 13:06+0000\n"
-"PO-Revision-Date: 2024-09-25 09:41+0000\n"
-"Last-Translator: Larissa Manderfeld, 2025\n"
-"Language-Team: Spanish (https://app.transifex.com/odoo/teams/41243/es/)\n"
+"POT-Creation-Date: 2025-05-13 15:13+0000\n"
+"PO-Revision-Date: 2025-10-17 13:33+0000\n"
+"Last-Translator: \"Noemi Pla Garcia (nopl)\" <nopl@odoo.com>\n"
+"Language-Team: Spanish <https://translate.odoo.com/projects/odoo-18/base/es/>"
+"\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: es\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=(n == 1) ? 0 : ((n != 0 && n % 1000000 == 0)"
+" ? 1 : 2);\n"
+"X-Generator: Weblate 5.12.2\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_at_reports
@@ -423,7 +428,8 @@ msgstr ""
 "===========================================\n"
 "\n"
 "Catálogo de Cuentas e Impuestos para República Dominicana, Compatible para\n"
-"**Internacionalización** con **NIIF** y alineado a las normas y regulaciones\n"
+"**Internacionalización** con **NIIF** y alineado a las normas y "
+"regulaciones\n"
 "de la Dirección General de Impuestos Internos (**DGII**).\n"
 "\n"
 "**Este módulo consiste de:**\n"
@@ -448,20 +454,23 @@ msgstr ""
 "        - Gubernamentales\n"
 "- Posiciones Fiscales para automatización de impuestos y retenciones\n"
 "        - Cambios de Impuestos a Exenciones (Ej. Ventas al Estado)\n"
-"        - Cambios de Impuestos a Retenciones (Ej. Compra Servicios al Exterior)\n"
+"        - Cambios de Impuestos a Retenciones (Ej. Compra Servicios al "
+"Exterior)\n"
 "        - Entre otros\n"
 "\n"
 "**Nota:**\n"
-"Esta localización, aunque posee las secuencias para NCF, las mismas no pueden\n"
+"Esta localización, aunque posee las secuencias para NCF, las mismas no "
+"pueden\n"
 "ser utilizadas sin la instalación de módulos de terceros o desarrollo\n"
 "adicional.\n"
 "\n"
 "Estructura de Codificación del Catálogo de Cuentas:\n"
 "===================================================\n"
 "\n"
-"**Un dígito** representa la categoría/tipo de cuenta del del estado financiero.\n"
+"**Un dígito** representa la categoría/tipo de cuenta del del estado "
+"financiero.\n"
 "**1** - Activo        **4** - Cuentas de Ingresos y Ganancias\n"
-"**2** - Pasivo        **5** - Costos, Gastos y Pérdidas\n"
+"**2** - Pasivo        **5** - Costes, Gastos y Pérdidas\n"
 "**3** - Capital       **6** - Cuentas Liquidadoras de Resultados\n"
 "\n"
 "**Dos dígitos** representan los rubros de agrupación:\n"
@@ -469,7 +478,8 @@ msgstr ""
 "21- Pasivo Corriente\n"
 "31- Capital Contable\n"
 "\n"
-"**Cuatro dígitos** se asignan a las cuentas de mayor: cuentas de primer orden\n"
+"**Cuatro dígitos** se asignan a las cuentas de mayor: cuentas de primer "
+"orden\n"
 "1101- Efectivo y Equivalentes de Efectivo\n"
 "2101- Cuentas y Documentos por pagar\n"
 "3101- Capital Social\n"
@@ -620,6 +630,17 @@ msgstr ""
 "Usa las impresoras Epson como impresoras de pedidos en el punto de venta sin la caja IoT\n"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_l10n_eg_edi_eta
+msgid ""
+"\n"
+"            Egypt Tax Authority Invoice Integration\n"
+"        "
+msgstr ""
+"\n"
+"            Integración con la facturación de la Autoridad Tributaria de Egipto\n"
+"        "
+
+#. module: base
 #: model:ir.module.module,summary:base.module_l10n_ke_edi_oscu
 msgid ""
 "\n"
@@ -650,6 +671,17 @@ msgid ""
 msgstr ""
 "\n"
 "        Un componente de editor HTML y sistema de complementos\n"
+"    "
+
+#. module: base
+#: model:ir.module.module,summary:base.module_l10n_sa_edi
+msgid ""
+"\n"
+"        E-Invoicing, Universal Business Language\n"
+"    "
+msgstr ""
+"\n"
+"        Facturación electrónica, Universal Business Language\n"
 "    "
 
 #. module: base
@@ -1211,19 +1243,6 @@ msgstr ""
 "========================================\n"
 
 #. module: base
-#: model:ir.module.module,description:base.module_l10n_sa_hr_payroll_account
-msgid ""
-"\n"
-"Accounting Data for KSA Payroll Rules.\n"
-"=======================================================\n"
-"\n"
-msgstr ""
-"\n"
-"Información de contabilidad para las reglas de nómina en el Reino de Arabia Saudita.\n"
-"=======================================================\n"
-"\n"
-
-#. module: base
 #: model:ir.module.module,description:base.module_l10n_ke_hr_payroll_account
 msgid ""
 "\n"
@@ -1255,6 +1274,17 @@ msgstr ""
 "\n"
 "Datos de contabilidad para las reglas de nómina en Luxemburgo.\n"
 "============================================\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_my_hr_payroll_account
+msgid ""
+"\n"
+"Accounting Data for Malaysian Payroll Rules\n"
+"===========================================\n"
+msgstr ""
+"\n"
+"Datos contables para reglas de nómina de Malasia\n"
+"==========================================\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_mx_hr_payroll_account
@@ -1323,6 +1353,19 @@ msgstr ""
 "=========================================\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_sa_hr_payroll_account
+msgid ""
+"\n"
+"Accounting Data for Saudi Arabia Payroll Rules.\n"
+"=======================================================\n"
+"\n"
+msgstr ""
+"\n"
+"Datos contables para las reglas de nómina en Arabia Saudita.\n"
+"=======================================================\n"
+"\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_sk_hr_payroll_account
 msgid ""
 "\n"
@@ -1335,6 +1378,7 @@ msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_ch_hr_payroll_account
+#: model:ir.module.module,description:base.module_l10n_ch_hr_payroll_elm_transmission_account
 msgid ""
 "\n"
 "Accounting Data for Switzerland Payroll Rules\n"
@@ -1433,6 +1477,15 @@ msgstr ""
 "Informes contables para Nigeria\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_pk_reports
+msgid ""
+"\n"
+"Accounting Reports for Pakistan (Profit and Loss report and Balance Sheet)\n"
+msgstr ""
+"\n"
+"Informes contables para Pakistán (balance de situación y la cuenta de pérdidas y ganancias)\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_hu
 msgid ""
 "\n"
@@ -1457,9 +1510,13 @@ msgstr ""
 msgid ""
 "\n"
 "Accounting reports for Bangladesh\n"
+"============================================\n"
+"- Corporate tax report\n"
 msgstr ""
 "\n"
 "Informes contables para Bangladés\n"
+"============================================\n"
+"- Informe de impuestos sobre sociedades\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be_reports
@@ -1766,15 +1823,6 @@ msgstr ""
 "=================================\n"
 
 #. module: base
-#: model:ir.module.module,description:base.module_l10n_pk_reports
-msgid ""
-"\n"
-"Accounting reports for Pakistan\n"
-msgstr ""
-"\n"
-"Informes contables para Pakistán\n"
-
-#. module: base
 #: model:ir.module.module,description:base.module_l10n_pl_reports
 msgid ""
 "\n"
@@ -1981,7 +2029,7 @@ msgstr ""
 "\n"
 "Informes contables para Zambia\n"
 "================================\n"
-"    - Informes financieros (balance de situación, estado de resultados y informe fiscal)\n"
+"    - Informes financieros (balance de situación, estado de resultados e informe fiscal)\n"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_l10n_ph_reports
@@ -2265,6 +2313,15 @@ msgstr ""
 "Añada la capacidad de gestionar currículums y cartas desde la aplicación Documentos.\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_it_xml_export
+msgid ""
+"\n"
+"Additional module to allow the export of the Italian monthly tax report to XML format.\n"
+msgstr ""
+"\n"
+"Módulo adicional para permitir la exportación en tiempo real del informe de impuestos mensual italiano en formato XML.\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_it_edi_ndd
 msgid ""
 "\n"
@@ -2363,6 +2420,16 @@ msgstr ""
 "Añade la posibilidad de configurar plantillas del espacio del trabajo en productos.\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_be_intrastat_services
+#: model:ir.module.module,description:base.module_l10n_fr_intrastat_services
+msgid ""
+"\n"
+"Adds the support for services intrastat codes.\n"
+msgstr ""
+"\n"
+"Añade soporte para los servicios de códigos Intrastat.\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_quality_mrp
 msgid ""
 "\n"
@@ -2405,6 +2472,33 @@ msgstr ""
 "\n"
 "* Pagar rápido, solo tendrá que escanear o deslizar la tarjeta de débito o crédito. También podrá escanear un código QR mientras está en la pantalla de pago\n"
 "* Tarjetas compatibles: Visa, MasterCard, Rupay, UPI\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_pos_pine_labs
+msgid ""
+"\n"
+"Allow Pine Labs POS payments\n"
+"==============================\n"
+"\n"
+"This module is available only for companies that use INR currency.\n"
+"It enables customers to pay for their orders using debit/credit cards and UPI through Pine Labs POS terminals.\n"
+"A Pine Labs merchant account is required to process transactions.\n"
+"Features include:\n"
+"\n"
+"* Quick payments by swiping, scanning, or tapping your credit/debit card or UPI QR code at the payment terminal.\n"
+"* Supported cards: Visa, MasterCard, RuPay.\n"
+msgstr ""
+"\n"
+"Permita pagos con el TPV de Pine Labs\n"
+"==============================\n"
+"\n"
+"Este módulo solo está disponible para empresas que usan la moneda INR.\n"
+"Con este módulo, los clientes podrán pagar sus pedidos usando tarjetas de débito o crédito y la UPI a través de los terminales de pago de Pine Labs POS.\n"
+"Se necesita una cuenta de comerciante de Pine Labs para poder procesar las transacciones.\n"
+"Las funciones incluyen:\n"
+"\n"
+"* Pagos rápidos al deslizar, escanear o tocar la tarjeta de débito o crédito y el código QR UPI en el terminal de pago.\n"
+"* Tarjetas compatibles: Visa, MasterCard, RuPay.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_pos_razorpay
@@ -2523,7 +2617,10 @@ msgid ""
 "Allow website visitors to chat with the collaborators. This module also brings a feedback tool for the livechat and web pages to display your channel with its ratings on the website.\n"
 msgstr ""
 "\n"
-"Permita que los visitantes del sitio web chateen con los colaboradores. Este módulo también incluye una herramienta de retroalimentación para el chat en vivo y las páginas web para que su canal muestre sus calificaciones en el sitio web.\n"
+"Permita que los visitantes del sitio web chateen con los colaboradores. Este "
+"módulo también incluye una herramienta de comentarios para el chat en "
+"directo y las páginas web para que su canal muestre sus calificaciones en el "
+"sitio web.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_sale_mass_mailing
@@ -2761,9 +2858,12 @@ msgstr ""
 "\n"
 "* Informe de estructura de costes\n"
 "\n"
-"Además, permite calcular el coste del producto en función de su LdM con los costos de sus componentes y las operaciones del centro de trabajo.\n"
-"Añade un botón en el producto, pero también una acción en la vista de lista de los productos.\n"
-"Si la valuación automatizada del inventario está activa, se crearán los asientos contables necesarios.\n"
+"Además, permite calcular el coste del producto en función de su LdM con los "
+"costes de sus componentes y las operaciones del centro de trabajo.\n"
+"Añade un botón en el producto, pero también una acción en la vista de lista "
+"de los productos.\n"
+"Si la valuación automatizada del inventario está activa, se crearán los "
+"asientos contables necesarios.\n"
 "\n"
 
 #. module: base
@@ -2908,28 +3008,36 @@ msgid ""
 "The report uses tax tags ``Service`` and ``Tax Withheld`` in order to find adequate journal items. These are set using the fiscal positions, and the right type of product (Services).\n"
 msgstr ""
 "\n"
-"Módulo contables para Australia\n"
+"Módulo contable para Australia\n"
 "============================\n"
 "\n"
-"Informes anuales de pagos imponibles (TPAR) para Australia\n"
+"Informes anuales de pagos sujetos a impuestos (TPAR) para Australia\n"
 "\n"
-"El informe anual de pagos imponibles (TPAR) permite:\n"
+"El informe anual de pagos sujetos a impuestos (TPAR) permite:\n"
 "\n"
-"    • Pagos hechos a contratistas (o subcontratistas) por servicios, o\n"
+"    • Pagos realizados a contratistas (o subcontratistas) por servicios, o\n"
 "    • Subvenciones pagadas por entidades gubernamentales a titulares de ABN\n"
 "\n"
-"para que informan cuando sea necesario bajo el Sistema de Información de Pagos Gravables (TPRS) y la medida de informe de Subvenciones y Pagos del Gobierno Gravable.\n"
+"para informar cuando sea necesario, según el Sistema de Información de Pagos "
+"Gravables (TPRS) y la medida de informe de Subvenciones y Pagos del Gobierno "
+"Gravables.\n"
 "\n"
 "El TPAR vence el 28 de agosto de cada año.\n"
 "\n"
 "Se pueden aplicar sanciones si no presenta su TPAR a tiempo.\n"
 "\n"
-"Para obtener más información sobre quién debe presentar un informe anual de pagos sujetos a impuestos, consulte\n"
+"Para obtener más información sobre quién debe presentar un informe anual de "
+"pagos sujetos a impuestos, consulte\n"
 "https://softwaredevelopers.ato.gov.au/tprs\n"
 "\n"
-"El informe anual debe entregarse al Comisionado a más tardar el 28 de agosto después del final del ejercicio financiero. Los informes se pueden enviar con más frecuencia para aquellos que lo deseen.\n"
+"El informe anual debe presentarse al Comisionado a más tardar el 28 de "
+"agosto después del final del ejercicio financiero. Si se desea, también se "
+"pueden enviar informes con mayor frecuencia.\n"
 "\n"
-"El informe utiliza etiquetas de impuestos `` Servicio '' e `` Impuestos retenidos '' para encontrar elementos de diario adecuados. Estos se establecen utilizando las posiciones fiscales y el tipo correcto de producto (Servicios).\n"
+"El informe utiliza las etiquetas fiscales `` Servicio '' e `` Impuesto "
+"retenido '' para localizar los asientos contables correspondientes. Estas se "
+"configuran mediante las posiciones fiscales y el tipo de producto adecuado "
+"(Servicios).\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_au_hr_payroll
@@ -3070,7 +3178,8 @@ msgid ""
 "Avoid auto-enabling the documents feature on fsm projects.\n"
 msgstr ""
 "\n"
-"Evite activar automáticamente la función de documentos en los proyectos de servicio externo\n"
+"Evite activar automáticamente la función de documentos en los proyectos de "
+"servicio de campo\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_bd_hr_payroll
@@ -3078,12 +3187,16 @@ msgid ""
 "\n"
 "Bangladesh Payroll Rules.\n"
 "=========================\n"
-"\n"
+"- Salary rules calculation\n"
+"- Income tax credits handling\n"
+"- Introduced the income tax slabs calculations\n"
 msgstr ""
 "\n"
-"Reglas de nómina para Bangladés.\n"
+"Reglas de nómina de Bangladés.\n"
 "=========================\n"
-"\n"
+"- Cálculo de reglas salariales\n"
+"- Gestión de créditos por impuestos sobre la renta\n"
+"- Añadimos los cálculos de las tablas de impuestos sobre la renta\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_et
@@ -3263,7 +3376,7 @@ msgstr ""
 "configurar Odoo y poder usar AvaTax de forma correcta, así como para poder enviar la información\n"
 "fiscal necesaria para obtener los impuestos correctos.\n"
 "\n"
-"AvaTax para órdenes de venta en Brasil (l10n_br_avatax_sale)\n"
+"AvaTax para pedidos de venta en Brasil (l10n_br_avatax_sale)\n"
 "----------------------------------------------\n"
 "La información es la misma que la del módulo l10n_br_avatax pero añadimos el módulo de pedidos de venta.\n"
 "\n"
@@ -3486,6 +3599,19 @@ msgstr ""
 "Proporciona facturación electrónica para Brasil mediante AvaTax.\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_br_edi_pos
+msgid ""
+"\n"
+"Brazilian Accounting EDI for POS\n"
+"================================\n"
+"Provides electronic invoicing for Brazil through Avatax in the POS.\n"
+msgstr ""
+"\n"
+"EDI de contabilidad de Brasil para el TPV\n"
+"================================\n"
+"Ofrece facturación electrónica para Brasil a través de Avatax en el Punto de venta.\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_br_edi_sale
 msgid ""
 "\n"
@@ -3512,13 +3638,26 @@ msgstr ""
 "Permite el cálculo de impuestos y EDI para los usuarios de comercio electrónico.\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_br_edi_stock
+msgid ""
+"\n"
+"Brazilian Accounting EDI for stock\n"
+"==================================\n"
+"Adds delivery-related information to the NF-e.\n"
+msgstr ""
+"\n"
+"EDI para la contabilidad brasileña para Inventario\n"
+"===================================\n"
+"Añade información relacionada con la entrega a la NF-e.\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_hr_livechat
 msgid ""
 "\n"
 "Bridge between HR and Livechat."
 msgstr ""
 "\n"
-"        Enlace entre los módulos RR. HH. y Chat en vivo."
+"        Enlace entre los módulos RR. HH. y Chat en directo."
 
 #. module: base
 #: model:ir.module.module,description:base.module_hr_maintenance
@@ -4081,7 +4220,7 @@ msgid ""
 "Convert helpdesk tickets to field service tasks.\n"
 msgstr ""
 "\n"
-"Convierta tickets del servicio de asistencia en tareas de servicio externo.\n"
+"Convierta tickets del servicio de asistencia en tareas de servicio de campo.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_product_unspsc
@@ -4499,7 +4638,7 @@ msgstr ""
 "También usamos una secuencia separada para el DDT, ya que el número\n"
 "no puede tener separaciones y solo se debe aplicar cuando se envíen los bienes.\n"
 "\n"
-"Cuando las facturas están relacionadas a su orden de venta y la orden de venta está relacionada \n"
+"Cuando las facturas están relacionadas a su pedido de venta y el pedido de venta está relacionado \n"
 "a la entrega, el sistema calculará los DDT automáticamente para cada \n"
 "línea de factura para exportarlo al XML de FatturaPA.\n"
 
@@ -4601,6 +4740,24 @@ msgstr ""
 "Además, marca la factura como “entregada” en el estado de pago.\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_ro_edi_stock_batch
+msgid ""
+"\n"
+"E-Transport implementation for Batch Pickings in Romania\n"
+msgstr ""
+"\n"
+"Implementación de e-Transport para los pickings por lote de Rumania\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_ro_edi_stock
+msgid ""
+"\n"
+"E-Transport implementation for Romania\n"
+msgstr ""
+"\n"
+"Implementación de e-Transport para Rumania\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_it_edi
 msgid ""
 "\n"
@@ -4619,6 +4776,24 @@ msgstr ""
 "Implementación de factura electrónica para Rumania\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_sa_edi
+msgid ""
+"\n"
+"E-invoice implementation for Saudi Arabia; Integration with ZATCA\n"
+msgstr ""
+"\n"
+"Implementación de la factura electrónica para Arabia Saudita con ZATCA\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_sa_edi_pos
+msgid ""
+"\n"
+"E-invoice implementation for Saudi Arabia; Integration with ZATCA (POS)\n"
+msgstr ""
+"\n"
+"Implementación de la factura electrónica para Arabia Saudita con ZATCA (TPV)\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_dk_oioubl
 msgid ""
 "\n"
@@ -4628,22 +4803,23 @@ msgstr ""
 "Implementación de factura electrónica para Dinamarca\n"
 
 #. module: base
-#: model:ir.module.module,description:base.module_l10n_sa_edi
+#: model:ir.module.module,description:base.module_l10n_id_efaktur_coretax
 msgid ""
 "\n"
-"E-invoice implementation for the Kingdom of Saudi Arabia\n"
+"E-invoicing feature provided by DJP (Indonesian Tax Office). As of January 1st 2025,\n"
+"Indonesia is using CoreTax system, which changes the file format and content of E-Faktur.\n"
+"We're changing from CSV files into XML.\n"
+"At the same time, due to tax regulation changes back and forth, for general E-Faktur now,\n"
+"TaxBase (DPP) has to be mulitplied by factor of 11/12 while multiplied to tax of 12% which\n"
+"is resulting to 11%.\n"
 msgstr ""
 "\n"
-"Implementación de factura electrónica para el Reino de Arabia Saudita\n"
-
-#. module: base
-#: model:ir.module.module,description:base.module_l10n_sa_edi_pos
-msgid ""
-"\n"
-"E-invoice implementation for the Kingdom of Saudi Arabia (PoS)\n"
-msgstr ""
-"\n"
-"Implementación de la factura electrónica para Arabia Saudita (TPV)\n"
+"Función de facturación electrónica con DJP (oficina fiscal de Indonesia) A partir del 1 de enero de 2025,\n"
+"se usa el sistema CoreTax en Indonesia. Este sistema cambia el formato del archivo y el contenido de E-Faktur.\n"
+"Cambiamos los archivos CSV a XML.\n"
+"Al mismo tiempo, debido a que las normas fiscales están en constante cambio para E-Faktur en general,\n"
+"TaxBase (DPP) debe multiplicarse por un factor de 11/12 mientras se multiplica por el impuesto del 12 % que\n"
+"resulta en un 11 %.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_hr_skills_slides
@@ -4885,7 +5061,7 @@ msgstr ""
 "IVA para One Stop Shop (OSS) en UE\n"
 "==========================\n"
 "\n"
-"A partir del 1 de julio, 2021, los negocios de la UE que venden bienes dentro de la UE cuyo coste es mayor que 10.000 EUR y cuando el comprador está ubicado en otro estado miembro de la UE deben registrarse y pagar el IVA dentro del estado miembro en el que viva el comprador.\n"
+"A partir del 1 de julio, 2021, los negocios de la UE que venden bienes dentro de la UE cuyo coste es mayor que 10.000 EUR y cuando el comprador está situado en otro estado miembro de la UE deben registrarse y pagar el IVA dentro del estado miembro en el que viva el comprador.\n"
 "Bajo esta medida que cubra a toda la UE, puede continuar aplicando las reglas locales para el IVA en sus ventas transfronterizas. Para simplificar la aplicación de esta directiva de la UE, el esquema de registro para puntos únicos de compra permite que los negocios hagan una única declaración de impuestos.\n"
 "\n"
 "Este módulo funciona ya que ayuda a la creación de las posiciones fiscales requeridas en la UE y los impuestos para aplicarlos automáticamente y registrar los impuestos requeridos.\n"
@@ -4925,17 +5101,75 @@ msgstr ""
 "Acceda fácilmente a sus documentos desde su perfil de empleado.\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_eg
+msgid ""
+"\n"
+"Egypt Accounting Module\n"
+"==============================================================================\n"
+"Egypt Accounting Basic Charts and Localization.\n"
+"\n"
+"Activates:\n"
+"\n"
+"- Chart of Accounts\n"
+"- Taxes\n"
+"- VAT Return\n"
+"- Withholding Tax Report\n"
+"- Schedule Tax Report\n"
+"- Other Taxes Report\n"
+"- Fiscal Positions\n"
+msgstr ""
+"\n"
+"Módulo de contabilidad para Egipto\n"
+"==============================================================================\n"
+"Plan contable y localización base de Egipto.\n"
+"\n"
+"Activa:\n"
+"\n"
+"- Plan contable\n"
+"- Impuestos\n"
+"- Declaración de la renta\n"
+"- Informe sobre la retención fiscal\n"
+"- Informe de impuestos planificado\n"
+"- Otro informe de impuestos\n"
+"- Posiciones fiscales\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_eg_hr_payroll
 msgid ""
 "\n"
 "Egypt Payroll and End of Service rules.\n"
 "=======================================\n"
-"\n"
+"- Basic calculation\n"
+"- End of service calculation\n"
+"- Other inputs (overtime, salary attachments, etc.)\n"
+"- Social insurance calculation\n"
+"- End of service provisions\n"
+"- Tax break calculations and deductions\n"
+"- Master payroll export\n"
 msgstr ""
 "\n"
-" Reglas de nómina y finalización de servicios de Egipto.\n"
-"=======================================\n"
+"Reglas para la nómina y terminación de la relación laboral en Egipto\n"
+"===========================================================\n"
+"- Cálculos básicos\n"
+"- Cálculo de terminación de la relación laboral\n"
+"- Otras entradas (horas extra, cesión de salario, complemento salarial, etc.)\n"
+"- Cálculo de seguridad social\n"
+"- Provisión por terminación de la relación laboral\n"
+"- Cálculo y deducciones de la categoría impositiva\n"
+"- Exportación maestra de nómina\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_eg_edi_eta
+msgid ""
 "\n"
+"Egypt Tax Authority Invoice Integration\n"
+"==============================================================================\n"
+"Integrates with the ETA portal to automatically send and sign the Invoices to the Tax Authority.\n"
+msgstr ""
+"\n"
+"Integración de facturación de la agencia tributaria egipcia\n"
+"==============================================================================\n"
+"Se integra con el portal ETA para enviar y firmar automáticamente las facturas a la agencia tributaria.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_account_edi
@@ -5141,12 +5375,22 @@ msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be_reports_post_wizard
+#: model:ir.module.module,description:base.module_l10n_nl_reports_vat_pay_wizard
 msgid ""
 "\n"
 "Enable the VAT wizard when posting a tax return journal entry\n"
 msgstr ""
 "\n"
 "Habilite el asistente de IVA al registrar un asiento contable de declaración de impuestos.\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_pos_urban_piper_enhancements
+msgid ""
+"\n"
+"Enhancements for the Point of Sale UrbanPiper module. Includes features such as store timing configuration, scheduled order handling, and improved toggle options.\n"
+msgstr ""
+"\n"
+"Mejoras para el módulo UrbanPiper para Punto de venta. Incluye funciones como configuración de horarios de la tienda, gestión programada de pedidos y opciones de botones mejoradas.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_appointment_crm
@@ -5267,16 +5511,16 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"Gestión de servicios externos\n"
+"Gestión de servicios de campo\n"
 "=========================\n"
-"Este módulo añade las características necesarias para administrar los servicios externos de una manera moderna.\n"
+"Este módulo añade las características necesarias para administrar los servicios de campo de una manera moderna.\n"
 "Se instalan las siguientes aplicaciones:\n"
 "- Proyecto\n"
 "- Partes de horas\n"
 "\n"
 "Se añaden las siguientes opciones:\n"
 "- Informes sobre tareas\n"
-"- Aplicación Servicio externo con vista personalizada para trabajadores en el sitio\n"
+"- Aplicación Servicio de campo con vista personalizada para trabajadores en el sitio\n"
 "- Añadir productos en tareas\n"
 "\n"
 
@@ -6169,9 +6413,36 @@ msgstr ""
 "* Importar pedidos de múltiples cuentas y mercados.\n"
 "* Los pedidos se emparejan con los productos Odoo según su referencia interna (SKU en Amazon).\n"
 "* Las entregas confirmadas en Odoo se sincronizan en Amazon.\n"
-"* Soporte para Logística de Amazon (Fulfillment by Amazon, FBA) y Logística de Comerciante (Fulfillment by Merchant, FBM):\n"
+"* Soporte para Envío por Amazon (Fulfillment by Amazon, FBA) y Envío por el comerciante (Fulfillment by Merchant, FBM):\n"
 "    * Logística de Amazon: una ubicación de stock y los movimientos de stock permiten supervisar su stock en los centros logísticos de Amazon.\n"
 "    * FBM: las notificaciones de entrega se envían a Amazon para cada albarán confirmado (entrega parcial amigable).\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_sale_shopee
+msgid ""
+"\n"
+"Import your Shopee orders in Odoo and synchronize deliveries\n"
+"============================================================\n"
+"\n"
+"Key Features\n"
+"------------\n"
+"* Import orders from multiple accounts and shops\n"
+"* Orders are matched with Odoo products based on their internal reference (item_id or model_id in Shopee)\n"
+"* Support for both Fulfillment by Shopee (FBS), Fulfillment by Merchant (FBM) and Fulfilled by Cross Border Seller (Hybrid):\n"
+"* FBS: Importing the completed orders\n"
+"* FBM/Hybrid: Delivery information is fetched from Shopee, track and synchronize the stock level to Shopee\n"
+msgstr ""
+"\n"
+"Importe sus pedidos de Shopee en Odoo y sincronice las entregas\n"
+"================================================ ==========\n"
+"\n"
+"Características clave\n"
+"------------\n"
+"* Importe pedidos de múltiples cuentas y tiendas.\n"
+"* Los pedidos se emparejan con los productos Odoo según su referencia interna (item_id o model_id en Shopee).\n"
+"* Soporte para Envío por Shopee (Fulfillment by Amazon, FBA) y Envío por el comerciante (Fulfillment by Merchant, FBM):\n"
+"    * FBS: importación de los pedidos completos\n"
+"    * FBM/Híbrido: la información de entrega se obtiene de Shopee, rastrea y sincroniza el nivel de stock con Shopee.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_account_debit_note
@@ -6383,7 +6654,7 @@ msgstr ""
 "    * Prestaciones y deducciones \n"
 "    * Integrado con la gestión de las ausencias \n"
 "    * Gastos médicos, de viajes, por cuidado de niños... \n"
-"    - Asesoramiento y informes sobre la nómina\n"
+"    - Asesoramiento e informes sobre la nómina\n"
 "    - Salarios anuales por informe de empleado\n"
 
 #. module: base
@@ -6405,6 +6676,17 @@ msgstr ""
 "\n"
 "Informes Intrastat \n"
 "==================\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_account_intrastat_services
+msgid ""
+"\n"
+"Intrastat Reports for Services\n"
+"==============================\n"
+msgstr ""
+"\n"
+"Informes Intrastat para servicios\n"
+"==============================\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_dk_intrastat
@@ -6510,22 +6792,19 @@ msgstr ""
 msgid ""
 "\n"
 "Jordan Payroll and Tax Rules\n"
-"============================\n"
+"========================================\n"
+"\n"
+"- Supports basic calculation\n"
+"- Tax income brackets\n"
+"- National contribution tax and social security\n"
 msgstr ""
 "\n"
-"Reglas de nómina e impuestos de Jordania\n"
-"============================\n"
-
-#. module: base
-#: model:ir.module.module,description:base.module_l10n_sa_pos
-msgid ""
+"Nómina y reglas fiscales de Jordania \n"
+"======================================== \n"
 "\n"
-"K.S.A. POS Localization\n"
-"=======================================================\n"
-msgstr ""
-"\n"
-"Localización de puntos de venta para el Reino de Arabia Saudita\n"
-"=======================================================\n"
+"- Compatibilidad con cálculos básicos\n"
+"- Tablas de impuestos sobre la renta\n"
+"- Impuesto de contribución nacional y seguridad social\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_appointment_hr_recruitment
@@ -6573,19 +6852,6 @@ msgstr ""
 "    * Permite configurar el sueldo básico, bruto y neto\n"
 "    * Recibo de el sueldo del empleado\n"
 "    * Integración con la gestión de permisos\n"
-
-#. module: base
-#: model:ir.module.module,description:base.module_l10n_sa_hr_payroll
-msgid ""
-"\n"
-"Kingdom of Saudi Arabia Payroll and End of Service rules.\n"
-"===========================================================\n"
-"\n"
-msgstr ""
-"\n"
-"Reglas de nómina y finalización de servicios del Reino de Arabia Saudita.\n"
-"===========================================================\n"
-"\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_stock_landed_costs
@@ -6687,7 +6953,7 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"Soporte por chat en vivo\n"
+"Soporte por chat en directo\n"
 "==========================\n"
 "\n"
 "Permite enviar widgets de mensajería instantánea desde cualquier página web que se\n"
@@ -6775,6 +7041,23 @@ msgstr ""
 "* Planifique solicitudes de mantenimiento (también preventivo recurrente)\n"
 "* Equipo relacionado con los centros de trabajo\n"
 "* MTBF, MTTR...\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_my_hr_payroll
+msgid ""
+"\n"
+"Malaysian Payroll and Tax Rules\n"
+"===============================\n"
+"- Social Security Premium/Insurance calculations for employment and unemployment\n"
+"- Income tax calculations\n"
+"- Stamp tax deductions\n"
+msgstr ""
+"\n"
+"Nómina y reglas de impuestos de Malasia\n"
+"===============================\n"
+"- Cálculos de Seguro social premium/Seguro para el empleo y durante el desempleo\n"
+"- Cálculos de impuesto sobre la renta\n"
+"- Deducciones de impuesto sobre transferencias de propiedad\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_mt_reports
@@ -7300,6 +7583,15 @@ msgstr ""
 "analíticas diferentes que no tengan contrapartida en la contabilidad financiera general.\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_bg_reports_ledger
+msgid ""
+"\n"
+"Module for ledger reports\n"
+msgstr ""
+"\n"
+"Módulo para informes del libro mayor\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_hr_recruitment_integration_monster
 msgid ""
 "\n"
@@ -7330,6 +7622,19 @@ msgstr ""
 "===============================\n"
 "\n"
 "Un recurso representa algo que se puede planificar (un desarrollador en una tarea o un centro de trabajo en una orden de fabricación). Este módulo gestiona un calendario asociado a cada recurso. También gestiona las ausencias de cada recurso.\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_se_sie4_export
+msgid ""
+"\n"
+"Module for the export of accounting data to SIE 4 standard files.\n"
+"Official website: https://sie.se/\n"
+"XSD and documentation: https://sie.se/format/\n"
+msgstr ""
+"\n"
+"Módulo para la exportación de datos contables a archivos estándar SIE 4.\n"
+"Sitio web oficial: https://sie.se/\n"
+"XSD y documentación: https://sie.se/format/\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_fr_fec_import
@@ -7425,6 +7730,19 @@ msgstr ""
 "\n"
 "Los archivos SAF-T son los informes contables estándar que las empresas de algunos países deben presentar a las autoridades fiscales correspondientes.\n"
 "Este módulo permite importar cuentas, diarios, contactos, impuestos y movimientos desde estos documentos.\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_se_sie4_import
+msgid ""
+"\n"
+"Module for the import of SIE 4 standard files.\n"
+"Official website: https://sie.se/\n"
+"XSD and documentation: https://sie.se/format/\n"
+msgstr ""
+"\n"
+"Módulo para la importación de archivos estándar SIE 4.\n"
+"Sitio web oficial: https://sie.se/\n"
+"XSD y documentación: https://sie.se/format/\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_se_sie_import
@@ -7753,6 +8071,19 @@ msgstr ""
 "Localización contable para Mozambique\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_gr_edi
+msgid ""
+"\n"
+"MyDATA is a platform created by Greece's tax authority,\n"
+"The Independent Authority for Public Revenue (IAPR),\n"
+"to digitize business tax and accounting information declaration.\n"
+msgstr ""
+"\n"
+"MyDATA es una plataforma creada por las autoridades fiscales de Grecia,\n"
+"IAPR (la Autoridad Independiente para Ingresos Públicos),\n"
+"para digitalizar la declaración de impuestos y e información contable de las empresas.\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_nz
 msgid ""
 "\n"
@@ -7850,15 +8181,6 @@ msgid ""
 msgstr ""
 "\n"
 "Notifique que existe un pedido de venta que coincide en el widget de conciliación.\n"
-
-#. module: base
-#: model:ir.module.module,description:base.module_l10n_sa
-msgid ""
-"\n"
-"Odoo Arabic localization for most Saudi Arabia.\n"
-msgstr ""
-"\n"
-"Localización arábica de Odoo para la mayoría de Arabia Saudita.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_web_enterprise
@@ -8077,15 +8399,46 @@ msgstr ""
 "=================================================\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_pk
+msgid ""
+"\n"
+"Pakistan Accounting Module\n"
+"=======================================================\n"
+"Pakistan accounting basic charts and localization.\n"
+"\n"
+"Activates:\n"
+"\n"
+"- Chart of Accounts\n"
+"- Taxes\n"
+"- Tax Report\n"
+"- Withholding Tax Report\n"
+msgstr ""
+"\n"
+"Módulo de contabilidad para Pakistán\n"
+"=======================================================\n"
+"Plan contable y localización base para Pakistán.\n"
+"\n"
+"Activa:\n"
+"\n"
+"- Plan contable\n"
+"- Impuestos\n"
+"- Informe de impuestos\n"
+"- Informe sobre la retención fiscal\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_pk_hr_payroll
 msgid ""
 "\n"
 "Pakistan Payroll and End of Service rules\n"
 "=========================================\n"
+"- Basic salaries calculations.\n"
+"- Tax bracket calculations/deductions\n"
 msgstr ""
 "\n"
-" Reglas de nómina y finalización de servicios de Pakistán.\n"
+"Reglas para la nómina y terminación de la relación laboral en Pakistán.\n"
 "=========================================\n"
+"- Cálculo de salarios básicos\n"
+"- Cálculos y deducciones de la categoría impositiva\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_pa
@@ -8407,6 +8760,42 @@ msgstr ""
 "Reparación de productos de tickets del servicio de asistencia\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_bg_ledger
+msgid ""
+"\n"
+"Report ledger for Bulgaria\n"
+msgstr ""
+"\n"
+"Informe del libro mayor para Bulgaria\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_it_riba
+msgid ""
+"\n"
+"Ri.Ba. Export for Batch Payment\n"
+"================================\n"
+"\n"
+"This module enables the generation of Ri.Ba. (Ricevute Bancarie) files from batch payments in Odoo.  \n"
+"It facilitates compliance with the Italian banking standard for managing receivables.\n"
+"\n"
+"- Group multiple receivables into a single batch for streamlined management and reconciliation.\n"
+"- Export batch payments as RIBA-compliant files to be submitted to your homebanking for processing.\n"
+"\n"
+"For more information about RIBA standards, refer to the guidelines issued by the Italian Bankers Association (CBI).\n"
+msgstr ""
+"\n"
+"Exportación Ri.Ba. para pagos por lote\n"
+"================================\n"
+"\n"
+"Este módulo permite generar archivos Ri.Ba. (Ricevute Bancario) a partir de los pagos por lote en Odoo.  \n"
+"Facilita el cumplimiento de la normativa bancaria italiana para la gestión de las cuentas por cobrar.\n"
+"\n"
+"- Agrupe varias cuentas por cobrar en un solo lote para simplificar la gestión y conciliación.\n"
+"- Exporte los pagos por lote como archivos compatibles con RIBA para enviarlos a la banca electrónica que se encargará de su procesamiento.\n"
+"\n"
+"Consulte las directrices emitidas por la Asociación Italiana de Banqueros (CBI) para obtener más información sobre la normativa RIBA.\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_rw
 msgid ""
 "\n"
@@ -8508,6 +8897,73 @@ msgstr ""
 "de la sesión del evento.\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_sa
+msgid ""
+"\n"
+"Saudi Arabia Accounting Module\n"
+"===========================================================\n"
+"Saudi Arabia Accounting Basic Charts and Localization\n"
+"\n"
+"Activates:\n"
+"\n"
+"- Chart of Accounts\n"
+"- Taxes\n"
+"- Vat Filling Report\n"
+"- Withholding Tax Report\n"
+"- Fiscal Positions\n"
+msgstr ""
+"\n"
+"Módulo de contabilidad para Arabia Saudita\n"
+"===========================================================\n"
+"Plan contable y localización base de Arabia Saudita\n"
+"\n"
+"Activa:\n"
+"\n"
+"- Plan contable\n"
+"- Impuestos\n"
+"- Informe sobre la declaración de la renta\n"
+"- Informe sobre la retención fiscal\n"
+"- Posiciones fiscales\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_sa_pos
+msgid ""
+"\n"
+"Saudi Arabia POS Localization\n"
+"===========================================================\n"
+msgstr ""
+"\n"
+"Localización del TPV en Arabia Saudita\n"
+"===========================================================\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_sa_hr_payroll
+msgid ""
+"\n"
+"Saudi Arabia Payroll and End of Service rules.\n"
+"===========================================================\n"
+"- Basic Calculation\n"
+"- End of Service Calculation\n"
+"- Other Input Rules (Overtime, Salary Attachments, etc.)\n"
+"- Split Structures for EOS and Monthly Salaries\n"
+"- GOSI Employee Deduction and company contributions\n"
+"- Unpaid leaves\n"
+"- WPS\n"
+"- Master Payroll Export\n"
+msgstr ""
+"\n"
+"Reglas para la nómina de Arabia Saudita y terminación de la relación laboral\n"
+"===========================================================\n"
+"- Cálculos básicos\n"
+"- Cálculo de terminación de la relación laboral\n"
+"- Otras reglas de entrada (horas extra, cesión de salario, complemento salarial)\n"
+"- Estructuras de división para terminación de la relación laboral y salarios mensuales\n"
+"- Deducción GOSI del empleado y contribuciones empresariales\n"
+"- Permisos sin sueldo\n"
+"- WPS\n"
+"- Exportación maestra de nómina\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_project_forecast
 msgid ""
 "\n"
@@ -8572,6 +9028,27 @@ msgstr ""
 "\n"
 "Envíe los resúmenes de KPI periódicamente\n"
 "=============================\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_delivery_envia
+msgid ""
+"\n"
+"Send your shippings through Envia and track them online\n"
+"=======================================================\n"
+"\n"
+"Envia is a provider of integrated shipping and tracking solutions for growing e-commerce businesses.\n"
+"Seamlessly integrating with a large range of couriers and platforms,\n"
+"you can streamline every step of your fulfilment process,\n"
+"reduce handling time and improve customer experience.\n"
+msgstr ""
+"\n"
+"Haga sus envío con Envia y rastréelos en línea\n"
+"=======================================================\n"
+"\n"
+"Envia es un proveedor de soluciones de envíos y rastreos para empresas de comercio electrónico.\n"
+"Puede agilizar cada paso de su proceso de envío\n"
+"gracias a que este proveedor se integra con muchas empresas de envíos,\n"
+"así se reducirá el tiempo de espera y se mejorará la experiencia del usuario.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_delivery_starshipit
@@ -9111,6 +9588,7 @@ msgstr ""
 "de entrega.\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_ec_edi_stock
 #: model:ir.module.module,description:base.module_l10n_pe_edi_stock
 msgid ""
 "\n"
@@ -9445,7 +9923,7 @@ msgstr ""
 "Este es el módulo base para gestionar productos y listas de precios en Odoo.\n"
 "========================================================================\n"
 "\n"
-"Los productos son compatibles con variantes, varios métodos de fijación de precios, información del proveedor, información de almacenaje, distintas unidades de medida, empaquetado y propiedades.\n"
+"Los productos son compatibles con variantes, varios métodos de fijación de precios, información del proveedor, información de almacenaje, distintas unidades de medida, embalaje y propiedades.\n"
 "\n"
 "Las listas de precios son compatibles con:\n"
 "-------------------------------\n"
@@ -9499,6 +9977,33 @@ msgstr ""
 " - Informes de impuestos\n"
 " - Posiciones fiscales\n"
 " - Estados\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_bd
+msgid ""
+"\n"
+"This is the base module to manage the accounting chart for Bangladesh in Odoo\n"
+"==============================================================================\n"
+"\n"
+"Bangladesh accounting basic charts and localization.\n"
+"\n"
+"Activates:\n"
+"\n"
+"- Chart of accounts\n"
+"- Taxes\n"
+"- Tax report\n"
+msgstr ""
+"\n"
+"Éste es el módulo base para gestionar el plan contable de Bangladés en Odoo.\n"
+"==============================================================================\n"
+"\n"
+"Plan contable y localización base de Bangladés.\n"
+"\n"
+"Activa:\n"
+"\n"
+"- Plan contable\n"
+"- Impuestos\n"
+"- Informe de impuestos\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be
@@ -9562,17 +10067,6 @@ msgstr ""
 "      \n"
 "         ** Ruta de acceso: ** Contabilidad / Informes / Informes legales / Extracto bancario de Bélgica  / Lista anual de clientes sometidos a IVA\n"
 "\n"
-
-#. module: base
-#: model:ir.module.module,description:base.module_l10n_eg
-msgid ""
-"\n"
-"This is the base module to manage the accounting chart for Egypt in Odoo.\n"
-"==============================================================================\n"
-msgstr ""
-"\n"
-"Este es un módulo base para gestionar el plan contable de Egipto en Odoo.\n"
-"==============================================================================\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_ee
@@ -10258,7 +10752,7 @@ msgid ""
 "It also provides new tools to analyse your data.\n"
 msgstr ""
 "\n"
-"Este módulo añade un nueva vista de tablero en la aplicación Sitio web.\n"
+"Este módulo añade una nueva vista de tablero en la aplicación Sitio web.\n"
 "Este nuevo tipo de vista contiene algunas estadísticas básicas, una gráfica y una subvista de tabla dinámica que permiten obtener una rápida vista general de sus ventas en línea.\n"
 "También ofrece nuevas herramientas para analizar sus datos.\n"
 
@@ -10270,7 +10764,8 @@ msgid ""
 "your visitors to subscribe with their phone number.\n"
 msgstr ""
 "\n"
-"Este módulo añade una plantilla nueva al bloque del boletín de noticias para permitir \n"
+"Este módulo añade una plantilla nueva al bloque del boletín informativo para "
+"permitir \n"
 "que sus visitantes se suscriban con sus números telefónicos.\n"
 
 #. module: base
@@ -10402,6 +10897,27 @@ msgstr ""
 "==================================================================\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_cz_reports_2025
+msgid ""
+"\n"
+"This module adds the following reports for the Czech Republic:\n"
+"==============================================================\n"
+"1. VAT Control Statement (creation and XML export). For more information, see https://adisspr.mfcr.cz/dpr/adis/idpr_pub/epo2_info/popis_struktury_detail.faces?zkratka=DPHKH1\n"
+"\n"
+"2. Souhrnné hlášení VIES Report (creation and XML export). For more information, see https://adisspr.mfcr.cz/dpr/adis/idpr_pub/epo2_info/popis_struktury_detail.faces?zkratka=DPHSHV\n"
+"\n"
+"3. Tax report (XML export). For more information, see https://adisspr.mfcr.cz/dpr/adis/idpr_pub/epo2_info/popis_struktury_detail.faces?zkratka=DPHDP3\n"
+msgstr ""
+"\n"
+"Este módulo añade los siguientes informes para la República Checa:\n"
+"==============================================================\n"
+"1. Declaración de control del IVA (creación y exportación XML). Más información: https://adisspr.mfcr.cz/dpr/adis/idpr_pub/epo2_info/popis_struktury_detail.faces?zkratka=DPHKH1\n"
+"\n"
+"2. Souhrnné hlášení: informe VIES (creación y exportación XML). Más información: https://adisspr.mfcr.cz/dpr/adis/idpr_pub/epo2_info/popis_struktury_detail.faces?zkratka=DPHSHV\n"
+"\n"
+"3. Informe de impuestos (exportación XML). Más información: https://adisspr.mfcr.cz/dpr/adis/idpr_pub/epo2_info/popis_struktury_detail.faces?zkratka=DPHDP3\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_approvals_purchase
 msgid ""
 "\n"
@@ -10479,7 +10995,7 @@ msgid ""
 "This module allows ecommerce users to book an order with the shiprocket using cash on delivery feature.\n"
 msgstr ""
 "\n"
-"Este módulo permite que los usuarios del comercio electrónico reserven un pedido con la función Pago a contra reembolso de Shiprocket.\n"
+"Este módulo permite que los usuarios del comercio electrónico reserven un pedido con la función Pago contra reembolso de Shiprocket.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_sale_ups
@@ -10974,6 +11490,7 @@ msgstr ""
 "Prueba todos los códigos QR compatibles: SEPA, QR suizo y el QR EMV (con la implementación hk y br)\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_pos_restaurant_loyalty
 #: model:ir.module.module,description:base.module_pos_sale_loyalty
 msgid ""
 "\n"
@@ -11104,6 +11621,17 @@ msgid ""
 msgstr ""
 "\n"
 "Este módulo habilita la función de lectura de código QR para facturas de proveedores en India.\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_ch_hr_payroll_elm_transmission
+msgid ""
+"\n"
+"This module fully implements the ELM 5.0 wage standard and is Swissdec certified under certificate 1203.25. Any unauthorized modifications are strictly prohibited, as they may lead to errors in data transmission and calculations.\n"
+"The Module is not retro-compatible with Previous Swiss Payroll versions, installation will require a re-generation of your yearly Payroll-accounting.\n"
+msgstr ""
+"\n"
+"Este módulo implementa el estándar salarial ELM 5.0 y está certificado por Swissdec con el certificado 1203.25. Cualquier modificación no autorizada está estrictamente prohibida, ya que puede producir errores en la transmisión de datos y en los cálculos.\n"
+"El módulo no es compatible con versiones anteriores de la nómina suiza y la instalación requerirá una regeneración de tu contabilidad anual de nóminas.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_sms
@@ -11525,6 +12053,17 @@ msgstr ""
 "\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_my_edi_extended
+msgid ""
+"\n"
+"This module improves the MyInvois E-invoicing feature by adding proper support for self billing, rendering the MyInvois\n"
+"QR code in the invoice PDF file and allows better management of foreign customer TIN.\n"
+msgstr ""
+"\n"
+"Este módulo mejora la función de facturación electrónica de MyInvois añadiendo la compatibilidad para la autofacturación, mostrando el código QR\n"
+"de MyInvois en el archivo PDF de la factura y permitiendo una mejor gestión del TIN de clientes extranjeros.\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_base_iban
 msgid ""
 "\n"
@@ -11593,17 +12132,6 @@ msgstr ""
 "\n"
 "* Los documentos de contingencia no están implementados.\n"
 "* La próxima implementación incluirá la sincronización automática de las facturas de proveedores.\n"
-
-#. module: base
-#: model:ir.module.module,description:base.module_l10n_eg_edi_eta
-msgid ""
-"\n"
-"This module integrate with the ETA Portal to automatically sign and send your invoices to the tax Authority.\n"
-"Special thanks to Plementus <info@plementus.com> for their help in developing this module.\n"
-msgstr ""
-"\n"
-"       Este módulo se integra con el portal ETA para firmar y enviar sus facturas a la autoridad tributaria automáticamente.\n"
-"       Agradecemos especialmente a Plementus <info@plementus.com> por su ayuda para desarrollar este módulo.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_pos_urban_piper_swiggy
@@ -11862,6 +12390,15 @@ msgid ""
 msgstr ""
 "\n"
 "Este módulo proporciona el enlace entre los pasos de calidad y los dispositivos IoT. \n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_pos_mobile
+msgid ""
+"\n"
+"This module provides the point of sale function of the Odoo Mobile App.\n"
+msgstr ""
+"\n"
+"Este módulo proporciona la función de punto de venta para la aplicación móvil de Odoo.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_es_edi_tbai
@@ -12178,15 +12715,44 @@ msgstr ""
 "============================\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_ae
+msgid ""
+"\n"
+"United Arab Emirates Accounting Module\n"
+"=======================================================\n"
+"United Arab Emirates accounting basic charts and localization.\n"
+"\n"
+"Activates:\n"
+"\n"
+"- Chart of Accounts\n"
+"- Taxes\n"
+"- Tax Report\n"
+"- Fiscal Positions\n"
+msgstr ""
+"\n"
+"Módulo de contabilidad para los Emiratos Árabes Unidos\n"
+"=======================================================\n"
+"Plan contable y localización base para los Emiratos Árabes Unidos.\n"
+"\n"
+"Activa:\n"
+"\n"
+"- Plan contable\n"
+"- Impuestos\n"
+"- Informe de impuestos\n"
+"- Posiciones fiscales\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_ae_corporate_tax_report
 msgid ""
 "\n"
 "United Arab Emirates Corporate Tax Report\n"
 "=======================================================\n"
+"Adds the Corporate Tax Report which can be accessed by going to Accounting > Reporting > Corporate Tax Report\n"
 msgstr ""
 "\n"
-"Informe de impuestos de sociedades de los Emiratos Árabes Unidos\n"
+"Declaración de impuestos sobre sociedades de los Emiratos Árabes Unidos\n"
 "=======================================================\n"
+"Añade esta opción a la que puede acceder desde Contabilidad > Informes > Informe de impuestos sobre sociedades\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_ae_hr_payroll
@@ -12194,23 +12760,36 @@ msgid ""
 "\n"
 "United Arab Emirates Payroll and End of Service rules.\n"
 "=======================================================\n"
-"\n"
+"- Basic salary calculations\n"
+"- EOS calculations\n"
+"- Annual leaves provisions and EOS provisions\n"
+"- Social insurance rules for locals\n"
+"- Overtime rule for the other inputs case\n"
+"- Sick-leaves calculations\n"
+"- DEWS calculations\n"
+"- EOS calculations for free zones (DMCC)\n"
+"- Out of contract calculations\n"
+"- Calculation for unused leaves for EOS calculation\n"
+"- Additional other input rules for (bonus, commissions, arrears, etc.)\n"
+"- Master payroll export\n"
+"- WPS\n"
 msgstr ""
 "\n"
-"Reglas de nómina y finalización de servicios de los Emiratos Árabes Unidos.\n"
-"=======================================================\n"
-"\n"
-
-#. module: base
-#: model:ir.module.module,description:base.module_l10n_ae
-msgid ""
-"\n"
-"United Arab Emirates accounting chart and localization.\n"
-"=======================================================\n"
-msgstr ""
-"\n"
-"Plan contable y localización de los Emiratos Árabes Unidos\n"
-"=======================================================\n"
+"Reglas de nómina y terminación de la relación laboral de los Emiratos Árabes Unidos.\n"
+"======================================================= \n"
+"- Cálculo del salario base\n"
+"- Cálculo de terminación de la relación laboral\n"
+"- Provisión de vacaciones anuales y de terminación de la relación laboral\n"
+"- Reglas de seguridad social para ciudadanos locales\n"
+"- Regla de horas extra para otros casos de ingresos adicionales\n"
+"- Cálculo de permisos por enfermedad\n"
+"- Cálculo de DEWS\n"
+"- Cálculo de terminación de la relación laboral para la zona franca (DMCC)\n"
+"- Cálculos fuera de contrato\n"
+"- Cálculo de permisos sin utilizar para la terminación de la relación laboral\n"
+"- Reglas adicionales para otros ingresos (bonos, comisiones, atrasos, etc.)\n"
+"- Exportación maestra de nómina\n"
+"- WPS\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_us_hr_payroll
@@ -12278,7 +12857,7 @@ msgid ""
 "Use the e-commerce to sell your event booths.\n"
 msgstr ""
 "\n"
-"Use el comercio electrónico para vender cabinas en sus eventos.\n"
+"Use el comercio electrónico para vender estands en sus eventos.\n"
 
 #. module: base
 #. odoo-python
@@ -12373,7 +12952,7 @@ msgid ""
 "======================================\n"
 msgstr ""
 "\n"
-"Valide los movimientos de stock para Servicio externo\n"
+"Valide los movimientos de stock para Servicio de campo\n"
 "======================================\n"
 
 #. module: base
@@ -12400,7 +12979,7 @@ msgstr ""
 "Vehículos, arrendamiento, seguros y costes\n"
 "==================================\n"
 "Este módulo de Odoo le ayudará a gestionar todos sus vehículos, los\n"
-"contratos asociados a esos vehículos, así como los servicios, costos\n"
+"contratos asociados a esos vehículos, así como los servicios, costes\n"
 "y muchas otras funciones que son necesarias para gestionar su flota\n"
 "de vehículos.\n"
 "\n"
@@ -12408,7 +12987,8 @@ msgstr ""
 "-------------\n"
 "* Añada vehículos a su flota.\n"
 "* Gestione los contratos de sus vehículos.\n"
-"* Reciba un recordatorio cuando la fecha de vencimiento de un contrato se aproxime.\n"
+"* Reciba un recordatorio cuando la fecha de vencimiento de un contrato se "
+"aproxime.\n"
 "* Añada los servicios y los valores de odómetro para todos sus vehículos.\n"
 "* Muestra todos los costes asociados a un vehículo o a un tipo de servicio.\n"
 "* Gráfica de análisis de costes.\n"
@@ -12490,12 +13070,12 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"Integración de la mensajería instantánea del chat en vivo del sitio web con el módulo de servicio de asistencia\n"
+"Integración de la mensajería instantánea del chat en directo del sitio web con el módulo de servicio de asistencia\n"
 "=======================================================\n"
 "\n"
 "Funciones:\n"
 "\n"
-"    - Tenga un canal de chat en vivo relacionado con su equipo para responder a las preguntas de sus clientes.\n"
+"    - Tenga un canal de chat en directo relacionado con su equipo para responder a las preguntas de sus clientes.\n"
 "    - Crea nuevos tickets fácilmente utilizando los comandos del canal.\n"
 "\n"
 
@@ -12571,6 +13151,66 @@ msgstr ""
 "    También actualice el módulo italiano de Contabilidad (l10n_it) cuando instale este módulo.\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_rs_edi
+msgid ""
+"\n"
+"eFaktura E-invoice implementation for Serbia\n"
+msgstr ""
+"\n"
+"Implementación de facturación electrónica eFaktura para Serbia\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_be_hr_payroll_dmfa_sftp
+msgid ""
+"\n"
+"synchronize DmfA to ONSS portal\n"
+"===============================\n"
+"\n"
+"This new module automates the synchronization of DmfA ONSS declarations\n"
+"to the official Belgian SFTP portal.\n"
+"\n"
+"It integrates with the existing `l10n_be_hr_payroll` and\n"
+"`l10n_be_hr_payroll_dmfa` modules to:\n"
+"\n"
+"- Upload the FO, FS, and GO files to the correct ONSS environment folder\n"
+"  (IN, INTEST, INTEST-S).\n"
+"- Poll the OUT folders (OUT, OUTTEST, OUTTEST-S) for returned files.\n"
+"- Link received files to the corresponding declarations and employees\n"
+"  when applicable.\n"
+"\n"
+"Technical features include:\n"
+"- Secure connection using a private key and technical user credentials.\n"
+"- XML file parsing for ACRF and notification files.\n"
+"- Error handling and logging for missing directories or malformed files.\n"
+"\n"
+"This module ensures compliance with ONSS electronic declaration\n"
+"requirements and reduces manual interaction with the SFTP portal.\n"
+msgstr ""
+"\n"
+"Sincronizar la DmfA al portal ONSS\n"
+"===============================\n"
+"\n"
+"Con este módulo nuevo se automatiza la sincronización de las declaraciones de DmfA a la ONSS\n"
+"con el portal belga SFTP oficial.\n"
+"\n"
+"Se integra con los módulos `l10n_be_hr_payroll` y\n"
+"`l10n_be_hr_payroll_dmfa` para:\n"
+"\n"
+"- Subir los archivos FO, FS y GO a la carpeta del entorno ONSS correcta\n"
+"  (IN, INTEST, INTEST-S).\n"
+"- Obtener las carpetas OUT (OUT, OUTTEST, OUTTEST-S) para los archivos que resulten.\n"
+"- Vincular los archivos recibidos a las declaraciones y empleados correspondientes\n"
+" cuando sea aplicable.\n"
+"\n"
+"Las funciones técnicas incluyen:\n"
+"- Conexión segura con una clave privada y credenciales técnicas para el usuario.\n"
+"- El archivo XML que analizará los archivos ACRF y de notificación.\n"
+"- Error al trabajar y registrar directorios faltantes o archivos dañados.\n"
+"\n"
+"Este módulo garantiza el cumplimiento con las normas de la declaración\n"
+"electrónica ONSS y reduce la interacción manual con el portal SFTP.\n"
+
+#. module: base
 #: model:ir.module.module,summary:base.module_delivery_mondialrelay
 msgid " Let's choose a Point Relais® as shipping address "
 msgstr "Elijamos un Point Relais® como dirección de envío"
@@ -12589,7 +13229,7 @@ msgstr "# Permisos de acceso"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_users__groups_count
 msgid "# Groups"
-msgstr "# Grupos"
+msgstr "# de grupos"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_users__rules_count
@@ -12731,6 +13371,7 @@ msgstr "%s (Servidor dedicado de correo de salida):"
 
 #. module: base
 #. odoo-python
+#: code:addons/base/models/ir_actions.py:0
 #: code:addons/base/models/ir_filters.py:0
 #: code:addons/base/models/res_lang.py:0
 #: code:addons/base/models/res_partner.py:0
@@ -13022,7 +13663,7 @@ msgstr "3. %y, %Y         ==&gt; 08, 2008"
 #. module: base
 #: model:ir.module.module,summary:base.module_hr_appraisal_survey
 msgid "360 Feedback"
-msgstr "Retroalimentación de 360 grados"
+msgstr "Comentarios de 360 grados"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_external_tax
@@ -13209,7 +13850,7 @@ msgstr "<i class=\"fa fa-circle\" role=\"img\" aria-label=\"Ok\" title=\"Ok\"/>"
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_res_users_kanban
 msgid "<i class=\"fa fa-envelope me-1\" role=\"img\" aria-label=\"Login\"/>"
-msgstr "<i class=\"fa fa-envelope me-1\" role=\"img\" aria-label=\"Login\"/>"
+msgstr "<i class=\"fa fa-envelope me-1\" role=\"img\" aria-label=\"Iniciar sesión\"/>"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.ir_mail_server_form
@@ -13350,20 +13991,20 @@ msgstr ""
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_server_action_form
 msgid ""
-"<span invisible=\"evaluation_type != 'value' or not update_field_type == "
-"'many2many'\">by</span>"
+"<span invisible=\"evaluation_type != 'value' or update_field_type in "
+"['one2many', 'many2many']\">to</span>"
 msgstr ""
-"<span invisible=\"evaluation_type != 'value' or not update_field_type == "
-"'many2many'\">por</span>"
+"<span invisible=\"evaluation_type != 'value' or update_field_type in "
+"['one2many', 'many2many']\">a</span>"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_server_action_form
 msgid ""
-"<span invisible=\"evaluation_type != 'value' or update_field_type == "
-"'many2many'\">to</span>"
+"<span invisible=\"evaluation_type != 'value' or update_field_type not in "
+"['one2many', 'many2many']\">by</span>"
 msgstr ""
-"<span invisible=\"evaluation_type != 'value' or update_field_type == "
-"'many2many'\">para</span>"
+"<span invisible=\"evaluation_type != 'value' or update_field_type not in "
+"['one2many', 'many2many']\">por</span>"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_partner_form
@@ -13431,9 +14072,8 @@ msgid ""
 "<span>Preferred address for all deliveries. Selected by default when you "
 "deliver an order that belongs to this company.</span>"
 msgstr ""
-"<span>La dirección preferida para todas las entregas. Se selecciona "
-"automáticamente cuando entrega un pedido que pertenece a esta "
-"empresa.</span>"
+"<span>La dirección preferida para todas las entregas. Se selecciona por "
+"defecto cuando entrega un pedido que pertenece a esta empresa.</span>"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_partner_form
@@ -13441,8 +14081,9 @@ msgid ""
 "<span>Preferred address for all invoices. Selected by default when you "
 "invoice an order that belongs to this company.</span>"
 msgstr ""
-"<span>La dirección preferida para todas las facturas. Seleccionada por "
-"defecto cuando factura un pedido que pertenece a esta empresa.</span>"
+"<span>La dirección preferida para todas las facturas. Se selecciona por "
+"defecto cuando se emite una factura para un pedido que pertenece a esta "
+"empresa.</span>"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_partner_form
@@ -13713,17 +14354,22 @@ msgstr ""
 "Localización mexicana de Odoo para Almacén/Pedimentos\n"
 "====================================================\n"
 "\n"
-"Este módulo extiende la funcionalidad de la localización mexicana para ser compatible con\n"
-"números de pedimentos de importación relacionados a los costes en destino cuando genera una\n"
+"Este módulo extiende la funcionalidad de la localización mexicana para ser "
+"compatible con\n"
+"números de pedimentos de importación relacionados a los costes en destino "
+"cuando genera una\n"
 "factura electrónica.\n"
 "Uso\n"
 "===\n"
 "\n"
 "Para usar este módulo, debe:\n"
 "\n"
-"* Generar un nuevo pedido de compra de un producto del extranjero. El coste en destino solo está\n"
-"  disponible para productos configurados con una valoración de inventarios 'automatizada' y con\n"
-"  el método de cálculo del coste 'FIFO. El método de cálculo del coste está configurado en las categorías\n"
+"* Generar un nuevo pedido de compra de un producto del extranjero. El coste "
+"en destino solo está\n"
+"  disponible para productos configurados con una valoración de inventarios "
+"'automatizada' y con\n"
+"  el método de cálculo del coste 'FIFO. El método de cálculo del coste está "
+"configurado en las categorías\n"
 "de producto.\n"
 "\n"
 ".. figure:: static/description/purchase_order_new.png\n"
@@ -13733,30 +14379,35 @@ msgstr ""
 ".. figure:: static/description/picking_done_purchase.png\n"
 "\n"
 "* Vaya a Inventario -> Control de inventario -> Coste en destino\n"
-"* Cree un nuevo coste en destino indicando la preparación del pedido de compra\n"
-"  y el número de pedimento de importación. Los costos de envío son\n"
-"  solo posibles para productos configurados con método de costeo en tiempo real.\n"
+"* Cree un nuevo coste en destino indicando la preparación del pedido de "
+"compra\n"
+"  y el número de pedimento de importación. Los costes de envío son\n"
+"  solo posibles para productos configurados con método de costeo en tiempo "
+"real.\n"
 " El método de costeo se configura en la categoría\n"
 "  del producto\n"
 "\n"
 ".. figure:: static/description/landed_cost_picking.png\n"
 "\n"
-"* Comience creando productos específicos para indicar varios costos\n"
+"* Comience creando productos específicos para indicar varios costes\n"
 "  a prorratear, como fletes, seguros, gastos aduanale..\n"
 "\n"
-"  Vaya a Inventario -> Configuración -> Tipos de gastos de envío. Los gastos de envío solo son\n"
+"  Vaya a Inventario -> Configuración -> Tipos de gastos de envío. Los gastos "
+"de envío solo son\n"
 "  posibles para productos configurados con método de costeo\n"
 "  en tiempo real. El método de costeo se configura en la categoría\n"
 "  de productos.\n"
 "\n"
 ".. figure:: static/description/product_landed_cost.png\n"
 "\n"
-"* Haga clic en el botón Calcular para ver cómo los costos de envío se distribuyen \n"
+"* Haga clic en el botón Calcular para ver cómo los costes de envío se "
+"distribuyen \n"
 "  entre las líneas del albarán del picking.\n"
 "\n"
 ".. figure:: static/description/compute_landed_cost.png\n"
 "\n"
-"* Para confirmar la distribución de costos de envío, haga clic en el botón Validar.\n"
+"* Para confirmar la distribución de costes de envío, haga clic en el botón "
+"Validar.\n"
 "\n"
 ".. figure:: static/description/validate_landed_cost.png\n"
 "\n"
@@ -13771,7 +14422,8 @@ msgstr ""
 "\n"
 ".. figure:: static/description/validate_invoice_customs.png\n"
 "\n"
-"* Los datos del pedimento de importación se encuentran en las líneas de las facturas asociadas\n"
+"* Los datos del pedimento de importación se encuentran en las líneas de las "
+"facturas asociadas\n"
 "  a cada producto\n"
 "\n"
 ".. figure:: static/description/invoice_custom_pedimento.png\n"
@@ -13833,7 +14485,7 @@ msgid ""
 "effortlessly check in and out while ensuring seamless notifications for "
 "hosts."
 msgstr ""
-"Un sistema completo para gestionar su recepción. Los huéspedes podrán "
+"Un sistema completo para gestionar su recepción. Los invitados podrán "
 "ingresar y salir sin problemas y ustedes podrán recibir notificaciones."
 
 #. module: base
@@ -13960,6 +14612,11 @@ msgstr "Un contacto con el/la mismo/a"
 #: model:ir.module.module,summary:base.module_payment_razorpay
 msgid "A payment provider covering India."
 msgstr "Un proveedor de pagos que cubre India. "
+
+#. module: base
+#: model:ir.module.module,summary:base.module_payment_nuvei
+msgid "A payment provider covering Latin America."
+msgstr "Un proveedor de pagos para Latinoamérica."
 
 #. module: base
 #: model:ir.module.module,summary:base.module_payment_mercado_pago
@@ -14657,7 +15314,7 @@ msgstr "Añada un formulario de sugerencia de tareas a su sitio web"
 #. module: base
 #: model:ir.module.module,summary:base.module_website_mail_group
 msgid "Add a website snippet for the mail groups."
-msgstr "Añada un snippet del sitio web para grupos de correo."
+msgstr "Añada un fragmento del sitio web para grupos de correo."
 
 #. module: base
 #: model:ir.module.module,summary:base.module_account_reports_cash_basis
@@ -14731,6 +15388,11 @@ msgstr "Añada la información UTM de leads y oportunidades en correo masivo"
 #: model:ir.module.module,summary:base.module_mass_mailing_crm_sms
 msgid "Add lead / opportunities info on mass mailing sms"
 msgstr "Añada información de leads y oportunidades en los SMS de envío masivo"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_mx_hr_payroll_localisation
+msgid "Add models and fields for complete mexican localisation"
+msgstr "Añada modelos y campos para completar la localización mexicana"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_social_sale
@@ -14841,6 +15503,11 @@ msgstr ""
 "con Stripe."
 
 #. module: base
+#: model:ir.module.module,description:base.module_tests
+msgid "Addons to test Odoo industries code."
+msgstr "Módulos adicionales para probar el código de industrias de Odoo."
+
+#. module: base
 #. odoo-python
 #: code:addons/base/models/ir_qweb_fields.py:0
 #: model_terms:ir.ui.view,arch_db:base.contact
@@ -14927,7 +15594,7 @@ msgid ""
 "Adds a stat button on lead form view to access their livechat sessions."
 msgstr ""
 "Añade un botón de estadísticas en la vista del formulario del lead para "
-"acceder a sus sesiones de chat en vivo."
+"acceder a sus sesiones de chat en directo."
 
 #. module: base
 #: model:ir.module.module,summary:base.module_sale_loyalty_delivery
@@ -15464,6 +16131,11 @@ msgid "Agorot"
 msgstr "Agorá"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_agriculture_shop
+msgid "Agricultural Store"
+msgstr "Tienda de agricultura"
+
+#. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_A
 msgid "Agriculture"
 msgstr "Agricultura"
@@ -15584,7 +16256,7 @@ msgstr "Permitir actualizar tablas de impuestos en asientos existentes"
 msgid "Allow user without repair right to access fsm stock.picking"
 msgstr ""
 "Permita que los usuarios sin permisos de reparación accedan a stock.picking "
-"de Servicio externo"
+"de Servicio de campo"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_users_form
@@ -15941,6 +16613,11 @@ msgstr "América/Córdoba"
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__america/costa_rica
 msgid "America/Costa_Rica"
 msgstr "América/Costa_Rica"
+
+#. module: base
+#: model:ir.model.fields.selection,name:base.selection__res_partner__tz__america/coyhaique
+msgid "America/Coyhaique"
+msgstr "América/Coyhaique"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__america/creston
@@ -16939,6 +17616,16 @@ msgid "Architecture Diff"
 msgstr "Diferencia de arquitectura"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_architects
+msgid "Architecture Firm"
+msgstr "Estudio de arquitectura"
+
+#. module: base
+#: model_terms:ir.ui.view,arch_db:base.view_partner_bank_form
+msgid "Archive"
+msgstr "Archivar"
+
+#. module: base
 #: model_terms:ir.ui.view,arch_db:base.edit_menu_access_search
 #: model_terms:ir.ui.view,arch_db:base.ir_access_view_search
 #: model_terms:ir.ui.view,arch_db:base.ir_cron_view_search
@@ -16950,6 +17637,7 @@ msgstr "Diferencia de arquitectura"
 #: model_terms:ir.ui.view,arch_db:base.res_partner_kanban_view
 #: model_terms:ir.ui.view,arch_db:base.view_ir_mail_server_search
 #: model_terms:ir.ui.view,arch_db:base.view_partner_bank_form
+#: model_terms:ir.ui.view,arch_db:base.view_partner_bank_search
 #: model_terms:ir.ui.view,arch_db:base.view_partner_form
 #: model_terms:ir.ui.view,arch_db:base.view_res_bank_form
 #: model_terms:ir.ui.view,arch_db:base.view_res_partner_filter
@@ -17026,6 +17714,11 @@ msgstr "Ariari"
 #: model:res.country,name:base.am
 msgid "Armenia"
 msgstr "Armenia"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_art_craft
+msgid "Arts & Crafts Store"
+msgstr "Tienda de manualidades"
 
 #. module: base
 #: model:res.country,name:base.aw
@@ -17722,6 +18415,11 @@ msgid "Attract visitors to subscribe to mailing lists"
 msgstr "Anime a los visitantes a suscribirse a sus listas de correo"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_certification_organism
+msgid "Audit & Certification"
+msgstr "Auditoría y certificación"
+
+#. module: base
 #: model:res.currency,currency_subunit_label:base.ISK
 msgid "Aurar"
 msgstr "Aurar"
@@ -18003,6 +18701,11 @@ msgid "Automation Rules based on Employee Contracts"
 msgstr "Reglas de automatización según los contratos de los empleados"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_automobile
+msgid "Automobile Spare Parts"
+msgstr "Piezas de recambio para automóviles"
+
+#. module: base
 #: model:ir.model.fields,field_description:base.field_ir_actions_server__available_model_ids
 #: model:ir.model.fields,field_description:base.field_ir_cron__available_model_ids
 msgid "Available Models"
@@ -18089,7 +18792,7 @@ msgstr "AvaTax para geolocalización"
 msgid "Avoid auto-enabling the documents feature on fsm projects"
 msgstr ""
 "Evite activar automáticamente la función de documentos en los proyectos de "
-"servicio externo"
+"servicio de campo"
 
 #. module: base
 #: model:res.country,name:base.az
@@ -18187,14 +18890,14 @@ msgid "Bahamas"
 msgstr "Bahamas"
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_bh
-msgid "Bahrain - Accounting"
-msgstr "Baréin - Contabilidad"
-
-#. module: base
 #: model:res.country,name:base.bh
 msgid "Bahrain"
 msgstr "Baréin"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_bh
+msgid "Bahrain - Accounting"
+msgstr "Baréin - Contabilidad"
 
 #. module: base
 #: model:res.currency,currency_unit_label:base.THB
@@ -18205,6 +18908,11 @@ msgstr "Bat"
 #: model:res.currency,currency_subunit_label:base.OMR
 msgid "Baisa"
 msgstr "Baisa"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_bakery
+msgid "Bakery Shop"
+msgstr "Panadería"
 
 #. module: base
 #: model:res.currency,currency_unit_label:base.PAB
@@ -18308,6 +19016,11 @@ msgid ""
 msgstr ""
 "Los bancos son instituciones financieras en las que usted y sus contactos "
 "tienen sus cuentas."
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_bar_industry
+msgid "Bar & Pub"
+msgstr "Bar y taberna"
 
 #. module: base
 #: model:res.country,name:base.bb
@@ -18541,6 +19254,16 @@ msgid "Belgian Intrastat Declaration"
 msgstr "Declaración Intrasat belga"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_be_intrastat_services
+msgid "Belgian Intrastat Declaration (Services)"
+msgstr "Declaración Intrastat de Bélgica (servicios)"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_be_pos_restaurant
+msgid "Belgian POS Restaurant Localization"
+msgstr "Localización de restaurante de TPV en Bélgica"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_be_hr_payroll_attendance
 msgid "Belgian Payroll - Attendance"
 msgstr "Nómina belga - Asistencias"
@@ -18611,6 +19334,16 @@ msgid "Belgium - Payroll - Dimona"
 msgstr "Bélgica - Nómina - Dimona"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_be_hr_payroll_dmfa_sftp
+msgid "Belgium - Payroll - DmfA SFTP"
+msgstr "Bélgica - Nómina - DmfA SFTP"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_be_hr_payroll_acerta
+msgid "Belgium - Payroll - Export to Acerta"
+msgstr "Bélgica - Nómina - Exportar a Acerta"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_be_hr_payroll_group_s
 msgid "Belgium - Payroll - Export to Group S"
 msgstr "Bélgica - Nómina - Exportar a Group S"
@@ -18619,6 +19352,11 @@ msgstr "Bélgica - Nómina - Exportar a Group S"
 #: model:ir.module.module,shortdesc:base.module_l10n_be_hr_payroll_partena
 msgid "Belgium - Payroll - Export to Partena"
 msgstr "Bélgica - Nómina - Exportar a Partena"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_be_hr_payroll_prisma
+msgid "Belgium - Payroll - Export to Prisma"
+msgstr "Bélgica - Nómina - Exportar a Prisma"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_be_hr_payroll_sd_worx
@@ -18670,14 +19408,29 @@ msgid "Bermuda"
 msgstr "Bermudas"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_beverage_distributor
+msgid "Beverage Distributor"
+msgstr "Distribuidor de bebidas"
+
+#. module: base
 #: model:res.country,name:base.bt
 msgid "Bhutan"
 msgstr "Bhután"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_bike_leasing
+msgid "Bike Leasing"
+msgstr "Alquiler de bicicletas"
+
+#. module: base
 #: model:ir.module.module,summary:base.module_website_sale_ups
 msgid "Bill to your UPS account number"
 msgstr "Cárguelo a su número de cuenta de UPS"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_billboard_rental
+msgid "Billboard Rental"
+msgstr "Alquiler de paneles publicitarios"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_actions_act_url__binding_model_id
@@ -18772,6 +19525,11 @@ msgstr "Boliviano"
 #: model:res.country,name:base.bq
 msgid "Bonaire, Sint Eustatius and Saba"
 msgstr "Bonaire, San Eustaquio y Saba"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_bookstore
+msgid "Bookstore"
+msgstr "Librería"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_actions_server__update_boolean_value
@@ -18889,9 +19647,19 @@ msgid "Brazilian Accounting EDI For Sale"
 msgstr "EDI para contabilidad brasileña para Ventas"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_br_edi_pos
+msgid "Brazilian Accounting EDI for POS"
+msgstr "EDI para contabilidad brasileña para el TPV"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_br_edi_website_sale
 msgid "Brazilian Accounting EDI for eCommerce"
 msgstr "EDI para contabilidad brasileña para comercio electrónico"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_br_edi_stock
+msgid "Brazilian Accounting EDI for stock"
+msgstr "EDI para contabilidad brasileña para el stock"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_sale_renting_sign
@@ -19151,6 +19919,16 @@ msgid "Bulgaria - Accounting Reports"
 msgstr "Bulgaria - Informes contables"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_bg_reports_ledger
+msgid "Bulgaria - Accounting Reports Ledger"
+msgstr "Bulgaria - Libro mayor e informes contables"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_bg_ledger
+msgid "Bulgaria - Report ledger"
+msgstr "Bulgaria - Informe del libro mayor"
+
+#. module: base
 #: model:ir.model.fields,field_description:base.field_ir_asset__bundle
 msgid "Bundle name"
 msgstr "Nombre del paquete"
@@ -19246,7 +20024,7 @@ msgstr "Ludificación CRM"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_crm_livechat
 msgid "CRM Livechat"
-msgstr "Chat en vivo CRM"
+msgstr "Chat en directo CRM"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_crm_mail_plugin
@@ -19293,6 +20071,11 @@ msgstr ""
 #: model:res.country,vat_label:base.ar
 msgid "CUIT"
 msgstr "CUIT"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_cake_shop
+msgid "Cake Store"
+msgstr "Pastelería"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_actions_act_window_view__view_mode__calendar
@@ -19685,7 +20468,7 @@ msgstr ""
 #: model:res.currency,currency_subunit_label:base.XCD
 #: model:res.currency,currency_subunit_label:base.ZAR
 msgid "Cents"
-msgstr "Centavos"
+msgstr "Céntimos"
 
 #. module: base
 #: model_terms:res.company,invoice_terms_html:base.main_company
@@ -19701,10 +20484,10 @@ msgstr ""
 "Algunos países aplican la retención en el origen sobre la cantidad de "
 "facturas, depende su legislación interna. Cualquier retención en origen la "
 "pagará el cliente a las autoridades tributarias. Bajo ningunas "
-"circunstancias Mi Empresa (San Francisco) se podrá involucrar en los costos "
+"circunstancias Mi Empresa (San Francisco) se podrá involucrar en los costes "
 "relacionados a la legislación de un país. Por lo tanto, el importe de la "
 "factura será debido a Mi Empresa (San Francisco) en su totalidad y no "
-"incluye ningún costo relacionado con la legislación del país en el que se "
+"incluye ningún coste relacionado con la legislación del país en el que se "
 "encuentra el cliente."
 
 #. module: base
@@ -20003,6 +20786,11 @@ msgid "City"
 msgstr "Ciudad"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_cleaning_services
+msgid "Cleaning Services"
+msgstr "Servicios de limpieza"
+
+#. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_actions_server__update_m2m_operation__clear
 msgid "Clearing it"
 msgstr "Vaciarlo"
@@ -20042,6 +20830,11 @@ msgstr "Etiqueta de acción de cliente"
 #: model_terms:ir.ui.view,arch_db:base.wizard_lang_export
 msgid "Close"
 msgstr "Cerrar"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_clothing_boutique
+msgid "Clothing Store"
+msgstr "Tienda de ropa"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_cloud_storage
@@ -20149,6 +20942,11 @@ msgstr "Colombia - Punto de Venta"
 #: model:ir.module.module,description:base.module_l10n_co
 msgid "Colombian Accounting and Tax Preconfiguration"
 msgstr "Contabilidad colombiana y preconfiguración de impuestos"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_l10n_co_edi_mandate
+msgid "Colombian EDI Mandate Invoicing extension"
+msgstr "Extensión de facturación con el mandato EDI de Colombia"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_l10n_co_dian
@@ -20553,6 +21351,11 @@ msgid "Connect the Web Client to Hardware Peripherals"
 msgstr "Conecte el cliente web a los dispositivos periféricos"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_l10n_gr_edi
+msgid "Connect to MyDATA API implementation for Greece"
+msgstr "Implementación API de conexión a MyDATA para Grecia"
+
+#. module: base
 #. odoo-python
 #: code:addons/base/models/ir_mail_server.py:0
 msgid ""
@@ -20641,6 +21444,8 @@ msgid "Constraints with the same name are unique per module."
 msgstr "Las restricciones con el mismo nombre son únicas por módulo."
 
 #. module: base
+#: model:ir.module.category,name:base.module_category_construction
+#: model:ir.module.module,shortdesc:base.module_construction
 #: model:res.partner.industry,name:base.res_partner_industry_F
 msgid "Construction"
 msgstr "Construcción"
@@ -20816,6 +21621,11 @@ msgid "Cordoba"
 msgstr "Córdoba"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_corporate_gifts
+msgid "Corporate Gifts"
+msgstr "Regalos empresariales"
+
+#. module: base
 #: model:res.country,name:base.cr
 msgid "Costa Rica"
 msgstr "Costa Rica"
@@ -20943,7 +21753,7 @@ msgstr "Crear"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_access__perm_create
 msgid "Create Access"
-msgstr "Crear acceso"
+msgstr "Permiso de creación"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_server_action_form
@@ -20983,7 +21793,8 @@ msgstr "Crear registro"
 #: model:ir.module.module,summary:base.module_industry_fsm_report
 #: model:ir.module.module,summary:base.module_industry_fsm_sale_report
 msgid "Create Reports for Field service workers"
-msgstr "Cree informes para trabajadores que estén realizando servicio externo"
+msgstr ""
+"Cree informes para trabajadores que estén realizando servicio de campo"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_users_log__create_uid
@@ -21110,7 +21921,7 @@ msgstr "Cree una hoja de trabajo personalizable"
 #. module: base
 #: model:ir.module.module,summary:base.module_crm_livechat
 msgid "Create lead from livechat conversation"
-msgstr "Cree un lead a partir de una conversación en el chat en vivo "
+msgstr "Cree un lead a partir de una conversación en el chat en directo "
 
 #. module: base
 #: model:ir.module.module,description:base.module_event_crm
@@ -21527,6 +22338,11 @@ msgid "Custom Field"
 msgstr "Campo personalizado"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_custom_furniture
+msgid "Custom Furniture Production"
+msgstr "Producción de muebles personalizados"
+
+#. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_model__state__manual
 msgid "Custom Object"
 msgstr "Objeto personalizado"
@@ -21635,6 +22451,11 @@ msgid "Czech Republic"
 msgstr "República Checa"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_cz_reports_2025
+msgid "Czech Republic - Accounting Reports 2025"
+msgstr "República Checa - Informes contables 2025"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_cz_reports
 msgid "Czech Republic- Accounting Reports"
 msgstr "República Checa - Informes contables"
@@ -21651,8 +22472,8 @@ msgstr "D - SUMINISTRO DE ELECTRICIDAD, GAS, VAPOR Y AIRE ACONDICIONADO"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_delivery_dhl
-msgid "DHL Express Shipping"
-msgstr "Envío por DHL Express"
+msgid "DHL Express Shipping (Legacy)"
+msgstr "Envío por DHL Express (obsoleto)"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_din5008
@@ -21662,7 +22483,7 @@ msgstr "DIN 5008"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_din5008_industry_fsm
 msgid "DIN 5008 - Field Service"
-msgstr "DIN 5008 - Servicio externo"
+msgstr "DIN 5008 - Servicio de campo"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_din5008_account_followup
@@ -22026,7 +22847,7 @@ msgstr "Eliminar clave API"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_access__perm_unlink
 msgid "Delete Access"
-msgstr "Eliminar acceso"
+msgstr "Permiso de eliminación"
 
 #. module: base
 #. odoo-python
@@ -22471,7 +23292,7 @@ msgstr "Mostrar"
 #: model:ir.model.fields,field_description:base.field_reset_view_arch_wizard__display_name
 #: model:ir.model.fields,field_description:base.field_wizard_ir_model_menu_create__display_name
 msgid "Display Name"
-msgstr "Nombre mostrado"
+msgstr "Nombre para mostrar"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_pos_hr_preparation_display
@@ -22646,7 +23467,7 @@ msgstr "Documentos - Gastos"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_documents_fsm
 msgid "Documents - FSM"
-msgstr "Documentos - Servicio externo"
+msgstr "Documentos - Servicio de campo"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_documents_fleet
@@ -22915,16 +23736,16 @@ msgid "E-Invoice implementation for Romania"
 msgstr "Implementación de factura electrónica para Rumania"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_l10n_rs_edi
+msgid "E-Invoice implementation for Serbia"
+msgstr "Implementación de facturas electrónicas para Serbia"
+
+#. module: base
 #: model:ir.module.module,summary:base.module_l10n_dk_oioubl
 msgid "E-Invoicing, Offentlig Information Online Universal Business Language"
 msgstr ""
 "Facturación electrónica, Información oficial en línea Universal Business "
 "Language"
-
-#. module: base
-#: model:ir.module.module,summary:base.module_l10n_sa_edi
-msgid "E-Invoicing, Universal Business Language"
-msgstr "Facturación electrónica, Universal Business Language"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_l10n_my_edi
@@ -23066,6 +23887,11 @@ msgid "Ecuadorian Accounting Reports"
 msgstr "Informes contables ecuatorianos"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_ec_edi_stock
+msgid "Ecuadorian Delivery Guide"
+msgstr "Guía de entrega para Ecuador"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ec_edi_pos
 msgid "Ecuadorian Point of Sale"
 msgstr "Punto de venta ecuatoriano"
@@ -23103,13 +23929,8 @@ msgstr "Egipto - Nómina y Contabilidad"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_eg_edi_eta
-msgid "Egyptian E-Invoice Integration"
-msgstr "Integración de la facturación electrónica para Egipto"
-
-#. module: base
-#: model:ir.module.module,summary:base.module_l10n_eg_edi_eta
-msgid "Egyptian Tax Authority Invoice Integration"
-msgstr "Integración con la autoridad fiscal egipcia"
+msgid "Egypt E-Invoicing"
+msgstr "Facturación electrónica para Egipto"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__eire
@@ -23134,6 +23955,11 @@ msgid "El Salvador"
 msgstr "El Salvador"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_electrician
+msgid "Electricians"
+msgstr "Electricistas"
+
+#. module: base
 #: model:ir.module.module,summary:base.module_l10n_pe_edi_stock
 msgid "Electronic Delivery Note for Peru (OSE method) and UBL 2.1"
 msgstr "Nota electrónica de entrega para Perú (método OSE) y UBL 2.1"
@@ -23152,6 +23978,11 @@ msgstr "Facturación electrónica para Jordania, UBL 2.1"
 #: model:ir.module.module,summary:base.module_l10n_pe_edi
 msgid "Electronic Invoicing for Peru (OSE method) and UBL 2.1"
 msgstr "Facturación electrónica para Perú (método OSE) y UBL 2.1"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_electronic_store
+msgid "Electronic Store"
+msgstr "Tienda de electrónica"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_co_edi
@@ -23488,6 +24319,16 @@ msgid "Entry count"
 msgstr "Número de entradas"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_delivery_envia
+msgid "Envia Shipping"
+msgstr "Envío por Envia"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_environmental_agency
+msgid "Environmental Agency"
+msgstr "Agencia de protección del medio ambiente"
+
+#. module: base
 #: model:ir.module.module,summary:base.module_pos_epson_printer
 msgid "Epson ePOS Printers in PoS"
 msgstr "Impresoras Epson ePOS en TPV"
@@ -23608,6 +24449,11 @@ msgstr "Estonia - Informes contables"
 #: model:ir.module.module,shortdesc:base.module_l10n_ee_rounding
 msgid "Estonia - Rounding"
 msgstr "Estonia - Redondeo"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_ee_intrastat
+msgid "Estonia Intrastat Declaration"
+msgstr "Declaración Intrastat de Estonia"
 
 #. module: base
 #: model:res.country,name:base.sz
@@ -24373,6 +25219,11 @@ msgid "Export"
 msgstr "Exportar"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_l10n_se_sie4_export
+msgid "Export Accounting Data to SIE 4 files"
+msgstr "Exporte datos de contabilidad a archivos SIE 4"
+
+#. module: base
 #: model_terms:ir.ui.view,arch_db:base.wizard_lang_export
 msgid "Export Complete"
 msgstr "Exportación completada"
@@ -24415,6 +25266,12 @@ msgid "Export Work Entries to ADP"
 msgstr "Exporte entradas de trabajo a ADP"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_be_hr_payroll_acerta
+#: model:ir.module.module,summary:base.module_l10n_be_hr_payroll_acerta
+msgid "Export Work Entries to Acerta"
+msgstr "Exporte entradas de trabajo a Acerta"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_be_hr_payroll_group_s
 #: model:ir.module.module,summary:base.module_l10n_be_hr_payroll_group_s
 msgid "Export Work Entries to Group S"
@@ -24425,6 +25282,12 @@ msgstr "Exporte entradas de trabajo a Group S"
 #: model:ir.module.module,summary:base.module_l10n_be_hr_payroll_partena
 msgid "Export Work Entries to Partena"
 msgstr "Exporte entradas de trabajo a Partena"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_be_hr_payroll_prisma
+#: model:ir.module.module,summary:base.module_l10n_be_hr_payroll_prisma
+msgid "Export Work Entries to Prisma"
+msgstr "Exporte entradas de trabajo a Prisma"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be_hr_payroll_sd_worx
@@ -24493,6 +25356,11 @@ msgstr "Expresión"
 #: model:ir.module.module,shortdesc:base.module_base_address_extended
 msgid "Extended Addresses"
 msgstr "Direcciones ampliadas"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_l10n_my_edi_extended
+msgid "Extended features for the E-invoicing using MyInvois"
+msgstr "Más funciones para la facturación electrónica con MyInvois"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_ui_view__mode__extension
@@ -24615,6 +25483,11 @@ msgid "Extraterritorial"
 msgstr "Extraterritorial"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_eyewear_shop
+msgid "Eyewear Store"
+msgstr "Óptica"
+
+#. module: base
 #: model:res.partner.industry,full_name:base.res_partner_industry_F
 msgid "F - CONSTRUCTION"
 msgstr "F - CONSTRUCCIÓN"
@@ -24671,6 +25544,11 @@ msgstr "Islas Malvinas"
 #: model:res.country,name:base.fo
 msgid "Faroe Islands"
 msgstr "Islas Feroe"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_fast_food
+msgid "Fast Food"
+msgstr "Comida rápida"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_l10n_it_edi_website_sale
@@ -24796,37 +25674,37 @@ msgstr "Nombre de campo"
 #: model:ir.module.category,name:base.module_category_services_field_service
 #: model:ir.module.module,shortdesc:base.module_industry_fsm
 msgid "Field Service"
-msgstr "Servicio externo"
+msgstr "Servicio de campo"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_industry_fsm_sale
 msgid "Field Service - Sale"
-msgstr "Servicio externo - Ventas"
+msgstr "Servicio de campo - Ventas"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_industry_fsm_sale_subscription
 msgid "Field Service - Sale Subscription"
-msgstr "Servicio externo - Suscripción de ventas "
+msgstr "Servicio de campo - Suscripción de ventas "
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_industry_fsm_repair
 msgid "Field Service Repair"
-msgstr "Reparación Servicio externo"
+msgstr "Reparación Servicio de campo"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_industry_fsm_report
 msgid "Field Service Reports"
-msgstr "Informes de servicio externo"
+msgstr "Informes de servicio de campo"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_industry_fsm_sale_report
 msgid "Field Service Reports - Sale"
-msgstr "Informes de servicio externo - Ventas"
+msgstr "Informes de servicio de campo - Ventas"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_industry_fsm_stock
 msgid "Field Service Stock"
-msgstr "Stock del servicio externo"
+msgstr "Stock del servicio de campo"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_actions_server__update_field_type
@@ -25098,6 +25976,11 @@ msgid "Find old records and archive/delete them"
 msgstr "Encuentre registros antiguos y archívelos o eliminarlos"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_industry_restaurant
+msgid "Fine Dining Restaurant"
+msgstr "Restaurante de alta cocina"
+
+#. module: base
 #: model:ir.model.fields.selection,name:base.selection__base_partner_merge_automatic_wizard__state__finished
 msgid "Finished"
 msgstr "Terminado"
@@ -25165,6 +26048,11 @@ msgstr ""
 "vista disponibles, se usará el mismo modo que para pantallas más grandes."
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_fitness
+msgid "Fitness Center"
+msgstr "Gimnasio"
+
+#. module: base
 #: model:ir.module.module,summary:base.module_l10n_nl_reports_sbr_ob_nummer
 msgid ""
 "Fix to add the omzetbelastingnummer in Dutch Localization for SBR documents"
@@ -25226,6 +26114,11 @@ msgid "Font"
 msgstr "Fuente"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_food_trucks
+msgid "Food Trucks"
+msgstr "Gastronetas"
+
+#. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_I
 msgid "Food/Hospitality"
 msgstr "Comida/Hospedaje"
@@ -25234,11 +26127,6 @@ msgstr "Comida/Hospedaje"
 #: model:ir.model.fields,help:base.field_res_company__report_footer
 msgid "Footer text displayed at the bottom of all reports."
 msgstr "Texto mostrado en el pie de página de todos los informes."
-
-#. module: base
-#: model:ir.module.module,summary:base.module_l10n_be_codabox
-msgid "For Accounting Firms"
-msgstr "Para asesorías contables"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_actions_server__value
@@ -25353,6 +26241,11 @@ msgid "Forum on Courses"
 msgstr "Foro en Cursos"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_coal_petroleum
+msgid "Fossil Fuel Trading"
+msgstr "Comercio de combustible fósil"
+
+#. module: base
 #. odoo-python
 #: code:addons/models.py:0
 msgid ""
@@ -25450,6 +26343,11 @@ msgid "French Intrastat Declaration"
 msgstr "Declaración Intrastat para Francia"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_fr_intrastat_services
+msgid "French Intrastat Declaration (Services)"
+msgstr "Declaración Intrastat de Francia (servicios)"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_fr_hr_payroll
 msgid "French Payroll"
 msgstr "Nómina de Francia"
@@ -25525,6 +26423,11 @@ msgstr "Informe de trazabilidad completo de los Datos del demo"
 #: model:ir.model.fields,field_description:base.field_ir_logging__func
 msgid "Function"
 msgstr "Función"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_furniture_store
+msgid "Furniture Store"
+msgstr "Tienda de muebles"
 
 #. module: base
 #: model:res.partner.industry,full_name:base.res_partner_industry_G
@@ -25659,6 +26562,21 @@ msgid "Gantt view for Time Off Dashboard"
 msgstr "Vista Gantt para el tablero de Ausencias"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_gardening
+msgid "Gardening"
+msgstr "Jardinería"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_sale_gelato
+msgid "Gelato"
+msgstr "Gelato"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_sale_gelato_stock
+msgid "Gelato/Stock bridge"
+msgstr "Módulo de enlace entre Gelato y existencias"
+
+#. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_rule_form
 msgid "General"
 msgstr "General"
@@ -25722,6 +26640,7 @@ msgstr "Generar URL cortos y rastreables"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_de_intrastat
+#: model:ir.module.module,description:base.module_l10n_ee_intrastat
 msgid "Generates Intrastat XML report for declaration."
 msgstr "Genera el informe XML Intrastat para la declaración."
 
@@ -25968,6 +26887,11 @@ msgid "Greece - Accounting Reports"
 msgstr "Grecia - Informes contables"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_gr_edi
+msgid "Greece - MyDATA"
+msgstr "Grecia - MyDATA"
+
+#. module: base
 #: model:res.country,name:base.gl
 msgid "Greenland"
 msgstr "Groenlandia"
@@ -25986,6 +26910,11 @@ msgstr "Granada"
 #: model:ir.module.module,shortdesc:base.module_web_grid
 msgid "Grid View"
 msgstr "Vista de cuadrícula"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_fmcg_store
+msgid "Grocery Store"
+msgstr "Tienda de ultramarinos"
 
 #. module: base
 #: model:res.currency,currency_subunit_label:base.PLN
@@ -26197,7 +27126,7 @@ msgstr "HMRC"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_livechat
 msgid "HR - Livechat"
-msgstr "RR. HH. - Chat en vivo"
+msgstr "RR. HH. - Chat en directo"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_holidays_attendance
@@ -26240,6 +27169,11 @@ msgid "HTTP Routing"
 msgstr "Enrutamiento HTTP "
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_hair_salon
+msgid "Hair Salon"
+msgstr "Peluquería"
+
+#. module: base
 #: model:res.country,name:base.ht
 msgid "Haiti"
 msgstr "Haití"
@@ -26270,6 +27204,11 @@ msgid "Handle lunch orders of your employees"
 msgstr "Gestione los pedidos de comida de sus empleados"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_handyman
+msgid "Handyman Services"
+msgstr "Servicios de mantenimiento"
+
+#. module: base
 #: model_terms:res.partner,website_description:base.res_partner_1
 #: model_terms:res.partner,website_description:base.res_partner_10
 #: model_terms:res.partner,website_description:base.res_partner_12
@@ -26286,6 +27225,11 @@ msgstr "Controlador para impresoras de recibos ESC/POS y cajones portamonedas"
 #: model:ir.module.module,shortdesc:base.module_hw_drivers
 msgid "Hardware Proxy"
 msgstr "Proxy hardware"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_hardware_shop
+msgid "Hardware Store"
+msgstr "Ferretería"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_reset_view_arch_wizard__has_diff
@@ -26306,6 +27250,11 @@ msgstr "Espaciado del encabezado "
 #: model:ir.model.fields,help:base.field_res_company__company_details
 msgid "Header text displayed at the top of all reports."
 msgstr "Texto de encabezado en la parte de arriba de todos los informes"
+
+#. module: base
+#: model:ir.module.category,name:base.module_category_health_and_fitness
+msgid "Health and Fitness"
+msgstr "Salud y bienestar"
 
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_Q
@@ -26471,7 +27420,7 @@ msgid ""
 msgstr ""
 "Le ayuda a gestionar sus facturas y acciones contables.\n"
 "\n"
-"        Facturación: facturas, pagos y informes básicos de facturas.\n"
+"        Facturación: facturas, pagos e informes básicos de facturas.\n"
 "        Facturación y bancos: añade el tablero de Contabilidad, la gestión bancaria y los informes de seguimiento.\n"
 "        Asesor fiscal: acceso a todas las funciones de Contabilidad, incluyendo informes, gestión de activos, contabilidad analítica, sin permisos de configuración.\n"
 "        Administrador: acceso completo, incluidos los permisos de configuración y la gestión de datos contables.\n"
@@ -26636,6 +27585,11 @@ msgstr "Hong Kong - Nómina y contabilidad "
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__hongkong
 msgid "Hongkong"
 msgstr "Hongkong"
+
+#. module: base
+#: model:ir.module.category,name:base.module_category_hospitality
+msgid "Hospitality"
+msgstr "Hospitalidad"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_mail_server__smtp_host
@@ -26911,6 +27865,11 @@ msgstr "Código ISO de idioma y país, ej. es_ES"
 #: model:ir.model.fields,field_description:base.field_res_lang__iso_code
 msgid "ISO code"
 msgstr "Código ISO"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_it_hardware
+msgid "IT Hardware & Support"
+msgstr "Hardware y soporte informático"
 
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_J
@@ -27209,16 +28168,6 @@ msgid "Image is not encoded in base64."
 msgstr "La imagen no está codificada en base64."
 
 #. module: base
-#. odoo-python
-#: code:addons/image.py:0
-msgid ""
-"Image size excessive, uploaded images must be smaller than %s million "
-"pixels."
-msgstr ""
-"Tamaño de imagen excesivo, las imágenes cargadas deben ser más pequeñas que "
-"%s millones de píxeles."
-
-#. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_base_module_upgrade
 msgid "Impacted Apps"
 msgstr "Aplicaciones afectadas"
@@ -27288,9 +28237,14 @@ msgid "Import Accounting Data from SAF-T files"
 msgstr "Importe información de contabilidad desde archivos SAF-T"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_l10n_se_sie4_import
+msgid "Import Accounting Data from SIE 4 files"
+msgstr "Importe los datos de contabilidad desde archivos SIE 4"
+
+#. module: base
 #: model:ir.module.module,summary:base.module_l10n_se_sie_import
-msgid "Import Accounting Data from SIE files"
-msgstr "Importe información de contabilidad desde archivos SIE"
+msgid "Import Accounting Data from SIE 5 files"
+msgstr "Importe los datos de contabilidad desde archivos SIE 5"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_sale_amazon
@@ -27321,6 +28275,11 @@ msgstr "Importar extracto bancario OFX"
 #: model:ir.module.module,shortdesc:base.module_account_bank_statement_import_qif
 msgid "Import QIF Bank Statement"
 msgstr "Importar extracto bancario QIF"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_sale_shopee
+msgid "Import Shopee orders and sync deliveries"
+msgstr "Importe pedidos de Shopee y sincronice entregas"
 
 #. module: base
 #. odoo-python
@@ -27654,6 +28613,11 @@ msgid "Indonesia E-faktur"
 msgstr "E-faktur Indonesia"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_id_efaktur_coretax
+msgid "Indonesia E-faktur (Coretax)"
+msgstr "E-faktur de Indonesia (Coretax)"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_id
 msgid "Indonesian - Accounting"
 msgstr "Indonesia - Contabilidad"
@@ -27852,6 +28816,11 @@ msgstr ""
 "Convierta correos que recibió en su buzón de correo en tickets y registre su contenido como notas internas."
 
 #. module: base
+#: model:ir.module.module,summary:base.module_pos_pine_labs
+msgid "Integrate your POS with Pine Labs payment terminals"
+msgstr "Integre su TPV con las terminales de pago de Pine Labs"
+
+#. module: base
 #: model:ir.module.module,summary:base.module_pos_paytm
 msgid "Integrate your POS with a PayTM payment terminal"
 msgstr "Integre su TPV con una terminal de pago PayTM"
@@ -27875,6 +28844,11 @@ msgstr "Integre su TPV con un terminal de pago Six a través de la caja IoT"
 #: model:ir.module.module,summary:base.module_pos_stripe
 msgid "Integrate your POS with a Stripe payment terminal"
 msgstr "Integre su TPV con un terminal de pago Stripe"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_pos_tyro
+msgid "Integrate your POS with a Tyro payment terminal (AU)"
+msgstr "Integre su TPV con la terminal de pago Tyro (AU)"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_pos_viva_wallet
@@ -28007,6 +28981,11 @@ msgstr ""
 #: model:ir.module.module,shortdesc:base.module_account_intrastat
 msgid "Intrastat Reports"
 msgstr "Informes Instrastat"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_account_intrastat_services
+msgid "Intrastat Reports for Services"
+msgstr "Informes Intrastat para servicios"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.report_irmodulereference
@@ -28264,7 +29243,7 @@ msgstr "Tipo de cambio inverso"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__type__invoice
 msgid "Invoice Address"
-msgstr "Dirección de factura"
+msgstr "Dirección de facturación"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_documents_account
@@ -28285,7 +29264,7 @@ msgstr "Facturas, pagos, seguimientos y sincronización bancaria (enterprise)"
 #: model:ir.module.module,shortdesc:base.module_account
 #: model:ir.module.module,shortdesc:base.module_account_accountant
 msgid "Invoicing"
-msgstr "Facturación"
+msgstr "Facturación / Contabilidad"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hw_posbox_homepage
@@ -28470,6 +29449,11 @@ msgid "Italy - Accounting Reports"
 msgstr "Italia - informes contables"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_it_riba
+msgid "Italy - Bank Receipts (Ri.Ba.)"
+msgstr "Italia - Recibos bancarios (Ri.Ba.)"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_it_edi_doi
 msgid "Italy - Declaration of Intent"
 msgstr "Italia - Declaración de intención"
@@ -28499,9 +29483,19 @@ msgid "Italy - Point of Sale"
 msgstr "Italia - Punto de venta"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_it_edi_sale
+msgid "Italy - Sale E-invoicing"
+msgstr "Italia - Facturación electrónica de ventas"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_it_stock_ddt
 msgid "Italy - Stock DDT"
 msgstr "Italia - DDT de stock"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_it_xml_export
+msgid "Italy - Tax Report XML Export"
+msgstr "Italia - Exportación XML del informe de impuestos"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_it_edi_website_sale
@@ -28598,16 +29592,6 @@ msgid "K - FINANCIAL AND INSURANCE ACTIVITIES"
 msgstr "K - ACTIVIDADES FINANCIERAS Y DE SEGUROS"
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_sa_hr_payroll
-msgid "K.S.A. - Payroll"
-msgstr "Reino de Arabia Saudita - Nómina"
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_sa_hr_payroll_account
-msgid "K.S.A. - Payroll with Accounting"
-msgstr "Reino de Arabia Saudita - Nómina y contabilidad"
-
-#. module: base
 #: model:ir.module.module,shortdesc:base.module_digest
 msgid "KPI Digests"
 msgstr "Resúmenes de KPI"
@@ -28688,6 +29672,11 @@ msgstr "Kenia - Nómina SHIF"
 #: model:ir.module.module,shortdesc:base.module_l10n_ke_hr_payroll_account
 msgid "Kenya - Payroll with Accounting"
 msgstr "Kenia - Nómina y contabilidad"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_ke_edi_oscu_pos
+msgid "Kenya - Point of Sale"
+msgstr "Kenia - Punto de venta"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ke_edi_oscu_mrp
@@ -28914,7 +29903,7 @@ msgstr "Coste en destino con una orden de subcontratación"
 #. module: base
 #: model:ir.module.module,summary:base.module_mrp_landed_costs
 msgid "Landed Costs on Manufacturing Order"
-msgstr "Costo en destino en la orden de fabricación"
+msgstr "Coste en destino en la orden de fabricación"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__report_paperformat__orientation__landscape
@@ -29215,6 +30204,11 @@ msgid "Launch Configuration Wizard"
 msgstr "Iniciar asistente de configuración"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_industry_lawyer
+msgid "Law Firm"
+msgstr "Bufete de abogados"
+
+#. module: base
 #: model:ir.model.fields,field_description:base.field_res_company__layout_background
 msgid "Layout Background"
 msgstr "Fondo de diseño"
@@ -29324,7 +30318,7 @@ msgstr "Lesotho"
 #: model:ir.module.module,summary:base.module_website_sale_mass_mailing
 msgid "Let new customers sign up for a newsletter during checkout"
 msgstr ""
-"Permita que los nuevos clientes se registren para un boletín de noticias en "
+"Permita que los nuevos clientes se registren para un boletín informativo en "
 "el proceso de pago"
 
 #. module: base
@@ -29496,9 +30490,19 @@ msgid "Link module between pos_hr and pos_restaurant"
 msgstr "Módulo de enlace entre pos_sale y pos_loyalty"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_pos_restaurant_loyalty
+msgid "Link module between pos_restaurant and pos_loyalty"
+msgstr "Módulo de enlace entre pos_restaurant y pos_loyalty"
+
+#. module: base
 #: model:ir.module.module,summary:base.module_l10n_be_pos_sale
 msgid "Link module between pos_sale and l10n_be"
 msgstr "Módulo de enlace entre pos_sale y l10n_be"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_pos_event_sale
+msgid "Link module between pos_sale and pos_event"
+msgstr "Módulo de enlace entre pos_sale y pos_event"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_pos_sale_loyalty
@@ -29600,7 +30604,7 @@ msgstr "Archivo de auditoría estándar para impuestos de Lituania"
 #: model:ir.module.category,name:base.module_category_website_live_chat
 #: model:ir.module.module,shortdesc:base.module_im_livechat
 msgid "Live Chat"
-msgstr "Chat en vivo"
+msgstr "Chat en directo"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_currency_rate_live
@@ -29983,6 +30987,21 @@ msgstr "Malasia - Informes contables"
 #: model:ir.module.module,shortdesc:base.module_l10n_my_edi
 msgid "Malaysia - E-invoicing"
 msgstr "Malasia - Facturación electrónica"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_my_edi_extended
+msgid "Malaysia - E-invoicing Extended Features"
+msgstr "Malasia - Más funciones para la facturación electrónica"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_my_hr_payroll
+msgid "Malaysia - Payroll"
+msgstr "Malasia - Nómina"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_my_hr_payroll_account
+msgid "Malaysia - Payroll with Accounting"
+msgstr "Malasia - Nómina y Contabilidad"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_my_ubl_pint
@@ -30401,6 +31420,11 @@ msgid "Manat"
 msgstr "Manat"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_co_edi_mandate
+msgid "Mandate invoicing for Colombia"
+msgstr "Mandato de facturación para Colombia"
+
+#. module: base
 #: model:ir.module.category,name:base.module_category_manufacturing
 #: model:ir.module.category,name:base.module_category_manufacturing_manufacturing
 #: model:ir.module.module,shortdesc:base.module_mrp
@@ -30465,6 +31489,11 @@ msgstr "Marco"
 #: model_terms:ir.ui.view,arch_db:base.user_groups_view
 msgid "Marketing"
 msgstr "Marketing"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_marketing_agency
+msgid "Marketing Agency"
+msgstr "Agencia de marketing"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_marketing_marketing_automation
@@ -30556,6 +31585,12 @@ msgstr "Mensajes SMS masivos para leads/oportunidades"
 #: model:ir.module.module,shortdesc:base.module_mass_mailing_sale_sms
 msgid "Mass mailing sms on sale orders"
 msgstr "Mensajes SMS masivos para pedidos de venta"
+
+#. module: base
+#: model:ir.module.module,description:base.module_hr_recruitment_sms
+#: model:ir.module.module,summary:base.module_hr_recruitment_sms
+msgid "Mass mailing sms to job applicants"
+msgstr "Envío masivo de SMS a candidatos de un puesto"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mrp_mps
@@ -30732,6 +31767,11 @@ msgid "Mexico - Payroll"
 msgstr "México - Nómina"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_mx_hr_payroll_localisation
+msgid "Mexico - Payroll - Localisation"
+msgstr "México - Nómina - Localización"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_mx_hr_payroll_account
 msgid "Mexico - Payroll with Accounting"
 msgstr "México - Nómina y contabilidad"
@@ -30755,6 +31795,11 @@ msgstr "México/BajaSur"
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__mexico/general
 msgid "Mexico/General"
 msgstr "México/General"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_micro_brewery
+msgid "Microbrewery"
+msgstr "Cervecerías artesanales"
 
 #. module: base
 #: model:res.country,name:base.fm
@@ -31627,6 +32672,11 @@ msgid "Netherlands - Accounting Reports"
 msgstr "Países Bajos - Informes contables"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_nl_reports_vat_pay_wizard
+msgid "Netherlands - Accounting Reports (post wizard)"
+msgstr "Países Bajos - Informes contables (asistente de publicación)"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_nl_hr_payroll
 msgid "Netherlands - Payroll"
 msgstr "Países Bajos - Nómina"
@@ -31708,7 +32758,7 @@ msgstr "Nueva Zelanda - Contabilidad"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_mass_mailing
 msgid "Newsletter Subscribe Button"
-msgstr "Botón de suscripción al boletín de noticias"
+msgstr "Botón de suscripción al boletín informativo"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_mass_mailing_sms
@@ -31884,7 +32934,7 @@ msgid ""
 "No response received. Check server address and port number.\n"
 " %s"
 msgstr ""
-"No se recibió respuesta. Comprueba la dirección del servidor y el número de puerto.\n"
+"No se recibió respuesta. Compruebe la dirección del servidor y el número de puerto.\n"
 " %s"
 
 #. module: base
@@ -31938,6 +32988,11 @@ msgstr ""
 #: model:ir.model.fields.selection,name:base.selection__ir_mail_server__smtp_encryption__none
 msgid "None"
 msgstr "Ninguno"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_non_profit_organization
+msgid "Nonprofit Organization"
+msgstr "Organización sin ánimo de lucro"
 
 #. module: base
 #: model:res.country,name:base.nf
@@ -32215,7 +33270,7 @@ msgstr ""
 "Interactúe con sus visitantes\n"
 "-------------------------\n"
 "\n"
-"La función integrada de chat en vivo del sitio web le permite comenzar a chatear en tiempo real con\n"
+"La función integrada de chat en directo del sitio web le permite comenzar a chatear en tiempo real con\n"
 "sus visitantes, de esta manera podrá obtener comentarios sobre sus publicaciones recientes o ideas para escribir nuevas\n"
 "publicaciones.\n"
 "\n"
@@ -32579,72 +33634,93 @@ msgstr ""
 "Recursos Humanos de Odoo\n"
 "--------------------\n"
 "\n"
-"Con <a href=\"https://www.odoo.com/app/employees\">Recursos Humanos</a> de Odoo,\n"
+"Con <a href=\"https://www.odoo.com/app/employees\">Recursos Humanos</a> de "
+"Odoo,\n"
 "gestionar el activo más importante de su empresa: las personas.\n"
 "\n"
-"Obtenga todas sus operaciones de RR. HH. gestionadas fácilmente: intercambio de conocimientos, contrataciones,\n"
+"Obtenga todas sus operaciones de RR. HH. gestionadas fácilmente: intercambio "
+"de conocimientos, contrataciones,\n"
 "tasaciones, partes de horas, contratos, asistencias, nómina, etc.\n"
 "\n"
-"Cada necesidad es proporcionada por una aplicación específica que se activa a petición.\n"
+"Cada necesidad es proporcionada por una aplicación específica que se activa "
+"a petición.\n"
 "\n"
 "Gestione a sus empleados\n"
 "---------------------\n"
 "\n"
-"Supervise toda la información importante en la libreta de direcciones de su empresa. Alguna\n"
+"Supervise toda la información importante en la libreta de direcciones de su "
+"empresa. Alguna\n"
 "es exclusiva para los gerentes de RR. HH. , otros son públicos para\n"
 "los otros trabajadores.\n"
 "\n"
-"Registre los contratos de los empleados y reciba alertas cuando tenga que renovarse.\n"
+"Registre los contratos de los empleados y reciba alertas cuando tenga que "
+"renovarse.\n"
 "\n"
 "Optimice su proceso de reclutamiento\n"
 "-----------------------------------\n"
 "\n"
-"Índice de currículums, seguimiento de solicitantes, perfiles de búsqueda con <a href=\"https://www.odoo.com/app/employees\">Odoo RR. HH.</a>\n"
+"Índice de currículums, seguimiento de solicitantes, perfiles de búsqueda con "
+"<a href=\"https://www.odoo.com/app/employees\">Odoo RR. HH.</a>\n"
 "\n"
-"Publique ofertas de trabajo y realice un seguimiento de cada solicitud recibida. Siga a los solicitantes\n"
+"Publique ofertas de trabajo y realice un seguimiento de cada solicitud "
+"recibida. Siga a los solicitantes\n"
 "en su proceso de reclutamiento con la vista kanban inteligente.\n"
 "\n"
-"Ahorre tiempo automatizando algunas comunicaciones con plantillas de correo electrónico. Los currículos se\n"
-"indexan automáticamente, lo que le permite encontrar fácilmente perfiles específicos.\n"
+"Ahorre tiempo automatizando algunas comunicaciones con plantillas de correo "
+"electrónico. Los currículos se\n"
+"indexan automáticamente, lo que le permite encontrar fácilmente perfiles "
+"específicos.\n"
 "\n"
 "Red Social Empresarial\n"
 "-------------------------\n"
 "\n"
-"Desglose los silos de información. Comparta conocimientos y mejores prácticas entre todos los\n"
-"empleados. Siga a personas o documentos específicos y únase a grupos de interés para\n"
+"Desglose los silos de información. Comparta conocimientos y mejores "
+"prácticas entre todos los\n"
+"empleados. Siga a personas o documentos específicos y únase a grupos de "
+"interés para\n"
 "compartir experiencia y documentos.\n"
 "\n"
-"Interactúe con sus compañeros de trabajo en tiempo real con el chat en vivo del sitio web.\n"
+"Interactúe con sus compañeros de trabajo en tiempo real con el chat en "
+"directo del sitio web.\n"
 "\n"
 "Realice un seguimiento del tiempo y las asistencias\n"
 "--------------------------\n"
 "\n"
-"Realice un seguimiento del tiempo dedicado por proyecto, cliente o tarea. Es fácil de registrar\n"
-"partes de horas o verificar las asistencias de cada empleado. Publique la contabilidad analítica\n"
+"Realice un seguimiento del tiempo dedicado por proyecto, cliente o tarea. Es "
+"fácil de registrar\n"
+"partes de horas o verificar las asistencias de cada empleado. Publique la "
+"contabilidad analítica\n"
 "automáticamente en función del tiempo invertido en sus proyectos.\n"
 "\n"
 "Gestione el tiempo personal\n"
 "-----------------\n"
 "\n"
-"Lleve un registro de los días de vacaciones acumulados por cada empleado. Los empleados ingresan a sus\n"
-"(tiempo personal pagado, tiempo personal por enfermedad, etc.), para que los gerentes aprueben y\n"
+"Lleve un registro de los días de vacaciones acumulados por cada empleado. "
+"Los empleados ingresan a sus\n"
+"(tiempo personal pagado, tiempo personal por enfermedad, etc.), para que los "
+"gerentes aprueben y\n"
 "Validar. Todo se hace en unos pocos clics. La agenda de cada empleado es\n"
 "actualizado en consecuencia.\n"
 "\n"
 "Realice un seguimiento de los gastos de los empleados\n"
 "-------------------------------\n"
 "\n"
-"Deshágase del trabajo en papel y siga los gastos de los empleados directamente en Odoo.\n"
+"Deshágase del trabajo en papel y siga los gastos de los empleados "
+"directamente en Odoo.\n"
 "No pierda tiempo ni dinero controlando todo el flujo: validación de gastos,\n"
-"reembolso de los empleados, publique todo lo relacionado con contabilidad y refacturación a\n"
+"reembolso de los empleados, publique todo lo relacionado con contabilidad y "
+"refacturación a\n"
 "Clientes.\n"
 "\n"
 "Siga las evaluaciones periódicas\n"
 "--------------------------\n"
 "\n"
-"Configure planes de evaluación y/o encuestas para sus empleados y observe su\n"
-"Evolución. Definir los pasos para las entrevistas y Odoo notificará a los gerentes o\n"
-"automáticamente para preparar evaluaciones. Realizar un seguimiento del progreso de\n"
+"Configure planes de evaluación y/o encuestas para sus empleados y observe "
+"su\n"
+"Evolución. Definir los pasos para las entrevistas y Odoo notificará a los "
+"gerentes o\n"
+"automáticamente para preparar evaluaciones. Realizar un seguimiento del "
+"progreso de\n"
 "personal periódicamente.\n"
 "\n"
 "Aumente el compromiso con la ludificación\n"
@@ -32653,20 +33729,25 @@ msgstr ""
 "• Defina un objetivo claro y proporcionar comentarios en tiempo real\n"
 "\n"
 "Inspire logros con desafíos, metas y recompensas. Definir objetivos claros\n"
-"y proporcionar retroalimentación en tiempo real y resultados tangibles. Mostrar la parte superior\n"
-"artistas intérpretes o ejecutantes a todo el canal y reconocen públicamente un trabajo bien hecho.\n"
+"y proporcionar comentarios en tiempo real y resultados tangibles. Mostrar la "
+"parte superior\n"
+"artistas intérpretes o ejecutantes a todo el canal y reconocen públicamente "
+"un trabajo bien hecho.\n"
 "\n"
 "Tablas de clasificación\n"
 "\n"
-"Promover líderes y competencia entre el equipo de ventas con ratios de rendimiento.\n"
+"Promover líderes y competencia entre el equipo de ventas con ratios de "
+"rendimiento.\n"
 "\n"
 "Objetivos personales\n"
 "\n"
-"Asigne objetivos claros a los usuarios para alinearlos con los objetivos de la empresa.\n"
+"Asigne objetivos claros a los usuarios para alinearlos con los objetivos de "
+"la empresa.\n"
 "\n"
 "Objetivos de equipo\n"
 "\n"
 "Compare los ingresos con las previsiones y los presupuestos en tiempo real.\n"
+"\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_mrp
@@ -32791,7 +33872,7 @@ msgstr ""
 "\n"
 "Obtenga su planificación de recursos de fabricación precisa con su integración completa\n"
 "con aplicaciones de ventas y compras. La integración contable permite\n"
-"valoración contable y informes más profundos sobre los costes e ingresos de su\n"
+"valoración contable e informes más profundos sobre los costes e ingresos de su\n"
 "operaciones de fabricación.\n"
 "\n"
 
@@ -33011,6 +34092,16 @@ msgstr "Localización mexicana de Odoo para el stock y el embarque"
 #: model:ir.module.module,summary:base.module_web_mobile
 msgid "Odoo Mobile Core module"
 msgstr "Módulo principal de Oddo en el móvil"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_pos_mobile
+msgid "Odoo Mobile Point of Sale module"
+msgstr "Módulo móvil de Punto de venta de Odoo"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_odoo_partner
+msgid "Odoo Partner"
+msgstr "Partner de Odoo"
 
 #. module: base
 #: model:ir.module.module,description:base.module_point_of_sale
@@ -33883,7 +34974,7 @@ msgstr ""
 "### Servicio al cliente\n"
 "\n"
 "-   Portal del cliente para rastrear pedidos\n"
-"-   Compra asistida con chats en vivo desde el sitio web\n"
+"-   Compra asistida con chats en directo desde el sitio web\n"
 "-   Gestión de devoluciones\n"
 "-   Reglas de envío avanzadas\n"
 "-   Cupones o certificados de regalo\n"
@@ -34071,7 +35162,7 @@ msgstr "Estands de eventos en línea"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_event_sale
 msgid "Online Event Ticketing"
-msgstr "Venta de entradas en línea eventos"
+msgstr "Venta de entradas en línea para eventos"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_hr_recruitment
@@ -34330,7 +35421,7 @@ msgstr ""
 "\n"
 "### Planifique, promocione, comercialice y organice\n"
 "\n"
-"Obtenga funciones extra por evento: varias páginas, patrocinadores, numerosas charlas, formularios de propuesta para charlas, programa, noticias relacionadas con el evento, documentos (diapositivas de las presentaciones), menús específicos para el evento.\n"
+"Obtenga funciones extra por evento: varias páginas, patrocinadores, numerosas charlas, formularios de propuesta para charlas, programa, noticias relacionadas con el evento, documentos (diapositivas de las charlas), menús específicos para el evento.\n"
 "\n"
 "Organice las sesiones\n"
 "--------------------\n"
@@ -34339,9 +35430,9 @@ msgstr ""
 "\n"
 "Incluya en sus eventos un formulario para proponer charlas que permita a sus visitas enviar conferencias y ponentes. Organice el proceso de validación de cada charla y planifíquelas de una manera fácil.\n"
 "\n"
-"La integración única del frontend y el backend de Odoo facilita la organización y la publicación. Elabore de forma sencilla las biografías de los ponentes y las descripciones de las presentaciones de una manera profesional.\n"
+"La integración única del frontend y el backend de Odoo facilita la organización y la publicación. Elabore de forma sencilla las biografías de los ponentes y las descripciones de las charlas de una manera profesional.\n"
 "\n"
-"Programa y lista de presentaciones\n"
+"Programa y lista de charlas\n"
 "------------------------\n"
 "\n"
 "### Una interfaz muy eficaz\n"
@@ -34717,13 +35808,19 @@ msgid ""
 "due. My Company (San Francisco) will be authorized to suspend any provision "
 "of services without prior warning in the event of late payment."
 msgstr ""
-"Nuestras facturas se pueden pagar dentro de 21 días hábiles, a no ser que se"
-" indique un megen de tiempo diferente, ya sea en la factura o en la orden. "
-"En el caso de que no se pague para la fecha acordada, My Company (San "
-"Francisco) se reserva el derecho a pedir un pago de intereses fijo que puede"
-" ser del 10% de la suma que sigue sin pagarse para el último día. My Company"
-" (San Francisco) tendrá la autorización de suspender cualquier servicio "
-"provisional sin dar aviso previo en caso de que haya un pago atrasado."
+"Nuestras facturas se pueden pagar dentro de 21 días laborables, a no ser que"
+" se indique un margen de tiempo diferente, ya sea en la factura o en el "
+"pedido. En el caso de que no se pague para la fecha acordada, My Company "
+"(San Francisco) se reserva el derecho a pedir un pago de intereses fijo que "
+"puede ser del 10% de la suma que sigue sin pagarse para el último día. My "
+"Company (San Francisco) tendrá la autorización de suspender cualquier "
+"servicio provisional sin dar aviso previo en caso de que haya un pago "
+"atrasado."
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_outdoor_activities
+msgid "Outdoor Activities"
+msgstr "Actividades al aire libre"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_ir_mail_server_search
@@ -34812,6 +35909,11 @@ msgid "POS - HR"
 msgstr "TPV - RR. HH."
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_pos_restaurant_loyalty
+msgid "POS - Restaurant Loyality"
+msgstr "TPV para restaurante - Fidelidad"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_sms
 msgid "POS - SMS"
 msgstr "TPV - SMS"
@@ -34864,7 +35966,7 @@ msgstr "RR. HH. de TPV para restaurante "
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_iot_six
 msgid "POS IoT Six"
-msgstr "TPV IoT Six"
+msgstr "TPV – IoT Six"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_mercado_pago
@@ -34875,6 +35977,11 @@ msgstr "TPV de Mercado Pago"
 #: model:ir.module.module,shortdesc:base.module_pos_paytm
 msgid "POS PayTM"
 msgstr "PayTM TPV"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_pos_pine_labs
+msgid "POS Pine Labs"
+msgstr "TPV - Pine Labs"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_pricer
@@ -34960,6 +36067,11 @@ msgstr "TPV Six"
 #: model:ir.module.module,shortdesc:base.module_pos_stripe
 msgid "POS Stripe"
 msgstr "TPV Stripe"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_pos_tyro
+msgid "POS Tyro"
+msgstr "TPV - Tyro"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_urban_piper_swiggy
@@ -35653,6 +36765,11 @@ msgid "Payment Provider: Mollie"
 msgstr "Proveedor de pago: Mollie"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_payment_nuvei
+msgid "Payment Provider: Nuvei"
+msgstr "Proveedor de pago: Nuvei"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_payment_paypal
 msgid "Payment Provider: Paypal"
 msgstr "Proveedor de pago: PayPal"
@@ -35685,7 +36802,7 @@ msgstr "Proveedor de pago: Xendit"
 #. module: base
 #: model:ir.module.category,name:base.module_category_accounting_payment_providers
 msgid "Payment Providers"
-msgstr "Proveedores de pagos"
+msgstr "Proveedores de pago"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_payment
@@ -35735,6 +36852,11 @@ msgstr "Penique"
 #: model:ir.module.module,shortdesc:base.module_account_peppol
 msgid "Peppol"
 msgstr "Peppol"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_personal_trainer
+msgid "Personal Trainer"
+msgstr "Entrenador personal"
 
 #. module: base
 #: model_terms:res.partner,website_description:base.res_partner_2
@@ -35807,6 +36929,11 @@ msgid "Pesos"
 msgstr "Pesos"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_pharmacy_retail
+msgid "Pharmacy"
+msgstr "Farmacia"
+
+#. module: base
 #: model:res.country,name:base.ph
 msgid "Philippines"
 msgstr "Filipinas"
@@ -35848,6 +36975,11 @@ msgid "Phone:"
 msgstr "Teléfono:"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_photography
+msgid "Photography"
+msgstr "Fotografía"
+
+#. module: base
 #: model:res.currency,currency_subunit_label:base.SSP
 msgid "Piasters"
 msgstr "Piastras"
@@ -35873,6 +37005,11 @@ msgstr "Islas Pitcairn"
 #: model:ir.model.fields.selection,name:base.selection__ir_ui_view__type__pivot
 msgid "Pivot"
 msgstr "Tabla dinámica"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_sale_gelato
+msgid "Place orders through Gelato's print-on-demand service"
+msgstr "Haga pedidos mediante el servicio de impresión bajo demanda de Gelato"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_project_forecast
@@ -35960,6 +37097,11 @@ msgstr ""
 "en el menú de usuario) para cambiar su propia contraseña."
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_pos_event_sale
+msgid "PoS - Event Sale"
+msgstr "TPV - Venta y eventos"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_order_tracking_display
 msgid "PoS Order Tracking Customer Display"
 msgstr "Pantalla que el cliente verá al rastrear su pedido en el TPV"
@@ -35981,6 +37123,7 @@ msgstr "Pantalla de preparación del TPV para restaurantes"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_accounting_localizations_point_of_sale
+#: model:ir.module.category,name:base.module_category_localization_point_of_sale
 #: model:ir.module.category,name:base.module_category_point_of_sale
 #: model:ir.module.category,name:base.module_category_sales_point_of_sale
 #: model:ir.module.module,shortdesc:base.module_point_of_sale
@@ -35998,9 +37141,19 @@ msgid "Point of Sale - UrbanPiper"
 msgstr "Punto de venta - UrbanPiper"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_pos_urban_piper_enhancements
+msgid "Point of Sale - UrbanPiper Enhancements"
+msgstr "Punto de venta - Mejoras para UrbanPiper"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_discount
 msgid "Point of Sale Discounts"
 msgstr "Descuentos del punto de venta"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_pos_mobile
+msgid "Point of Sale Mobile"
+msgstr "Punto de venta y Móvil"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_sale_stock_renting
@@ -36583,7 +37736,7 @@ msgstr ""
 "y documentos mediante tareas y tickets. Comience a compartir de inmediato con la integración\n"
 "de correo electrónico.\n"
 "\n"
-"Hable con otros usuarios o clientes con la función de chat en vivo desde la página web.\n"
+"Hable con otros usuarios o clientes con la función de chat en directo desde la página web.\n"
 "\n"
 "Redacción colaborativa\n"
 "---------------------\n"
@@ -36776,6 +37929,11 @@ msgstr ""
 "de un módulo personalizado."
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_condominium
+msgid "Property Owner Association"
+msgstr "Asociación de propietarios"
+
+#. module: base
 #: model:res.partner.category,name:base.res_partner_category_2
 msgid "Prospects"
 msgstr "Prospectos"
@@ -36783,7 +37941,7 @@ msgstr "Prospectos"
 #. module: base
 #: model:ir.module.module,summary:base.module_website_sale_shiprocket
 msgid "Provide cash on delivery for website users"
-msgstr "Ofrezca pago a contra reembolso para usuarios del sitio web"
+msgstr "Ofrezca pago contra reembolso para usuarios del sitio web"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_mail_mobile
@@ -37230,7 +38388,8 @@ msgid "RTN"
 msgstr "RTN"
 
 #. module: base
-#: model:res.country,vat_label:base.ec model:res.country,vat_label:base.pe
+#: model:res.country,vat_label:base.ec model:res.country,vat_label:base.pa
+#: model:res.country,vat_label:base.pe
 msgid "RUC"
 msgstr "RUC"
 
@@ -37275,7 +38434,7 @@ msgstr "Leer"
 #: model:ir.model.fields,field_description:base.field_ir_model_access__perm_read
 #: model_terms:ir.ui.view,arch_db:base.ir_access_view_search
 msgid "Read Access"
-msgstr "Acceso de lectura"
+msgstr "Permiso de lectura"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_fields__readonly
@@ -37289,6 +38448,7 @@ msgid "Real"
 msgstr "Real"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_industry_real_estate
 #: model:res.partner.industry,name:base.res_partner_industry_L
 msgid "Real Estate"
 msgstr "Bienes inmuebles"
@@ -37363,6 +38523,11 @@ msgstr "Registro a crear"
 #: model:ir.module.module,shortdesc:base.module_hr_recruitment
 msgid "Recruitment"
 msgstr "Reclutamiento"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_hr_recruitment_sms
+msgid "Recruitment - SMS"
+msgstr "Reclutamiento - SMS"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_recruitment_sign
@@ -37530,7 +38695,7 @@ msgstr "Restantes"
 #: model:ir.module.category,name:base.module_category_human_resources_remote_work
 #: model:ir.module.module,shortdesc:base.module_hr_homeworking
 msgid "Remote Work"
-msgstr "Trabajo remoto"
+msgstr "Teletrabajo"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_homeworking_calendar
@@ -37837,6 +39002,11 @@ msgid "Restrict"
 msgstr "Restringir"
 
 #. module: base
+#: model:ir.module.category,name:base.module_category_retail
+msgid "Retail"
+msgstr "Comercio al por menor"
+
+#. module: base
 #: model_terms:ir.ui.view,arch_db:base.res_device_view_kanban
 #: model_terms:ir.ui.view,arch_db:base.res_device_view_tree
 msgid "Revoke"
@@ -37899,6 +39069,16 @@ msgstr "Rumania - Contabilidad"
 #: model:ir.module.module,shortdesc:base.module_l10n_ro_reports
 msgid "Romania - Accounting Reports"
 msgstr "Rumania - Informes contables"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_ro_edi_stock
+msgid "Romania - E-Transport"
+msgstr "Rumania - e-Transport"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_ro_edi_stock_batch
+msgid "Romania - E-Transport Batch Pickings"
+msgstr "Rumania - Pickings por lote con e-Transport"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ro_edi
@@ -38252,6 +39432,11 @@ msgid "Salary Configurator (Belgium)"
 msgstr "Configurador de salario (Bélgica)"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_be_hr_contract_salary_mobility_budget
+msgid "Salary Configurator (Belgium) - Mobility Budget"
+msgstr "Configurador de sueldo (Bélgica) - Presupuesto de movilidad"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_contract_salary_holidays
 msgid "Salary Configurator - Holidays"
 msgstr "Configurador de salario - Vacaciones"
@@ -38263,6 +39448,7 @@ msgstr "Configurador de salario - nómina"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_l10n_be_hr_contract_salary
+#: model:ir.module.module,summary:base.module_l10n_be_hr_contract_salary_mobility_budget
 msgid "Salary Package Configurator"
 msgstr "Configurador del paquete salarial"
 
@@ -38270,6 +39456,12 @@ msgstr "Configurador del paquete salarial"
 #: model:ir.module.category,name:base.module_category_accounting_localizations_sale
 msgid "Sale"
 msgstr "Ventas"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_test_sale_purchase_edi_ubl
+msgid "Sale & Purchase Order EDI Tests: Ensure Flow Robustness"
+msgstr ""
+"Pruebas EDI de los pedidos de venta y compra: asegurar la solidez del flujo"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_sms
@@ -38414,6 +39606,11 @@ msgstr "Venta basada en la subcontratación de servicios"
 #: model:ir.module.module,description:base.module_l10n_br_sales
 msgid "Sale modifications for Brazil"
 msgstr "Modificaciones de venta para Brasil"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_it_edi_sale
+msgid "Sale modifications for Italy E-invoicing"
+msgstr "Modificaciones de venta para la facturación electrónica de Italia"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_spreadsheet_sale_management
@@ -38615,6 +39812,16 @@ msgstr "Arabia Saudita - Facturación electrónica"
 #: model:ir.module.module,shortdesc:base.module_l10n_sa_edi_pos
 msgid "Saudi Arabia - E-invoicing (Simplified)"
 msgstr "Arabia Saudita - Facturación electrónica (simplificada) "
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_sa_hr_payroll
+msgid "Saudi Arabia - Payroll"
+msgstr "Arabia Saudita - Nómina "
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_sa_hr_payroll_account
+msgid "Saudi Arabia - Payroll with Accounting"
+msgstr "Arabia Saudita - Nómina y contabilidad "
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_sa_pos
@@ -39028,8 +40235,14 @@ msgstr "Envíe sus paquetes a través de Shiprocket y rastréelos en línea"
 
 #. module: base
 #: model:ir.module.module,description:base.module_delivery_dhl
-msgid "Send your shippings through DHL and track them online"
-msgstr "Haga sus envíos a través de DHL y rastréelos en línea"
+msgid ""
+"This is the legacy integration with DHL Express that is no longer supported."
+" Please install the new \"DHL Express Shipping\" module and uninstall this "
+"one as soon as possible."
+msgstr ""
+"Esta es una integración de DHL Express obsoleta y ya no es compatible. "
+"Instale el nuevo modulo “Envíos por DHL Express” y desinstale este tan "
+"pronto como le sea posible."
 
 #. module: base
 #: model:ir.module.module,description:base.module_delivery_fedex_rest
@@ -39043,7 +40256,7 @@ msgstr ""
 "Envíe sus envíos a través de UPS y realice un seguimiento de ellos en línea"
 
 #. module: base
-#: model:ir.module.module,description:base.module_delivery_usps
+#: model:ir.module.module,description:base.module_delivery_usps_rest
 msgid "Send your shippings through USPS and track them online"
 msgstr "Haga sus envíos a través de USPS y rastréelos en línea"
 
@@ -39145,7 +40358,7 @@ msgstr "Código de secuencia"
 #. module: base
 #: model:ir.model,name:base.model_ir_sequence_date_range
 msgid "Sequence Date Range"
-msgstr "Rango de fechas de la secuencia"
+msgstr "Intervalo de fechas de la secuencia"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_sequence__padding
@@ -39180,6 +40393,11 @@ msgstr "Serbia - Contabilidad"
 #: model:ir.module.module,shortdesc:base.module_l10n_rs_reports
 msgid "Serbia - Accounting Reports"
 msgstr "Serbia - Informes contables"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_rs_edi
+msgid "Serbia - eFaktura E-invoicing"
+msgstr "Serbia - Facturación electrónica de eFaktura"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_logging__type__server
@@ -39361,7 +40579,17 @@ msgstr "Envío por Shiprocket"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_sale_shiprocket
 msgid "Shiprocket: Cash on Delivery"
-msgstr "Shiprocket: pago a contra reembolso"
+msgstr "Shiprocket: pago contra reembolso"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_shoe_maker
+msgid "Shoe Maker"
+msgstr "Zapatero"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_sale_shopee
+msgid "Shopee Connector"
+msgstr "Conector de Shopee"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_sale_wishlist
@@ -39399,6 +40627,11 @@ msgstr "Mostrar tipo de moneda"
 #: model_terms:ir.ui.view,arch_db:base.view_currency_search
 msgid "Show active currencies"
 msgstr "Mostrar monedas activas"
+
+#. module: base
+#: model_terms:ir.ui.view,arch_db:base.view_partner_bank_search
+msgid "Show inactive bank account"
+msgstr "Mostrar cuenta bancaria inactiva"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_currency_search
@@ -39675,6 +40908,16 @@ msgid "Social media connectors for company settings."
 msgstr "Conectores a redes sociales para la configuración de la compañía."
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_software_reseller
+msgid "Software Reseller"
+msgstr "Distribuidor de software"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_solar_installation
+msgid "Solar Energy Systems"
+msgstr "Sistemas de energía solar"
+
+#. module: base
 #: model:res.currency,currency_unit_label:base.PEN
 msgid "Soles"
 msgstr "Sol"
@@ -39882,6 +41125,11 @@ msgid "Sponsors, Tracks, Agenda, Event News"
 msgstr "Patrocinadores, seguimientos, agenda y noticias de eventos"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_sports_club
+msgid "Sports Club"
+msgstr "Club deportivo"
+
+#. module: base
 #: model:ir.module.module,description:base.module_spreadsheet
 #: model:ir.module.module,description:base.module_spreadsheet_dashboard
 #: model:ir.module.module,description:base.module_spreadsheet_dashboard_account
@@ -40033,7 +41281,7 @@ msgstr "Tablero de hojas de cálculo para recursos humanos"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_spreadsheet_dashboard_im_livechat
 msgid "Spreadsheet dashboard for live chat"
-msgstr "Tablero de hojas de cálculo para chat en vivo"
+msgstr "Tablero de hojas de cálculo para chat en directo"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_spreadsheet_dashboard_mrp_account
@@ -40441,6 +41689,11 @@ msgid "Supplementary arguments"
 msgstr "Argumentos suplementarios"
 
 #. module: base
+#: model:ir.module.category,name:base.module_category_supply_chain
+msgid "Supply Chain"
+msgstr "Cadena de suministro"
+
+#. module: base
 #: model:ir.module.module,summary:base.module_website_event_track_live
 msgid "Support live tracks: streaming, participation, youtube"
 msgstr "Soporte para sesiones en vivo: streaming, participación, youtube"
@@ -40459,6 +41712,11 @@ msgstr "Compatible con pago electrónico para autopedido"
 #: model:res.country,name:base.sr
 msgid "Suriname"
 msgstr "Surinam"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_surveyor
+msgid "Surveying & Mapping"
+msgstr "Topografía y cartografía"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_marketing_surveys
@@ -40488,9 +41746,19 @@ msgid "Sweden - Accounting Reports"
 msgstr "Suecia -  informes contables"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_se_sie4_export
+msgid "Sweden - SIE 4 Export"
+msgstr "Suecia - Exportación SIE 4"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_se_sie4_import
+msgid "Sweden - SIE 4 Import"
+msgstr "Suecia - Importación SIE 4"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_se_sie_import
-msgid "Sweden - SIE Import"
-msgstr "Suecia - Importación SIE"
+msgid "Sweden - SIE 5 Import"
+msgstr "Suecia - Importación SIE 5"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_l10n_se
@@ -40501,6 +41769,11 @@ msgstr "Caja registradora inscrita Suecia"
 #: model:ir.module.module,shortdesc:base.module_l10n_ch_pos
 msgid "Swiss - Point of Sale"
 msgstr "Suiza - Punto de venta"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_ch_hr_payroll_elm_transmission
+msgid "Swissdec Certified Payroll (ELM 5.0)"
+msgstr "Nómina certificada por Swissdec (ELM 5.0)"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.language_install_view_form_lang_switch
@@ -40534,6 +41807,7 @@ msgstr "Suiza - Nómina"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ch_hr_payroll_account
+#: model:ir.module.module,shortdesc:base.module_l10n_ch_hr_payroll_elm_transmission_account
 msgid "Switzerland - Payroll with Accounting"
 msgstr "Suiza - Nómina y contabilidad"
 
@@ -40681,6 +41955,11 @@ msgid "Tala"
 msgstr "Tālā"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_headhunter
+msgid "Talent Acquisition"
+msgstr "Adquisición de talentos"
+
+#. module: base
 #: model_terms:res.partner,website_description:base.res_partner_2
 #: model_terms:res.partner,website_description:base.res_partner_4
 msgid "Talent Management"
@@ -40733,6 +42012,11 @@ msgstr "Gneración de tareas a partir de un pedido de venta"
 #: model:ir.module.module,shortdesc:base.module_hr_timesheet
 msgid "Task Logs"
 msgstr "Registros de tareas"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_tattoo_shop
+msgid "Tattoo Shop"
+msgstr "Estudio de tatuajes"
 
 #. module: base
 #. odoo-python
@@ -40861,6 +42145,11 @@ msgid "Test - Resource"
 msgstr "Prueba - Recurso"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_test_sale_purchase_edi_ubl
+msgid "Test - Sale & Purchase Order EDI"
+msgstr "Prueba - EDI de pedidos de venta y compra"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_test_html_field_history
 msgid "Test - html_field_history"
 msgstr "Prueba - html_field_history"
@@ -40955,17 +42244,17 @@ msgstr "Prueba de Suscripción de ventas"
 #. module: base
 #: model:ir.module.module,summary:base.module_test_marketing_automation
 msgid "Test Suite for Automated Marketing Campaigns"
-msgstr "Suite de prueba para campañas de marketing automatizadas"
+msgstr "Conjunto de pruebas para las campañas de marketing automatizadas"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_test_data_cleaning
 msgid "Test Suite for Data Cleaning"
-msgstr "Suite de pruebas para la limpieza de datos"
+msgstr "Conjunto de pruebas para la limpieza de datos"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_test_discuss_full_enterprise
 msgid "Test Suite for Discuss Enterprise"
-msgstr "Suite de prueba para Conversaciones en Enterprise"
+msgstr "Conjunto de pruebas para Conversaciones en Enterprise"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_test_rental_product_configurators
@@ -42130,24 +43419,6 @@ msgstr ""
 "para Hong Kong"
 
 #. module: base
-#: model:ir.module.module,description:base.module_l10n_bd
-msgid ""
-"This is the base module to manage chart of accounts and localization for the"
-" Bangladesh "
-msgstr ""
-"Este es el módulo base para gestionar el plan contable y la localización de "
-"Bangladés"
-
-#. module: base
-#: model:ir.module.module,description:base.module_l10n_pk
-msgid ""
-"This is the base module to manage chart of accounts and localization for the"
-" Pakistan "
-msgstr ""
-"Este es el módulo base para gestionar el plan contable y la localización de "
-"Pakistán"
-
-#. module: base
 #: model:ir.model.fields,help:base.field_ir_actions_report__attachment
 msgid ""
 "This is the filename of the attachment used to store the printing result. "
@@ -42190,6 +43461,17 @@ msgstr ""
 "Esta es la integración heredada con UPS y ya no es compatible.         "
 "Instale el nuevo modulo \"Envío por UPS\" y desinstale este tan pronto como "
 "le sea posible. Esta integración dejará de funcionar en el 2024. "
+
+#. module: base
+#: model:ir.module.module,description:base.module_delivery_usps
+msgid ""
+"This is the legacy integration with USPS. Please install the new \"United "
+"States Postal Service (USPS) Shipping\" module and uninstall this one as "
+"soon as possible."
+msgstr ""
+"Esta es la integración de sistemas heredados con UPS. Instale el nuevo "
+"módulo de “Envío por United States Postal Service (USPS)” y desinstale este "
+"tan pronto como le sea posible."
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_no
@@ -42261,13 +43543,11 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be_codabox
 msgid ""
-"This module allows Accounting Firms to connect to CodaBox\n"
-"and automatically import CODA and SODA statements for their clients in Odoo.\n"
-"The connection must be done by the Accounting Firm.\n"
+"This module allows connection to CodaBox\n"
+"and automatically imports CODA and SODA statements in Odoo.\n"
 msgstr ""
-"Este módulo permite que las asesorías contables se conecten a CodaBox\n"
-"e importen automáticamente extractos bancarios CODA y SODA para sus clientes en Odoo.\n"
-"La asesoría contable debe realizar la conexión.\n"
+"Este modelo permite la conexión con CodaBox\n"
+"e importa automáticamente los extractos CODA y SODA a Odoo.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_account_online_payment
@@ -42390,6 +43670,17 @@ msgstr ""
 "Este módulo contiene pruebas relacionadas a los correos masivos. Están\n"
 "en otro módulo para usar modelos de prueba específicos definidos en\n"
 "test_mail. "
+
+#. module: base
+#: model:ir.module.module,description:base.module_test_sale_purchase_edi_ubl
+msgid ""
+"This module contains tests related to sale and purchase order edi.\n"
+"    Ensure export and import of order working properly and filling details properly from\n"
+"    order XML file."
+msgstr ""
+"Este módulo incluye pruebas relacionadas con los EDI de los pedidos de venta y de compra.\n"
+"    Asegure la exportación e importación de los pedidos de forma correcta y complete los detalles con\n"
+"    el archivo XML del pedido."
 
 #. module: base
 #: model:ir.module.module,description:base.module_test_spreadsheet_edition
@@ -42680,7 +43971,7 @@ msgstr "Jueves"
 #. module: base
 #: model:ir.module.module,summary:base.module_website_helpdesk_livechat
 msgid "Ticketing, Support, Livechat"
-msgstr "Venta de entradas, asistencia y chat en vivo"
+msgstr "Venta de entradas, asistencia y chat en directo"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_helpdesk_slides
@@ -42907,6 +44198,14 @@ msgstr ""
 
 #. module: base
 #. odoo-python
+#: code:addons/image.py:0
+msgid "Too large image (above %sMpx), reduce the image size."
+msgstr ""
+"El tamaño de la imagen es demasiado grande (más de %s MPx). Reduzca el "
+"tamaño de la imagen."
+
+#. module: base
+#. odoo-python
 #: code:addons/base/models/res_users.py:0
 msgid "Too many login failures, please wait a bit before trying again."
 msgstr ""
@@ -42932,6 +44231,11 @@ msgstr "Número total de registros en este modelo"
 #: model:ir.module.module,shortdesc:base.module_web_tour
 msgid "Tours"
 msgstr "Recorridos"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_toy_store
+msgid "Toy Store"
+msgstr "Juguetería"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_profile__traces_async
@@ -43091,16 +44395,6 @@ msgid "Turkey"
 msgstr "Turquía"
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_tr_nilvera
-msgid "Türkiye - Nilvera"
-msgstr "Türkiye - Nilvera"
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_tr_nilvera_einvoice
-msgid "Türkiye - Nilvera E-Invoice"
-msgstr "Türkiye - Nilvera - Factura electrónica"
-
-#. module: base
 #: model:res.country,name:base.tm
 msgid "Turkmenistan"
 msgstr "Turkmenistán"
@@ -43211,6 +44505,16 @@ msgid "Türkiye - Accounting Reports"
 msgstr "Turquía - Informes contables"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_tr_nilvera
+msgid "Türkiye - Nilvera"
+msgstr "Türkiye - Nilvera"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_tr_nilvera_einvoice
+msgid "Türkiye - Nilvera E-Invoice"
+msgstr "Türkiye - Nilvera - Factura electrónica"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_tr_hr_payroll
 msgid "Türkiye - Payroll"
 msgstr "Turquía - Nómina"
@@ -43224,16 +44528,6 @@ msgstr "Turquía - Nómina y Contabilidad"
 #: model:res.partner.industry,full_name:base.res_partner_industry_U
 msgid "U - ACTIVITIES OF EXTRATERRITORIAL ORGANISATIONS AND BODIES"
 msgstr "U - ACTIVIDADES DE ORGANIZACIONES Y CUERPOS EXTRATERRITORIALES"
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_ae_hr_payroll
-msgid "U.A.E. - Payroll"
-msgstr "EAU - Nómina"
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_ae_hr_payroll_account
-msgid "U.A.E. - Payroll with Accounting"
-msgstr "Emiratos Árabes Unidos - Nómina y contabilidad"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__uct
@@ -43589,6 +44883,16 @@ msgid "United Arab Emirates - Corporate Tax Report"
 msgstr "Emiratos Árabes Unidos - Declaración de impuestos sobre sociedades"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_ae_hr_payroll
+msgid "United Arab Emirates - Payroll"
+msgstr "Emiratos Árabes Unidos - Nómina"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_ae_hr_payroll_account
+msgid "United Arab Emirates - Payroll with Accounting"
+msgstr "Emiratos Árabes Unidos - Nómina y contabilidad"
+
+#. module: base
 #: model:res.country,name:base.uk
 msgid "United Kingdom"
 msgstr "Reino Unido"
@@ -43634,9 +44938,14 @@ msgid "United States - Payroll with Accounting"
 msgstr "Estados Unidos - Nómina y contabilidad"
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_delivery_usps
+#: model:ir.module.module,shortdesc:base.module_delivery_usps_rest
 msgid "United States Postal Service (USPS) Shipping"
 msgstr "Envío por USPS (United States Postal Service)"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_delivery_usps
+msgid "United States Postal Service (USPS) Shipping (Legacy)"
+msgstr "Envío por USPS (United States Postal Service) (heredado)"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_uom
@@ -44276,7 +45585,7 @@ msgid ""
 " Management App"
 msgstr ""
 "Valide movimientos de inventario para productos añadidos en pedidos mediante"
-" la aplicación Gestión de servicio externo"
+" la aplicación Gestión de servicio de campo"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_actions_server__value
@@ -44766,7 +46075,7 @@ msgstr "Servicio de asistencia del sitio web"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_helpdesk_livechat
 msgid "Website IM Livechat Helpdesk"
-msgstr "Servicio de asistencia mediante el chat en vivo del sitio web"
+msgstr "Servicio de asistencia mediante el chat en directo del sitio web"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_jitsi
@@ -44783,7 +46092,7 @@ msgstr "Enlace del sitio web"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_livechat
 msgid "Website Live Chat"
-msgstr "Chat en vivo del sitio web"
+msgstr "Chat en directo del sitio web"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_mail
@@ -44863,6 +46172,11 @@ msgid "Website profile"
 msgstr "Perfil del sitio web"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_wedding_planner
+msgid "Wedding Planner"
+msgstr "Organizador de bodas"
+
+#. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_lang__week_start__3
 msgid "Wednesday"
 msgstr "Miércoles"
@@ -44871,6 +46185,11 @@ msgstr "Miércoles"
 #: model:ir.model.fields.selection,name:base.selection__ir_cron__interval_type__weeks
 msgid "Weeks"
 msgstr "Semanas"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_wellness_practitioner
+msgid "Wellness Practitioner"
+msgstr "Terapeuta de bienestar"
 
 #. module: base
 #: model:res.country,name:base.eh
@@ -44991,8 +46310,8 @@ msgid ""
 "When re-invoicing the expense on the SO, set the cost to the total untaxed "
 "amount of the expense."
 msgstr ""
-"Al volver a facturar el gasto en el pedido de venta, configure el coste al "
-"base imponible del gasto."
+"Al volver a facturar el gasto en el pedido de venta, establece el coste como "
+"el importe base total del gasto."
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.sequence_view
@@ -45000,7 +46319,7 @@ msgid ""
 "When subsequences per date range are used, you can prefix variables with 'range_'\n"
 "                                to use the beginning of the range instead of the current date, e.g. %(range_year)s instead of %(year)s."
 msgstr ""
-"Cuando se usan las subsecuencias por rango de fecha, usted podrá prefijar las variables con 'range_'\n"
+"Cuando se usan las subsecuencias por intervalo de fecha, usted podrá prefijar las variables con 'range_'\n"
 "para usar el inicio del rango en lugar de la fecha actual, p. ej. %(range_year)s en lugar de %(year)s."
 
 #. module: base
@@ -46032,6 +47351,11 @@ msgid "eCommerce on appointments"
 msgstr "Comercio electrónico en citas"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_website_sale_gelato
+msgid "eCommerce/Gelato bridge"
+msgstr "Módulo de enlace entre Gelato y Comercio electrónico"
+
+#. module: base
 #: model:ir.module.category,name:base.module_category_website_elearning
 #: model:ir.module.module,shortdesc:base.module_website_slides
 msgid "eLearning"
@@ -46052,7 +47376,7 @@ msgstr "id externo"
 #. odoo-python
 #: code:addons/base/models/ir_fields.py:0
 msgid "false"
-msgstr "False"
+msgstr "falso"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_model_fields__ttype__float
@@ -46309,6 +47633,11 @@ msgid "subscriptions"
 msgstr "suscripciones"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_tests
+msgid "test"
+msgstr "prueba"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_test_data_module_install
 msgid "test installation of data module"
 msgstr "instalación de pruebla del módulo de datos"
@@ -46407,7 +47736,7 @@ msgstr "texto"
 #. odoo-python
 #: code:addons/base/models/ir_fields.py:0
 msgid "true"
-msgstr "True"
+msgstr "verdadero"
 
 #. module: base
 #. odoo-python

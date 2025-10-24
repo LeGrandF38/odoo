@@ -4,15 +4,16 @@
 # 
 # Translators:
 # Rastislav Brencic <rastislav.brencic@azet.sk>, 2024
-# Wil Odoo, 2024
+# Tomáš Píšek, 2025
+# Wil Odoo, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-26 08:56+0000\n"
+"POT-Creation-Date: 2025-05-14 20:48+0000\n"
 "PO-Revision-Date: 2024-09-25 09:41+0000\n"
-"Last-Translator: Wil Odoo, 2024\n"
+"Last-Translator: Wil Odoo, 2025\n"
 "Language-Team: Slovak (https://app.transifex.com/odoo/teams/41243/sk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -596,6 +597,11 @@ msgstr "Nedeľa"
 
 #. module: resource
 #: model_terms:ir.ui.view,arch_db:resource.resource_calendar_form
+msgid "Switch"
+msgstr "Prepnúť"
+
+#. module: resource
+#: model_terms:ir.ui.view,arch_db:resource.resource_calendar_form
 msgid "Switch to 1 week calendar"
 msgstr ""
 
@@ -642,6 +648,10 @@ msgid ""
 "the efficiency factor is 200%, however the expected duration will be 30 "
 "minutes."
 msgstr ""
+"Toto pole sa používa na výpočet očakávaného trvania pracovnej objednávky na "
+"tomto pracovisku. Ak napríklad pracovná objednávka trvá jednu hodinu a "
+"faktor účinnosti je 100 %, potom bude očakávané trvanie jedna hodina. Ak je "
+"však faktor účinnosti 200 %, očakávané trvanie bude 30 minút."
 
 #. module: resource
 #: model:ir.model.fields.selection,name:resource.selection__resource_calendar_attendance__dayofweek__3

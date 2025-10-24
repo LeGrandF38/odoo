@@ -11,6 +11,7 @@ from odoo.tests import tagged
 from odoo.tools import SQL
 
 from odoo.addons.base.tests.common import HttpCaseWithUserPortal, TransactionCaseWithUserDemo
+from odoo.addons.website.tools import MockRequest
 from odoo.addons.website_sale.tests.common import WebsiteSaleCommon
 
 
@@ -417,6 +418,41 @@ class TestWebsitePriceList(WebsiteSaleCommon):
             self.assertEqual(sol.price_unit, 80.0, 'Reduction should be applied')
             self.assertEqual(sol.price_total, 160)
 
+    def test_pricelist_anonymous_user(self):
+        list_benelux_2 = self.list_benelux.sudo().copy({
+            'name': 'Benelux 2',
+            'item_ids': [
+                Command.create({
+                    'compute_price': 'percentage',
+                    'base': 'list_price',
+                    'percent_price': 20,
+                }),
+            ]
+        })
+        order_sudo = self.env['sale.order'].sudo().create({
+            'partner_id': self.public_partner.id,
+            'pricelist_id': list_benelux_2.id,
+            'order_line': [Command.create({
+                'name': self.product.name,
+                'product_id': self.product.id,
+                'tax_id': False,
+            })],
+        })
+        # Creating partner with address of belgium
+        partner = self.env['res.partner'].create({
+            'name': 'Test Partner',
+            'company_id': False,
+            'country_id': self.env.ref('base.be').id,
+        })
+        website = self.website.with_user(self.public_user)
+        with MockRequest(
+            website.env, website=website,
+            website_sale_current_pl=list_benelux_2.id,
+            website_sale_selected_pl_id=list_benelux_2.id
+        ) as request:
+            order_sudo._update_address({'partner_id': partner.id})
+        self.assertEqual(order_sudo.pricelist_id, list_benelux_2)
+
 def simulate_frontend_context(self, website_id=1):
     # Mock this method will be enough to simulate frontend context in most methods
     def get_request_website():
@@ -624,6 +660,31 @@ class TestWebsitePriceListAvailableGeoIP(TestWebsitePriceListAvailable):
         with patch('odoo.addons.website_sale.models.website.Website._get_geoip_country_code', return_value=self.US.code):
             pricelists = self.website.get_pricelist_available()
         self.assertFalse(pricelists, "Pricelists specific to NL and BE should not be returned for US.")
+
+    def test_get_pricelist_available_geoip6(self):
+        """Remove country group from certain pricelists, and check that pricelists
+        with country group get prioritized when geoip is available."""
+        exclude = self.backend_pl + self.generic_pl_code + self.w1_pl_select + self.w1_pl_code
+        exclude.country_group_ids = False
+        self.website1_be_pl -= exclude
+
+        with patch(
+            'odoo.addons.website_sale.models.website.Website._get_geoip_country_code',
+            return_value=self.BE.code,
+        ):
+            pls = self.website.get_pricelist_available()
+
+        for pl in pls:
+            self.assertIn(
+                self.BE,
+                pl.country_group_ids.country_ids,
+                "Pricelists should have a country group that includes BE",
+            )
+        self.assertEqual(
+            pls,
+            self.website1_be_pl,
+            "Only pricelists for BE and accessible on website should be returned",
+        )
 
 
 @tagged('post_install', '-at_install')

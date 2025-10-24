@@ -121,6 +121,10 @@ class AccountPayment(models.Model):
             field_desc['readonly'] = True
         return result
 
+    @api.model
+    def _get_trigger_fields_to_synchronize(self):
+        return super()._get_trigger_fields_to_synchronize() + ('check_number',)
+
     def _get_aml_default_display_name_list(self):
         # Extends 'account'
         self.ensure_one()
@@ -152,7 +156,7 @@ class AccountPayment(models.Model):
     def print_checks(self):
         """ Check that the recordset is valid, set the payments state to sent and call print_checks() """
         # Since this method can be called via a client_action_multi, we need to make sure the received records are what we expect
-        valid_payments = self.filtered(lambda r: r.payment_method_line_id.code == 'check_printing' and r.state != 'paid')
+        valid_payments = self.filtered(lambda r: r.payment_method_line_id.code == 'check_printing' and not r.is_sent)
 
         if len(valid_payments) == 0:
             raise UserError(_("Payments to print as a checks must have 'Check' selected as payment method and "
@@ -164,7 +168,7 @@ class AccountPayment(models.Model):
             # The wizard asks for the number printed on the first pre-printed check
             # so payments are attributed the number of the check the'll be printed on.
             self.env.cr.execute("""
-                  SELECT payment.id
+                  SELECT payment.check_number
                     FROM account_payment payment
                    WHERE payment.journal_id = %(journal_id)s
                      AND payment.check_number IS NOT NULL
@@ -173,9 +177,9 @@ class AccountPayment(models.Model):
             """, {
                 'journal_id': self.journal_id.id,
             })
-            last_printed_check = self.browse(self.env.cr.fetchone())
-            number_len = len(last_printed_check.check_number or "")
-            next_check_number = '%0{}d'.format(number_len) % (int(last_printed_check.check_number) + 1)
+            last_check_number = (self.env.cr.fetchone() or (False,))[0]
+            number_len = len(last_check_number or "")
+            next_check_number = f'{int(last_check_number) + 1:0{number_len}}'
 
             return {
                 'name': _('Print Pre-numbered Checks'),
@@ -223,6 +227,7 @@ class AccountPayment(models.Model):
             'date': format_date(self.env, self.date),
             'partner_id': self.partner_id,
             'partner_name': self.partner_id.name,
+            'company': self.company_id.name,
             'currency': self.currency_id,
             'state': self.state,
             'amount': formatLang(self.env, self.amount, currency_obj=self.currency_id) if i == 0 else 'VOID',
@@ -249,7 +254,8 @@ class AccountPayment(models.Model):
         self.ensure_one()
 
         def prepare_vals(invoice, partials=None, current_amount=0):
-            number = ' - '.join([invoice.name, invoice.ref] if invoice.ref else [invoice.name])
+            invoice_name = invoice.name or '/'
+            number = ' - '.join([invoice_name, invoice.ref] if invoice.ref else [invoice_name])
 
             if invoice.is_outbound() or invoice.move_type == 'in_receipt':
                 invoice_sign = 1

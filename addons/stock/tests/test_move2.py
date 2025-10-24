@@ -2673,6 +2673,64 @@ class TestSinglePicking(TestStockCommon):
             ('Shell 2', 'LOT004', 2.0),
         ])
 
+    def test_onchange_picking_locations(self):
+        """
+        Check that changing the location/destination of a picking propagets the info
+        to the related moves.
+        """
+        new_location, new_destination = self.env['stock.location'].create([
+            {
+                'name': f'Super location',
+                'usage': 'internal',
+                'location_id': self.stock_location,
+            },
+            {
+                'name': f'Super destination',
+                'usage': 'internal',
+                'location_id': self.stock_location,
+            }
+        ])
+        with Form(self.env['stock.picking'].with_context(restricted_picking_type_code='internal')) as picking_form:
+            with picking_form.move_ids_without_package.new() as new_move:
+                new_move.product_id = self.product
+                new_move.product_uom_qty = 3.0
+            picking_form.location_id = new_location
+            picking_form.location_dest_id = new_destination
+        picking = picking_form.save()
+        self.assertRecordValues(picking.move_ids, [
+            { 'location_id': new_location.id, 'location_dest_id': new_destination.id }
+        ])
+
+    def test_validate_picking_twice(self):
+        """
+        Check that validating an already validated picking bypasses the call.
+        """
+        picking = self.env['stock.picking'].create({
+            'location_id': self.supplier_location,
+            'location_dest_id': self.stock_location,
+            'picking_type_id': self.picking_type_out,
+            'move_ids': [
+                Command.create({
+                    'name': 'Lovely Move',
+                    'product_id': self.productA.id,
+                    'product_uom_qty': 50,
+                    'location_id': self.stock_location,
+                    'location_dest_id': self.customer_location,
+                    'product_uom': self.productA.uom_id.id,
+                }),
+            ],
+        })
+        picking.button_validate()
+        self.assertEqual(picking.state, 'done')
+        self.assertRecordValues(picking.move_ids, [
+            {'quantity': 50.0, 'state': 'done'}
+        ])
+        picking.button_validate()
+        self.assertEqual(picking.state, 'done')
+        self.assertRecordValues(picking.move_ids, [
+            {'quantity': 50.0, 'state': 'done'}
+        ])
+
 
 class TestStockUOM(TestStockCommon):
     @classmethod
@@ -3019,6 +3077,46 @@ class TestRoutes(TestStockCommon):
         self.assertEqual(pick_move.location_dest_id, subloc)
         self.assertEqual(len(pick_move.move_dest_ids), 1)
         self.assertEqual(pick_move.move_dest_ids.location_id, subloc)
+
+    def test_2_steps_delivery_reaches_customer_subloc(self):
+        """
+        Ensure Customer subloc destination of a 2-steps delivery is reached.
+
+        Test Case:
+        ==========
+        1. Create child location from Partners/Customer
+        2. Create delivery with the created subloc as final destination
+        3. confirm the delivery
+        4. check the ship move is created with the destination as the subloc
+        """
+
+        self._enable_pick_ship()
+
+        # Create sublocation of Customer
+        subloc = self.env['stock.location'].create({
+            'name': 'Fancy Spot',
+            'location_id': self.env.ref('stock.stock_location_customers').id,
+            'usage': 'internal',
+        })
+
+        pick_move = self.env['stock.move'].create({
+            'name': 'pick',
+            'picking_type_id': self.wh.pick_type_id.id,
+            'location_id': self.wh.lot_stock_id.id,
+            'product_id': self.product1.id,
+            'product_uom_qty': 1,
+            'location_final_id': subloc.id,
+        })
+        pick_move._action_confirm()
+        self.assertEqual(pick_move.location_dest_id, self.wh.wh_output_stock_loc_id)
+
+        # Validate the picking
+        pick_move.write({'quantity': 1, 'picked': True})
+        pick_move.picking_id._action_done()
+
+        # Output -> Customer rule should trigger, creating the next step that reaches sublocation
+        self.assertEqual(len(pick_move.move_dest_ids), 1)
+        self.assertEqual(pick_move.move_dest_ids.location_dest_id, subloc)
 
     def test_push_rule_on_move_1(self):
         """ Create a route with a push rule, force it on a move, check that it is applied.
@@ -3626,3 +3724,124 @@ class TestAutoAssign(TestStockCommon):
         self.assertEqual(delivery_order_2.partner_id, partner_2)
         self.assertEqual(delivery_order_2.move_ids.mapped('product_id'), self.productA)
         self.assertEqual(delivery_order_2.move_ids.product_uom_qty, 1.0)
+
+    def test_description_picking_consistent_with_product_description(self):
+        """
+        Ensure the description_picking of a move matches the product template's
+        description in a multi-step reception process.
+        """
+        warehouse = self.env['stock.warehouse'].search([('company_id', '=', self.env.company.id)], limit=1)
+        warehouse.reception_steps = 'two_steps'
+
+        self.productA.product_tmpl_id.description_picking = 'transfer'
+        receipt = self.env['stock.picking'].create({
+            'picking_type_id': self.picking_type_in,
+            'location_id': self.supplier_location,
+            'move_line_ids': [Command.create({
+                'product_id': self.productA.id,
+                'quantity': 1,
+                'description_picking': 'receipt',
+            })]
+        })
+        receipt.button_validate()
+
+        next_picking = receipt._get_next_transfers()
+        self.assertEqual(next_picking.move_ids.description_picking, 'transfer')
+
+
+class TestPickShipBackorder(TestStockCommon):
+    @classmethod
+    def setUpClass(cls):
+        super().setUpClass()
+        cls.picking_type_out = cls.env["stock.picking.type"].search(
+            [("code", "=", "outgoing")], limit=1
+        )
+        cls.picking_type_out.use_create_lots = True
+        cls.picking_type_out.write({"sequence_code": "WH/OUT"})
+
+        cls.product_lot = cls.env["product.product"].create(
+            {
+                "name": "Lot Product",
+                "type": "consu",
+                "is_storable": True,
+                "uom_id": cls.env.ref("uom.product_uom_unit").id,
+                "uom_po_id": cls.env.ref("uom.product_uom_unit").id,
+            }
+        )
+
+        cls.lot1 = cls.env["stock.lot"].create(
+            {
+                "name": "LOT001",
+                "product_id": cls.product_lot.id,
+            }
+        )
+        cls.lot2 = cls.env["stock.lot"].create(
+            {
+                "name": "LOT002",
+                "product_id": cls.product_lot.id,
+            }
+        )
+
+        cls.stock_location = cls.env.ref("stock.stock_location_stock")
+
+        cls.env["stock.quant"]._update_available_quantity(
+            cls.product_lot, cls.stock_location, 5.0, lot_id=cls.lot1
+        )
+        cls.env["stock.quant"]._update_available_quantity(
+            cls.product_lot, cls.stock_location, 5.0, lot_id=cls.lot2
+        )
+
+    def test_pick_assign_and_backorder(self):
+        cust = self.env.ref("stock.stock_location_customers")
+        pg = self.env["procurement.group"].create({"name": "sale order"})
+        warehouse = self.env["stock.warehouse"].search([], limit=1)
+        warehouse.delivery_steps = "pick_ship"
+        self.env["procurement.group"].run(
+            [
+                pg.Procurement(
+                    self.product_lot,
+                    10.0,
+                    self.product_lot.uom_id,
+                    cust,
+                    "sale_order",
+                    "sale_order",
+                    warehouse.company_id,
+                    {"warehouse_id": warehouse, "group_id": pg},
+                )
+            ]
+        )
+        picking = pg.stock_move_ids.picking_id[0]
+
+        picking.action_confirm()
+        picking.action_assign()
+
+        move_line_obj = picking.move_ids.move_line_ids
+
+        pack = self.env["stock.quant.package"].create({"name": "Test Package"})
+        move_line_obj[0].write({"quantity": 2.0, "lot_id": self.lot1})
+        move_line_obj[1].write({"quantity": 2.0, "lot_id": self.lot2})
+        picking.move_ids.move_line_ids = [
+            Command.create(
+                {
+                    "picking_id": picking.id,
+                    "move_id": picking.move_ids[0].id,
+                    "product_id": self.product_lot.id,
+                    "lot_id": self.lot1.id,
+                    "quantity": 3.0,
+                    "result_package_id": pack.id,
+                }
+            )
+        ]
+
+        picking.picking_type_id.create_backorder = "always"
+        picking.button_validate()
+
+        backorder = self.env["stock.picking"].search(
+            [("backorder_id", "=", picking.id)]
+        )
+
+        self.assertTrue(backorder, "Backorder should exist")
+
+        backorder.action_assign()
+        backorder.button_validate()
+        self.assertEqual(backorder.state, "done")

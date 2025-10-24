@@ -45,7 +45,7 @@ class ProductProduct(models.Model):
     @api.model
     def _load_pos_self_data_fields(self, config_id):
         params = super()._load_pos_self_data_fields(config_id)
-        params += ['public_description']
+        params += ['public_description', 'list_price']
         return params
     
     @api.model
@@ -54,7 +54,7 @@ class ProductProduct(models.Model):
         return AND([domain, [('self_order_available', '=', True)]])
 
     def _load_pos_self_data(self, data):
-        domain = self._load_pos_data_domain(data)
+        domain = self._load_pos_self_data_domain(data)
         config_id = data['pos.config']['data'][0]['id']
 
         # Add custom fields for 'formula' taxes.
@@ -71,6 +71,15 @@ class ProductProduct(models.Model):
             order='sequence,default_code,name',
             load=False
         )
+        combo_products = self.browse((p['id'] for p in products if p["type"]=="combo"))
+        combo_products_choice = self.with_context(display_default_code=False).search_read(
+            [("id", 'in', combo_products.combo_ids.combo_item_ids.product_id.ids), ("id", "not in", [p['id'] for p in products])],
+            fields,
+            limit=config.get_limited_product_count(),
+            order='sequence,default_code,name',
+            load=False
+        )
+        products.extend(combo_products_choice)
         for product in products:
             product['image_128'] = bool(product['image_128'])
 

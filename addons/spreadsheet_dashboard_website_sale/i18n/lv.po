@@ -5,9 +5,9 @@
 # Translators:
 # Konstantins Zabogonskis <inculin4ik@gmail.com>, 2024
 # Martin Trigaux, 2024
-# Armīns Jeltajevs <armins.jeltajevs@gmail.com>, 2024
 # Arnis Putniņš <arnis@allegro.lv>, 2024
 # ievaputnina <ievai.putninai@gmail.com>, 2024
+# Armīns Jeltajevs <armins.jeltajevs@gmail.com>, 2025
 # Will Sensors, 2025
 # 
 msgid ""
@@ -36,7 +36,7 @@ msgstr "Pamestie grozi"
 #: code:addons/spreadsheet_dashboard_website_sale/data/files/ecommerce_dashboard.json:0
 #: code:addons/spreadsheet_dashboard_website_sale/data/files/ecommerce_sample_dashboard.json:0
 msgid "Carts"
-msgstr ""
+msgstr "Grozs"
 
 #. module: spreadsheet_dashboard_website_sale
 #. odoo-javascript
@@ -82,7 +82,7 @@ msgstr ""
 #: code:addons/spreadsheet_dashboard_website_sale/data/files/ecommerce_dashboard.json:0
 #: code:addons/spreadsheet_dashboard_website_sale/data/files/ecommerce_sample_dashboard.json:0
 msgid "Monthly Sales"
-msgstr ""
+msgstr "Ikmēnēša pārdošana"
 
 #. module: spreadsheet_dashboard_website_sale
 #. odoo-javascript
@@ -129,14 +129,14 @@ msgstr "Ieņēmumi"
 #: code:addons/spreadsheet_dashboard_website_sale/data/files/ecommerce_dashboard.json:0
 #: code:addons/spreadsheet_dashboard_website_sale/data/files/ecommerce_sample_dashboard.json:0
 msgid "Top Categories"
-msgstr ""
+msgstr "Top kategorijas"
 
 #. module: spreadsheet_dashboard_website_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_website_sale/data/files/ecommerce_dashboard.json:0
 #: code:addons/spreadsheet_dashboard_website_sale/data/files/ecommerce_sample_dashboard.json:0
 msgid "Top Products"
-msgstr ""
+msgstr "Top preces"
 
 #. module: spreadsheet_dashboard_website_sale
 #. odoo-javascript
@@ -150,7 +150,7 @@ msgstr "Kopējie ieņēmumi"
 #: code:addons/spreadsheet_dashboard_website_sale/data/files/ecommerce_dashboard.json:0
 #: code:addons/spreadsheet_dashboard_website_sale/data/files/ecommerce_sample_dashboard.json:0
 msgid "Units"
-msgstr "Vienības"
+msgstr "vienības"
 
 #. module: spreadsheet_dashboard_website_sale
 #. odoo-javascript
@@ -168,4 +168,4 @@ msgstr "E-Komercija"
 #: code:addons/spreadsheet_dashboard_website_sale/data/files/ecommerce_dashboard.json:0
 #: code:addons/spreadsheet_dashboard_website_sale/data/files/ecommerce_sample_dashboard.json:0
 msgid "since last period"
-msgstr ""
+msgstr "kopš pēdējā perioda"

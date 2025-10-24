@@ -1,24 +1,25 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* marketing_card
-# 
+#
 # Translators:
 # Wil Odoo, 2024
 # Malaz Abuidris <msea@odoo.com>, 2025
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-25 08:39+0000\n"
+"POT-Creation-Date: 2025-08-08 18:37+0000\n"
 "PO-Revision-Date: 2024-09-25 09:41+0000\n"
 "Last-Translator: Malaz Abuidris <msea@odoo.com>, 2025\n"
 "Language-Team: Arabic (https://app.transifex.com/odoo/teams/41243/ar/)\n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: ar\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 #. module: marketing_card
 #. odoo-python
@@ -37,7 +38,9 @@ msgstr ""
 
 #. module: marketing_card
 #: model_terms:ir.ui.view,arch_db:marketing_card.card_campaign_view_kanban
-msgid "<i class=\"fa fa-fw fa-share\" aria-label=\"Shares\" role=\"img\" title=\"Shares\"/>"
+msgid ""
+"<i class=\"fa fa-fw fa-share\" aria-label=\"Shares\" role=\"img\" "
+"title=\"Shares\"/>"
 msgstr ""
 "<i class=\"fa fa-fw fa-share\" aria-label=\"Shares\" role=\"img\" "
 "title=\"المشاركات \"/>"
@@ -142,7 +145,7 @@ msgstr "مؤرشف"
 #. module: marketing_card
 #: model_terms:ir.ui.view,arch_db:marketing_card.mailing_mailing_view_form_inherit_marketing_card
 msgid "Are you sure you want to update all cards of the campaign?"
-msgstr ""
+msgstr "هل أنت متأكد من أنك ترغب في تحديث كافة بطاقات الحملة؟ "
 
 #. module: marketing_card
 #: model:ir.model.fields,field_description:marketing_card.field_card_campaign__message_attachment_count
@@ -193,7 +196,7 @@ msgstr "حملات البطاقات "
 #. odoo-python
 #: code:addons/marketing_card/models/mailing_mailing.py:0
 msgid "Card Campaign Mailing should target model %(model_name)s"
-msgstr ""
+msgstr "يجب أن تستهدف حملة البطاقة البريدية النموذج %(model_name)s "
 
 #. module: marketing_card
 #: model:ir.model.fields,field_description:marketing_card.field_card_campaign__card_click_count
@@ -204,6 +207,17 @@ msgstr "عدد النقرات على البطاقة "
 #: model:ir.model.fields,field_description:marketing_card.field_card_campaign__card_count
 msgid "Card Count"
 msgstr "عدد البطاقات "
+
+#. module: marketing_card
+#: model_terms:ir.ui.view,arch_db:marketing_card.card_campaign_view_form
+msgid "Card Layout"
+msgstr "مخطط البطاقة "
+
+#. module: marketing_card
+#. odoo-python
+#: code:addons/marketing_card/models/card_campaign.py:0
+msgid "Card Preview"
+msgstr ""
 
 #. module: marketing_card
 #: model:ir.model.fields,field_description:marketing_card.field_mailing_mailing__card_requires_sync_count
@@ -364,6 +378,12 @@ msgstr "مسار الترويسة "
 #. module: marketing_card
 #. odoo-python
 #: code:addons/marketing_card/models/card_campaign.py:0
+msgid "Hello everyone"
+msgstr ""
+
+#. module: marketing_card
+#. odoo-python
+#: code:addons/marketing_card/models/card_campaign.py:0
 msgid "Help us share the news"
 msgstr "ساعدنا على مشاركة آخر الأخبار "
 
@@ -371,6 +391,12 @@ msgstr "ساعدنا على مشاركة آخر الأخبار "
 #: model:ir.module.category,description:marketing_card.module_category_marketing_card
 msgid "Helps you manage marketing card campaigns."
 msgstr "يساعدك على إدارة حملات البطافات التسويقية. "
+
+#. module: marketing_card
+#. odoo-python
+#: code:addons/marketing_card/models/card_campaign.py:0
+msgid "Here's the link to advertise your participation."
+msgstr ""
 
 #. module: marketing_card
 #: model:ir.model.fields,field_description:marketing_card.field_card_campaign__id
@@ -483,6 +509,12 @@ msgid "Mailing Count"
 msgstr "عدد المراسلات "
 
 #. module: marketing_card
+#. odoo-python
+#: code:addons/marketing_card/models/card_campaign.py:0
+msgid "Many thanks"
+msgstr ""
+
+#. module: marketing_card
 #: model:ir.model,name:marketing_card.model_card_card
 #: model:ir.module.category,name:marketing_card.module_category_marketing_card
 #: model:ir.ui.menu,name:marketing_card.card_menu
@@ -541,6 +573,11 @@ msgstr "اسم النموذج "
 #: code:addons/marketing_card/models/card_campaign.py:0
 msgid ""
 "Model of campaign %(campaign)s may not be changed as it already has cards"
+msgstr "لا يُمكن تغيير نموذج الحملة %(campaign)s لأنه يحتوي على بطاقات بالفعل "
+
+#. module: marketing_card
+#: model:ir.model,name:marketing_card.model_ir_model
+msgid "Models"
 msgstr ""
 
 #. module: marketing_card
@@ -620,13 +657,13 @@ msgstr "أودو"
 msgid ""
 "Optional translation language (ISO code) to select when sending out an "
 "email. If not set, the english version will be used. This should usually be "
-"a placeholder expression that provides the appropriate language, e.g. {{ "
-"object.partner_id.lang }}."
+"a placeholder expression that provides the appropriate language, e.g. "
+"{{ object.partner_id.lang }}."
 msgstr ""
 "لغة الترجمة الاختيارية (كود ISO) لاختيارها عند إرسال بريد إلكتروني. إذا لم "
 "يتم تعيينها، سوف تُستخدم النسخة باللغة الإنجليزية. عادة ما يكون ذلك تمثيلاً "
-"للعنصر النائب المسؤول عن التزويد باللغة المناسبة، مثال: {{ "
-"object.partner_id.lang }}. "
+"للعنصر النائب المسؤول عن التزويد باللغة المناسبة، مثال: "
+"{{ object.partner_id.lang }}. "
 
 #. module: marketing_card
 #: model:ir.model.fields,field_description:marketing_card.field_card_campaign__target_url
@@ -687,6 +724,11 @@ msgstr "صورة الملف التعريفي "
 #: model:ir.model.fields,field_description:marketing_card.field_card_campaign__rating_ids
 msgid "Ratings"
 msgstr "التقييمات "
+
+#. module: marketing_card
+#: model_terms:ir.ui.view,arch_db:marketing_card.card_campaign_view_form
+msgid "Recipient Message"
+msgstr "رسالة المستلم "
 
 #. module: marketing_card
 #: model_terms:ir.ui.view,arch_db:marketing_card.card_campaign_view_form
@@ -886,14 +928,9 @@ msgid "Tags may not reuse existing names."
 msgstr "لا يمكن لعلامات التصنيف أن تعيد استخدام أسماء موجودة بالفعل. "
 
 #. module: marketing_card
-#: model_terms:ir.ui.view,arch_db:marketing_card.card_campaign_view_form
-msgid "Thanks for sharing, here is your reward!"
-msgstr "نشكرك على المشاركة. إليك مكافأتك! "
-
-#. module: marketing_card
 #: model:ir.model.fields,field_description:marketing_card.field_card_campaign__reward_message
-msgid "Thanks to You Message"
-msgstr "نشكرك على رسالتك "
+msgid "Thank You Message"
+msgstr "رسالة شكر "
 
 #. module: marketing_card
 #. odoo-python
@@ -920,13 +957,9 @@ msgid "Update"
 msgstr "تحديث"
 
 #. module: marketing_card
-#: model_terms:ir.ui.view,arch_db:marketing_card.robots
-msgid ""
-"User-agent: *\n"
-"                Allow: /cards/"
-msgstr ""
-"عميل المستخدم: *\n"
-"                السماح لـ : /cards/ "
+#: model_terms:ir.ui.view,arch_db:marketing_card.mailing_mailing_view_form_inherit_marketing_card
+msgid "Update Cards"
+msgstr "تحديث البطاقات "
 
 #. module: marketing_card
 #: model:ir.model.fields.selection,name:marketing_card.selection__card_card__share_status__visited
@@ -947,7 +980,7 @@ msgstr "سجل تواصل الموقع الإلكتروني "
 #. module: marketing_card
 #: model:ir.model.fields,help:marketing_card.field_card_card__requires_sync
 msgid "Whether the image needs to be updated to match the campaign template."
-msgstr ""
+msgstr "ما إذا كانت الصورة بحاجة إلى أن يتم تحديثها لتتناسب مع قالب الحملة. "
 
 #. module: marketing_card
 #. odoo-python
@@ -955,11 +988,19 @@ msgstr ""
 msgid ""
 "You should update all the cards for %(mailing)s before scheduling a mailing."
 msgstr ""
+"يجب أن تقوم بتحديث كافة البطاقات لـ %(mailing)s قبل تحديد موعد إرسالها "
+"بالبريد. "
 
 #. module: marketing_card
 #: model_terms:ir.ui.view,arch_db:marketing_card.card_campaign_view_form
 msgid "Your Home Page"
 msgstr "صفحتك الرئيسية "
+
+#. module: marketing_card
+#. odoo-python
+#: code:addons/marketing_card/models/card_campaign.py:0
+msgid "Your help with this promotion would be greatly appreciated!"
+msgstr ""
 
 #. module: marketing_card
 #: model_terms:ir.ui.view,arch_db:marketing_card.template_2
@@ -968,6 +1009,11 @@ msgstr "صفحتك الرئيسية "
 #: model_terms:ir.ui.view,arch_db:marketing_card.template_5
 msgid "button text"
 msgstr "نص الزر "
+
+#. module: marketing_card
+#: model_terms:ir.ui.view,arch_db:marketing_card.card_campaign_view_form
+msgid "e.g. \"Thanks for sharing, here is your reward!\""
+msgstr "مثال: \"نشكرك على المشاركة. إليك مكافأتك!\" "
 
 #. module: marketing_card
 #: model_terms:ir.ui.view,arch_db:marketing_card.card_campaign_view_form

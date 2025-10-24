@@ -1,6 +1,5 @@
 import { _t } from "@web/core/l10n/translation";
 import { useService } from "@web/core/utils/hooks";
-import { fuzzyLookup } from "@web/core/utils/search";
 import { Dialog } from "@web/core/dialog/dialog";
 import { PartnerLine } from "@point_of_sale/app/screens/partner_list/partner_line/partner_line";
 import { usePos } from "@point_of_sale/app/store/pos_hook";
@@ -56,7 +55,7 @@ export class PartnerList extends Component {
     }
 
     goToOrders(partner) {
-        this.props.close();
+        this.clickPartner(this.props.partner);
         const partnerHasActiveOrders = this.pos
             .get_open_orders()
             .some((order) => order.partner?.id === partner.id);
@@ -75,16 +74,20 @@ export class PartnerList extends Component {
         this.pos.closeTempScreen();
     }
     getPartners() {
-        const searchWord = unaccent((this.state.query || "").trim(), false);
+        const searchWord = unaccent((this.state.query || "").trim(), false).toLowerCase();
         const partners = this.pos.models["res.partner"].getAll();
         const exactMatches = partners.filter((partner) => partner.exactMatch(searchWord));
 
         if (exactMatches.length > 0) {
             return exactMatches;
         }
+        const numberString = searchWord.replace(/[+\s()-]/g, "");
+        const isSearchWordNumber = /^[0-9]+$/.test(numberString);
 
         const availablePartners = searchWord
-            ? fuzzyLookup(searchWord, partners, (partner) => unaccent(partner.searchString, false))
+            ? partners.filter((p) =>
+                  unaccent(p.searchString).includes(isSearchWordNumber ? numberString : searchWord)
+              )
             : partners
                   .slice(0, 1000)
                   .toSorted((a, b) =>
@@ -125,7 +128,7 @@ export class PartnerList extends Component {
             const search_fields = [
                 "name",
                 "parent_name",
-                "phone_mobile_search",
+                ...this.getPhoneSearchTerms(),
                 "email",
                 "barcode",
                 "street",
@@ -147,5 +150,9 @@ export class PartnerList extends Component {
         });
 
         return result;
+    }
+
+    getPhoneSearchTerms() {
+        return ["phone", "mobile"];
     }
 }

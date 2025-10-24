@@ -18,55 +18,12 @@ patch(PosStore.prototype, {
             {
                 timeout: 180000, // 3 minutes
                 action: () =>
+                    this.dialog.closeAll() &&
                     this.config.module_pos_restaurant &&
-                    this.mainScreen.component.name !== "PaymentScreen" &&
+                    !["LoginScreen", "PaymentScreen"].includes(this.mainScreen.component.name) &&
                     this.showScreen("FloorScreen"),
             },
         ];
-    },
-    async recordSynchronisation(data) {
-        await super.recordSynchronisation(...arguments);
-        if (data.records["pos.order"]?.length > 0) {
-            // Verify if there is only 1 order by table.
-            const orderByTableId = this.models["pos.order"].reduce((acc, order) => {
-                // Floating order doesn't need to be verified.
-                if (!order.finalized && order.table_id?.id) {
-                    acc[order.table_id.id] = acc[order.table_id.id] || [];
-                    acc[order.table_id.id].push(order);
-                }
-                return acc;
-            }, {});
-
-            for (const orders of Object.values(orderByTableId)) {
-                if (orders.length > 1) {
-                    // The only way to get here is if there is several waiters on the same table.
-                    // In this case we take orderline of the local order and we add it to the synced order.
-                    const syncedOrder = orders.find((order) => typeof order.id === "number");
-                    const localOrders = orders.find((order) => typeof order.id !== "number");
-
-                    let watcher = 0;
-                    while (localOrders.lines.length > 0) {
-                        if (watcher > 1000) {
-                            break;
-                        }
-
-                        const line = localOrders.lines.pop();
-                        line.update({ order_id: syncedOrder });
-                        line.setDirty();
-                        watcher++;
-                    }
-
-                    // Remove local orders from the local database.
-                    if (this.get_order()?.id === localOrders.id) {
-                        this.set_order(syncedOrder);
-                        this.addPendingOrder([syncedOrder.id]);
-                    }
-
-                    localOrders.delete();
-                }
-            }
-            this.computeTableCount();
-        }
     },
     get firstScreen() {
         const screen = super.firstScreen;
@@ -101,8 +58,8 @@ patch(PosStore.prototype, {
             );
             const qtyChange = tableOrders.reduce(
                 (acc, order) => {
-                    const quantityChange = this.getOrderChanges(false, order);
                     const quantitySkipped = this.getOrderChanges(true, order);
+                    const quantityChange = this.getOrderChanges(false, order);
                     acc.changed += quantityChange.count;
                     acc.skipped += quantitySkipped.count;
                     return acc;
@@ -202,12 +159,18 @@ patch(PosStore.prototype, {
     //@override
     add_new_order() {
         const order = super.add_new_order(...arguments);
-        this.addPendingOrder([order.id]);
+        if (this.config.module_pos_restaurant) {
+            this.addPendingOrder([order.id]);
+        }
         return order;
     },
     async addLineToCurrentOrder(vals, opts = {}, configure = true) {
-        if (this.config.module_pos_restaurant && !this.get_order().uiState.booked) {
-            this.get_order().setBooked(true);
+        if (this.config.module_pos_restaurant) {
+            const order = this.get_order();
+            this.addPendingOrder([order.id]);
+            if (!this.get_order().uiState.booked) {
+                this.get_order().setBooked(true);
+            }
         }
         return super.addLineToCurrentOrder(vals, opts, configure);
     },
@@ -233,13 +196,11 @@ patch(PosStore.prototype, {
         return super.getDefaultSearchDetails();
     },
     async setTable(table, orderUuid = null) {
+        this.deviceSync.readDataFromServer();
         this.selectedTable = table;
-
-        const tableOrders = table.orders;
-
-        let currentOrder = tableOrders.find((order) =>
-            orderUuid ? order.uuid === orderUuid : !order.finalized
-        );
+        let currentOrder = table
+            ? table.orders.find((o) => o.uuid === orderUuid || !o.finalized)
+            : null;
 
         if (currentOrder) {
             this.set_order(currentOrder);
@@ -294,7 +255,7 @@ patch(PosStore.prototype, {
         const order = this.get_order();
         if (order && !order.isBooked) {
             this.removeOrder(order);
-        } else if (order) {
+        } else if (order && this.previousScreen !== "ReceiptScreen") {
             if (!this.orderToTransferUuid) {
                 this.syncAllOrders({ orders: [order] });
             } else {
@@ -316,9 +277,23 @@ patch(PosStore.prototype, {
             [...el.classList].find((c) => c.includes("tableId")).split("-")[1]
         );
     },
+    mergePreparationLines(preparationLine, destPreparationLine, destinationOrder, destOrderLine) {
+        if (preparationLine && destPreparationLine) {
+            destPreparationLine.quantity += preparationLine.quantity;
+            preparationLine.quantity = 0;
+        } else if (preparationLine) {
+            const preparationLineCopy = { ...preparationLine };
+            preparationLineCopy.order_id = destinationOrder.id;
+            preparationLineCopy.uuid = destOrderLine.uuid;
+            destinationOrder.last_order_preparation_change.lines[destOrderLine.preparationKey] =
+                preparationLineCopy;
+            preparationLine.quantity = 0;
+        }
+    },
     async transferOrder(orderUuid, destinationTable) {
         const order = this.models["pos.order"].getBy("uuid", orderUuid);
         const destinationOrder = this.getActiveOrdersOnTable(destinationTable)[0];
+        await this.syncAllOrders({ orders: [destinationOrder || order] });
         const originalTable = order.table_id;
         this.loadingOrderState = false;
         this.alert.dismiss();
@@ -338,12 +313,35 @@ patch(PosStore.prototype, {
                 );
                 if (adoptingLine) {
                     adoptingLine.merge(orphanLine);
+                    this.mergePreparationLines(
+                        order.last_order_preparation_change.lines[orphanLine.preparationKey],
+                        destinationOrder.last_order_preparation_change.lines[
+                            adoptingLine.preparationKey
+                        ],
+                        destinationOrder,
+                        adoptingLine
+                    );
                 } else {
                     const serialized = orphanLine.serialize();
                     serialized.order_id = destinationOrder.id;
                     delete serialized.uuid;
                     delete serialized.id;
-                    this.models["pos.order.line"].create(serialized, false, true);
+                    const newOrderLine = this.models["pos.order.line"].create(
+                        serialized,
+                        false,
+                        true
+                    );
+
+                    const preparationLine =
+                        order.last_order_preparation_change.lines[orphanLine.preparationKey];
+                    if (preparationLine) {
+                        const preparationLineCopy = { ...preparationLine };
+                        preparationLineCopy.order_id = destinationOrder.id;
+                        destinationOrder.last_order_preparation_change.lines[
+                            newOrderLine.preparationKey
+                        ] = preparationLineCopy;
+                        preparationLine.quantity = 0;
+                    }
                 }
             }
 
@@ -366,5 +364,8 @@ patch(PosStore.prototype, {
     },
     _shouldLoadOrders() {
         return super._shouldLoadOrders() || this.config.module_pos_restaurant;
+    },
+    get showSaveOrderButton() {
+        return super.showSaveOrderButton && !this.config.module_pos_restaurant;
     },
 });

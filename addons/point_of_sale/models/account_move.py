@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
-from odoo import fields, models, api
+from odoo import fields, models, api, _
+from odoo.exceptions import UserError
 
 
 class AccountMove(models.Model):
@@ -13,6 +14,17 @@ class AccountMove(models.Model):
     reversed_pos_order_id = fields.Many2one('pos.order', string="Reversed POS Order",
         help="The pos order that was reverted after closing the session to create an invoice for it.")
     pos_session_ids = fields.One2many("pos.session", "move_id", "POS Sessions")
+
+    @api.depends('tax_cash_basis_created_move_ids', 'pos_session_ids')
+    def _compute_always_tax_exigible(self):
+        super()._compute_always_tax_exigible()
+        # The pos closing move does not create caba entries (anymore); we set the tax values directly on the closing move.
+        # (But there may still be old closing moves that used caba entries from previous versions.)
+        for move in self:
+            if move.always_tax_exigible or move.tax_cash_basis_created_move_ids:
+                continue
+            if move.pos_session_ids:
+                move.always_tax_exigible = True
 
     def _stock_account_get_last_step_stock_moves(self):
         stock_moves = super(AccountMove, self)._stock_account_get_last_step_stock_moves()
@@ -71,6 +83,10 @@ class AccountMove(models.Model):
     def _compute_tax_totals(self):
         return super(AccountMove, self.with_context(linked_to_pos=bool(self.sudo().pos_order_ids)))._compute_tax_totals()
 
+    def button_draft(self):
+        if self.sudo().pos_order_ids:
+            raise UserError(_("You cannot reset to draft an invoice linked to a POS order. You must refund the order or create a credit note instead."))
+        return super().button_draft()
 
 
 class AccountMoveLine(models.Model):

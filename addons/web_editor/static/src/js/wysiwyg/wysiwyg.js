@@ -46,6 +46,7 @@ import {
     onWillUpdateProps,
     markup,
     status,
+    htmlEscape,
 } from "@odoo/owl";
 import { isCSSColor } from '@web/core/utils/colors';
 import { EmojiPicker } from '@web/core/emoji_picker/emoji_picker';
@@ -67,6 +68,7 @@ const getRangePosition = OdooEditorLib.getRangePosition;
 const childNodeIndex = OdooEditorLib.childNodeIndex;
 const fillEmpty = OdooEditorLib.fillEmpty;
 const isVisible = OdooEditorLib.isVisible;
+const getSelectedNodes = OdooEditorLib.getSelectedNodes;
 const getDeepestPosition = OdooEditorLib.getDeepestPosition;
 const paragraphRelatedElements = OdooEditorLib.paragraphRelatedElements;
 
@@ -440,6 +442,7 @@ export class Wysiwyg extends Component {
             getUnremovableElements: this.options.getUnremovableElements,
             defaultLinkAttributes: this.options.userGeneratedContent ? {rel: 'ugc' } : {},
             allowCommandVideo: this.options.allowCommandVideo,
+            disableTransform: this.options.disableTransform,
             allowInlineAtRoot: this.options.allowInlineAtRoot,
             getYoutubeVideoElement: getYoutubeVideoElement,
             getContextFromParentRect: options.getContextFromParentRect,
@@ -509,7 +512,7 @@ export class Wysiwyg extends Component {
             plugins: options.editorPlugins,
             direction: options.direction || localization.direction || 'ltr',
             collaborationClientAvatarUrl: this._getCollaborationClientAvatarUrl(),
-            renderingClasses: ["o_dirty", "o_transform_removal", "oe_edited_link", "o_menu_loading", "o_draggable", "o_link_in_selection"],
+            renderingClasses: ["o_dirty", "o_transform_removal", "oe_edited_link", "o_menu_loading", "o_draggable", "o_link_in_selection", "o_we_force_no_transition"],
             dropImageAsAttachment: options.dropImageAsAttachment,
             foldSnippets: !!options.foldSnippets,
             useResponsiveFontSizes: options.useResponsiveFontSizes,
@@ -648,6 +651,9 @@ export class Wysiwyg extends Component {
             this.snippetsMenuComponent = await this.getSnippetsMenuClass(options);
             await this._insertSnippetMenu();
             $(this.odooEditor.document.body).addClass('editor_enable');
+            if (localization.direction === "rtl") {
+                this.odooEditor.document.body.setAttribute("is-rtl-backend", "true");
+            }
 
             this._onBeforeUnload = (event) => {
                 if (this.isDirty()) {
@@ -1381,7 +1387,25 @@ export class Wysiwyg extends Component {
      * Open the link tools or the image link tool depending on the selection.
      */
     openLinkToolsFromSelection() {
-        const targetEl = this.odooEditor.document.getSelection().getRangeAt(0).startContainer;
+        const selection = this.odooEditor.document.getSelection();
+        // If there is no selection return
+        if (!selection || selection.rangeCount === 0) {
+            return;
+        }
+        // If there is a video in selection then return
+        for (const el of getSelectedNodes(this.odooEditor.editable)) {
+            if (
+                el.classList?.contains("media_iframe_video")
+                || el.classList?.contains("media_iframe_video_size")
+            ) {
+                return;
+            }
+        }
+        const targetEl = selection.getRangeAt(0).startContainer;
+        // Avoid toggleLinkTools for video if targetEl is text
+        if (closestElement(targetEl, ".media_iframe_video")) {
+            return;
+        }
         // Link tool is different if the selection is an image or a text.
         if (targetEl.nodeType === Node.ELEMENT_NODE
                 && (targetEl.tagName === 'IMG' || targetEl.querySelectorAll('img').length === 1)) {
@@ -1774,13 +1798,43 @@ export class Wysiwyg extends Component {
      * @param {Object} params binded @see openMediaDialog
      * @param {Element} element provided by the dialog
      */
-    _onMediaDialogSave(params, element) {
+    async _onMediaDialogSave(params, element) {
         params.restoreSelection();
         if (!element) {
             return;
         }
 
+        const saveCallback = this.state.showSnippetsMenu
+            ? async element => {
+                const $element = $(element);
+                // Make sure the newly inserted media's options are built, note:
+                // also enable the overlay on edited existing media.
+                await new Promise(resolve => {
+                    this.snippetsMenuBus.trigger(
+                        params.node ? "ACTIVATE_SNIPPET" : "CALL_POST_SNIPPET_DROP",
+                        {
+                            $snippet: $element,
+                            onSuccess: resolve,
+                        },
+                    );
+                });
+                if (element.tagName !== 'IMG') {
+                    return;
+                }
+                return new Promise(resolve => {
+                    // TODO ideally would need 'snippet_edition_request' ? So
+                    // there could be a loading animation ?
+                    this.mutex.exec(() => {
+                        // TODO In master use a trigger parameter
+                        const event = $.Event("image_changed", {_complete: resolve});
+                        $element.trigger(event);
+                    });
+                });
+            }
+            : () => {};
+
         if (params.node) {
+            this.odooEditor.historyPauseSteps();
             const changedIcon = isIconElement(params.node) && isIconElement(element);
             if (changedIcon) {
                 // Preserve tag name when changing an icon and not recreate the
@@ -1791,6 +1845,8 @@ export class Wysiwyg extends Component {
             } else {
                 params.node.replaceWith(element);
             }
+            await saveCallback(element);
+            this.odooEditor.historyUnpauseSteps();
             this.odooEditor.unbreakableStepUnactive();
 
             if (params.node.matches(".oe_unremovable")) {
@@ -1811,21 +1867,14 @@ export class Wysiwyg extends Component {
             // Refocus again to save updates when calling `_onWysiwygBlur`
             this.odooEditor.editable.focus();
         } else {
+            this.odooEditor.historyPauseSteps();
             const result = this.odooEditor.execCommand('insert', element);
+            await saveCallback(element);
+            this.odooEditor.historyUnpauseSteps();
+            this.odooEditor.historyStep();
             // Refocus again to save updates when calling `_onWysiwygBlur`
             this.odooEditor.editable.focus();
             return result;
-        }
-
-        if (this.state.showSnippetsMenu) {
-            this.snippetsMenuBus.trigger("ACTIVATE_SNIPPET", {
-                $snippet: $(element),
-                onSuccess: () => {
-                    if (element.tagName === 'IMG') {
-                        $(element).trigger('image_changed');
-                    }
-                }
-            });
         }
     }
     getInSelection(selector) {
@@ -2054,8 +2103,11 @@ export class Wysiwyg extends Component {
             if (!this.lastMediaClicked) {
                 return;
             }
+            const anchorNode = this.lastMediaClicked.parentElement;
+            const anchorOffset = Array.from(anchorNode.childNodes).indexOf(this.lastMediaClicked);
             $(this.lastMediaClicked).remove();
             this.lastMediaClicked = undefined;
+            setSelection(anchorNode, anchorOffset, anchorNode, anchorOffset);
             this.odooEditor.toolbarHide();
         });
         $toolbar.find('#fa-resize div').click(e => {
@@ -2153,7 +2205,10 @@ export class Wysiwyg extends Component {
         coloredElements = coloredElements.filter(element => this.odooEditor.document.contains(element));
 
         const coloredTds = coloredElements && coloredElements.length && Array.isArray(coloredElements) && coloredElements.filter(coloredElement => coloredElement.classList.contains('o_selected_td'));
-        if (coloredTds.length) {
+        if (selectedTds.length === 1 && !previewMode) {
+            const sel = this.odooEditor.document.getSelection();
+            sel.collapseToEnd();
+        } else if (coloredTds.length) {
             const propName = colorType === 'text' ? 'color' : 'background-color';
             for (const td of coloredTds) {
                 // Make it important so it has priority over selection color.
@@ -2439,7 +2494,7 @@ export class Wysiwyg extends Component {
             callback: () => {
                 const bannerElement = parseHTML(this.odooEditor.document, `
                     <div class="o_editor_banner o_not_editable lh-1 d-flex align-items-center alert alert-${alertClass} pb-0 pt-3" role="status" data-oe-protected="true">
-                        <i class="o_editor_banner_icon mb-3 fst-normal" aria-label="${_t(title)}">${emoji}</i>
+                        <i class="o_editor_banner_icon mb-3 fst-normal" aria-label="${htmlEscape(title)}">${emoji}</i>
                         <div class="w-100 px-3" data-oe-protected="false">
                             <p><br></p>
                         </div>
@@ -2458,6 +2513,33 @@ export class Wysiwyg extends Component {
         await snippetsMenuMountedProm;
     }
     /**
+     * Retrieves an array of banner command objects, each representing a specific
+     * type of banner (info, success, warning, danger) that can be inserted.
+     * Each banner command contains detail such as the label, type, icon,
+     * description, and priority.
+     *
+     * @returns {Array}
+     */
+    _getBannerCommands() {
+        return [
+            this._getBannerCommand(_t('Banner Info'), '💡', 'info', 'fa-info-circle', _t('Insert an info banner'), 24),
+            this._getBannerCommand(_t('Banner Success'), '✅', 'success', 'fa-check-circle', _t('Insert a success banner'), 23),
+            this._getBannerCommand(_t('Banner Warning'), '⚠️', 'warning', 'fa-exclamation-triangle', _t('Insert a warning banner'), 22),
+            this._getBannerCommand(_t('Banner Danger'), '❌', 'danger', 'fa-exclamation-circle', _t('Insert a danger banner'), 21),
+        ];
+    }
+    /**
+     * Returns an array containing a banner category object with a
+     * name and priority value.
+     *
+     * @returns {Array}
+     */
+    _getBannerCategory() {
+        return [
+            { name: _t("Banners"), priority: 65 }
+        ];
+    }
+    /**
      * If the element holds a translation, saves it. Otherwise, fallback to the
      * standard saving but with the lang kept.
      *
@@ -2472,14 +2554,12 @@ export class Wysiwyg extends Component {
                     [$(x).data('oe-translation-source-sha')]: this._getEscapedElement($(x)).html()
                 })
             ));
-            return this.orm.call(
-                $els.data('oe-model'),
-                'web_update_field_translations',
-                [
-                    [+$els.data('oe-id')],
-                    $els.data('oe-field'),
-                    translations,
-                ], { context });
+            return rpc('/web_editor/field/translation/update', {
+                model: $els.data('oe-model'),
+                record_id: [+$els.data('oe-id')],  
+                field_name: $els.data('oe-field'),
+                translations,                
+            });
         } else {
             var viewID = $el.data('oe-id');
             if (!viewID) {
@@ -2499,12 +2579,9 @@ export class Wysiwyg extends Component {
     }
     _getPowerboxOptions() {
         const editorOptions = this.options;
-        const categories = [{ name: _t('Banners'), priority: 65 },];
+        const categories = [...this._getBannerCategory()];
         const commands = [
-            this._getBannerCommand(_t('Banner Info'), '💡', 'info', 'fa-info-circle', _t('Insert an info banner'), 24),
-            this._getBannerCommand(_t('Banner Success'), '✅', 'success', 'fa-check-circle', _t('Insert a success banner'), 23),
-            this._getBannerCommand(_t('Banner Warning'), '⚠️', 'warning', 'fa-exclamation-triangle', _t('Insert a warning banner'), 22),
-            this._getBannerCommand(_t('Banner Danger'), '❌', 'danger', 'fa-exclamation-circle', _t('Insert a danger banner'), 21),
+            ...this._getBannerCommands(),
             {
                 category: _t('Structure'),
                 name: _t('Quote'),
@@ -3626,7 +3703,20 @@ export class Wysiwyg extends Component {
                 }
             }
         }
-        const newAttachmentSrc = await this._serviceRpc(
+        let newAttachmentSrc = isBackground ? el.dataset.bgSrc : el.getAttribute('src');
+        const isImageAlreadySaved = !newAttachmentSrc || !newAttachmentSrc.startsWith("data:");
+        // Frequent media changes or page reloads may trigger a save request  
+        // without removing the `o_modified_image_to_save` class, causing a traceback  
+        // on the next save since the element loses its base64 `src`.  
+        // If the image isn't already saved, a new copy is created.
+        if (isImageAlreadySaved) {
+            el.classList.remove('o_modified_image_to_save');
+            return;
+        }
+        // Modifying an image always creates a copy of the original, even if
+        // it was modified previously, as the other modified image may be used
+        // elsewhere if the snippet was duplicated or was saved as a custom one.
+        newAttachmentSrc = await this._serviceRpc(
             `/web_editor/modify_image/${encodeURIComponent(el.dataset.originalId)}`,
             {
                 res_model: resModel,

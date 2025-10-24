@@ -1,44 +1,39 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* account_edi_ubl_cii
-# 
+#
 # Translators:
-# Wil Odoo, 2024
-# Thi Huong Nguyen, 2024
-# 
+# Thi Huong Nguyen, 2025
+# Wil Odoo, 2025
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-13 09:08+0000\n"
+"POT-Creation-Date: 2025-08-08 18:38+0000\n"
 "PO-Revision-Date: 2024-09-25 09:41+0000\n"
-"Last-Translator: Thi Huong Nguyen, 2024\n"
+"Last-Translator: Wil Odoo, 2025\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: account_edi_ubl_cii
 #. odoo-python
 #: code:addons/account_edi_ubl_cii/models/account_edi_xml_ubl_bis3.py:0
 msgid ""
-"%s should have a KVK or OIN number: the Peppol e-address (EAS) should be "
-"'0106' or '0190'."
+"%s should have a KVK or OIN number set in Company ID field or as Peppol e-"
+"address (EAS code 0106 or 0190)."
 msgstr ""
-"%s phải có số KVK hoặc OIN: địa chỉ điện tử Peppol (EAS) phải là '0106' hoặc"
-" '0190'."
+"%s cần có số KVK hoặc OIN được điền trong trường ID công ty hoặc dưới dạng "
+"địa chỉ Peppol (mã EAS 0106 hoặc 0190)."
 
 #. module: account_edi_ubl_cii
 #: model_terms:ir.ui.view,arch_db:account_edi_ubl_cii.account_invoice_pdfa_3_facturx_metadata
 msgid "1.0"
 msgstr "1.0"
-
-#. module: account_edi_ubl_cii
-#: model_terms:ir.ui.view,arch_db:account_edi_ubl_cii.account_invoice_facturx_export_22
-msgid "42"
-msgstr "42"
 
 #. module: account_edi_ubl_cii
 #. odoo-python
@@ -47,9 +42,20 @@ msgid "A payment of %s was detected."
 msgstr "Đã phát hiện khoản thanh toán %s."
 
 #. module: account_edi_ubl_cii
+#. odoo-python
+#: code:addons/account_edi_ubl_cii/models/account_edi_common.py:0
+msgid "A rounding amount of %s was detected."
+msgstr ""
+
+#. module: account_edi_ubl_cii
 #: model:ir.model,name:account_edi_ubl_cii.model_account_edi_xml_ubl_a_nz
 msgid "A-NZ BIS Billing 3.0"
 msgstr "A-NZ BIS Billing 3.0"
+
+#. module: account_edi_ubl_cii
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__as
+msgid "AS2 exchange"
+msgstr ""
 
 #. module: account_edi_ubl_cii
 #: model:ir.model,name:account_edi_ubl_cii.model_account_move_send
@@ -58,13 +64,13 @@ msgstr "Account Move Send"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9923
-msgid "Albania VAT - 9923"
-msgstr "Thuế GTGT của Albania - 9923"
+msgid "Albania VAT"
+msgstr "Thuế GTGT của Albania"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9922
-msgid "Andorra VAT - 9922"
-msgstr "Thuế GTGT của Andorra - 9922"
+msgid "Andorra VAT"
+msgstr "Thuế GTGT của Andorra"
 
 #. module: account_edi_ubl_cii
 #. odoo-python
@@ -76,8 +82,8 @@ msgstr "Điều 226 mục 11 đến 15 Chỉ thị 2006/112/EN"
 #. odoo-python
 #: code:addons/account_edi_ubl_cii/models/account_edi_common.py:0
 msgid ""
-"At least one of the following fields %(field_list)s is required on "
-"%(record)s."
+"At least one of the following fields %(field_list)s is required on %"
+"(record)s."
 msgstr ""
 "Yêu cầu ít nhất một trong các trường sau %(field_list)s trên %(record)s."
 
@@ -89,33 +95,29 @@ msgstr "Tệp đính kèm"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0151
-msgid "Australia ABN - 0151"
-msgstr "ABN của Úc - 0151"
-
-#. module: account_edi_ubl_cii
-#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9914
-msgid "Austria UID - 9914"
-msgstr "UID của Áo - 9914"
-
-#. module: account_edi_ubl_cii
-#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9915
-msgid "Austria VOKZ - 9915"
-msgstr "VOKZ của Áo - 9915"
-
-#. module: account_edi_ubl_cii
-#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__invoice_edi_format__ubl_bis3
-msgid "BIS Billing 3.0"
-msgstr "BIS Billing 3.0"
+msgid "Australia ABN"
+msgstr "ABN của Úc"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__invoice_edi_format__ubl_a_nz
-msgid "BIS Billing 3.0 A-NZ"
-msgstr "BIS Billing 3.0 A-NZ"
+msgid "Australia BIS Billing 3.0 A-NZ"
+msgstr ""
 
 #. module: account_edi_ubl_cii
-#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__invoice_edi_format__ubl_sg
-msgid "BIS Billing 3.0 SG"
-msgstr "BIS Billing 3.0 SG"
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9914
+msgid "Austria UID"
+msgstr "UID của Áo"
+
+#. module: account_edi_ubl_cii
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9915
+msgid "Austria VOKZ"
+msgstr "VOKZ của Áo"
+
+#. module: account_edi_ubl_cii
+#: model:ir.model.fields,field_description:account_edi_ubl_cii.field_res_partner__available_peppol_eas
+#: model:ir.model.fields,field_description:account_edi_ubl_cii.field_res_users__available_peppol_eas
+msgid "Available Peppol Eas"
+msgstr ""
 
 #. module: account_edi_ubl_cii
 #: model:ir.model,name:account_edi_ubl_cii.model_account_edi_xml_ubl_de
@@ -124,34 +126,28 @@ msgstr "BIS3 DE (XRechnung)"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0208
-msgid "Belgium CBE - 0208"
-msgstr "CBE của Bỉ - 0208"
+msgid "Belgian Company Registry"
+msgstr "Cơ quan đăng ký doanh nghiệp Bỉ"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9925
-msgid "Belgium VAT - 9925"
-msgstr "Thuế GTGT của Bỉ - 9925"
+msgid "Belgian VAT"
+msgstr "Thuế GTGT của Bỉ"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9924
-msgid "Bosnia and Herzegovina VAT - 9924"
-msgstr "Thuế GTGT của Bosnia và Herzegovina - 9924"
+msgid "Bosnia and Herzegovina VAT"
+msgstr "Thuế GTGT của Bosnia và Herzegovina"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9926
-msgid "Bulgaria VAT - 9926"
-msgstr "Thuế GTGT của Bulgaria - 9926"
+msgid "Bulgaria VAT"
+msgstr "Thuế GTGT của Bulgary"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9913
-msgid "Business Registers Network - 9913"
-msgstr "Mạng lưới đăng ký kinh doanh - 9913"
-
-#. module: account_edi_ubl_cii
-#. odoo-python
-#: code:addons/account_edi_ubl_cii/models/account_move_send.py:0
-msgid "Check Invoice(s)"
-msgstr "Kiểm tra (các) hoá đơn"
+msgid "Business Registers Network"
+msgstr "Mạng lưới đăng ký kinh doanh"
 
 #. module: account_edi_ubl_cii
 #. odoo-python
@@ -164,20 +160,23 @@ msgstr "Kiểm tra (các) đối tác"
 #: model:ir.model.fields,help:account_edi_ubl_cii.field_res_users__peppol_eas
 msgid ""
 "Code used to identify the Endpoint for BIS Billing 3.0 and its derivatives.\n"
-"             List available at https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/"
+"             List available at https://docs.peppol.eu/poacc/billing/3.0/"
+"codelist/eas/"
 msgstr ""
-"Mã được sử dụng để xác định Endpoint cho BIS Billing 3.0 và các thành phần phái sinh.\n"
-"             Danh sách có tại: https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/"
+"Mã được sử dụng để xác định Endpoint cho BIS Billing 3.0 và các thành phần "
+"phái sinh.\n"
+"             Danh sách có tại: https://docs.peppol.eu/poacc/billing/3.0/"
+"codelist/eas/"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0210
-msgid "Codice Fiscale - 0210"
-msgstr "Mã số thuế Codice Fiscale - 0210"
+msgid "Codice Fiscale"
+msgstr "Mã số thuế Codice Fiscale"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0201
-msgid "Codice Univoco Unità Organizzativa iPA - 0201"
-msgstr "Codice Univoco Unità Organizzativa iPA - 0201"
+msgid "Codice Univoco Unità Organizzativa iPA"
+msgstr "Codice Univoco Unità Organizzativa iPA"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model,name:account_edi_ubl_cii.model_account_edi_common
@@ -190,6 +189,12 @@ msgstr "Các chức năng chung cho tài liệu EDI: tạo dữ liệu, ràng bu
 #: code:addons/account_edi_ubl_cii/models/account_edi_xml_ubl_20.py:0
 msgid "Conditional cash/payment discount"
 msgstr "Chiết khấu thanh toán/tiền mặt có điều kiện"
+
+#. module: account_edi_ubl_cii
+#. odoo-python
+#: code:addons/account_edi_ubl_cii/models/account_move_send.py:0
+msgid "Configure"
+msgstr "Cấu hình"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model,name:account_edi_ubl_cii.model_res_partner
@@ -209,11 +214,11 @@ msgstr ""
 #. odoo-python
 #: code:addons/account_edi_ubl_cii/models/account_edi_common.py:0
 msgid ""
-"Could not retrieve currency: %s. Did you enable the multicurrency option and"
-" activate the currency?"
+"Could not retrieve currency: %s. Did you enable the multicurrency option and "
+"activate the currency?"
 msgstr ""
-"Không thể truy xuất tiền tệ: %s. Bạn đã bật tùy chọn đa tiền tệ và kích hoạt"
-" loại tiền tệ này chưa?"
+"Không thể truy xuất tiền tệ: %s. Bạn đã bật tùy chọn đa tiền tệ và kích hoạt "
+"loại tiền tệ này chưa?"
 
 #. module: account_edi_ubl_cii
 #. odoo-python
@@ -230,50 +235,48 @@ msgstr "Không thể truy xuất thuế: %(tax_percentage)s %% cho dòng '%(line
 #. module: account_edi_ubl_cii
 #. odoo-python
 #: code:addons/account_edi_ubl_cii/models/account_edi_common.py:0
-msgid ""
-"Could not retrieve the tax: %s for the document level allowance/charge."
-msgstr ""
-"Không thể truy xuất thuế: %s cho khoản phụ cấp/phụ phí trong chứng từ."
+msgid "Could not retrieve the tax: %s for the document level allowance/charge."
+msgstr "Không thể truy xuất thuế: %s cho khoản phụ cấp/phụ phí trong chứng từ."
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9934
-msgid "Croatia VAT - 9934"
-msgstr "Thuế GTGT của Croatia - 9934"
+msgid "Croatia VAT"
+msgstr "Thuế GTGT của Croatia"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9928
-msgid "Cyprus VAT - 9928"
-msgstr "Thuế GTGT của Síp - 9928"
+msgid "Cyprus VAT"
+msgstr "Thuế GTGT của Síp"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9929
-msgid "Czech Republic VAT - 9929"
-msgstr "Thuế GTGT của CH Séc - 9929"
+msgid "Czech Republic VAT"
+msgstr "Thuế GTGT của CH Séc"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0060
-msgid "DUNS Number - 0060"
-msgstr "Mã số DUNS - 0060"
-
-#. module: account_edi_ubl_cii
-#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0096
-msgid "Denmark CVR - 0096"
-msgstr "CVR của Đan Mạch - 0096"
+msgid "DUNS Number"
+msgstr "Mã số DUNS"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0184
-msgid "Denmark CVR - 0184"
-msgstr "CVR của Đan Mạch - 0184"
+msgid "Denmark CVR"
+msgstr "CVR của Đan Mạch"
+
+#. module: account_edi_ubl_cii
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0096
+msgid "Denmark P"
+msgstr "Đan Mạch P"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0198
-msgid "Denmark SE - 0198"
-msgstr "SE của Đan Mạch - 0198"
+msgid "Denmark SE"
+msgstr "SE của Đan Mạch"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0130
-msgid "Directorates of the European Commission - 0130"
-msgstr "Đoàn uỷ viên của Ủy ban Châu Âu - 0130"
+msgid "Directorates of the European Commission"
+msgstr "Đoàn uỷ viên của Ủy ban Châu Âu"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model,name:account_edi_ubl_cii.model_account_edi_xml_ubl_efff
@@ -282,18 +285,18 @@ msgstr "E-FFF (BE)"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0088
-msgid "EAN Location Code - 0088"
-msgstr "Mã vị trí EAN - 0088"
-
-#. module: account_edi_ubl_cii
-#: model_terms:ir.ui.view,arch_db:account_edi_ubl_cii.view_partner_property_form
-msgid "EAS"
-msgstr "EAS"
+msgid "EAN Location Code"
+msgstr "Mã vị trí EAN"
 
 #. module: account_edi_ubl_cii
 #: model_terms:ir.ui.view,arch_db:account_edi_ubl_cii.account_invoice_pdfa_3_facturx_metadata
 msgid "EN 16931"
 msgstr "EN 16931"
+
+#. module: account_edi_ubl_cii
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__invoice_edi_format__ubl_bis3
+msgid "EU Standard (Peppol Bis 3.0)"
+msgstr ""
 
 #. module: account_edi_ubl_cii
 #. odoo-python
@@ -314,9 +317,9 @@ msgid "Each invoice line should have at least one tax."
 msgstr "Mỗi dòng hoá đơn nên có ít nhất một loại thuế."
 
 #. module: account_edi_ubl_cii
-#: model_terms:ir.ui.view,arch_db:account_edi_ubl_cii.view_partner_property_form
-msgid "Endpoint"
-msgstr "Endpoint"
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__em
+msgid "Electronic mail"
+msgstr "Thư điện tử"
 
 #. module: account_edi_ubl_cii
 #. odoo-python
@@ -326,13 +329,19 @@ msgstr "Đã xảy ra lỗi khi tạo tài liệu EDI (định dạng: %s):"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0191
-msgid "Estonia Company code - 0191"
-msgstr "Mã công ty Estonia - 0191"
+msgid "Estonia Company code"
+msgstr "Mã số công ty của Estonia"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9931
-msgid "Estonia VAT - 9931"
-msgstr "Thuế GTGT của Estonia - 9931"
+msgid "Estonia VAT"
+msgstr "Thuế GTGT của Estonia"
+
+#. module: account_edi_ubl_cii
+#. odoo-python
+#: code:addons/account_edi_ubl_cii/models/account_edi_common.py:0
+msgid "Exempt from tax"
+msgstr "Miễn thuế"
 
 #. module: account_edi_ubl_cii
 #. odoo-python
@@ -341,29 +350,29 @@ msgid "Export outside the EU"
 msgstr "Xuất ra ngoài EU"
 
 #. module: account_edi_ubl_cii
-#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__invoice_edi_format__facturx
-msgid "Factur-X (CII)"
-msgstr "Factur-X (CII)"
-
-#. module: account_edi_ubl_cii
 #: model:ir.model,name:account_edi_ubl_cii.model_account_edi_xml_cii
 msgid "Factur-x/XRechnung CII 2.2.0"
 msgstr "Factur-x/XRechnung CII 2.2.0"
 
 #. module: account_edi_ubl_cii
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__au
+msgid "File Transfer Protocol"
+msgstr "Giao thức chuyển tệp"
+
+#. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0037
-msgid "Finland LY-tunnus - 0037"
-msgstr "LY-tunnus của Phần Lan - 0037"
+msgid "Finland LY-tunnus"
+msgstr "LY-tunnus của Phần Lan"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0216
-msgid "Finland OVT code - 0216"
-msgstr "Mã OVT của Phần Lan - 0216"
+msgid "Finland OVT code"
+msgstr "Mã OVT của Phần Lan"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0213
-msgid "Finland VAT - 0213"
-msgstr "Thuế GTGT của Phần Lan - 0213"
+msgid "Finland VAT"
+msgstr "Thuế GTGT của Phần Lan"
 
 #. module: account_edi_ubl_cii
 #. odoo-python
@@ -379,8 +388,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/account_edi_ubl_cii/models/account_edi_xml_ubl_bis3.py:0
 msgid "For intracommunity supply, the delivery address should be included."
-msgstr ""
-"Đối với việc cung cấp trong cộng đồng, phải bao gồm địa chỉ giao hàng."
+msgstr "Đối với việc cung cấp trong cộng đồng, phải bao gồm địa chỉ giao hàng."
 
 #. module: account_edi_ubl_cii
 #. odoo-python
@@ -389,54 +397,74 @@ msgid "Format used to import the invoice: %s"
 msgstr "Định dạng được sử dụng để nhập hóa đơn: %s"
 
 #. module: account_edi_ubl_cii
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__invoice_edi_format__facturx
+msgid "France (FacturX)"
+msgstr ""
+
+#. module: account_edi_ubl_cii
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0225
+msgid "France FRCTC Electronic Address"
+msgstr ""
+
+#. module: account_edi_ubl_cii
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0240
+msgid "France Register of legal persons"
+msgstr ""
+
+#. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0002
-msgid "France SIRENE - 0002"
-msgstr "SIRENE của Pháp - 0002"
+msgid "France SIRENE"
+msgstr "SIRENE của Pháp"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0009
-msgid "France SIRET - 0009"
-msgstr "SIRET của Pháp - 0009"
+msgid "France SIRET"
+msgstr "SIRET của Pháp"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9957
-msgid "France VAT - 9957"
-msgstr "Thuế GTGT của Pháp - 9957"
+msgid "France VAT"
+msgstr "Thuế GTGT của Pháp"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0209
-msgid "GS1 identification keys - 0209"
-msgstr "Khoá định danh GS1 - 0209"
+msgid "GS1 identification keys"
+msgstr "Khoá định danh GS1"
+
+#. module: account_edi_ubl_cii
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__invoice_edi_format__xrechnung
+msgid "Germany (XRechnung)"
+msgstr ""
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0204
-msgid "Germany Leitweg-ID - 0204"
-msgstr "Leitweg-ID của Đức - 0204"
+msgid "Germany Leitweg-ID"
+msgstr "Leitweg-ID của Đức"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9930
-msgid "Germany VAT - 9930"
-msgstr "Thuế GTGT của Đức - 9930"
+msgid "Germany VAT"
+msgstr "Thuế GTGT của Đức"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9933
-msgid "Greece VAT - 9933"
-msgstr "Thuế GTGT của Hy Lạp - 9933"
+msgid "Greece VAT"
+msgstr "Thuế GTGT của Hy Lạp"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9910
-msgid "Hungary VAT - 9910"
-msgstr "Thuế GTGT của Hungary - 9910"
+msgid "Hungary VAT"
+msgstr "Thuế GTGT của Hungary"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0196
-msgid "Iceland Kennitala - 0196"
-msgstr "Kennitala của Iceland - 0196"
+msgid "Iceland Kennitala"
+msgstr "Kennitala của Iceland"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0202
-msgid "Indirizzo di Posta Elettronica Certificata - 0202"
-msgstr "Indirizzo di Posta Elettronica Certificata - 0202"
+msgid "Indirizzo di Posta Elettronica Certificata"
+msgstr "Indirizzo di Posta Elettronica Certificata"
 
 #. module: account_edi_ubl_cii
 #. odoo-python
@@ -451,8 +479,8 @@ msgstr "Hoá đơn được tạo bởi Odoo"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9935
-msgid "Ireland VAT - 9935"
-msgstr "Thuế GTGT của Ireland - 9935"
+msgid "Ireland VAT"
+msgstr "Thuế GTGT của Ireland"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields,field_description:account_edi_ubl_cii.field_res_partner__is_peppol_edi_format
@@ -468,23 +496,23 @@ msgstr "Là định dạng UBI"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0097
-msgid "Italia FTI - 0097"
-msgstr "FTI của Ý - 0097"
+msgid "Italia FTI"
+msgstr "FTI của Ý"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0211
-msgid "Italia Partita IVA - 0211"
-msgstr "Partita IVA của Ý - 0211"
+msgid "Italia Partita IVA"
+msgstr "Partita IVA của Ý"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0221
-msgid "Japan IIN - 0221"
-msgstr "IIN của Nhật Bản - 0221"
+msgid "Japan IIN"
+msgstr "IIN của Nhật Bản"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0188
-msgid "Japan SST - 0188"
-msgstr "SST của Nhật Bản - 0188"
+msgid "Japan SST"
+msgstr "SST của Nhật Bản"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model,name:account_edi_ubl_cii.model_account_move
@@ -493,83 +521,88 @@ msgstr "Bút toán"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9919
-msgid "Kennziffer des Unternehmensregisters - 9919"
-msgstr "Kennziffer des Unternehmensregisters - 9919"
+msgid "Kennziffer des Unternehmensregisters"
+msgstr "Kennziffer des Unternehmensregisters"
+
+#. module: account_edi_ubl_cii
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0218
+msgid "Latvia Unified registration number"
+msgstr ""
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9939
-msgid "Latvia VAT - 9939"
-msgstr "Thuế GTGT của Latvia - 9939"
+msgid "Latvia VAT"
+msgstr "Thuế GTGT của Latvia"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0199
-msgid "Legal Entity Identifier (LEI) - 0199"
-msgstr "Mã định danh pháp nhân (LEI) - 0199"
+msgid "Legal Entity Identifier (LEI)"
+msgstr "Mã định danh pháp nhân (LEI)"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9936
-msgid "Liechtenstein VAT - 9936"
-msgstr "Thuế GTGT của Liechtenstein - 9936"
+msgid "Liechtenstein VAT"
+msgstr "Thuế GTGT của Liechtenstein"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0200
-msgid "Lithuania JAK - 0200"
-msgstr "JAK của Lithuania - 0200"
+msgid "Lithuania JAK"
+msgstr "JAK của Lithuania"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9937
-msgid "Lithuania VAT - 9937"
-msgstr "Thuế GTGT của Lithuania - 9937"
+msgid "Lithuania VAT"
+msgstr "Thuế GTGT của Lithuania"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9938
-msgid "Luxemburg VAT - 9938"
-msgstr "Thuế GTGT của Luxemburg - 9938"
+msgid "Luxembourg VAT"
+msgstr "Thuế GTGT của Luxemburg"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9942
-msgid "Macedonia VAT - 9942"
-msgstr "Thuế GTGT của Macedonia - 9942"
+msgid "Macedonia VAT"
+msgstr "Thuế GTGT của Macedonia"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0230
-msgid "Malaysia - 0230"
-msgstr "Malaysia - 0230"
+msgid "Malaysia"
+msgstr "Malaysia"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9943
-msgid "Malta VAT - 9943"
-msgstr "Thuế GTGT của Malta - 9943"
+msgid "Malta VAT"
+msgstr "Thuế GTGT của Malta"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9940
-msgid "Monaco VAT - 9940"
-msgstr "Thuế GTGT của Monaco - 9940"
+msgid "Monaco VAT"
+msgstr "Thuế GTGT của Monaco"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9941
-msgid "Montenegro VAT - 9941"
-msgstr "Thuế GTGT của Montenegro - 9941"
+msgid "Montenegro VAT"
+msgstr "Thuế GTGT của Montenegro"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__invoice_edi_format__nlcius
-msgid "NLCIUS"
-msgstr "NLCIUS"
+msgid "Netherlands (NLCIUS)"
+msgstr ""
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0106
-msgid "Netherlands KvK - 0106"
-msgstr "KvK của Hà Lan - 0106"
+msgid "Netherlands KvK"
+msgstr "KvK của Hà Lan"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0190
-msgid "Netherlands OIN - 0190"
-msgstr "OIN của Hà Lan - 0190"
+msgid "Netherlands OIN"
+msgstr "OIN của Hà Lan"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9944
-msgid "Netherlands VAT - 9944"
-msgstr "Thuế GTGT của Hà Lan - 9944"
+msgid "Netherlands VAT"
+msgstr "Thuế GTGT của Hà Lan"
 
 #. module: account_edi_ubl_cii
 #. odoo-python
@@ -582,8 +615,13 @@ msgstr ""
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0192
-msgid "Norway Org.nr. - 0192"
-msgstr "Org.nr. của Na Uy - 0192"
+msgid "Norway Org.nr."
+msgstr "Org.nr. của Na Uy"
+
+#. module: account_edi_ubl_cii
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__an
+msgid "O.F.T.P. (ODETTE File Transfer Protocol)"
+msgstr ""
 
 #. module: account_edi_ubl_cii
 #: model_terms:ir.ui.view,arch_db:account_edi_ubl_cii.account_invoice_pdfa_3_facturx_metadata
@@ -602,6 +640,11 @@ msgid "Peppol Endpoint"
 msgstr "Endpoint Peppol"
 
 #. module: account_edi_ubl_cii
+#: model_terms:ir.ui.view,arch_db:account_edi_ubl_cii.view_partner_property_form
+msgid "Peppol ID"
+msgstr "ID Peppol"
+
+#. module: account_edi_ubl_cii
 #: model:ir.model.fields,field_description:account_edi_ubl_cii.field_res_partner__peppol_eas
 #: model:ir.model.fields,field_description:account_edi_ubl_cii.field_res_users__peppol_eas
 msgid "Peppol e-address (EAS)"
@@ -610,47 +653,54 @@ msgstr "Địa chỉ điện tử Peppol (EAS)"
 #. module: account_edi_ubl_cii
 #. odoo-python
 #: code:addons/account_edi_ubl_cii/models/account_move_send.py:0
-msgid ""
-"Please add a Recipient bank in the 'Other Info' tab to generate a complete "
-"file."
-msgstr ""
-"Vui lòng thêm Ngân hàng người nhận vào tab 'Thông tin khác' để tạo tệp hoàn "
-"chỉnh."
+msgid "Please fill in partner's VAT or Peppol Address."
+msgstr "Vui lòng điền địa chỉ Peppol hoặc thuế GTGT của đối tác."
 
 #. module: account_edi_ubl_cii
 #. odoo-python
 #: code:addons/account_edi_ubl_cii/models/account_move_send.py:0
 msgid ""
-"Please fill in Peppol EAS and Peppol Endpoint in your company form to "
-"generate a complete file."
+"Please fill in your company's VAT or Peppol Address to generate a complete "
+"XML file."
 msgstr ""
-"Vui lòng điền Peppol EAS và Peppol Endpoint vào biểu mẫu công ty của bạn để "
-"tạo một tệp hoàn chỉnh."
+"Vui lòng điền địa chỉ thuế GTGT hoặc Peppol của công ty bạn để tạo tệp XML "
+"hoàn chỉnh."
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9945
-msgid "Poland VAT - 9945"
-msgstr "Thuế GTGT của Ba Lan - 9945"
+msgid "Poland VAT"
+msgstr "Thuế GTGT của Ba Lan"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9946
-msgid "Portugal VAT - 9946"
-msgstr "Thuế GTGT của Bồ Đào Nha - 9946"
+msgid "Portugal VAT"
+msgstr "Thuế GTGT của Bồ Đào Nha"
+
+#. module: account_edi_ubl_cii
+#: model:ir.model,name:account_edi_ubl_cii.model_ir_actions_report
+msgid "Report Action"
+msgstr "Tác vụ báo cáo"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9947
-msgid "Romania VAT - 9947"
-msgstr "Thuế GTGT của Romania - 9947"
+msgid "Romania VAT"
+msgstr "Thuế GTGT của Romania"
+
+#. module: account_edi_ubl_cii
+#. odoo-python
+#: code:addons/account_edi_ubl_cii/models/account_edi_common.py:0
+msgid "Rounding"
+msgstr "Làm tròn"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9918
-msgid "S.W.I.F.T - 9918"
-msgstr "S.W.I.F.T - 9918"
+msgid "S.W.I.F.T"
+msgstr "S.W.I.F.T"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0142
-msgid "SECETI Object Identifiers - 0142"
-msgstr "Mã định danh đối tượng SECETI - 0142"
+msgid "SECETI Object Identifiers"
+msgstr "Mã định danh đối tượng SECETI"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model,name:account_edi_ubl_cii.model_account_edi_xml_ubl_sg
@@ -664,58 +714,63 @@ msgstr "SI-UBL 2.0 (NLCIUS)"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0135
-msgid "SIA Object Identifiers - 0135"
-msgstr "Mã định danh đối tượng SIA - 0135"
+msgid "SIA Object Identifiers"
+msgstr "Mã định danh đối tượng SIA"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9951
-msgid "San Marino VAT - 9951"
-msgstr "Thuế GTGT của San Marino - 9951"
+msgid "San Marino VAT"
+msgstr "Thuế GTGT của San Marino"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9948
-msgid "Serbia VAT - 9948"
-msgstr "Thuế GTGT của Serbia - 9948"
+msgid "Serbia VAT"
+msgstr "Thuế GTGT của Serbia"
+
+#. module: account_edi_ubl_cii
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__invoice_edi_format__ubl_sg
+msgid "Singapore BIS Billing 3.0 SG"
+msgstr ""
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0195
-msgid "Singapore UEN - 0195"
-msgstr "UEN của Singapore - 0195"
+msgid "Singapore UEN"
+msgstr "UEN của Singapore"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9950
-msgid "Slovakia VAT - 9950"
-msgstr "Thuế GTGT của Slovakia - 9950"
+msgid "Slovakia VAT"
+msgstr "Thuế GTGT của Slovakia"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9949
-msgid "Slovenia VAT - 9949"
-msgstr "Thuế GTGT của Slovenia - 9949"
+msgid "Slovenia VAT"
+msgstr "Thuế GTGT của Slovenia"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9920
-msgid "Spain VAT - 9920"
-msgstr "Thuế GTGT của Tây Ban Nha - 9920"
+msgid "Spain VAT"
+msgstr "Thuế GTGT của Tây Ban Nha"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0007
-msgid "Sweden Org.nr. - 0007"
-msgstr "Org.nr. của Thuỵ Điển - 0007"
+msgid "Sweden Org.nr."
+msgstr "Org.nr. của Thuỵ Điển"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9955
-msgid "Sweden VAT - 9955"
-msgstr "Thuế GTGT của Thuỵ Điển - 9955"
+msgid "Sweden VAT"
+msgstr "Thuế GTGT của Thuỵ Điển"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0183
-msgid "Swiss UIDB - 0183"
-msgstr "UIDB của Thuỵ Sĩ - 0183"
+msgid "Swiss UIDB"
+msgstr "UIDB của Thuỵ Sĩ"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9927
-msgid "Swiss VAT - 9927"
-msgstr "Thuế GTGT của Thuỵ Sĩ - 9927"
+msgid "Swiss VAT"
+msgstr "Thuế GTGT của Thuỵ Sĩ"
 
 #. module: account_edi_ubl_cii
 #. odoo-python
@@ -789,8 +844,7 @@ msgstr "Yêu cầu trường %(field)s trên %(record)s."
 #. module: account_edi_ubl_cii
 #. odoo-python
 #: code:addons/account_edi_ubl_cii/models/account_edi_xml_cii_facturx.py:0
-msgid ""
-"The field 'Sanitized Account Number' is required on the Recipient Bank."
+msgid "The field 'Sanitized Account Number' is required on the Recipient Bank."
 msgstr ""
 "Yêu cầu trường 'Số tài khoản đã xác nhận' đối với Ngân hàng người nhận."
 
@@ -804,19 +858,14 @@ msgid ""
 msgstr "Hóa đơn đã được chuyển đổi thành giấy báo có và số lượng đã được đảo."
 
 #. module: account_edi_ubl_cii
-#. odoo-python
-#: code:addons/account_edi_ubl_cii/models/account_move_send.py:0
-msgid ""
-"These partners are missing Peppol Address. Please check those in their "
-"Accounting tab. Otherwise, the generated files will be incomplete."
-msgstr ""
-"Đối tác sau thiếu trường Địa chỉ Peppol. Vui lòng kiểm tra chúng trong tab "
-"Kế toán của họ. Nếu không, các tệp được tạo sẽ không đầy đủ."
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9952
+msgid "Turkey VAT"
+msgstr "Thuế GTGT của Thổ Nhĩ Kỳ"
 
 #. module: account_edi_ubl_cii
-#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9952
-msgid "Turkey VAT - 9952"
-msgstr "Thuế GTGT của Thổ Nhĩ Kỳ - 9952"
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0235
+msgid "UAE Tax Identification Number (TIN)"
+msgstr ""
 
 #. module: account_edi_ubl_cii
 #: model:ir.model,name:account_edi_ubl_cii.model_account_edi_xml_ubl_20
@@ -835,8 +884,8 @@ msgstr "UBL BIS Billing 3.0.12"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0193
-msgid "UBL.BE party identifier - 0193"
-msgstr "Mã số tổ chức UBL.BE - 0193"
+msgid "UBL.BE party identifier"
+msgstr "Mã số tổ chức UBL.BE"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields,field_description:account_edi_ubl_cii.field_account_bank_statement_line__ubl_cii_xml_file
@@ -846,8 +895,8 @@ msgstr "Tệp UBL/CII"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9959
-msgid "USA EIN - 9959"
-msgstr "EIN của Hoa Kỳ - 9959"
+msgid "USA EIN"
+msgstr "EIN của Hoa Kỳ"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields,help:account_edi_ubl_cii.field_res_partner__peppol_endpoint
@@ -861,25 +910,13 @@ msgstr ""
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9932
-msgid "United Kingdom VAT - 9932"
-msgstr "Thuế GTGT của Vương quốc Anh - 9932"
+msgid "United Kingdom VAT"
+msgstr "Thuế GTGT của Vương quốc Anh"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9953
-msgid "Vatican VAT - 9953"
-msgstr "Thuế GTGT của Vatican - 9953"
-
-#. module: account_edi_ubl_cii
-#. odoo-python
-#: code:addons/account_edi_ubl_cii/models/account_move_send.py:0
-msgid "View Company"
-msgstr "Xem công ty"
-
-#. module: account_edi_ubl_cii
-#. odoo-python
-#: code:addons/account_edi_ubl_cii/models/account_move_send.py:0
-msgid "View Invoice(s)"
-msgstr "Xem (các) hoá đơn"
+msgid "Vatican VAT"
+msgstr "Thuế GTGT của Vatican"
 
 #. module: account_edi_ubl_cii
 #. odoo-python
@@ -898,27 +935,32 @@ msgstr ""
 "mỗi dòng hóa đơn phải lớn hơn 0."
 
 #. module: account_edi_ubl_cii
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__aq
+msgid "X.400 address for mail text"
+msgstr ""
+
+#. module: account_edi_ubl_cii
 #. odoo-python
 #: code:addons/account_edi_ubl_cii/models/account_move.py:0
 msgid "XML UBL"
 msgstr "XML UBL"
 
 #. module: account_edi_ubl_cii
-#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__invoice_edi_format__xrechnung
-msgid "XRechnung CIUS"
-msgstr "XRechnung CIUS"
-
-#. module: account_edi_ubl_cii
 #. odoo-python
 #: code:addons/account_edi_ubl_cii/models/account_edi_xml_cii_facturx.py:0
 msgid ""
 "You should include at least one tax per invoice line. [BR-CO-04]-Each "
-"Invoice line (BG-25) shall be categorized with an Invoiced item VAT category"
-" code (BT-151)."
+"Invoice line (BG-25) shall be categorized with an Invoiced item VAT category "
+"code (BT-151)."
 msgstr ""
 "Bạn nên đặt ít nhất một khoản thuế trên mỗi dòng hóa đơn. [BR-CO-04]-Mỗi "
 "dòng hóa đơn (BG-25) sẽ được phân loại bằng mã danh mục thuế GTGT của mặt "
 "hàng được lập hóa đơn (BT-151)."
+
+#. module: account_edi_ubl_cii
+#: model_terms:ir.ui.view,arch_db:account_edi_ubl_cii.view_partner_property_form
+msgid "Your endpoint"
+msgstr "Endpoint của bạn"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields,field_description:account_edi_ubl_cii.field_res_partner__invoice_edi_format
@@ -940,3 +982,21 @@ msgstr "fx"
 #: model_terms:ir.ui.view,arch_db:account_edi_ubl_cii.account_invoice_pdfa_3_facturx_metadata
 msgid "urn:factur-x:pdfa:CrossIndustryDocument:invoice:1p0#"
 msgstr "urn:factur-x:pdfa:CrossIndustryDocument:invoice:1p0#"
+
+#~ msgid "BIS Billing 3.0"
+#~ msgstr "BIS Billing 3.0"
+
+#~ msgid "BIS Billing 3.0 A-NZ"
+#~ msgstr "BIS Billing 3.0 A-NZ"
+
+#~ msgid "BIS Billing 3.0 SG"
+#~ msgstr "BIS Billing 3.0 SG"
+
+#~ msgid "Factur-X (CII)"
+#~ msgstr "Factur-X (CII)"
+
+#~ msgid "NLCIUS"
+#~ msgstr "NLCIUS"
+
+#~ msgid "XRechnung CIUS"
+#~ msgstr "XRechnung CIUS"

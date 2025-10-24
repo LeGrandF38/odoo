@@ -1,44 +1,43 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* account_edi_ubl_cii
-# 
+# * account_edi_ubl_cii
+#
 # Translators:
-# Wil Odoo, 2024
+# Wil Odoo, 2025
 # Manon Rondou, 2025
-# 
+#
+# "Manon Rondou (ronm)" <ronm@odoo.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-13 09:08+0000\n"
-"PO-Revision-Date: 2024-09-25 09:41+0000\n"
-"Last-Translator: Manon Rondou, 2025\n"
-"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
+"POT-Creation-Date: 2025-08-08 18:38+0000\n"
+"PO-Revision-Date: 2025-10-14 12:39+0000\n"
+"Last-Translator: \"Manon Rondou (ronm)\" <ronm@odoo.com>\n"
+"Language-Team: French <https://translate.odoo.com/projects/odoo-18/"
+"account_edi_ubl_cii/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: fr\n"
-"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : ((n != 0 && n % "
+"1000000 == 0) ? 1 : 2);\n"
+"X-Generator: Weblate 5.12.2\n"
 
 #. module: account_edi_ubl_cii
 #. odoo-python
 #: code:addons/account_edi_ubl_cii/models/account_edi_xml_ubl_bis3.py:0
 msgid ""
-"%s should have a KVK or OIN number: the Peppol e-address (EAS) should be "
-"'0106' or '0190'."
+"%s should have a KVK or OIN number set in Company ID field or as Peppol e-"
+"address (EAS code 0106 or 0190)."
 msgstr ""
-"%s devrait avoir un numéro KVK ou OIN : l'adresse électronique Peppol (EAS) "
-"devrait être '0106' ou '0190'."
+"%s doit avoir un numéro KVK ou OIN défini dans le champ ID de l’entreprise "
+"ou comme adresse Peppol (code EAS 0106 ou 0190)."
 
 #. module: account_edi_ubl_cii
 #: model_terms:ir.ui.view,arch_db:account_edi_ubl_cii.account_invoice_pdfa_3_facturx_metadata
 msgid "1.0"
 msgstr "1.0"
-
-#. module: account_edi_ubl_cii
-#: model_terms:ir.ui.view,arch_db:account_edi_ubl_cii.account_invoice_facturx_export_22
-msgid "42"
-msgstr "42"
 
 #. module: account_edi_ubl_cii
 #. odoo-python
@@ -47,9 +46,20 @@ msgid "A payment of %s was detected."
 msgstr "Un paiement de %s a été détecté."
 
 #. module: account_edi_ubl_cii
+#. odoo-python
+#: code:addons/account_edi_ubl_cii/models/account_edi_common.py:0
+msgid "A rounding amount of %s was detected."
+msgstr "Un montant d'arrondi de %s a été détecté."
+
+#. module: account_edi_ubl_cii
 #: model:ir.model,name:account_edi_ubl_cii.model_account_edi_xml_ubl_a_nz
 msgid "A-NZ BIS Billing 3.0"
 msgstr "A-NZ BIS Billing 3.0"
+
+#. module: account_edi_ubl_cii
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__as
+msgid "AS2 exchange"
+msgstr "Échange AS2"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model,name:account_edi_ubl_cii.model_account_move_send
@@ -58,13 +68,13 @@ msgstr "Envoi de l'écriture comptable"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9923
-msgid "Albania VAT - 9923"
-msgstr "TVA Albanie - 9923"
+msgid "Albania VAT"
+msgstr "TVA Albanie"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9922
-msgid "Andorra VAT - 9922"
-msgstr "TVA Andorre - 9922"
+msgid "Andorra VAT"
+msgstr "TVA Andorre"
 
 #. module: account_edi_ubl_cii
 #. odoo-python
@@ -76,8 +86,8 @@ msgstr "Article 226 points 11 à 15 Directive 2006/112/CE"
 #. odoo-python
 #: code:addons/account_edi_ubl_cii/models/account_edi_common.py:0
 msgid ""
-"At least one of the following fields %(field_list)s is required on "
-"%(record)s."
+"At least one of the following fields %(field_list)s is required on %"
+"(record)s."
 msgstr ""
 "Au moins un des champs suivants %(field_list)s est requis sur %(record)s."
 
@@ -89,33 +99,29 @@ msgstr "Pièce jointe"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0151
-msgid "Australia ABN - 0151"
-msgstr "ABN Australie - 0151"
-
-#. module: account_edi_ubl_cii
-#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9914
-msgid "Austria UID - 9914"
-msgstr "UID Autriche - 9914"
-
-#. module: account_edi_ubl_cii
-#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9915
-msgid "Austria VOKZ - 9915"
-msgstr "VOKZ Autriche - 9915"
-
-#. module: account_edi_ubl_cii
-#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__invoice_edi_format__ubl_bis3
-msgid "BIS Billing 3.0"
-msgstr "BIS Billing 3.0"
+msgid "Australia ABN"
+msgstr "ABN Australie"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__invoice_edi_format__ubl_a_nz
-msgid "BIS Billing 3.0 A-NZ"
-msgstr "BIS Billing 3.0 A-NZ"
+msgid "Australia BIS Billing 3.0 A-NZ"
+msgstr "Australie BIS Billing 3.0 A-NZ"
 
 #. module: account_edi_ubl_cii
-#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__invoice_edi_format__ubl_sg
-msgid "BIS Billing 3.0 SG"
-msgstr "BIS Billing 3.0 SG"
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9914
+msgid "Austria UID"
+msgstr "UID Autriche"
+
+#. module: account_edi_ubl_cii
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9915
+msgid "Austria VOKZ"
+msgstr "VOKZ Autriche"
+
+#. module: account_edi_ubl_cii
+#: model:ir.model.fields,field_description:account_edi_ubl_cii.field_res_partner__available_peppol_eas
+#: model:ir.model.fields,field_description:account_edi_ubl_cii.field_res_users__available_peppol_eas
+msgid "Available Peppol Eas"
+msgstr "EAS Peppol disponibles"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model,name:account_edi_ubl_cii.model_account_edi_xml_ubl_de
@@ -124,34 +130,28 @@ msgstr "BIS3 DE (XRechnung)"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0208
-msgid "Belgium CBE - 0208"
-msgstr "CBE Belgique - 0208"
+msgid "Belgian Company Registry"
+msgstr "Registre de commerce belge"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9925
-msgid "Belgium VAT - 9925"
-msgstr "TVA Belgique - 9925"
+msgid "Belgian VAT"
+msgstr "TVA belge"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9924
-msgid "Bosnia and Herzegovina VAT - 9924"
-msgstr "TVA Bosnie-Herzégovine - 9924"
+msgid "Bosnia and Herzegovina VAT"
+msgstr "TVA Bosnie-Herzégovine"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9926
-msgid "Bulgaria VAT - 9926"
-msgstr "TVA Bulgarie - 9926"
+msgid "Bulgaria VAT"
+msgstr "TVA Bulgarie"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9913
-msgid "Business Registers Network - 9913"
-msgstr "Réseau des registres d'entreprises - 9913"
-
-#. module: account_edi_ubl_cii
-#. odoo-python
-#: code:addons/account_edi_ubl_cii/models/account_move_send.py:0
-msgid "Check Invoice(s)"
-msgstr "Vérifier les facture(s)"
+msgid "Business Registers Network"
+msgstr "Business Registers Network"
 
 #. module: account_edi_ubl_cii
 #. odoo-python
@@ -164,34 +164,43 @@ msgstr "Vérifier le(s) partenaire(s)"
 #: model:ir.model.fields,help:account_edi_ubl_cii.field_res_users__peppol_eas
 msgid ""
 "Code used to identify the Endpoint for BIS Billing 3.0 and its derivatives.\n"
-"             List available at https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/"
+"             List available at https://docs.peppol.eu/poacc/billing/3.0/"
+"codelist/eas/"
 msgstr ""
-"Code utilisé pour identifier le Point de terminaison pour BIS Billing 3.0 et ses dérivés.\n"
-"             Liste disponible sur https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/"
+"Code utilisé pour identifier le Point de terminaison pour BIS Billing 3.0 et "
+"ses dérivés.\n"
+"             Liste disponible sur https://docs.peppol.eu/poacc/billing/3.0/"
+"codelist/eas/"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0210
-msgid "Codice Fiscale - 0210"
-msgstr "Codice Fiscale - 0210"
+msgid "Codice Fiscale"
+msgstr "Codice Fiscale"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0201
-msgid "Codice Univoco Unità Organizzativa iPA - 0201"
-msgstr "Codice Univoco Unità Organizzativa iPA - 0201"
+msgid "Codice Univoco Unità Organizzativa iPA"
+msgstr "Codice Univoco Unità Organizzativa iPA"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model,name:account_edi_ubl_cii.model_account_edi_common
 msgid ""
 "Common functions for EDI documents: generate the data, the constraints, etc"
 msgstr ""
-"Fonctions communes aux documents EDI : générer les données, les contraintes,"
-" etc."
+"Fonctions communes aux documents EDI : générer les données, les contraintes, "
+"etc."
 
 #. module: account_edi_ubl_cii
 #. odoo-python
 #: code:addons/account_edi_ubl_cii/models/account_edi_xml_ubl_20.py:0
 msgid "Conditional cash/payment discount"
 msgstr "Escompte conditionnel"
+
+#. module: account_edi_ubl_cii
+#. odoo-python
+#: code:addons/account_edi_ubl_cii/models/account_move_send.py:0
+msgid "Configure"
+msgstr "Configurer"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model,name:account_edi_ubl_cii.model_res_partner
@@ -212,8 +221,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/account_edi_ubl_cii/models/account_edi_common.py:0
 msgid ""
-"Could not retrieve currency: %s. Did you enable the multicurrency option and"
-" activate the currency?"
+"Could not retrieve currency: %s. Did you enable the multicurrency option and "
+"activate the currency?"
 msgstr ""
 "Impossible de récupérer la devise : %s. Avez-vous activé l'option des "
 "devises multiples et activé la devise ?"
@@ -230,57 +239,56 @@ msgstr ""
 #: code:addons/account_edi_ubl_cii/models/account_edi_common.py:0
 msgid "Could not retrieve the tax: %(tax_percentage)s %% for line '%(line)s'."
 msgstr ""
-"Impossible de récupérer la taxe : %(tax_percentage)s %% pour la ligne "
-"'%(line)s'."
+"Impossible de récupérer la taxe : %(tax_percentage)s %% pour la ligne '%"
+"(line)s'."
 
 #. module: account_edi_ubl_cii
 #. odoo-python
 #: code:addons/account_edi_ubl_cii/models/account_edi_common.py:0
-msgid ""
-"Could not retrieve the tax: %s for the document level allowance/charge."
+msgid "Could not retrieve the tax: %s for the document level allowance/charge."
 msgstr ""
-"Impossible de récupérer la taxe : %s pour le niveau de l'allocation/frais du"
-" document."
+"Impossible de récupérer la taxe : %s pour le niveau de l'allocation/frais du "
+"document."
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9934
-msgid "Croatia VAT - 9934"
-msgstr "TVA Croatie - 9934"
+msgid "Croatia VAT"
+msgstr "TVA Croatie"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9928
-msgid "Cyprus VAT - 9928"
-msgstr "TVA Chypre - 9928"
+msgid "Cyprus VAT"
+msgstr "TVA Chypre"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9929
-msgid "Czech Republic VAT - 9929"
-msgstr "TVA République tchèque - 9929"
+msgid "Czech Republic VAT"
+msgstr "TVA République tchèque"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0060
-msgid "DUNS Number - 0060"
-msgstr "Numéro DUNS - 0060"
-
-#. module: account_edi_ubl_cii
-#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0096
-msgid "Denmark CVR - 0096"
-msgstr "CVR Danemark - 0096"
+msgid "DUNS Number"
+msgstr "Numéro DUNS"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0184
-msgid "Denmark CVR - 0184"
-msgstr "CVR Danemark - 0184"
+msgid "Denmark CVR"
+msgstr "CVR Danemark"
+
+#. module: account_edi_ubl_cii
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0096
+msgid "Denmark P"
+msgstr "P Danemark"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0198
-msgid "Denmark SE - 0198"
-msgstr "SE Danemark - 0198"
+msgid "Denmark SE"
+msgstr "SE Danemark"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0130
-msgid "Directorates of the European Commission - 0130"
-msgstr "Directions de la Commission européenne - 0130"
+msgid "Directorates of the European Commission"
+msgstr "Directorates of the European Commission"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model,name:account_edi_ubl_cii.model_account_edi_xml_ubl_efff
@@ -289,18 +297,18 @@ msgstr "E-FFF (BE)"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0088
-msgid "EAN Location Code - 0088"
-msgstr "Code de localisation EAN - 0088"
-
-#. module: account_edi_ubl_cii
-#: model_terms:ir.ui.view,arch_db:account_edi_ubl_cii.view_partner_property_form
-msgid "EAS"
-msgstr "EAS"
+msgid "EAN Location Code"
+msgstr "Code de localisation EAN"
 
 #. module: account_edi_ubl_cii
 #: model_terms:ir.ui.view,arch_db:account_edi_ubl_cii.account_invoice_pdfa_3_facturx_metadata
 msgid "EN 16931"
 msgstr "EN 16931"
+
+#. module: account_edi_ubl_cii
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__invoice_edi_format__ubl_bis3
+msgid "EU Standard (Peppol Bis 3.0)"
+msgstr "Norme UE (Peppol Bis 3.0)"
 
 #. module: account_edi_ubl_cii
 #. odoo-python
@@ -321,9 +329,9 @@ msgid "Each invoice line should have at least one tax."
 msgstr "Chaque ligne de facture doit comporter au moins une taxe."
 
 #. module: account_edi_ubl_cii
-#: model_terms:ir.ui.view,arch_db:account_edi_ubl_cii.view_partner_property_form
-msgid "Endpoint"
-msgstr "Point de terminaison"
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__em
+msgid "Electronic mail"
+msgstr "Courrier électronique"
 
 #. module: account_edi_ubl_cii
 #. odoo-python
@@ -333,13 +341,19 @@ msgstr "Erreurs survenues lors de la création du document EDI (format : %s):"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0191
-msgid "Estonia Company code - 0191"
-msgstr "Code société Estonie - 0191"
+msgid "Estonia Company code"
+msgstr "Code d’entreprise Estonie"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9931
-msgid "Estonia VAT - 9931"
-msgstr "TVA Estonie - 9931"
+msgid "Estonia VAT"
+msgstr "TVA Estonie"
+
+#. module: account_edi_ubl_cii
+#. odoo-python
+#: code:addons/account_edi_ubl_cii/models/account_edi_common.py:0
+msgid "Exempt from tax"
+msgstr "Exonéré de taxe"
 
 #. module: account_edi_ubl_cii
 #. odoo-python
@@ -348,29 +362,29 @@ msgid "Export outside the EU"
 msgstr "Exportation hors UE"
 
 #. module: account_edi_ubl_cii
-#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__invoice_edi_format__facturx
-msgid "Factur-X (CII)"
-msgstr "Factur-X (CII)"
-
-#. module: account_edi_ubl_cii
 #: model:ir.model,name:account_edi_ubl_cii.model_account_edi_xml_cii
 msgid "Factur-x/XRechnung CII 2.2.0"
 msgstr "Factur-x/XRechnung CII 2.2.0"
 
 #. module: account_edi_ubl_cii
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__au
+msgid "File Transfer Protocol"
+msgstr "File Transfer Protocol"
+
+#. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0037
-msgid "Finland LY-tunnus - 0037"
-msgstr "LY-tunnus Finlande - 0037"
+msgid "Finland LY-tunnus"
+msgstr "LY-tunnus Finlande"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0216
-msgid "Finland OVT code - 0216"
-msgstr "Code OVT Finlande - 0216"
+msgid "Finland OVT code"
+msgstr "Code OVT Finlande"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0213
-msgid "Finland VAT - 0213"
-msgstr "TVA Finlande - 0213"
+msgid "Finland VAT"
+msgstr "TVA Finlande"
 
 #. module: account_edi_ubl_cii
 #. odoo-python
@@ -397,54 +411,74 @@ msgid "Format used to import the invoice: %s"
 msgstr "Format utilisé pour importer la facture : %s"
 
 #. module: account_edi_ubl_cii
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__invoice_edi_format__facturx
+msgid "France (FacturX)"
+msgstr "France (FacturX)"
+
+#. module: account_edi_ubl_cii
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0225
+msgid "France FRCTC Electronic Address"
+msgstr "Adresse électronique FRCTC France"
+
+#. module: account_edi_ubl_cii
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0240
+msgid "France Register of legal persons"
+msgstr "Registre des personnes juridiques France"
+
+#. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0002
-msgid "France SIRENE - 0002"
-msgstr "SIRENE France - 0002"
+msgid "France SIRENE"
+msgstr "SIRENE France"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0009
-msgid "France SIRET - 0009"
-msgstr "SIRET France - 0009"
+msgid "France SIRET"
+msgstr "SIRET France"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9957
-msgid "France VAT - 9957"
-msgstr "TVA France - 9957"
+msgid "France VAT"
+msgstr "TVA France"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0209
-msgid "GS1 identification keys - 0209"
-msgstr "Clés d'identification GS1 - 0209"
+msgid "GS1 identification keys"
+msgstr "Clés d’identification GS1"
+
+#. module: account_edi_ubl_cii
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__invoice_edi_format__xrechnung
+msgid "Germany (XRechnung)"
+msgstr "Allemagne (XRechnung)"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0204
-msgid "Germany Leitweg-ID - 0204"
-msgstr "Leitweg-ID Allemagne - 0204"
+msgid "Germany Leitweg-ID"
+msgstr "Leitweg-ID Allemagne"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9930
-msgid "Germany VAT - 9930"
-msgstr "TVA Allemagne - 9930"
+msgid "Germany VAT"
+msgstr "TVA Allemagne"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9933
-msgid "Greece VAT - 9933"
-msgstr "TVA Grèce - 9933"
+msgid "Greece VAT"
+msgstr "TVA Grèce"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9910
-msgid "Hungary VAT - 9910"
-msgstr "TVA Hongrie - 9910"
+msgid "Hungary VAT"
+msgstr "TVA Hongrie"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0196
-msgid "Iceland Kennitala - 0196"
-msgstr "Kennitala Islande - 0196"
+msgid "Iceland Kennitala"
+msgstr "Kennitala Islande"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0202
-msgid "Indirizzo di Posta Elettronica Certificata - 0202"
-msgstr "Indirizzo di Posta Elettronica Certificata - 0202"
+msgid "Indirizzo di Posta Elettronica Certificata"
+msgstr "Indirizzo di Posta Elettronica Certificata"
 
 #. module: account_edi_ubl_cii
 #. odoo-python
@@ -459,8 +493,8 @@ msgstr "Facture générée par Odoo"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9935
-msgid "Ireland VAT - 9935"
-msgstr "TVA Irlande - 9935"
+msgid "Ireland VAT"
+msgstr "TVA Irlande"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields,field_description:account_edi_ubl_cii.field_res_partner__is_peppol_edi_format
@@ -476,108 +510,113 @@ msgstr "Est au format UBL"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0097
-msgid "Italia FTI - 0097"
-msgstr "FTI Italie - 0097"
+msgid "Italia FTI"
+msgstr "Italia FTI"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0211
-msgid "Italia Partita IVA - 0211"
-msgstr "Partita IVA Italie - 0211"
+msgid "Italia Partita IVA"
+msgstr "Italia Partita IVA"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0221
-msgid "Japan IIN - 0221"
-msgstr "IIN Japon - 0221"
+msgid "Japan IIN"
+msgstr "IIN Japon"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0188
-msgid "Japan SST - 0188"
-msgstr "SST Japon - 0188"
+msgid "Japan SST"
+msgstr "SST Japon"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model,name:account_edi_ubl_cii.model_account_move
 msgid "Journal Entry"
-msgstr "Pièce comptable"
+msgstr "Écriture comptable"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9919
-msgid "Kennziffer des Unternehmensregisters - 9919"
-msgstr "Kennziffer des Unternehmensregisters - 9919"
+msgid "Kennziffer des Unternehmensregisters"
+msgstr "Kennziffer des Unternehmensregisters"
+
+#. module: account_edi_ubl_cii
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0218
+msgid "Latvia Unified registration number"
+msgstr "Numéro d’enregistrement unifié Lettonie"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9939
-msgid "Latvia VAT - 9939"
-msgstr "TVA Lettonie - 9939"
+msgid "Latvia VAT"
+msgstr "TVA Lettonie"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0199
-msgid "Legal Entity Identifier (LEI) - 0199"
-msgstr "Legal Entity Identifier (LEI) - 0199"
+msgid "Legal Entity Identifier (LEI)"
+msgstr "Legal Entity Identifier (LEI)"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9936
-msgid "Liechtenstein VAT - 9936"
-msgstr "TVA Liechtenstein - 9936"
+msgid "Liechtenstein VAT"
+msgstr "TVA Liechtenstein"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0200
-msgid "Lithuania JAK - 0200"
-msgstr "JAK Lituanie - 0200"
+msgid "Lithuania JAK"
+msgstr "JAK Lituanie"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9937
-msgid "Lithuania VAT - 9937"
-msgstr "TVA Lituanie - 9937"
+msgid "Lithuania VAT"
+msgstr "TVA Lituanie"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9938
-msgid "Luxemburg VAT - 9938"
-msgstr "TVA Luxembourg - 9938"
+msgid "Luxembourg VAT"
+msgstr "TVA Luxembourg"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9942
-msgid "Macedonia VAT - 9942"
-msgstr "TVA Macédoine - 9942"
+msgid "Macedonia VAT"
+msgstr "TVA Macédoine"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0230
-msgid "Malaysia - 0230"
-msgstr "Malaisie - 0230"
+msgid "Malaysia"
+msgstr "Malaisie"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9943
-msgid "Malta VAT - 9943"
-msgstr "TVA Malte - 9943"
+msgid "Malta VAT"
+msgstr "TVA Malte"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9940
-msgid "Monaco VAT - 9940"
-msgstr "TVA Monaco - 9940"
+msgid "Monaco VAT"
+msgstr "TVA Monaco"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9941
-msgid "Montenegro VAT - 9941"
-msgstr "TVA Monténégro - 9941"
+msgid "Montenegro VAT"
+msgstr "TVA Monténégro"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__invoice_edi_format__nlcius
-msgid "NLCIUS"
-msgstr "NLCIUS"
+msgid "Netherlands (NLCIUS)"
+msgstr "Pays-Bas (NLCIUS)"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0106
-msgid "Netherlands KvK - 0106"
-msgstr "KvK Pays-Bas - 0106"
+msgid "Netherlands KvK"
+msgstr "KvK Pays-Bas"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0190
-msgid "Netherlands OIN - 0190"
-msgstr "OIN Pays-Bas - 0190"
+msgid "Netherlands OIN"
+msgstr "OIN Pays-Bas"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9944
-msgid "Netherlands VAT - 9944"
-msgstr "TVA Pays-Bas - 9944"
+msgid "Netherlands VAT"
+msgstr "TVA Pays-Bas"
 
 #. module: account_edi_ubl_cii
 #. odoo-python
@@ -588,8 +627,13 @@ msgstr "Aucun prix brut, prix net ou sous-total trouvé pour la ligne en xml"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0192
-msgid "Norway Org.nr. - 0192"
-msgstr "Org.nr. Norvège - 0192"
+msgid "Norway Org.nr."
+msgstr "Org.nr. Norvège"
+
+#. module: account_edi_ubl_cii
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__an
+msgid "O.F.T.P. (ODETTE File Transfer Protocol)"
+msgstr "O.F.T.P. (ODETTE File Transfer Protocol)"
 
 #. module: account_edi_ubl_cii
 #: model_terms:ir.ui.view,arch_db:account_edi_ubl_cii.account_invoice_pdfa_3_facturx_metadata
@@ -608,6 +652,11 @@ msgid "Peppol Endpoint"
 msgstr "Point de terminaison Peppol"
 
 #. module: account_edi_ubl_cii
+#: model_terms:ir.ui.view,arch_db:account_edi_ubl_cii.view_partner_property_form
+msgid "Peppol ID"
+msgstr "ID Peppol"
+
+#. module: account_edi_ubl_cii
 #: model:ir.model.fields,field_description:account_edi_ubl_cii.field_res_partner__peppol_eas
 #: model:ir.model.fields,field_description:account_edi_ubl_cii.field_res_users__peppol_eas
 msgid "Peppol e-address (EAS)"
@@ -616,47 +665,54 @@ msgstr "Peppol e-address (EAS)"
 #. module: account_edi_ubl_cii
 #. odoo-python
 #: code:addons/account_edi_ubl_cii/models/account_move_send.py:0
-msgid ""
-"Please add a Recipient bank in the 'Other Info' tab to generate a complete "
-"file."
-msgstr ""
-"Veuillez ajouter un compte bancaire destinataire dans l'onglet « Autres "
-"informations » pour générer un fichier complet."
+msgid "Please fill in partner's VAT or Peppol Address."
+msgstr "Veuillez compléter le numéro de TVA ou l'adresse Peppol du partenaire."
 
 #. module: account_edi_ubl_cii
 #. odoo-python
 #: code:addons/account_edi_ubl_cii/models/account_move_send.py:0
 msgid ""
-"Please fill in Peppol EAS and Peppol Endpoint in your company form to "
-"generate a complete file."
+"Please fill in your company's VAT or Peppol Address to generate a complete "
+"XML file."
 msgstr ""
-"Veuillez compléter l'EAS Peppol et le Point de terminaison Peppol dans le "
-"formulaire de votre entreprise pour générer un fichier complet."
+"Veuillez remplir le numéro de TVA ou l'adresse Peppol de votre entreprise "
+"pour générer un fichier XML complet."
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9945
-msgid "Poland VAT - 9945"
-msgstr "TVA Pologne - 9945"
+msgid "Poland VAT"
+msgstr "TVA Pologne"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9946
-msgid "Portugal VAT - 9946"
-msgstr "TVA Portugal - 9946"
+msgid "Portugal VAT"
+msgstr "TVA Portugal"
+
+#. module: account_edi_ubl_cii
+#: model:ir.model,name:account_edi_ubl_cii.model_ir_actions_report
+msgid "Report Action"
+msgstr "Action de rapport"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9947
-msgid "Romania VAT - 9947"
-msgstr "TVA Roumanie - 9947"
+msgid "Romania VAT"
+msgstr "TVA Roumanie"
+
+#. module: account_edi_ubl_cii
+#. odoo-python
+#: code:addons/account_edi_ubl_cii/models/account_edi_common.py:0
+msgid "Rounding"
+msgstr "Arrondi"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9918
-msgid "S.W.I.F.T - 9918"
-msgstr "S.W.I.F.T - 9918"
+msgid "S.W.I.F.T"
+msgstr "S.W.I.F.T"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0142
-msgid "SECETI Object Identifiers - 0142"
-msgstr "SECETI Object Identifiers - 0142"
+msgid "SECETI Object Identifiers"
+msgstr "SECETI Object Identifiers"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model,name:account_edi_ubl_cii.model_account_edi_xml_ubl_sg
@@ -670,58 +726,63 @@ msgstr "SI-UBL 2.0 (NLCIUS)"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0135
-msgid "SIA Object Identifiers - 0135"
-msgstr "SIA Object Identifiers - 0135"
+msgid "SIA Object Identifiers"
+msgstr "SIA Object Identifiers"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9951
-msgid "San Marino VAT - 9951"
-msgstr "TVA Saint-Marin - 9951"
+msgid "San Marino VAT"
+msgstr "TVA Saint-Marin"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9948
-msgid "Serbia VAT - 9948"
-msgstr "TVA Serbie - 9948"
+msgid "Serbia VAT"
+msgstr "TVA Serbie"
+
+#. module: account_edi_ubl_cii
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__invoice_edi_format__ubl_sg
+msgid "Singapore BIS Billing 3.0 SG"
+msgstr "Singapore BIS Billing 3.0 SG"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0195
-msgid "Singapore UEN - 0195"
-msgstr "UEN Singapour - 0195"
+msgid "Singapore UEN"
+msgstr "UEN Singapour"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9950
-msgid "Slovakia VAT - 9950"
-msgstr "TVA Slovaquie - 9950"
+msgid "Slovakia VAT"
+msgstr "TVA Slovaquie"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9949
-msgid "Slovenia VAT - 9949"
-msgstr "TVA Slovénie - 9949"
+msgid "Slovenia VAT"
+msgstr "TVA Slovénie"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9920
-msgid "Spain VAT - 9920"
-msgstr "TVA Espagne - 9920"
+msgid "Spain VAT"
+msgstr "TVA Espagne"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0007
-msgid "Sweden Org.nr. - 0007"
-msgstr "Org.nr. Suède - 0007"
+msgid "Sweden Org.nr."
+msgstr "Org.nr. Suède"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9955
-msgid "Sweden VAT - 9955"
-msgstr "TVA Suède - 9955"
+msgid "Sweden VAT"
+msgstr "TVA Suède"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0183
-msgid "Swiss UIDB - 0183"
-msgstr "UIDB Suisse - 0183"
+msgid "Swiss UIDB"
+msgstr "UIDB Suisse"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9927
-msgid "Swiss VAT - 9927"
-msgstr "TVA Suisse - 9927"
+msgid "Swiss VAT"
+msgstr "TVA Suisse"
 
 #. module: account_edi_ubl_cii
 #. odoo-python
@@ -736,8 +797,8 @@ msgid ""
 "The Peppol endpoint is not valid. It should contain exactly 10 digits "
 "(Company Registry number).The expected format is: 1234567890"
 msgstr ""
-"Le point de terminaison Peppol n'est pas valide. Il doit contenir exactement"
-" 10 chiffres (numéro d'entreprise de la société). Le format à respecter est "
+"Le point de terminaison Peppol n'est pas valide. Il doit contenir exactement "
+"10 chiffres (numéro d'entreprise de la société). Le format à respecter est "
 "le suivant : 1234567890"
 
 #. module: account_edi_ubl_cii
@@ -800,8 +861,7 @@ msgstr "Le champ %(field)s est requis sur %(record)s."
 #. module: account_edi_ubl_cii
 #. odoo-python
 #: code:addons/account_edi_ubl_cii/models/account_edi_xml_cii_facturx.py:0
-msgid ""
-"The field 'Sanitized Account Number' is required on the Recipient Bank."
+msgid "The field 'Sanitized Account Number' is required on the Recipient Bank."
 msgstr ""
 "Le champ 'Numéro de compte nettoyé' est requis pour la banque destinataire."
 
@@ -816,19 +876,14 @@ msgstr ""
 "La facture a été convertie en avoir et les quantités ont été inversées."
 
 #. module: account_edi_ubl_cii
-#. odoo-python
-#: code:addons/account_edi_ubl_cii/models/account_move_send.py:0
-msgid ""
-"These partners are missing Peppol Address. Please check those in their "
-"Accounting tab. Otherwise, the generated files will be incomplete."
-msgstr ""
-"Ces partenaires n'ont pas d'adresse Peppol. Veuillez vérifier leurs données "
-"dans l'onglet Comptabilité. Sinon, les fichiers générés seront incomplets."
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9952
+msgid "Turkey VAT"
+msgstr "TVA Turquie"
 
 #. module: account_edi_ubl_cii
-#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9952
-msgid "Turkey VAT - 9952"
-msgstr "TVA Turquie - 9952"
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0235
+msgid "UAE Tax Identification Number (TIN)"
+msgstr "Numéro d’identification fiscale ÉAU (TIN)"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model,name:account_edi_ubl_cii.model_account_edi_xml_ubl_20
@@ -847,8 +902,8 @@ msgstr "UBL BIS Billing 3.0.12"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__0193
-msgid "UBL.BE party identifier - 0193"
-msgstr "UBL.BE party identifier - 0193"
+msgid "UBL.BE party identifier"
+msgstr "UBL.BE party identifier"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields,field_description:account_edi_ubl_cii.field_account_bank_statement_line__ubl_cii_xml_file
@@ -858,8 +913,8 @@ msgstr "Fichier UBL/CII"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9959
-msgid "USA EIN - 9959"
-msgstr "EIN USA - 9959"
+msgid "USA EIN"
+msgstr "EIN USA"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields,help:account_edi_ubl_cii.field_res_partner__peppol_endpoint
@@ -873,25 +928,13 @@ msgstr ""
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9932
-msgid "United Kingdom VAT - 9932"
-msgstr "TVA Royaume-Uni - 9932"
+msgid "United Kingdom VAT"
+msgstr "TVA Royaume-Uni"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__9953
-msgid "Vatican VAT - 9953"
-msgstr "TVA Vatican - 9953"
-
-#. module: account_edi_ubl_cii
-#. odoo-python
-#: code:addons/account_edi_ubl_cii/models/account_move_send.py:0
-msgid "View Company"
-msgstr "Voir la société"
-
-#. module: account_edi_ubl_cii
-#. odoo-python
-#: code:addons/account_edi_ubl_cii/models/account_move_send.py:0
-msgid "View Invoice(s)"
-msgstr "Voir les facture(s)"
+msgid "Vatican VAT"
+msgstr "TVA Vatican"
 
 #. module: account_edi_ubl_cii
 #. odoo-python
@@ -910,27 +953,32 @@ msgstr ""
 "d'imposition de chaque ligne de facture doit être supérieur à 0."
 
 #. module: account_edi_ubl_cii
+#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__peppol_eas__aq
+msgid "X.400 address for mail text"
+msgstr "X.400 adresse pour messagerie"
+
+#. module: account_edi_ubl_cii
 #. odoo-python
 #: code:addons/account_edi_ubl_cii/models/account_move.py:0
 msgid "XML UBL"
 msgstr "XML UBL"
 
 #. module: account_edi_ubl_cii
-#: model:ir.model.fields.selection,name:account_edi_ubl_cii.selection__res_partner__invoice_edi_format__xrechnung
-msgid "XRechnung CIUS"
-msgstr "XRechnung CIUS"
-
-#. module: account_edi_ubl_cii
 #. odoo-python
 #: code:addons/account_edi_ubl_cii/models/account_edi_xml_cii_facturx.py:0
 msgid ""
 "You should include at least one tax per invoice line. [BR-CO-04]-Each "
-"Invoice line (BG-25) shall be categorized with an Invoiced item VAT category"
-" code (BT-151)."
+"Invoice line (BG-25) shall be categorized with an Invoiced item VAT category "
+"code (BT-151)."
 msgstr ""
-"Vous devez inclure au moins une taxe par ligne de facture. [BR-CO-04]-Chaque"
-" ligne de facture (BG-25) doit être classée avec un code de la catégorie de "
+"Vous devez inclure au moins une taxe par ligne de facture. [BR-CO-04]-Chaque "
+"ligne de facture (BG-25) doit être classée avec un code de la catégorie de "
 "TVA de l'article facturé (BT-151)."
+
+#. module: account_edi_ubl_cii
+#: model_terms:ir.ui.view,arch_db:account_edi_ubl_cii.view_partner_property_form
+msgid "Your endpoint"
+msgstr "Votre point de terminaison"
 
 #. module: account_edi_ubl_cii
 #: model:ir.model.fields,field_description:account_edi_ubl_cii.field_res_partner__invoice_edi_format
@@ -952,3 +1000,21 @@ msgstr "fx"
 #: model_terms:ir.ui.view,arch_db:account_edi_ubl_cii.account_invoice_pdfa_3_facturx_metadata
 msgid "urn:factur-x:pdfa:CrossIndustryDocument:invoice:1p0#"
 msgstr "urn:factur-x:pdfa:CrossIndustryDocument:invoice:1p0#"
+
+#~ msgid "BIS Billing 3.0"
+#~ msgstr "BIS Billing 3.0"
+
+#~ msgid "BIS Billing 3.0 A-NZ"
+#~ msgstr "BIS Billing 3.0 A-NZ"
+
+#~ msgid "BIS Billing 3.0 SG"
+#~ msgstr "BIS Billing 3.0 SG"
+
+#~ msgid "Factur-X (CII)"
+#~ msgstr "Factur-X (CII)"
+
+#~ msgid "NLCIUS"
+#~ msgstr "NLCIUS"
+
+#~ msgid "XRechnung CIUS"
+#~ msgstr "XRechnung CIUS"

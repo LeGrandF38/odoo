@@ -38,12 +38,20 @@ export class WebClient extends Component {
         this.state = useState({
             fullscreen: false,
         });
-        useBus(routerBus, "ROUTE_CHANGE", this.loadRouterState);
+        useBus(routerBus, "ROUTE_CHANGE", async () => {
+            document.body.style.pointerEvents = "none";
+            try {
+                await this.loadRouterState();
+            } finally {
+                document.body.style.pointerEvents = "auto";
+            }
+        });
         useBus(this.env.bus, "ACTION_MANAGER:UI-UPDATED", ({ detail: mode }) => {
             if (mode !== "new") {
                 this.state.fullscreen = mode === "fullscreen";
             }
         });
+        useBus(this.env.bus, "WEBCLIENT:LOAD_DEFAULT_APP", this._loadDefaultApp);
         onMounted(() => {
             this.loadRouterState();
             // the chat window and dialog services listen to 'web_client_ready' event in
@@ -58,11 +66,23 @@ export class WebClient extends Component {
         // ** url-retrocompatibility **
         // the menu_id in the url is only possible if we came from an old url
         let menuId = Number(router.current.menu_id || 0);
+        const storedMenuId = Number(browser.sessionStorage.getItem("menu_id"));
         const firstAction = router.current.actionStack?.[0]?.action;
         if (!menuId && firstAction) {
-            menuId = this.menuService
+            // Find all menus that match this action
+            const matchingMenus = this.menuService
                 .getAll()
-                .find((m) => m.actionID === firstAction || m.actionPath === firstAction)?.appID;
+                .filter((m) => m.actionID === firstAction || m.actionPath === firstAction);
+
+            if (matchingMenus.length > 0) {
+                // Use sessionStorage context to determine the correct menu
+                menuId = matchingMenus.find(m => 
+                    m.appID === storedMenuId
+                )?.appID;
+                if (!menuId) {
+                    menuId = matchingMenus[0]?.appID;
+                }
+            }
         }
         if (menuId) {
             this.menuService.setCurrentMenu(menuId);
@@ -87,6 +107,10 @@ export class WebClient extends Component {
             const currentController = this.actionService.currentController;
             const actionId = currentController && currentController.action.id;
             menuId = this.menuService.getAll().find((m) => m.actionID === actionId)?.appID;
+            if (!menuId) {
+                // Setting the menu based on the session storage if no other menu was found
+                menuId = storedMenuId;
+            }
             if (menuId) {
                 // Sets the menu according to the current action
                 this.menuService.setCurrentMenu(menuId);

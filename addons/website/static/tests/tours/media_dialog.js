@@ -28,6 +28,10 @@ registerWebsitePreviewTour("website_media_dialog_undraw", {
     content: "Check that the media library is available",
     trigger: '.o_select_media_dialog:has(.o_we_search_select option[value="media-library"])',
 },
+{
+    content: "Ensure all images are loaded to avoid CORS is misconfigured on the API server, image will be treated as non-dynamic.",
+    trigger: ".modal .o_load_done_msg",
+},
 ]);
 
 registerWebsitePreviewTour("website_media_dialog_external_library", {
@@ -150,8 +154,8 @@ registerWebsitePreviewTour("website_media_dialog_image_shape", {
     changeOption("ImageTools", "we-button[data-set-img-shape]"),
     {
         content: "Open MediaDialog from an image",
-        trigger: ":iframe .s_text_image img[data-shape]",
-        run: "dblclick",
+        trigger: "we-customizeblock-option:contains(media) we-button:contains(replace)",
+        run: "click",
     },
     {
         content: "Click on the 'Icons' tab",

@@ -1,6 +1,7 @@
 import { _t } from "@web/core/l10n/translation";
 import { pyToJsLocale, jsToPyLocale } from "@web/core/l10n/utils";
 import { rpc } from "@web/core/network/rpc";
+import { escapeRegExp } from "@web/core/utils/strings";
 import { useService, useAutofocus } from '@web/core/utils/hooks';
 import { MediaDialog } from '@web_editor/components/media_dialog/media_dialog';
 import { WebsiteDialog } from './dialog';
@@ -113,9 +114,10 @@ class ImageSelector extends Component {
             useMediaLibrary: true,
             save: image => {
                 let existingImage;
+                const src = image.getAttribute('src');
                 this.state.images = this.state.images.map(img => {
                     img.active = false;
-                    if (img.src === image.src) {
+                    if (img.src === src) {
                         existingImage = img;
                         img.active = true;
                     }
@@ -123,12 +125,12 @@ class ImageSelector extends Component {
                 });
                 if (!existingImage) {
                     this.state.images.push({
-                        src: image.src,
+                        src: src,
                         active: true,
                         custom: true,
                     });
                 }
-                this.seoContext.metaImage = image.src;
+                this.seoContext.metaImage = src;
             },
         });
     }
@@ -157,13 +159,19 @@ class Keyword extends Component {
                 lang: jsToPyLocale(this.props.language),
                 keywords: this.props.keyword,
             });
-            const regex = new RegExp(WORD_SEPARATORS_REGEX + this.props.keyword + WORD_SEPARATORS_REGEX, 'gi');
+            const regex = new RegExp(
+                WORD_SEPARATORS_REGEX + escapeRegExp(this.props.keyword) + WORD_SEPARATORS_REGEX,
+                "gi"
+            );
             this.state.suggestions = [...new Set(JSON.parse(suggestions).map(word => word.replace(regex, '').trim()))];
         });
     }
 
     isKeywordIn(string) {
-        return new RegExp(WORD_SEPARATORS_REGEX + this.props.keyword + WORD_SEPARATORS_REGEX, 'gi').test(string);
+        return new RegExp(
+            WORD_SEPARATORS_REGEX + escapeRegExp(this.props.keyword) + WORD_SEPARATORS_REGEX,
+            "gi"
+        ).test(string);
     }
 
     getHeaders(tag) {
@@ -238,7 +246,7 @@ class MetaKeywords extends Component {
     }
 
     addKeyword(keyword) {
-        keyword = keyword.trim();
+        keyword = keyword.replaceAll(/,\s*/gi, " ").trim();
         if (keyword && !this.isFull && !this.seoContext.keywords.includes(keyword)) {
             this.seoContext.keywords.push(keyword);
             this.state.keyword = '';
@@ -260,10 +268,10 @@ class SEOPreview extends Component {
     };
 
     get description() {
-        if (this.props.description.length > 160) {
+        if (this.props.description?.length > 160) {
             return this.props.description.substring(0, 159) + '…';
         }
-        return this.props.description;
+        return this.props.description || "";
     }
 }
 class TitleDescription extends Component {

@@ -8,9 +8,9 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 18.0\n"
+"Project-Id-Version: Odoo Server 18.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-25 08:39+0000\n"
+"POT-Creation-Date: 2025-08-01 07:25+0000\n"
 "PO-Revision-Date: 2024-09-25 09:42+0000\n"
 "Last-Translator: Malaz Abuidris <msea@odoo.com>, 2025\n"
 "Language-Team: Arabic (https://app.transifex.com/odoo/teams/41243/ar/)\n"
@@ -55,6 +55,7 @@ msgstr ""
 #: code:addons/stock_account/models/stock_valuation_layer.py:0
 msgid "%(user)s changed cost from %(previous)s to %(new_price)s - %(record)s"
 msgstr ""
+"قام %(user)s بتغيير التكلفة من %(previous)s إلى %(new_price)s - %(record)s "
 
 #. module: stock_account
 #. odoo-python
@@ -63,6 +64,8 @@ msgid ""
 "%(user)s changed stock valuation from  %(previous)s to %(new_value)s - %(product)s\n"
 "%(reason)s"
 msgstr ""
+"قام %(user)s بتغيير تقييم المخزون من %(previous)s إلى %(new_value)s - %(product)s\n"
+"%(reason)s "
 
 #. module: stock_account
 #: model_terms:ir.ui.view,arch_db:stock_account.stock_valuation_layer_revaluation_form_view
@@ -448,6 +451,7 @@ msgstr "المُعرف"
 #: model:ir.model.fields,help:stock_account.field_product_template__lot_valuated
 msgid "If checked, the valuation will be specific by Lot/Serial number."
 msgstr ""
+"إذا تم تحديده، فسيكون التقييم محدداً حسب رقم المجموعة/الرقم التسلسلي. "
 
 #. module: stock_account
 #: model_terms:ir.ui.view,arch_db:stock_account.view_inventory_valuation_search
@@ -524,9 +528,11 @@ msgstr "مرتبط بـ"
 #. odoo-python
 #: code:addons/stock_account/models/product.py:0
 msgid ""
-"Lot %(lot)s has a negative quantity in stock. Correct this"
-"                         quantity before enabling lot valuation"
+"Lot %(lot)s has a negative quantity in stock.\n"
+"Correct this quantity before enabling/disabling lot valuation."
 msgstr ""
+"تحتوي المجموعة %(lot)s على كمية سالبة في المخزون.\n"
+"قم بتصحيح هذه الكمية قبل تمكين/تعطيل تقييم المجموعة. "
 
 #. module: stock_account
 #. odoo-python
@@ -549,13 +555,14 @@ msgstr "رقم المجموعة/الرقم التسلسلي "
 #. odoo-python
 #: code:addons/stock_account/models/stock_lot.py:0
 msgid "Lot/Serial number Revaluation"
-msgstr "إعاجة تقييم رقم المجموعة/الرقم التسلسلي "
+msgstr "إعادة تقييم رقم المجموعة/الرقم التسلسلي "
 
 #. module: stock_account
 #. odoo-python
 #: code:addons/stock_account/models/stock_move_line.py:0
 msgid "Lot/Serial number is mandatory for product valuated by lot"
 msgstr ""
+"رقم المجموعة/الرقم التسلسلي إلزامي للمنتج الذي يتم تقييمه حسب المجموعة "
 
 #. module: stock_account
 #: model_terms:ir.ui.view,arch_db:stock_account.res_config_settings_view_form
@@ -619,6 +626,16 @@ msgstr "الصادرة "
 #: model_terms:ir.ui.view,arch_db:stock_account.view_inventory_valuation_search
 msgid "Product"
 msgstr "المنتج"
+
+#. module: stock_account
+#. odoo-python
+#: code:addons/stock_account/models/product.py:0
+msgid ""
+"Product %(product)s has quantity in valued location %(location)s without any lot.\n"
+"Please assign lots to all your quantities before enabling lot valuation."
+msgstr ""
+"يحتوي المنتج %(product)s على كمية في موقع التقييم %(location)s دون أي مجموعة. \n"
+"يرجى تعيين مجموعات لكافة الكميات التي لديك قبل تمكين تقييم المجموعة. "
 
 #. module: stock_account
 #: model:ir.model,name:stock_account.model_product_category
@@ -923,6 +940,7 @@ msgstr ""
 msgid ""
 "The stock accounts should be set in order to use the automatic valuation."
 msgstr ""
+"يجب أن يتم تعيين حسابات المخزون حتى تتمكن من استخدام التقييم التلقائي. "
 
 #. module: stock_account
 #. odoo-python
@@ -964,6 +982,8 @@ msgid ""
 "This operation might lead in a loss of data. Valuation will be identical for"
 " all lots/SN. Do you want to proceed ? "
 msgstr ""
+"قد تؤدي هذه العملية إلى فقدان البيانات. سيكون التقييم مطابقاً لكافة "
+"المجموعات /الأرقام التسلسلية. هل ترغب في المتابعة؟ "
 
 #. module: stock_account
 #. odoo-python
@@ -971,6 +991,16 @@ msgstr ""
 msgid ""
 "This product is valuated by lot/serial number. Changing the cost will update"
 " the cost of every lot/serial number in stock."
+msgstr ""
+"يتم تقييم هذا المنتج حسب رقم المجموعة/الرقم التسلسلي. سيؤدي تغيير التكلفة "
+"إلى تحديث تكلفة كل مجموعة/رقم تسلسلي في المخزون. "
+
+#. module: stock_account
+#. odoo-python
+#: code:addons/stock_account/models/stock_move_line.py:0
+msgid ""
+"This product is valuated by lot: an explicit Lot/Serial number is required "
+"when adding quantity"
 msgstr ""
 
 #. module: stock_account
@@ -1151,6 +1181,9 @@ msgid ""
 "        Used to value the product when the purchase cost is not known (e.g. inventory adjustment).\n"
 "        Used to compute margins on sale orders."
 msgstr ""
+"قيمة المجموعة (يتم احتسابها تلقائياً في AVCO).\n"
+"        تُستخدم لتحديد قيمة المنتج عندما تكون تكلفة الشراء غير معروفة (مثال: تعديلات المخزون).\n"
+"        تُستخدم لاحتساب الهوامش في أوامر المبيعات."
 
 #. module: stock_account
 #. odoo-python
@@ -1194,9 +1227,10 @@ msgstr "نموذج المعالج لإعادة تقييم بضاعة المخز�
 
 #. module: stock_account
 #. odoo-python
+#: code:addons/stock_account/models/stock_lot.py:0
 #: code:addons/stock_account/wizard/stock_valuation_layer_revaluation.py:0
 msgid "You cannot adjust the valuation of a layer with zero quantity"
-msgstr ""
+msgstr "لا يمكنك ضبط تقييم طبقة ذات كمية تساوي صفر "
 
 #. module: stock_account
 #. odoo-python
@@ -1211,6 +1245,8 @@ msgid ""
 "You cannot change the costing method of product valuated by lot/serial "
 "number."
 msgstr ""
+"لا يمكنك تغيير طريقة تقدير تكلفة المنتج الذي يتم تقييمه حسب المجموعة / الرقم"
+" التسلسلي. "
 
 #. module: stock_account
 #. odoo-python
@@ -1219,6 +1255,8 @@ msgid ""
 "You cannot change the product category of a product valuated by lot/serial "
 "number."
 msgstr ""
+"لا يمكنك تغيير فئة منتج من المنتجات التي تم تقييمها حسب رقم المجموعة/الرقم "
+"التسلسلي. "
 
 #. module: stock_account
 #. odoo-python
