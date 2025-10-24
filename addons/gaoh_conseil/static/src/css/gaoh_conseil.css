@@ -2,132 +2,22 @@
    Gaoh Conseil - Styles personnalisés
    ========================================================================== */
 
-/* Force le responsive sur les formulaires */
+/* Limiter la largeur du formulaire principal seulement */
 .o_form_view .o_form_sheet {
-    max-width: 1200px !important;
-    margin: 0 auto !important;
-    padding: 24px !important;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Limiter la largeur du chatter (section messages/activités) */
+/* Limiter la largeur du chatter */
 .o_form_view .oe_chatter {
-    max-width: 1200px !important;
-    margin: 0 auto !important;
-    padding: 0 24px !important;
-}
-
-/* Limiter la largeur de toutes les sections du formulaire */
-.o_form_view .o_form_view {
-    max-width: 1200px !important;
-    margin: 0 auto !important;
-}
-
-/* Limiter également les listes one2many (Investissements, etc.) */
-.o_form_view .o_field_one2many {
-    max-width: 1200px !important;
-    margin: 0 auto !important;
-}
-
-/* Conteneur wrapper pour les groupes */
-.gaoh_form_wrapper {
-    max-width: 100% !important;
-    margin: 0 auto !important;
-    padding: 20px 0 !important;
-}
-
-/* Force les groupes à rester en 2 colonnes max */
-.o_form_view .o_group.o_inner_group {
-    display: flex !important;
-    flex-wrap: wrap !important;
-}
-
-.o_form_view .o_group > .o_group {
-    flex: 1 1 48% !important;
-    max-width: 48% !important;
-    margin: 0 1% !important;
-}
-
-/* Sections spécifiques qui doivent rester en colonne unique */
-.o_form_view .o_group[string*="document"] > .o_group,
-.o_form_view .o_group[string*="Document"] > .o_group,
-.o_form_view .o_notebook_content .o_group > .o_group {
-    flex: 1 1 100% !important;
-    max-width: 100% !important;
-    margin: 0 0 16px 0 !important;
-}
-
-/* Forcer le mode colonne unique pour tous les groupes dans les onglets notebook */
-.o_form_view .o_notebook .o_notebook_content .o_group {
-    display: block !important;
-}
-
-.o_form_view .o_notebook .o_notebook_content .o_group > .o_group {
-    flex: none !important;
-    max-width: 100% !important;
-    width: 100% !important;
-    margin: 0 0 16px 0 !important;
-    display: block !important;
-}
-
-/* Sections de documents dans les listes et formulaires */
-.o_form_view .o_field_one2many .o_list_view,
-.o_form_view .o_field_one2many .o_form_view {
-    width: 100% !important;
-}
-
-/* Forcer l'affichage vertical des champs dans les sections de document */
-.o_form_view .o_group.o_label_nowrap .o_td_label {
-    width: 200px !important;
-    min-width: 200px !important;
-}
-
-/* Conteneur principal du formulaire */
-.o_form_view .o_content {
-    max-width: 1200px !important;
-    margin: 0 auto !important;
-}
-
-/* Limiter la largeur des notebooks et leurs contenus */
-.o_form_view .o_notebook {
-    max-width: 1200px !important;
-    margin: 0 auto !important;
-}
-
-.o_form_view .o_notebook .tab-content {
-    max-width: 100% !important;
-    overflow: hidden !important;
-}
-
-/* Limiter les listes dans les onglets */
-.o_form_view .o_notebook .o_list_view {
-    max-width: 100% !important;
-    overflow-x: auto !important;
-}
-
-/* Règle spécifique pour limiter seulement les conteneurs principaux */
-@media (min-width: 1201px) {
-    .o_form_view > .o_form_sheet_bg,
-    .o_form_view > .o_FormRenderer_chatter {
-        max-width: 1200px !important;
-        margin: 0 auto !important;
-    }
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Responsive pour les petits écrans */
 @media (max-width: 768px) {
     .o_form_view .o_group > .o_group {
-        flex: 1 1 100% !important;
-        max-width: 100% !important;
-        margin: 0 !important;
+        flex: 1 1 100%;
+        max-width: 100%;
     }
-}
-
-/* Amélioration de l'espacement */
-.o_form_view .o_group {
-    margin-bottom: 16px !important;
-}
-
-/* Titre du formulaire */
-.o_form_view .oe_title h1 {
-    margin-bottom: 24px !important;
 }
