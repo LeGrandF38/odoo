@@ -7,8 +7,17 @@ from datetime import date
 class Investisseur(models.Model):
     _name = 'gaoh.investisseur'
     _description = 'Investisseur'
-    _inherit = ['mail.thread', 'mail.activity.mixin']
+    _inherit = ['mail.thread', 'mail.activity.mixin', 'portal.mixin']
     _rec_name = 'nom_complet'
+
+    # Lien avec le contact Odoo (res.partner) pour l'accès portail
+    partner_id = fields.Many2one(
+        'res.partner',
+        string='Contact Associé',
+        ondelete='restrict',
+        tracking=True,
+        help='Contact Odoo lié à cet investisseur pour l\'accès portail'
+    )
 
     # Champ actif pour archivage
     active = fields.Boolean(string='Actif', default=True, tracking=True)
@@ -150,3 +159,39 @@ class Investisseur(models.Model):
         for record in self:
             record.nb_investissements_immobiliers = len(record.investissement_immobilier_ids)
             record.nb_investissements_placements = len(record.investissement_placement_ids)
+    
+    @api.model
+    def create(self, vals):
+        """Créer automatiquement un contact res.partner si non fourni"""
+        record = super(Investisseur, self).create(vals)
+        
+        # Si pas de partner_id, créer un contact automatiquement
+        if not record.partner_id and record.email:
+            partner_vals = {
+                'name': record.nom_complet,
+                'email': record.email,
+                'phone': record.telephone_portable or record.telephone_domicile,
+                'mobile': record.telephone_portable,
+                'street': record.adresse_ligne1,
+                'street2': record.adresse_ligne2 or record.rue,
+                'zip': record.code_postal,
+                'city': record.ville,
+                'country_id': record.pays_id.id if record.pays_id else False,
+                'is_company': False,
+                'comment': f'Investisseur Gaoh Conseil - Consultant: {record.consultant_apporteur or "N/A"}',
+            }
+            partner = self.env['res.partner'].create(partner_vals)
+            record.partner_id = partner.id
+        
+        return record
+    
+    def _compute_access_url(self):
+        """Calculer l'URL d'accès portail"""
+        super(Investisseur, self)._compute_access_url()
+        for record in self:
+            record.access_url = f'/my/investisseur/{record.id}'
+    
+    def _get_report_base_filename(self):
+        """Nom du fichier pour les rapports"""
+        self.ensure_one()
+        return f'Investisseur - {self.nom_complet}'

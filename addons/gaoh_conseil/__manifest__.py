@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Gaoh Conseil - Gestion des Investisseurs',
-    'version': '18.0.1.0.1',
+    'version': '18.0.1.1.0',
     'category': 'Sales/CRM',
     'summary': 'Gestion des investisseurs, placements et investissements immobiliers',
     'description': """
@@ -15,16 +15,22 @@ Module de gestion des investisseurs et de leurs portefeuilles:
     """,
     'author': 'Gaoh Conseil',
     'website': 'https://www.gaohconseil.com',
-    'depends': ['base', 'mail', 'contacts'],
+    'depends': ['base', 'mail', 'contacts', 'portal'],
     'data': [
         'security/gaoh_security.xml',
         'security/ir.model.access.csv',
+        'views/assets/assets.xml',
         'views/investisseur_views.xml',
         'views/investissement_immobilier_views.xml',
         'views/investissement_placement_views.xml',
         'wizards/import_excel_wizard_views.xml',
         'views/menu_views.xml',
     ],
+    'assets': {
+        'web.assets_backend': [
+            'gaoh_conseil/static/src/css/gaoh_conseil.css',
+        ],
+    },
     'demo': [],
     'installable': True,
     'application': True,

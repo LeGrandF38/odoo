@@ -38,7 +38,14 @@
                             <field name="nom_complet" readonly="1"/>
                         </h1>
                     </div>
-                    <div style="max-width: 1000px; margin: 0 auto; padding: 20px;">
+                    <group>
+                        <group>
+                            <field name="partner_id" string="Contact Odoo Associé" 
+                                   context="{'default_is_company': False}"
+                                   options="{'no_create': False, 'no_open': False}"/>
+                        </group>
+                    </group>
+                    <div class="gaoh_form_wrapper">
                         <group col="2">
                             <group string="Informations Personnelles" colspan="1">
                                 <field name="civilite"/>

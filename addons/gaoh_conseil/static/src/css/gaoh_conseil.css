@@ -1,0 +1,48 @@
+/* ==========================================================================
+   Gaoh Conseil - Styles personnalisés
+   ========================================================================== */
+
+/* Force le responsive sur les formulaires */
+.o_form_view .o_form_sheet {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 24px !important;
+}
+
+/* Conteneur wrapper pour les groupes */
+.gaoh_form_wrapper {
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 20px 0 !important;
+}
+
+/* Force les groupes à rester en 2 colonnes max */
+.o_form_view .o_group.o_inner_group {
+    display: flex !important;
+    flex-wrap: wrap !important;
+}
+
+.o_form_view .o_group > .o_group {
+    flex: 1 1 48% !important;
+    max-width: 48% !important;
+    margin: 0 1% !important;
+}
+
+/* Responsive pour les petits écrans */
+@media (max-width: 768px) {
+    .o_form_view .o_group > .o_group {
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+    }
+}
+
+/* Amélioration de l'espacement */
+.o_form_view .o_group {
+    margin-bottom: 16px !important;
+}
+
+/* Titre du formulaire */
+.o_form_view .oe_title h1 {
+    margin-bottom: 24px !important;
+}
