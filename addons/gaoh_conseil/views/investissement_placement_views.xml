@@ -35,44 +35,46 @@
                             <field name="libelle_produit"/>
                         </h1>
                     </div>
-                    <group col="2">
-                        <group string="Investisseur" colspan="1">
-                            <field name="investisseur_id"/>
-                            <field name="email_investisseur"/>
-                            <field name="consultant_apporteur"/>
-                            <field name="tmi"/>
-                            <field name="age_67_69"/>
+                    <div style="max-width: 1000px; margin: 0 auto; padding: 20px;">
+                        <group col="2">
+                            <group string="Investisseur" colspan="1">
+                                <field name="investisseur_id"/>
+                                <field name="email_investisseur"/>
+                                <field name="consultant_apporteur"/>
+                                <field name="tmi"/>
+                                <field name="age_67_69"/>
+                            </group>
+                            <group string="Produit" colspan="1">
+                                <field name="type_produit"/>
+                                <field name="partenaire"/>
+                                <field name="numero_contrat"/>
+                            </group>
                         </group>
-                        <group string="Produit" colspan="1">
-                            <field name="type_produit"/>
-                            <field name="partenaire"/>
-                            <field name="numero_contrat"/>
+                        <group col="2">
+                            <group string="Dates" colspan="1">
+                                <field name="date_effet"/>
+                                <field name="date_sortie"/>
+                                <field name="anciennete_mois"/>
+                            </group>
+                            <group string="Commande" colspan="1">
+                                <field name="numero_commande"/>
+                                <field name="achat_personnel"/>
+                            </group>
                         </group>
-                    </group>
-                    <group col="2">
-                        <group string="Dates" colspan="1">
-                            <field name="date_effet"/>
-                            <field name="date_sortie"/>
-                            <field name="anciennete_mois"/>
+                        <group col="2">
+                            <group string="Programmation Versement" colspan="1">
+                                <field name="programmation_versement"/>
+                                <field name="programmation_date_debut"/>
+                                <field name="programmation_date_fin"/>
+                                <field name="programmation_montant" widget="monetary"/>
+                            </group>
+                            <group string="Dernier Mouvement VC" colspan="1">
+                                <field name="dernier_mouvement_vc_date"/>
+                                <field name="dernier_mouvement_vc_type"/>
+                                <field name="dernier_mouvement_vc_montant" widget="monetary"/>
+                            </group>
                         </group>
-                        <group string="Commande" colspan="1">
-                            <field name="numero_commande"/>
-                            <field name="achat_personnel"/>
-                        </group>
-                    </group>
-                    <group col="2">
-                        <group string="Programmation Versement" colspan="1">
-                            <field name="programmation_versement"/>
-                            <field name="programmation_date_debut"/>
-                            <field name="programmation_date_fin"/>
-                            <field name="programmation_montant" widget="monetary"/>
-                        </group>
-                        <group string="Dernier Mouvement VC" colspan="1">
-                            <field name="dernier_mouvement_vc_date"/>
-                            <field name="dernier_mouvement_vc_type"/>
-                            <field name="dernier_mouvement_vc_montant" widget="monetary"/>
-                        </group>
-                    </group>
+                    </div>
                     <notebook>
                         <page string="Montants Cumulés" name="montants_cumules">
                             <group>

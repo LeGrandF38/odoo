@@ -35,46 +35,48 @@
                             <field name="nom_programme"/>
                         </h1>
                     </div>
-                    <group col="2">
-                        <group string="Investisseur" colspan="1">
-                            <field name="investisseur_id"/>
-                            <field name="email_investisseur"/>
-                            <field name="consultant_apporteur"/>
+                    <div style="max-width: 1000px; margin: 0 auto; padding: 20px;">
+                        <group col="2">
+                            <group string="Investisseur" colspan="1">
+                                <field name="investisseur_id"/>
+                                <field name="email_investisseur"/>
+                                <field name="consultant_apporteur"/>
+                            </group>
+                            <group string="Programme" colspan="1">
+                                <field name="code_programme"/>
+                                <field name="ville_programme"/>
+                                <field name="promoteur"/>
+                                <field name="gestionnaire"/>
+                                <field name="stellium_sci"/>
+                            </group>
                         </group>
-                        <group string="Programme" colspan="1">
-                            <field name="code_programme"/>
-                            <field name="ville_programme"/>
-                            <field name="promoteur"/>
-                            <field name="gestionnaire"/>
-                            <field name="stellium_sci"/>
+                        <group col="2">
+                            <group string="Lot" colspan="1">
+                                <field name="lot"/>
+                                <field name="type_lot"/>
+                                <field name="dispositif_fiscal"/>
+                            </group>
+                            <group string="Dates Importantes" colspan="1">
+                                <field name="date_option"/>
+                                <field name="date_reservation"/>
+                                <field name="date_livraison"/>
+                                <field name="date_acte"/>
+                                <field name="date_vc"/>
+                            </group>
                         </group>
-                    </group>
-                    <group col="2">
-                        <group string="Lot" colspan="1">
-                            <field name="lot"/>
-                            <field name="type_lot"/>
-                            <field name="dispositif_fiscal"/>
+                        <group col="2">
+                            <group string="Commande" colspan="1">
+                                <field name="numero_commande"/>
+                                <field name="paiement_comptant"/>
+                                <field name="achat_personnel"/>
+                                <field name="pv_strategie"/>
+                            </group>
+                            <group string="Montants" colspan="1">
+                                <field name="prix_ttc" widget="monetary"/>
+                                <field name="base_commissionnement" widget="monetary"/>
+                            </group>
                         </group>
-                        <group string="Dates Importantes" colspan="1">
-                            <field name="date_option"/>
-                            <field name="date_reservation"/>
-                            <field name="date_livraison"/>
-                            <field name="date_acte"/>
-                            <field name="date_vc"/>
-                        </group>
-                    </group>
-                    <group col="2">
-                        <group string="Commande" colspan="1">
-                            <field name="numero_commande"/>
-                            <field name="paiement_comptant"/>
-                            <field name="achat_personnel"/>
-                            <field name="pv_strategie"/>
-                        </group>
-                        <group string="Montants" colspan="1">
-                            <field name="prix_ttc" widget="monetary"/>
-                            <field name="base_commissionnement" widget="monetary"/>
-                        </group>
-                    </group>
+                    </div>
                 </sheet>
                 <div class="oe_chatter">
                     <field name="message_follower_ids"/>

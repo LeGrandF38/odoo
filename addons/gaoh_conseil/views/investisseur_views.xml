@@ -38,66 +38,68 @@
                             <field name="nom_complet" readonly="1"/>
                         </h1>
                     </div>
-                    <group col="2">
-                        <group string="Informations Personnelles" colspan="1">
-                            <field name="civilite"/>
-                            <field name="nom"/>
-                            <field name="prenom"/>
-                            <field name="nom_jeune_fille"/>
-                            <field name="date_naissance"/>
-                            <field name="age"/>
-                            <field name="situation_familiale"/>
-                            <field name="interlocuteur_principal"/>
+                    <div style="max-width: 1000px; margin: 0 auto; padding: 20px;">
+                        <group col="2">
+                            <group string="Informations Personnelles" colspan="1">
+                                <field name="civilite"/>
+                                <field name="nom"/>
+                                <field name="prenom"/>
+                                <field name="nom_jeune_fille"/>
+                                <field name="date_naissance"/>
+                                <field name="age"/>
+                                <field name="situation_familiale"/>
+                                <field name="interlocuteur_principal"/>
+                            </group>
+                            <group string="Contact" colspan="1">
+                                <field name="email" widget="email"/>
+                                <field name="telephone_portable" widget="phone"/>
+                                <field name="telephone_domicile" widget="phone"/>
+                                <field name="telephone_professionnel" widget="phone"/>
+                                <field name="autorisation_communication"/>
+                                <field name="npai"/>
+                            </group>
                         </group>
-                        <group string="Contact" colspan="1">
-                            <field name="email" widget="email"/>
-                            <field name="telephone_portable" widget="phone"/>
-                            <field name="telephone_domicile" widget="phone"/>
-                            <field name="telephone_professionnel" widget="phone"/>
-                            <field name="autorisation_communication"/>
-                            <field name="npai"/>
+                        <group col="2">
+                            <group string="Adresse" colspan="1">
+                                <field name="adresse_ligne1"/>
+                                <field name="adresse_ligne2"/>
+                                <field name="rue"/>
+                                <field name="code_postal"/>
+                                <field name="ville"/>
+                                <field name="pays_id"/>
+                            </group>
+                            <group string="Consultant" colspan="1">
+                                <field name="consultant_apporteur"/>
+                                <field name="consultant_precedent"/>
+                                <field name="date_rattachement_precedent"/>
+                                <field name="date_derniere_signature"/>
+                                <field name="date_suppression_contact"/>
+                            </group>
                         </group>
-                    </group>
-                    <group col="2">
-                        <group string="Adresse" colspan="1">
-                            <field name="adresse_ligne1"/>
-                            <field name="adresse_ligne2"/>
-                            <field name="rue"/>
-                            <field name="code_postal"/>
-                            <field name="ville"/>
-                            <field name="pays_id"/>
+                        <group col="2">
+                            <group string="Détentions" colspan="1">
+                                <field name="detenteur_epargne_retraite"/>
+                                <field name="detenteur_capinvest"/>
+                                <field name="detenteur_girardin"/>
+                            </group>
+                            <group string="Informations Fiscales" colspan="1">
+                                <field name="impot_revenu_brut" widget="monetary"/>
+                                <field name="impot_revenu_net" widget="monetary"/>
+                                <field name="tmi"/>
+                            </group>
                         </group>
-                        <group string="Consultant" colspan="1">
-                            <field name="consultant_apporteur"/>
-                            <field name="consultant_precedent"/>
-                            <field name="date_rattachement_precedent"/>
-                            <field name="date_derniere_signature"/>
-                            <field name="date_suppression_contact"/>
+                        <group col="2">
+                            <group string="Liquidités" colspan="1">
+                                <field name="liquidites_seul" widget="monetary"/>
+                                <field name="liquidites_couple" widget="monetary"/>
+                                <field name="liquidites_total" widget="monetary"/>
+                            </group>
+                            <group string="Crédits" colspan="1">
+                                <field name="date_credit_recent"/>
+                                <field name="date_credit_futur"/>
+                            </group>
                         </group>
-                    </group>
-                    <group col="2">
-                        <group string="Détentions" colspan="1">
-                            <field name="detenteur_epargne_retraite"/>
-                            <field name="detenteur_capinvest"/>
-                            <field name="detenteur_girardin"/>
-                        </group>
-                        <group string="Informations Fiscales" colspan="1">
-                            <field name="impot_revenu_brut" widget="monetary"/>
-                            <field name="impot_revenu_net" widget="monetary"/>
-                            <field name="tmi"/>
-                        </group>
-                    </group>
-                    <group col="2">
-                        <group string="Liquidités" colspan="1">
-                            <field name="liquidites_seul" widget="monetary"/>
-                            <field name="liquidites_couple" widget="monetary"/>
-                            <field name="liquidites_total" widget="monetary"/>
-                        </group>
-                        <group string="Crédits" colspan="1">
-                            <field name="date_credit_recent"/>
-                            <field name="date_credit_futur"/>
-                        </group>
-                    </group>
+                    </div>
                     <notebook>
                         <page string="Investissements Immobiliers" name="investissements_immobiliers">
                             <field name="investissement_immobilier_ids">
