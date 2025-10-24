@@ -39,7 +39,7 @@
                         </h1>
                     </div>
                     <group>
-                        <group string="Informations Personnelles">
+                        <group string="Informations Personnelles" colspan="1">
                             <field name="civilite"/>
                             <field name="nom"/>
                             <field name="prenom"/>
@@ -49,7 +49,7 @@
                             <field name="situation_familiale"/>
                             <field name="interlocuteur_principal"/>
                         </group>
-                        <group string="Contact">
+                        <group string="Contact" colspan="1">
                             <field name="email" widget="email"/>
                             <field name="telephone_portable" widget="phone"/>
                             <field name="telephone_domicile" widget="phone"/>
@@ -59,7 +59,7 @@
                         </group>
                     </group>
                     <group>
-                        <group string="Adresse">
+                        <group string="Adresse" colspan="1">
                             <field name="adresse_ligne1"/>
                             <field name="adresse_ligne2"/>
                             <field name="rue"/>
@@ -67,7 +67,7 @@
                             <field name="ville"/>
                             <field name="pays_id"/>
                         </group>
-                        <group string="Consultant">
+                        <group string="Consultant" colspan="1">
                             <field name="consultant_apporteur"/>
                             <field name="consultant_precedent"/>
                             <field name="date_rattachement_precedent"/>
@@ -76,24 +76,24 @@
                         </group>
                     </group>
                     <group>
-                        <group string="Détentions">
+                        <group string="Détentions" colspan="1">
                             <field name="detenteur_epargne_retraite"/>
                             <field name="detenteur_capinvest"/>
                             <field name="detenteur_girardin"/>
                         </group>
-                        <group string="Informations Fiscales">
+                        <group string="Informations Fiscales" colspan="1">
                             <field name="impot_revenu_brut" widget="monetary"/>
                             <field name="impot_revenu_net" widget="monetary"/>
                             <field name="tmi"/>
                         </group>
                     </group>
                     <group>
-                        <group string="Liquidités">
+                        <group string="Liquidités" colspan="1">
                             <field name="liquidites_seul" widget="monetary"/>
                             <field name="liquidites_couple" widget="monetary"/>
                             <field name="liquidites_total" widget="monetary"/>
                         </group>
-                        <group string="Crédits">
+                        <group string="Crédits" colspan="1">
                             <field name="date_credit_recent"/>
                             <field name="date_credit_futur"/>
                         </group>

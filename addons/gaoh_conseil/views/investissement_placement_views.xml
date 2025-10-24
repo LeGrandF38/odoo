@@ -36,38 +36,38 @@
                         </h1>
                     </div>
                     <group>
-                        <group string="Investisseur">
+                        <group string="Investisseur" colspan="1">
                             <field name="investisseur_id"/>
                             <field name="email_investisseur"/>
                             <field name="consultant_apporteur"/>
                             <field name="tmi"/>
                             <field name="age_67_69"/>
                         </group>
-                        <group string="Produit">
+                        <group string="Produit" colspan="1">
                             <field name="type_produit"/>
                             <field name="partenaire"/>
                             <field name="numero_contrat"/>
                         </group>
                     </group>
                     <group>
-                        <group string="Dates">
+                        <group string="Dates" colspan="1">
                             <field name="date_effet"/>
                             <field name="date_sortie"/>
                             <field name="anciennete_mois"/>
                         </group>
-                        <group string="Commande">
+                        <group string="Commande" colspan="1">
                             <field name="numero_commande"/>
                             <field name="achat_personnel"/>
                         </group>
                     </group>
                     <group>
-                        <group string="Programmation Versement">
+                        <group string="Programmation Versement" colspan="1">
                             <field name="programmation_versement"/>
                             <field name="programmation_date_debut"/>
                             <field name="programmation_date_fin"/>
                             <field name="programmation_montant" widget="monetary"/>
                         </group>
-                        <group string="Dernier Mouvement VC">
+                        <group string="Dernier Mouvement VC" colspan="1">
                             <field name="dernier_mouvement_vc_date"/>
                             <field name="dernier_mouvement_vc_type"/>
                             <field name="dernier_mouvement_vc_montant" widget="monetary"/>

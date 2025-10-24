@@ -36,12 +36,12 @@
                         </h1>
                     </div>
                     <group>
-                        <group string="Investisseur">
+                        <group string="Investisseur" colspan="1">
                             <field name="investisseur_id"/>
                             <field name="email_investisseur"/>
                             <field name="consultant_apporteur"/>
                         </group>
-                        <group string="Programme">
+                        <group string="Programme" colspan="1">
                             <field name="code_programme"/>
                             <field name="ville_programme"/>
                             <field name="promoteur"/>
@@ -50,12 +50,12 @@
                         </group>
                     </group>
                     <group>
-                        <group string="Lot">
+                        <group string="Lot" colspan="1">
                             <field name="lot"/>
                             <field name="type_lot"/>
                             <field name="dispositif_fiscal"/>
                         </group>
-                        <group string="Dates Importantes">
+                        <group string="Dates Importantes" colspan="1">
                             <field name="date_option"/>
                             <field name="date_reservation"/>
                             <field name="date_livraison"/>
@@ -64,13 +64,13 @@
                         </group>
                     </group>
                     <group>
-                        <group string="Commande">
+                        <group string="Commande" colspan="1">
                             <field name="numero_commande"/>
                             <field name="paiement_comptant"/>
                             <field name="achat_personnel"/>
                             <field name="pv_strategie"/>
                         </group>
-                        <group string="Montants">
+                        <group string="Montants" colspan="1">
                             <field name="prix_ttc" widget="monetary"/>
                             <field name="base_commissionnement" widget="monetary"/>
                         </group>
