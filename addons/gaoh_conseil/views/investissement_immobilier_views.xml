@@ -4,8 +4,9 @@
     <record id="view_investissement_immobilier_tree" model="ir.ui.view">
         <field name="name">gaoh.investissement_immobilier.tree</field>
         <field name="model">gaoh.investissement_immobilier</field>
+        <field name="type">list</field>
         <field name="arch" type="xml">
-            <tree string="Investissements Immobiliers">
+            <list string="Investissements Immobiliers">
                 <field name="investisseur_id"/>
                 <field name="nom_programme"/>
                 <field name="ville_programme"/>
@@ -15,7 +16,7 @@
                 <field name="date_livraison"/>
                 <field name="prix_ttc" widget="monetary"/>
                 <field name="etat_commande" decoration-success="etat_commande == 'livree'" decoration-info="etat_commande == 'signee'" decoration-warning="etat_commande == 'en_cours'" decoration-danger="etat_commande == 'annulee'"/>
-            </tree>
+            </list>
         </field>
     </record>
 

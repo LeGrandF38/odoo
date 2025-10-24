@@ -4,8 +4,9 @@
     <record id="view_investissement_placement_tree" model="ir.ui.view">
         <field name="name">gaoh.investissement_placement.tree</field>
         <field name="model">gaoh.investissement_placement</field>
+        <field name="type">list</field>
         <field name="arch" type="xml">
-            <tree string="Investissements Placements">
+            <list string="Investissements Placements">
                 <field name="investisseur_id"/>
                 <field name="libelle_produit"/>
                 <field name="type_produit"/>
@@ -15,7 +16,7 @@
                 <field name="anciennete_mois"/>
                 <field name="va_encours" widget="monetary"/>
                 <field name="etat_commande" decoration-success="etat_commande == 'en_vigueur'" decoration-info="etat_commande == 'signee'" decoration-warning="etat_commande == 'en_cours'" decoration-danger="etat_commande == 'annulee'"/>
-            </tree>
+            </list>
         </field>
     </record>
 

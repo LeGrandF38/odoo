@@ -4,8 +4,9 @@
     <record id="view_investisseur_tree" model="ir.ui.view">
         <field name="name">gaoh.investisseur.tree</field>
         <field name="model">gaoh.investisseur</field>
+        <field name="type">list</field>
         <field name="arch" type="xml">
-            <tree string="Investisseurs">
+            <list string="Investisseurs">
                 <field name="nom_complet"/>
                 <field name="email"/>
                 <field name="telephone_portable"/>
@@ -14,7 +15,7 @@
                 <field name="nb_investissements_immobiliers"/>
                 <field name="nb_investissements_placements"/>
                 <field name="date_derniere_signature"/>
-            </tree>
+            </list>
         </field>
     </record>
 
@@ -100,26 +101,26 @@
                     <notebook>
                         <page string="Investissements Immobiliers" name="investissements_immobiliers">
                             <field name="investissement_immobilier_ids">
-                                <tree>
+                                <list>
                                     <field name="nom_programme"/>
                                     <field name="ville_programme"/>
                                     <field name="dispositif_fiscal"/>
                                     <field name="date_reservation"/>
                                     <field name="prix_ttc" widget="monetary"/>
                                     <field name="etat_commande"/>
-                                </tree>
+                                </list>
                             </field>
                         </page>
                         <page string="Placements Financiers" name="placements">
                             <field name="investissement_placement_ids">
-                                <tree>
+                                <list>
                                     <field name="libelle_produit"/>
                                     <field name="type_produit"/>
                                     <field name="partenaire"/>
                                     <field name="date_effet"/>
                                     <field name="va_encours" widget="monetary"/>
                                     <field name="etat_commande"/>
-                                </tree>
+                                </list>
                             </field>
                         </page>
                     </notebook>
