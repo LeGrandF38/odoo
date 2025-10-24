@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Gaoh Conseil - Gestion des Investisseurs',
-    'version': '18.0.1.0.0',
+    'version': '18.0.1.0.1',
     'category': 'Sales/CRM',
     'summary': 'Gestion des investisseurs, placements et investissements immobiliers',
     'description': """
