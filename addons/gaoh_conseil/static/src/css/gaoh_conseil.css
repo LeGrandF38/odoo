@@ -9,6 +9,25 @@
     padding: 24px !important;
 }
 
+/* Limiter la largeur du chatter (section messages/activités) */
+.o_form_view .oe_chatter {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 24px !important;
+}
+
+/* Limiter la largeur de toutes les sections du formulaire */
+.o_form_view .o_form_view {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+/* Limiter également les listes one2many (Investissements, etc.) */
+.o_form_view .o_field_one2many {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
 /* Conteneur wrapper pour les groupes */
 .gaoh_form_wrapper {
     max-width: 100% !important;
@@ -60,6 +79,46 @@
 .o_form_view .o_group.o_label_nowrap .o_td_label {
     width: 200px !important;
     min-width: 200px !important;
+}
+
+/* Conteneur principal du formulaire */
+.o_form_view .o_content {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+/* Limiter la largeur des notebooks et leurs contenus */
+.o_form_view .o_notebook {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+.o_form_view .o_notebook .tab-content {
+    max-width: 100% !important;
+    overflow: hidden !important;
+}
+
+/* Limiter les listes dans les onglets */
+.o_form_view .o_notebook .o_list_view {
+    max-width: 100% !important;
+    overflow-x: auto !important;
+}
+
+/* Responsive global pour tous les éléments larges */
+@media (min-width: 1201px) {
+    .o_form_view * {
+        max-width: 1200px !important;
+    }
+    
+    /* Exception pour les éléments qui ont besoin de leur largeur naturelle */
+    .o_form_view .o_form_label,
+    .o_form_view .o_field_widget,
+    .o_form_view .btn,
+    .o_form_view .o_input,
+    .o_form_view .o_field_text,
+    .o_form_view .o_field_char {
+        max-width: none !important;
+    }
 }
 
 /* Responsive pour les petits écrans */
