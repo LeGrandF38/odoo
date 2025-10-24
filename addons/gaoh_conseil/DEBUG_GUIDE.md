@@ -19,6 +19,7 @@ python debug.py
 - ✅ Syntaxe Python valide
 - ✅ Fichiers requis existent
 - ✅ Manifest complet et cohérent
+- ✅ **Compatibilité Odoo 18** (types de vue, view_mode, etc.)
 
 ### 2️⃣ **Validation XML Seule**
 
@@ -48,6 +49,20 @@ python validate_python.py
 - Tous les imports détectés
 - Vérification du manifest.py
 
+### 4️⃣ **Débogage Odoo 18 Seul**
+
+Pour vérifier uniquement les incompatibilités Odoo 18 :
+
+```bash
+cd addons/gaoh_conseil
+python debug_odoo18.py
+```
+
+**Détecte:**
+- Usage de `'tree'` au lieu de `'list'` dans `view_mode`
+- Types de vue invalides
+- Autres incompatibilités Odoo 18
+
 ---
 
 ## 🚀 Workflow Avant Build Docker
@@ -75,6 +90,7 @@ python validate_python.py
 | `debug.py` | Script principal - lance toutes les validations |
 | `validate_xml.py` | Valide la syntaxe et les références XML |
 | `validate_python.py` | Valide la syntaxe et les imports Python |
+| `debug_odoo18.py` | **NOUVEAU** - Détecte les incompatibilités Odoo 18 |
 
 ---
 
@@ -94,6 +110,15 @@ Cause: Odoo 18 utilise 'list' au lieu de 'tree'
 Solution: 
   1. Remplacer <tree> par <list> dans les fichiers XML
   2. Ajouter <field name="type">list</field> aux vues
+```
+
+### ❌ "View types not defined tree found in act_window action"
+```
+Cause: view_mode utilise 'tree' au lieu de 'list' dans les actions
+Solution:
+  1. Trouver les <field name="view_mode">tree,form</field>
+  2. Remplacer par <field name="view_mode">list,form</field>
+  3. Vérifier que les vues correspondantes utilisent <list> et non <tree>
 ```
 
 ### ❌ Erreur de syntaxe XML

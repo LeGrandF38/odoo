@@ -59,6 +59,11 @@ def main():
     if python_script.exists():
         results['Python'] = run_script(python_script, "🐍 Validation Python")
     
+    # Valider Odoo 18
+    odoo18_script = module_path / 'debug_odoo18.py'
+    if odoo18_script.exists():
+        results['Odoo 18'] = run_script(odoo18_script, "🚀 Débogage Odoo 18")
+    
     # Résumé
     print(f"\n{Colors.CYAN}{'='*70}")
     print(f"{Colors.BOLD}📊 RÉSUMÉ DES VALIDATIONS{Colors.END}")
