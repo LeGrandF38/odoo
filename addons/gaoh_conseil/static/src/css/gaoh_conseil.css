@@ -28,6 +28,40 @@
     margin: 0 1% !important;
 }
 
+/* Sections spécifiques qui doivent rester en colonne unique */
+.o_form_view .o_group[string*="document"] > .o_group,
+.o_form_view .o_group[string*="Document"] > .o_group,
+.o_form_view .o_notebook_content .o_group > .o_group {
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+    margin: 0 0 16px 0 !important;
+}
+
+/* Forcer le mode colonne unique pour tous les groupes dans les onglets notebook */
+.o_form_view .o_notebook .o_notebook_content .o_group {
+    display: block !important;
+}
+
+.o_form_view .o_notebook .o_notebook_content .o_group > .o_group {
+    flex: none !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 0 16px 0 !important;
+    display: block !important;
+}
+
+/* Sections de documents dans les listes et formulaires */
+.o_form_view .o_field_one2many .o_list_view,
+.o_form_view .o_field_one2many .o_form_view {
+    width: 100% !important;
+}
+
+/* Forcer l'affichage vertical des champs dans les sections de document */
+.o_form_view .o_group.o_label_nowrap .o_td_label {
+    width: 200px !important;
+    min-width: 200px !important;
+}
+
 /* Responsive pour les petits écrans */
 @media (max-width: 768px) {
     .o_form_view .o_group > .o_group {
